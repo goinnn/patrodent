@@ -51,7 +51,7 @@
 	text-align      : center;
 	}
 span#e35            { /* patrodent001012.gif */
-	background      : transparent url(patrodent001012.gif) no-repeat top left;
+	background      : transparent url(../images/patrodent001012.gif) no-repeat top left;
 	position        : absolute;
 	left            :   1.50pt;
 	top             :   0.00pt;
@@ -60,7 +60,7 @@ span#e35            { /* patrodent001012.gif */
 	}
 span#e34            { /* patrodent001011.gif */
 	clip            : rect(0.00pt,103.50pt,6.75pt,0.00pt);
-	background      : transparent url(patrodent001011.gif) no-repeat top left;
+	background      : transparent url(../images/patrodent001011.gif) no-repeat top left;
 	position        : absolute;
 	left            :   1.50pt;
 	top             :   0.00pt;
@@ -69,7 +69,7 @@ span#e34            { /* patrodent001011.gif */
 	}
 span#e33            { /* patrodent001010.gif */
 	clip            : rect(0.00pt,459.00pt,6.75pt,0.00pt);
-	background      : transparent url(patrodent001010.gif) no-repeat top left;
+	background      : transparent url(../images/patrodent001010.gif) no-repeat top left;
 	position        : absolute;
 	left            : 105.00pt;
 	top             :   0.00pt;
@@ -78,7 +78,7 @@ span#e33            { /* patrodent001010.gif */
 	}
 span#e32            { /* patrodent001009.gif */
 	clip            : rect(0.00pt,103.50pt,15.00pt,0.00pt);
-	background      : transparent url(patrodent001009.gif) no-repeat top left;
+	background      : transparent url(../images/patrodent001009.gif) no-repeat top left;
 	position        : absolute;
 	left            :   1.50pt;
 	top             :  96.00pt;
@@ -87,7 +87,7 @@ span#e32            { /* patrodent001009.gif */
 	}
 span#e31            { /* patrodent001008.gif */
 	clip            : rect(0.00pt,459.00pt,15.00pt,0.00pt);
-	background      : transparent url(patrodent001008.gif) no-repeat top left;
+	background      : transparent url(../images/patrodent001008.gif) no-repeat top left;
 	position        : absolute;
 	left            : 105.00pt;
 	top             :  96.00pt;
@@ -95,7 +95,7 @@ span#e31            { /* patrodent001008.gif */
 	height          :  15.00pt;
 	}
 span#e30            { /* patrodent2001001.jpg */
-	background      : transparent url(patrodent2001001.jpg) no-repeat top left;
+	background      : transparent url(../images/patrodent2001001.jpg) no-repeat top left;
 	position        : absolute;
 	left            :   0.75pt;
 	top             :   6.75pt;
@@ -180,7 +180,7 @@ h4#e20              { /* CITAS */
 	height          :  20.25pt;
 	}
 span#e19            { /* patrodent001007.gif */
-	background      : transparent url(patrodent001007.gif) no-repeat top left;
+	background      : transparent url(../images/patrodent001007.gif) no-repeat top left;
 	position        : absolute;
 	left            :  26.25pt;
 	top             : 140.25pt;
@@ -188,7 +188,7 @@ span#e19            { /* patrodent001007.gif */
 	height          :  36.00pt;
 	}
 span#e18            { /* patrodent006005.gif */
-	background      : transparent url(patrodent006005.gif) no-repeat top left;
+	background      : transparent url(../images/patrodent006005.gif) no-repeat top left;
 	position        : absolute;
 	left            :  15.00pt;
 	top             : 240.75pt;
@@ -196,7 +196,7 @@ span#e18            { /* patrodent006005.gif */
 	height          :   0.75pt;
 	}
 span#e17            { /* patrodent006004.gif */
-	background      : transparent url(patrodent006004.gif) no-repeat top left;
+	background      : transparent url(../images/patrodent006004.gif) no-repeat top left;
 	position        : absolute;
 	left            :  15.00pt;
 	top             : 390.75pt;
@@ -263,7 +263,7 @@ div#e10             { /* Es necesario que el cepi... */
 	height          : 107.25pt;
 	}
 span#e9             { /* patrodent006003.jpg */
-	background      : transparent url(patrodent006003.jpg) no-repeat top left;
+	background      : transparent url(../images/patrodent006003.jpg) no-repeat top left;
 	position        : absolute;
 	left            : 168.00pt;
 	top             : 522.75pt;
@@ -271,7 +271,7 @@ span#e9             { /* patrodent006003.jpg */
 	height          :  60.00pt;
 	}
 span#e8             { /* patrodent006002.jpg */
-	background      : transparent url(patrodent006002.jpg) no-repeat top left;
+	background      : transparent url(../images/patrodent006002.jpg) no-repeat top left;
 	position        : absolute;
 	left            : 412.50pt;
 	top             : 522.75pt;
@@ -279,7 +279,7 @@ span#e8             { /* patrodent006002.jpg */
 	height          :  56.25pt;
 	}
 span#e7             { /* patrodent006001.gif */
-	background      : transparent url(patrodent006001.gif) no-repeat top left;
+	background      : transparent url(../images/patrodent006001.gif) no-repeat top left;
 	position        : absolute;
 	left            : 294.00pt;
 	top             : 510.00pt;
@@ -329,7 +329,7 @@ div#e1              { /* Volver       */
 	height          :  15.75pt;
 	}
 div#page            { /* Page Holder */
-	background-image: url(back_bus21.gif);
+	background-image: url(../images/back_bus21.gif);
 	position        : relative;
 	width           : 570.00pt;
 	height          : 645.00pt;

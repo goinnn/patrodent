@@ -44,7 +44,7 @@
 	text-align      : center;
 	}
 span#e28            { /* patrodent001012.gif */
-	background      : transparent url(patrodent001012.gif) no-repeat top left;
+	background      : transparent url(../images/patrodent001012.gif) no-repeat top left;
 	position        : absolute;
 	left            :   1.50pt;
 	top             :   0.00pt;
@@ -53,7 +53,7 @@ span#e28            { /* patrodent001012.gif */
 	}
 span#e27            { /* patrodent001011.gif */
 	clip            : rect(0.00pt,103.50pt,6.75pt,0.00pt);
-	background      : transparent url(patrodent001011.gif) no-repeat top left;
+	background      : transparent url(../images/patrodent001011.gif) no-repeat top left;
 	position        : absolute;
 	left            :   1.50pt;
 	top             :   0.00pt;
@@ -62,7 +62,7 @@ span#e27            { /* patrodent001011.gif */
 	}
 span#e26            { /* patrodent001010.gif */
 	clip            : rect(0.00pt,459.00pt,6.75pt,0.00pt);
-	background      : transparent url(patrodent001010.gif) no-repeat top left;
+	background      : transparent url(../images/patrodent001010.gif) no-repeat top left;
 	position        : absolute;
 	left            : 105.00pt;
 	top             :   0.00pt;
@@ -71,7 +71,7 @@ span#e26            { /* patrodent001010.gif */
 	}
 span#e25            { /* patrodent001009.gif */
 	clip            : rect(0.00pt,103.50pt,15.00pt,0.00pt);
-	background      : transparent url(patrodent001009.gif) no-repeat top left;
+	background      : transparent url(../images/patrodent001009.gif) no-repeat top left;
 	position        : absolute;
 	left            :   1.50pt;
 	top             :  96.00pt;
@@ -80,7 +80,7 @@ span#e25            { /* patrodent001009.gif */
 	}
 span#e24            { /* patrodent001008.gif */
 	clip            : rect(0.00pt,459.00pt,15.00pt,0.00pt);
-	background      : transparent url(patrodent001008.gif) no-repeat top left;
+	background      : transparent url(../images/patrodent001008.gif) no-repeat top left;
 	position        : absolute;
 	left            : 105.00pt;
 	top             :  96.00pt;
@@ -107,7 +107,7 @@ div#e22             { /* La clínica de la Dra. Pa... */
 	height          :  62.25pt;
 	}
 span#e21            { /* patrodent2001001.jpg */
-	background      : transparent url(patrodent2001001.jpg) no-repeat top left;
+	background      : transparent url(../images/patrodent2001001.jpg) no-repeat top left;
 	position        : absolute;
 	left            :   0.75pt;
 	top             :   6.75pt;
@@ -192,7 +192,7 @@ h4#e11              { /* CITAS */
 	height          :  20.25pt;
 	}
 span#e10            { /* patrodent001007.gif */
-	background      : transparent url(patrodent001007.gif) no-repeat top left;
+	background      : transparent url(../images/patrodent001007.gif) no-repeat top left;
 	position        : absolute;
 	left            :  26.25pt;
 	top             : 140.25pt;
@@ -200,7 +200,7 @@ span#e10            { /* patrodent001007.gif */
 	height          :  36.00pt;
 	}
 span#e9             { /* patrodent003002.gif */
-	background      : transparent url(patrodent003002.gif) no-repeat top left;
+	background      : transparent url(../images/patrodent003002.gif) no-repeat top left;
 	position        : absolute;
 	left            :  15.00pt;
 	top             : 240.75pt;
@@ -208,7 +208,7 @@ span#e9             { /* patrodent003002.gif */
 	height          :   0.75pt;
 	}
 span#e8             { /* patrodent003001.gif */
-	background      : transparent url(patrodent003001.gif) no-repeat top left;
+	background      : transparent url(../images/patrodent003001.gif) no-repeat top left;
 	position        : absolute;
 	left            :  15.00pt;
 	top             : 390.75pt;
@@ -267,7 +267,7 @@ h4#e1               { /* Plano de Situación */
 	height          :  20.25pt;
 	}
 div#page            { /* Page Holder */
-	background-image: url(back_bus21.gif);
+	background-image: url(../images/back_bus21.gif);
 	position        : relative;
 	width           : 570.00pt;
 	height          : 645.00pt;
