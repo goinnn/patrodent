@@ -15,7 +15,7 @@ h4#e25              { /* Bienvenidos a nuestra Cl... */
 	text-align      : center;
 	position        : absolute;
 	left            : 104.25pt;
-	top             : 242.25pt;
+	top             : 147.75pt;
 	width           : 459.00pt;
 	height          :  23.25pt;
 	}
@@ -23,32 +23,34 @@ span#e8             { /* patrodent001004.gif */
 	background      : transparent url(../images/patrodent001004.gif) no-repeat top left;
 	position        : absolute;
 	left            : 264.75pt;
-	top             : 143.25pt;
+	top             : 180.25pt;
 	width           : 132.00pt;
 	height          :  70.50pt;
 	}
 span#e7             { /* patrodent001003.jpg */
 	background      : transparent url(../images/patrodent001003.jpg) no-repeat top left;
-	position        : absolute;
 	left            : 282.00pt;
-	top             : 445.50pt;
-	width           :  99.00pt;
-	height          : 132.00pt;
 	}
 span#e6             { /* patrodent001002.jpg */
 	background      : transparent url(../images/patrodent001002.jpg) no-repeat top left;
-	position        : absolute;
 	left            : 424.50pt;
-	top             : 445.50pt;
-	width           :  99.00pt;
-	height          : 132.00pt;
 	}
 span#e5             { /* patrodent001001.jpg */
 	background      : transparent url(../images/patrodent001001.jpg) no-repeat top left;
-	position        : absolute;
 	left            : 138.00pt;
-	top             : 445.50pt;
-	width           :  99.00pt;
-	height          : 132.00pt;
 	}
+span.images {
+    position        : absolute;
+    top             : 400.00pt;
+    width           :  99.00pt;
+    height          : 132.00pt;
+}
+div.copy {
+    top: 583.75pt;
+}
+div#page {
+    height: 600pt;
+}
+
+
 /*--- EndOfFile ---*/
