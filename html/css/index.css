@@ -10,15 +10,6 @@
 .cc10               { /* Common */
 	border          :   2.25pt solid #d3c2be;
 	}
-h4#e25              { /* Bienvenidos a nuestra Cl... */
-	font            : bold 14pt 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif;
-	text-align      : center;
-	position        : absolute;
-	left            : 104.25pt;
-	top             : 147.75pt;
-	width           : 459.00pt;
-	height          :  23.25pt;
-	}
 span#e8             { /* patrodent001004.gif */
 	background      : transparent url(../images/patrodent001004.gif) no-repeat top left;
 	position        : absolute;

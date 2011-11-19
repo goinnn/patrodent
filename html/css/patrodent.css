@@ -440,17 +440,16 @@ div.indice              { /* SERVICIOS       */
     }
 
 div.quien             { /* QUIEN SOY       */
-    left            : 219.00pt;
+    left            : 199.00pt;
     }
 div.servicios              { /* SERVICIOS       */
-    left            : 303.00pt;
+    left            : 283.00pt;
     }
 div.instalaciones              { /* INSTALACIONES      */
-    left            : 388.50pt;
-    width           :  85.50pt;
+    left            : 368.50pt;
     }
 div.contacto              { /* CONTACTO     */
-    left            : 490.50pt;
+    left            : 470.50pt;
     }
 
 /* Final Menu */
@@ -501,6 +500,17 @@ div.volver              { /* Volver       */
     font            : bold 10pt 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif;
     color           : #972508;
     text-align      : center;
+    }
+#titulo2               { 
+    top             : 147.75pt;
+    }
+.titulo2               { /* Plano de Situación */
+    font            : bold 14pt 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif;
+    text-align      : center;
+    position        : absolute;
+    left            : 105.00pt;
+    width           : 459.00pt;
+    height          :  20.25pt;
     }
 
 
