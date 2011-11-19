@@ -28,27 +28,44 @@ div#e10             { /* La ortodoncia es una esp... */
 	height          : 452.25pt;
 	}
 span#e9             { /* patrodent010003.jpg */
-	background      : transparent url(../images/patrodent010003.jpg) no-repeat top left;
+	background      : url(../images/patrodent010003.jpg) no-repeat top left transparent;
 	position        : absolute;
-	left            : 117.00pt;
-	top             : 311.75pt;
+	left            : 00.00pt;
+	top             : 144.75pt;
 	width           : 132.75pt;
 	height          : 127.50pt;
 	}
 span#e8             { /* patrodent010002.jpg */
-	background      : transparent url(../images/patrodent010002.jpg) no-repeat top left;
+	background      : url(../images/patrodent010002.jpg) no-repeat top left transparent;
 	position        : absolute;
-	left            : 267.00pt;
-	top             : 311.75pt;
+	left            : 149.00pt;
+    top             : 144.75pt;
 	width           : 132.75pt;
 	height          : 127.50pt;
 	}
 span#e7             { /* patrodent010001.jpg */
-	background      : transparent url(../images/patrodent010001.jpg) no-repeat top left;
+	background      : url(../images/patrodent010001.jpg) no-repeat top left transparent;
 	position        : absolute;
-	left            : 415.50pt;
-	top             : 311.75pt;
+	left            : 297.50pt;
+    top             : 144.75pt;
 	width           : 132.75pt;
 	height          : 127.50pt;
 	}
+div.parrafos1 p,
+div.parrafos2 p {
+    margin: 0pt;
+}
+div.info div.parrafos2 {
+    position        : relative; 
+    top             : 165pt;
+}
+div#page {
+    height          : 700pt;
+}
+div.volver {
+    top             : 630pt;
+}
+div.copy {
+    top             : 658pt;
+}
 /*--- EndOfFile ---*/

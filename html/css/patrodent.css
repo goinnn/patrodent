@@ -10,7 +10,9 @@ body                { /* Page Body */
     text-align      : center;
     overflow        : auto;
     }
-
+br {
+    height: 1em;
+}
 a:link              { /* Document Style */
 	color           : #972508;
 	text-decoration :none;
