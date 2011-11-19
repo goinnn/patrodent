@@ -8,12 +8,12 @@
 	border          :   2.25pt solid #d3c2be;
 	}
 .cc60               { /* Common */
-	font            : bold 10pt 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif;
+	font            : bold 10pt Arial, sans-serif;
 	color           : #972508;
 	text-align      : right;
 	}
 .cc61               { /* Common */
-	font            : bold 10pt 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif;
+	font            : bold 10pt Arial, sans-serif;
 	color           : #972508;
 	text-align      : center;
 	}
@@ -36,7 +36,7 @@ div#e14             { /* La Clínica de la Dra. Pa... */
 	height          :  62.25pt;
 	}
 h4#e13              { /* Consejos y Normas en Hig... */
-	font            : bold 12pt 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif;
+	font            : bold 12pt Arial, sans-serif;
 	text-align      : center;
 	position        : absolute;
 	left            : 105.00pt;
@@ -49,7 +49,7 @@ div#e12             { /* El cepillado de dientes ... */
 	height          : 107.25pt;
 	}
 h4#e11              { /* Técnica para un Cepillad... */
-	font            : bold 12pt 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif;
+	font            : bold 12pt Arial, sans-serif;
 	text-align      : center;
 	position        : absolute;
 	left            : 105.75pt;
