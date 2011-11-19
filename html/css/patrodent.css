@@ -27,9 +27,12 @@ a:active            { /* Active Links */
 	color           : #501000;
 	}
 ol,ul               { /* All Lists */
-	margin          : 1em;
-	padding-left    : 2em;
-	}
+    list-style-type: none;
+    }
+ol li,ul li              { /* All Lists */
+    list-style-type: none;
+    }
+
 p                   { /* All Paragraphs */
 	margin-bottom   : 1em;
 	}
@@ -484,7 +487,7 @@ div#page            { /* Page Holder */
     }
 div.info             { /* La clínica dental de la ... */
     font            : 11pt 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif;
-    text-align      : center;
+    text-align      : justify;
     position        : absolute;
     left            : 116.25pt;
     top             : 276.00pt;
