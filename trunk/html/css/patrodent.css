@@ -434,6 +434,10 @@ div.menu {
     text-align: center;
 }
 
+div.menu.activo a {
+    color: #501000;
+}
+
 div.servicios              { /* SERVICIOS       */
     position        : absolute;
     left            : 219.00pt;
