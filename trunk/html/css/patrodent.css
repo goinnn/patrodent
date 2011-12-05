@@ -313,12 +313,13 @@ span.navigation_box_inferior            { /* patrodent001008.gif */
     width           : 459.00pt;
     height          :  15.00pt;
     }
-div.patro             { /* Patro */
+h1.logo             { /* Patro */
+    background      : transparent url(../images/logo_little.png) no-repeat top left;
     position        : absolute;
-    left            :   4.50pt;
-    top             :   8.25pt;
-    width           :  90.75pt;
-    height          :  48.00pt;
+    left            :  4.50pt;
+    top             :  8.25pt;
+    width           :  215px;
+    height          :  114px;
     font            : bold 30pt 'Bradley Hand ITC';
     color           : #008000;
     }
@@ -343,8 +344,8 @@ div.direccion             { /* &nbsp;C/ Marques de Para... */
     }
 div.clinica             { /* Clínica Dental\ \PATROCI... */
     position        : absolute;
-    left            :   3.00pt;
-    top             :  44.25pt;
+    left            :   35.00pt;
+    top             :  8.25pt;
     width           : 157.50pt;
     height          :  24.75pt;
     font            : bold 9pt 'Arial', Helvetica, sans-serif;
