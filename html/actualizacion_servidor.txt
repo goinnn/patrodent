@@ -1,0 +1,32 @@
+iconv -t iso-8859-1 -f utf8 index.html > index.html.tmp; mv index.html.tmp index.html
+iconv -t iso-8859-1 -f utf8 atm.html > atm.html.tmp; mv atm.html.tmp atm.html
+iconv -t iso-8859-1 -f utf8 contacto.html > contacto.html.tmp; mv contacto.html.tmp contacto.html
+iconv -t iso-8859-1 -f utf8 odontologia.html > odontologia.html.tmp; mv odontologia.html.odontologia odontologia.html
+iconv -t iso-8859-1 -f utf8 ortodoncia.html > ortodoncia.html.tmp; mv ortodoncia.html.tmp ortodoncia.html
+iconv -t iso-8859-1 -f utf8 quien_soy.html > quien_soy.html.tmp; mv quien_soy.html.tmp quien_soy.html
+iconv -t iso-8859-1 -f utf8 blanqueamiento.html > blanqueamiento.html.tmp; mv blanqueamiento.html.tmp blanqueamiento.html
+iconv -t iso-8859-1 -f utf8 implantes.html > implantes.html.tmp; mv implantes.html.tmp implantes.html
+iconv -t iso-8859-1 -f utf8 instalaciones.html > instalaciones.html.tmp; mv instalaciones.html.tmp instalaciones.html
+iconv -t iso-8859-1 -f utf8 odontopediatria.html > odontopediatria.html.tmp; mv odontopediatria.html.tmp odontopediatria.html
+iconv -t iso-8859-1 -f utf8 periodoncia.html > periodoncia.html.tmp; mv periodoncia.html.tmp periodoncia.html
+iconv -t iso-8859-1 -f utf8 servicios.html > servicios.html.tmp; mv servicios.html.tmp servicios.html
+
+rpl "charset=utf8" "charset=iso-8859-1" -R .
+
+
+ftp  ftp.patrodent.com
+Usuario:              patrodent.com
+Pass:                 ***
+
+lcd /home/pmartin/ftp_proyectos/patrodent/html
+cd html
+mput *.html
+
+
+lcd /home/pmartin/ftp_proyectos/patrodent/html/images
+cd images
+mput *
+
+lcd /home/pmartin/ftp_proyectos/patrodent/html/css
+cd ../css
+mput *
