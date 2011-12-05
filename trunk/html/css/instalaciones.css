@@ -49,9 +49,14 @@ span#e27            { /* patrodent001008.gif */
 	height          :  15.00pt;
 	}
 div#e25             { /* La clínica esta dotada d... */
-	top             : 190.00pt;
-	height          : 287.25pt;
-	}
+    top             : 190.00pt;
+    height          : 287.25pt;
+    }
+div#e32             { /* La clínica esta dotada d... */
+    top             : 370.00pt;
+    height          : 287.25pt;
+    }
+
 span#e24            { /* patrodent2001001.jpg */
 	background      : transparent url(../images/patrodent2001001.jpg) no-repeat top left;
 	position        : absolute;
