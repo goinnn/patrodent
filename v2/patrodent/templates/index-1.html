@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="main">
+        <div class="container_24">
+            <div class="grid_24">
+                <div class="top-pad">
+                    <div class="content-inner">
+                        <div class="wrapper">
+                            <div class="alpha prefix_1 grid_7">
+                                <div class="border-1">
+                                    <h3 class="margin-bot">Director’s Greeting</h3>
+                                    <figure class="img-style indent-bot2"><img src="{{ STATIC_URL }}images/page2-img1.jpg" alt="" /></figure>
+                                    <div class="clear"></div>
+                                    <blockquote>Donec acumsan malesuada orcidon sitmet erolorem isum dolor amet adipiscg maurise phartra magn msa. Malesuada orcdonec umet lorem. Doloronsec tetuer malesg elit muris sifer mentum.</blockquote>
+                                    <p class="color-3 it p1">Tellus dolor, dapibus eget, elrenu mi. Unean aucto wisi eturna. Aliqua olutpat. Duis turpis...”</p>
+                                    <div class="sign p7">John Anderson</div>
+                                    <h3 class="margin-bot">Newsletter!</h3>
+                                    <form id="subscribe-form" name="sibscribe" method="post">
+                                        <label><input class="subscribetext" type="text" onFocus="if(this.value =='Enter E-mail:' ) this.value=''" onBlur="if(this.value=='') this.value='Enter E-mail:'" value="Enter E-mail:" name="keyword" /></label>
+                                        <a onClick="document.getElementById('subscribe-form').submit()" class="button" href="#">subscribe</a>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="grid_15 suffix_1 omega">
+                                <h3 class="p3">Meet the Team</h3>
+                                <h5 class="indent-bot">Fusce suscipit vaus mi. Cum sociis natoque penatibus <br />et magnis dis parturient montes.</h5>
+                                <p class="indent-bot2">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida <br />at, cursus nec, luctus a, lorem. </p>
+                                <div class="wrapper indent-bot">
+                                    <div class="box img-indent">
+                                        <figure class="img-style p2"><img src="{{ STATIC_URL }}images/page2-img2.jpg" alt="" /></figure>
+                                        <strong>Sam Kromstain</strong>
+                                        <span class="bl p1">Net casunc odioseas gdaus kerteluctus aloem aecenas.</span>
+                                        <a href="#">Read More</a>
+                                    </div>
+                                    <div class="box img-indent">
+                                    <figure class="img-style p2"><img src="{{ STATIC_URL }}images/page2-img3.jpg" alt="" /></figure>
+                                        <strong>Alan Smith</strong>
+                                        <span class="bl p1">Net casunc odioseas gdaus kerteluctus aloem aecenas.</span>
+                                        <a href="#">Read More</a>
+                                    </div>
+                                    <div class="box">
+                                    <figure class="img-style p2"><img src="{{ STATIC_URL }}images/page2-img4.jpg" alt="" /></figure>
+                                        <strong>John Franklin</strong>
+                                        <span class="bl p1">Net casunc odioseas gdaus kerteluctus aloem aecenas.</span>
+                                        <a href="#">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="wrapper">
+                                    <div class="box img-indent">
+                                        <figure class="img-style p2"><img src="{{ STATIC_URL }}images/page2-img5.jpg" alt="" /></figure>
+                                        <strong>Jessica Priston</strong>
+                                        <span class="bl p1">Net casunc odioseas gdaus kerteluctus aloem aecenas.</span>
+                                        <a href="#">Read More</a>
+                                    </div>
+                                    <div class="box img-indent">
+                                    <figure class="img-style p2"><img src="{{ STATIC_URL }}images/page2-img6.jpg" alt="" /></figure>
+                                        <strong>John McCoist</strong>
+                                        <span class="bl p1">Net casunc odioseas gdaus kerteluctus aloem aecenas.</span>
+                                        <a href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+{% endblock %}
