@@ -98,25 +98,27 @@ header {
 	width:100%;
 	position:relative; 
 	z-index:2;
+    background-color: #32ac9c;
 	background:url(../images/header-bg.jpg) center 0 no-repeat; 
-	border-bottom:4px solid #004576;
+	border-bottom:4px solid #32AC9C;
 	height:180px;
 }
 
 h1 {
-	padding:22px 0 0 40px; 
 	position:relative;
 	float:left;
+    background:url(../images/logo.png) 0px 0 no-repeat;
 }
 h1 a {
 	display:block; 
-	font-size:52px;
+	font-size: 40px;
 	line-height:1.211em;
 	color:#FFF;
 	text-decoration:none;
-	background:url(../images/logo.png) 0px 0 no-repeat;
-	width:223px;
+	width:250px;
 	height:135px;
+    margin-top: 65px;
+    text-align: center;
 }
 
 .head-right {
@@ -127,7 +129,7 @@ h1 a {
 .slogon {
 	font-size:18px;
 	line-height:1.222em;
-	color:#004576;
+	color:#C8FFFF;
 	background:url(../images/slogon-bg.png) right 35px no-repeat;
 	padding:32px 43px 28px;
 	text-align:right;	
@@ -178,7 +180,7 @@ h1 a {
 	position:		absolute;
 	padding:		13px 0 9px 4px;
 	width:			135px;
-	background:#004576;
+	background:#32AC9C;
 	border-radius:0 10px 10px 10px;
 	-moz-border-radius:0 10px 10px 10px;
 	-webkit-border-radius:0 10px 10px 10px;
@@ -301,7 +303,7 @@ h4 {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:36px; 
 	line-height:1.222em; 
-	color:#004576;
+	color:#32AC9C;
 	font-weight:normal;
 	letter-spacing:-1px;
 	padding:23px 0px 19px;
@@ -315,14 +317,14 @@ h4 span {
 h5 {
 	font-size:18px;
 	line-height:1.222em;
-	color:#004576;
+	color:#32AC9C;
 	text-transform:uppercase;
 	font-weight:normal;
 }
 h6 {
 	font-size:48px; 
 	line-height:1.208em; 
-	color:#1ab7de;
+	color:#32ac9c;
 	font-weight:normal;
 	letter-spacing:-1px;
 }
@@ -336,7 +338,7 @@ a .sign, .sign {
 	display:inline-block;
 }
 a.sign:hover{
-	color:#1AB7DE;
+	color:#32ac9c;
 }
 blockquote {
 	background:url(../images/quotes.png) left top no-repeat;
@@ -443,7 +445,7 @@ color:#29bce0;
 	line-height:1.208em;
 	display:inline-block; 
 	padding:0 20px 10px;
-	color:#1ab7de; 
+	color:#32ac9c; 
 	background:url(../images/button-tail.gif) 0 0 repeat-x #f1f1f1;
 	border:1px solid #d0d0d0;
 	border-radius:20px;
@@ -500,7 +502,7 @@ color:#29bce0;
 		padding-left:25px;
 	}
 		.important-block ul li a:hover {
-			color:#004576;
+			color:#32AC9C;
 			background-position:0 bottom;
 		}
 
@@ -630,7 +632,7 @@ dt {margin-bottom:22px;}
 footer {
 	width:100%; 
 	padding:44px 0 30px;
-	border-top:4px solid #004576;
+	border-top:4px solid #32AC9C;
 }
 .footer-content {	
 	font-family:Arial, Helvetica, sans-serif;
@@ -663,7 +665,7 @@ footer time {
 	display:inline-block;
 }
 footer time a {
-	color:#004576;
+	color:#32AC9C;
 }
 
 footer .style-1 {
