@@ -82,7 +82,7 @@ p {margin-bottom:18px;}
 .indent-l {padding-left:30px;}
 .indent-r {margin-right:20px;}
 .prev-indent-bot {margin-bottom:10px;}
-.top-pad {padding-top:31px;position:relative;overflow:hidden;}
+.top-pad {padding-top:10px;position:relative;overflow:hidden;}
 .bot-pad {padding-bottom:39px;}
 .buttons a:hover {cursor:pointer;}
 
@@ -281,7 +281,7 @@ ul.menu li li:hover li ul, ul.menu li li.sfHover li ul {
 	border-radius:10px 10px 0 0;
 	-moz-border-radius:10px 10px 0 0 ;
 	-webkit-border-radius:10px 10px 0 0;
-	padding:57px 0 90px;
+	padding:0 0 90px;
 }
 #page1 .content-inner {padding:0 0 80px;}
 #page3 .content-inner {padding-bottom:70px;}
@@ -301,7 +301,7 @@ h3 span {
 }
 h4 {
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:36px; 
+	font-size:34px; 
 	line-height:1.222em; 
 	color:#32AC9C;
 	font-weight:normal;
