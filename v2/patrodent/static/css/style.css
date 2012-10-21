@@ -631,8 +631,8 @@ form.form {
 .fieldcontainer { float: left; margin:0; padding:0; width:100%; } /* OLD: margin-bottom:3px; also had display:none, which caused bug on form 376500 */
 .fieldcontainer div .rowleft, .fieldcontainer div .rowright { display:block; float: left; }
 
-.fieldcontainer .rowleft { margin:6px 1%; width:22%; }
-.fieldcontainer .rowright { margin:6px 1%; width: 74%; }
+.fieldcontainer .rowleft { width:22%; }
+.fieldcontainer .rowright { width: 74%; }
 .fieldcontainer .rowup { margin:3px 0.5%; width: 96%; float:left; }
 .fieldcontainer .rowdown { margin:3px 0.5%; width:96%; float:left; }
 .fieldcontainer .uberfieldlat { margin:3px 1%; }

@@ -3,6 +3,16 @@
 <!-- formalign -->
 
 <script type="text/javascript">
+    (function($){
+        $(document).ready(function () {
+            $("form.form a.button").click(function(){
+                $(this).parents("form").submit();
+            });
+        });
+      })(jQuery);
+</script>
+
+<script type="text/javascript">
 <!--
 var formrules=new Array(0);
     
@@ -14,7 +24,7 @@ document.write(unescape("%3Cscript src='" + cfJsHost + "www.123contactform.com/i
 </script>
 
 <script type="text/javascript">
-<!--
+
 var selectedfield='';
 var multiPageCurent=1;
 var multiPageTotal=1;
@@ -84,7 +94,7 @@ function InputActions(field,id) {
             for (j=0;j<textlabels.length;j++)
                 if (textlabels[j].className.indexOf('class123-label')>-1) textlabels[j].style.color=hltextcolor;
             }
-
+    }
     // now the field rules
     
     InputRules('beginning');    
@@ -93,10 +103,8 @@ function IsFullDateEntered(c_id) {
 if  ((document.getElementById('id123-control'+c_id+'-1').value!='')&&(document.getElementById('id123-control'+c_id+'-2').value!='')&&(document.getElementById('id123-control'+c_id+'-3').value!=''))
     document.getElementById('id123-control'+c_id).value=document.getElementById('id123-control'+c_id+'-1').value+'/'+document.getElementById('id123-control'+c_id+'-2').value+'/'+document.getElementById('id123-control'+c_id+'-3').value;
 }
-//-->
 </script>
 
-<?xml version="1.0" ?>
 <form action="http://www.123contactform.com/form-283841/Patrodent" class="form" enctype="multipart/form-data" id="mainform123" method="post" onsubmit="RefreshFrameHeight(1); return true;">
     <input name="action" type="hidden" value="verify"/>
     <input id="special_autoresponder" name="special_autoresponder" type="hidden" value=""/>
@@ -158,42 +166,14 @@ if  ((document.getElementById('id123-control'+c_id+'-1').value!='')&&(document.g
                         Mensaje:
                     </label>
                     <!--[if lte IE 7]><span class="requiredspan">*</span><![endif]-->
-                    <label class="class123-labelinfo labelinfo" id="id123-titlemic1735481">
-                        Escribe cual es tu consulta, y te atenderemos lo antes posible
-                    </label>
                 </div>
                 <div align="left" class="rowright" style="">
                     <input id="errorflagrow3" type="hidden" value=""/>
                     <textarea id="id123-control1735481" name="control1735481" onchange="InputRules(1735481); ;  " onclick="InputActions(this,'row3');" onkeyup="InputActions(this,'row3'); " rows="4" style="width:280px; max-width:96% !important;"></textarea>
                 </div>
-            </div>
-        </div>
-        <!-- fieldcontainer ends -->
-        <div class="fieldcontainer">
-            <div class="currentPage1 currentPageActive" id="row4">
-                <div class="rowleft" style="text-align: left;">
-                    <label class="class123-label  requiredfield " for="id123-captcha" id="verifno">
-                        Verificación:
-                    </label>
-                    <label class="class123-labelinfo labelinfo" id="id123-titlemic1735481">
-                        Escribe los números que aparecen encima
-                    </label>
-                    <!--[if lte IE 7]><span class="requiredspan">*</span><![endif]-->
-                </div>
-                <div align="left" class="rowright">
-                    <input id="id123-captcha" name="txtNumber" onclick="InputActions(this,'row4');" onkeyup="InputActions(this,'row4');" size="16" type="text" value=""/>
-                    <input name="qualityscore" type="hidden" value="729483761"/>
-                </div>
-            </div>
-            <div class="currentPage1 currentPageActive">
-                <div class="rowleft" style="text-align:right;">
-                    <a href="http://www.123contactform.com/faq.html#q1" onclick="window.open('http://www.123contactform.com/faq.html#q1','_blank','width=740, height=90, left=' + (screen.width/2-370) + ', top=250');return false;" title="Don't know why you have to enter this verification number? Click here!">
-                        <img alt="contact form faq" border="0" id="captcha-image" src="http://www.123contactform.com/images3/help_icon_form.png"/>
-                    </a>
-                </div>
-                <div align="left" class="rowright">
-                    <img alt="verification image" src="http://www.123contactform.com/random.php?t=729483761"/>
-                </div>
+                <label class="class123-labelinfo labelinfo" id="id123-titlemic1735481">
+                    Escribe cual es tu consulta, y te atenderemos lo antes posible
+                </label>
             </div>
         </div>
         <!-- fieldcontainer   -->
@@ -221,7 +201,8 @@ if  ((document.getElementById('id123-control'+c_id+'-1').value!='')&&(document.g
         InputRules('firsttime');
     </script>
     <input name="usage" type="hidden" value="e"/>
-</form><p align='center' style='float:left; width:100%'><font size="1" face="verdana" color="#000000"><a href="http://www.123contactform.com">HTML forms</a> generated by 123ContactForm</font></p><!-- formalign ends -->
+</form>
+
 <script type="text/javascript">multiPageTotal=1;</script>
 <p style='clear:both'></p>
 
