@@ -281,7 +281,7 @@ ul.menu li li:hover li ul, ul.menu li li.sfHover li ul {
 	border-radius:10px 10px 0 0;
 	-moz-border-radius:10px 10px 0 0 ;
 	-webkit-border-radius:10px 10px 0 0;
-	padding:0 0 90px;
+	padding: 25px 0 90px;
 }
 #page1 .content-inner {padding:0 0 80px;}
 #page3 .content-inner {padding-bottom:70px;}
@@ -299,18 +299,18 @@ h3 span {
 	display:block;
 	margin-top:-3px;
 }
-h4 {
+h2 {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:34px; 
 	line-height:1.222em; 
 	color:#32AC9C;
 	font-weight:normal;
 	letter-spacing:-1px;
-	padding:23px 0px 19px;
+	padding:0px 0px 19px;
 	border-bottom:1px solid #e2e8eb;
 	margin-bottom:18px;
 }
-h4 span {
+h2 span {
 	margin-top:-8px;
 	display:inline-block;
 }
@@ -677,4 +677,7 @@ footer .style-1 {
 	font-size:12px;
 	line-height:20px;
 	color:#727272;
+}
+footer .contact_info {
+    float:right;
 }
