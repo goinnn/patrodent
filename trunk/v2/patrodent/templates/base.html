@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}{% endblock %}Clínica Dental Patrodent</title>
     <meta charset="utf-8">
+    <link type="image/gif" href="{{ STATIC_URL }}images/favicon.ico" rel="shortcut icon" />
+   {% block metainfo %}
+   {% endblock %}
    {% block css %}
     <link rel="stylesheet" href="{{ STATIC_URL }}css/reset.css" type="text/css" media="screen">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css" media="screen">
@@ -72,22 +75,31 @@
                         <div class="clear"></div>
                         <nav>
                             <ul class="menu">
-                                <li><a href="index.html">Home</a>
-                                <ul>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Testimonials</a>
-                                        <ul>
-                                            <li><a href="#">Fresh News</a></li>
-                                            <li><a href="#">Archive</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                                <li>
+                                    <a href="index.html" {% block class-patrodent-link %}{% endblock %}>Patrodent</a>
+                                    <ul>
+                                        <li><a href="quienes_somos.html">Quienes somos</a></li>
+                                        <li><a href="instalaciones.html">Instalaciones</a></li>
+                                    </ul>
                                 </li>
-                                <li><a class="active" href="index-1.html">Our Staff</a></li>
-                                <li><a href="index-2.html">Services</a></li>
-                                <li><a href="index-3.html">Before and After's</a></li>
-                                <li><a href="index-4.html">News</a></li>
-                                <li><a href="index-5.html">Contacts</a></li>
+                                <li>
+                                    <a href="servicios.html" {% block class-servicios-link %}{% endblock %}>Servicios</a>
+                                    <ul>
+                                        <li><a href="odontologia.html">Odontología General</a></li>
+                                        <li><a href="ortodoncia.html">Ortodoncia</a></li>
+                                        <li><a href="odontopediatria.html">Odontopediatría</a></li>
+                                        <li><a href="estetica.html">Estética dental y blanqueamiento</a></li>
+                                        <li><a href="atm.html">Problemas de articulación (atm)</a></li>
+                                        <li><a href="periodoncia.html">Periodoncia</a></li>
+                                        <li><a href="implantes.html">Implantes</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="antes_y_despues.html" {% block class-antes-despues-link %}{% endblock %}>Antes y despues</a></li>
+                                <li><a href="contacto.html" {% block class-contacto-link %}{% endblock %}>Contacto</a></li>
+<!--                                 <li><a href="index-2.html">Services</a></li> -->
+<!--                                 <li><a href="index-3.html">Before and After's</a></li> -->
+<!--                                 <li><a href="index-4.html">News</a></li> -->
+<!--                                 <li><a href="index-5.html">Contacts</a></li> -->
                             </ul>
                         </nav>
                     </div>
@@ -111,34 +123,26 @@
                 <div class="prefix_1 grid_21 suffix_2">
                     <div class="footer-content">
                         <div class="wrapper indent-bot5">
-                            <div class="alpha grid_7 suffix_1">
+                            <div class="alpha grid_13 suffix_1">
                                 <div class="footer-title">Fresh Photo Gallery</div>
                                 <div class="wrapper">
                                    {% block footergallery %}
                                     <figure><a href="#"><img src="{{ STATIC_URL }}images/footer-img1.jpg" alt="" /></a></figure>
                                     <figure><a href="#"><img src="{{ STATIC_URL }}images/footer-img2.jpg" alt="" /></a></figure>
                                     <figure><a href="#"><img src="{{ STATIC_URL }}images/footer-img3.jpg" alt="" /></a></figure>
+                                    <figure><a href="#"><img src="{{ STATIC_URL }}images/footer-img1.jpg" alt="" /></a></figure>
+                                    <figure><a href="#"><img src="{{ STATIC_URL }}images/footer-img2.jpg" alt="" /></a></figure>
                                    {% endblock %}
                                 </div>
                             </div>
-                            <div class="grid_7 suffix_1">
-                                <div class="footer-title">Latest News</div>
-                                <time datetime="2011-08-25"><a class="link" href="#">[08-25-2011]</a></time>
-                                <p class="style-1">Sitmet erolorem isum dolor amet adipiscg phartra magn malesuada.</p>
-                                <time datetime="2011-08-20"><a class="link" href="#">[08-20-2011]</a></time>
-                                <p class="style-1">Phartra magn malesuda orcdonec lorem...</p>
-                            </div>
-                            <div class="grid_5 omega">
-                                <div class="footer-title">Contact Info</div>
+                            <div class="grid_5 omega contact_info">
+                                <div class="footer-title">Información de contacto</div>
                                 <dl class="contacts">
-                                    <dt>New York WA 02020<br />11 Some Street Second Floor<br />E-mail: <a class="link" href="#">mail@demolink.org</a></dt>
-                                    <dd><span>Freephone:</span>+1 800 559 6580</dd>
-                                    <dd><span>Fax:</span>+1 800 559 6580</dd>
+                                    <dt>Marqués de Paradas 22 1 º dcha<br/>41001 Sevilla<br />E-mail: <a class="link" href="#">info@patrodent.com</a></dt>
+                                    <dd><span>Teléfono:</span>954 21 12 44</dd>
                                 </dl>
                             </div>
                         </div>
-                        <div class="bl">Brilliant Smile &copy; 2011 &nbsp;| &nbsp;<a href="index-6.html">Privacy Policy</a></div>
-                        <!-- {%FOOTER_LINK} -->
                     </div>
                 </div>
                 <div class="clear"></div>

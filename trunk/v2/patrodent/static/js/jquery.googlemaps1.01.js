@@ -282,11 +282,10 @@ $.googleMaps = {
 				// Hide Div Layer With Info Window HTML
 				$(markers[i].info.layer).hide();
 				// Marker Div Layer Exists
+                $.googleMaps.marker[i].bindInfoWindowHtml( $(markers[i].info.layer).html().toString() );
 				if ( markers[i].info.popup )
 					// Map Marker Shows an Info Box on Load
 					$.googleMaps.marker[i].openInfoWindowHtml($(markers[i].info.layer).html());
-				else
-					$.googleMaps.marker[i].bindInfoWindowHtml( $(markers[i].info.layer).html().toString() );
 			}
 		}
 	},
