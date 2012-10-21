@@ -1,6 +1,6 @@
 <!-- 123ContactForm.com script begins here -->
 
-<!-- formalign --><center>
+<!-- formalign -->
 
 <script type="text/javascript">
 <!--
@@ -85,21 +85,6 @@ function InputActions(field,id) {
                 if (textlabels[j].className.indexOf('class123-label')>-1) textlabels[j].style.color=hltextcolor;
             }
 
-        // modificam culoare bg td
-        var tds = tr.getElementsByTagName('div');
-        for (j=0;j<tds.length;j++)
-            tds[j].parentNode.parentNode.style.background='#FEF1C1';
-        
-        // modificam culoare bg td sec
-        if (document.getElementById(lidsec) != null)
-            {
-            var trsec=document.getElementById(lidsec);
-            tds = trsec.getElementsByTagName('div');
-            for (j=0;j<tds.length;j++)  
-                tds[j].parentNode.parentNode.style.background='#FEF1C1';
-            }
-        }
-
     // now the field rules
     
     InputRules('beginning');    
@@ -110,8 +95,9 @@ if  ((document.getElementById('id123-control'+c_id+'-1').value!='')&&(document.g
 }
 //-->
 </script>
+
 <?xml version="1.0" ?>
-<form id="contact-form" action="http://www.123contactform.com/form-283841/Patrodent" enctype="multipart/form-data" id="mainform123" method="post" onsubmit="RefreshFrameHeight(1); return true;">
+<form action="http://www.123contactform.com/form-283841/Patrodent" class="form" enctype="multipart/form-data" id="mainform123" method="post" onsubmit="RefreshFrameHeight(1); return true;">
     <input name="action" type="hidden" value="verify"/>
     <input id="special_autoresponder" name="special_autoresponder" type="hidden" value=""/>
     <input name="language" type="hidden" value="en"/>
@@ -120,9 +106,9 @@ if  ((document.getElementById('id123-control'+c_id+'-1').value!='')&&(document.g
         <!-- Form headline begins -->
         <div class="optionscontainer headline">
             <div>
-                <font size="5">
+                <h2 style="font-size:31px">
                     Formulario de Contacto
-                </font>
+                </h2>
             </div>
         </div>
         <!-- Form headline ends -->
@@ -131,11 +117,10 @@ if  ((document.getElementById('id123-control'+c_id+'-1').value!='')&&(document.g
             <div class="currentPage1 currentPageActive" id="row1">
                 <div class="rowleft" style="text-align:left; ">
                     <label class="class123-label class123-fieldname fontbold  requiredfield " for="id123-control1735479" id="id123-title1735479">
-                        Nombre
+                        Nombre:
                     </label>
                     <!--[if lte IE 7]><span class="requiredspan">*</span><![endif]-->
-                    <br/>
-                    <label class="class123-labelinfo" id="id123-titlemic1735479">
+                    <label class="class123-labelinfo labelinfo" id="id123-titlemic1735479">
                         Escribe tu nombre completo
                     </label>
                 </div>
@@ -151,11 +136,10 @@ if  ((document.getElementById('id123-control'+c_id+'-1').value!='')&&(document.g
             <div class="currentPage1 currentPageActive" id="row2">
                 <div class="rowleft" style="text-align:left; ">
                     <label class="class123-label class123-fieldname fontbold  requiredfield " for="id123-control1735480" id="id123-title1735480">
-                        Email
+                        Email:
                     </label>
                     <!--[if lte IE 7]><span class="requiredspan">*</span><![endif]-->
-                    <br/>
-                    <label class="class123-labelinfo" id="id123-titlemic1735480">
+                    <label class="class123-labelinfo labelinfo" id="id123-titlemic1735480">
                         Escribe tu email para poder contactar contigo
                     </label>
                 </div>
@@ -171,11 +155,10 @@ if  ((document.getElementById('id123-control'+c_id+'-1').value!='')&&(document.g
             <div class="currentPage1 currentPageActive" id="row3">
                 <div class="rowleft" style="text-align:left; ">
                     <label class="class123-label class123-fieldname fontbold  requiredfield " for="id123-control1735481" id="id123-title1735481">
-                        Mensaje
+                        Mensaje:
                     </label>
                     <!--[if lte IE 7]><span class="requiredspan">*</span><![endif]-->
-                    <br/>
-                    <label class="class123-labelinfo" id="id123-titlemic1735481">
+                    <label class="class123-labelinfo labelinfo" id="id123-titlemic1735481">
                         Escribe cual es tu consulta, y te atenderemos lo antes posible
                     </label>
                 </div>
@@ -186,14 +169,39 @@ if  ((document.getElementById('id123-control'+c_id+'-1').value!='')&&(document.g
             </div>
         </div>
         <!-- fieldcontainer ends -->
+        <div class="fieldcontainer">
+            <div class="currentPage1 currentPageActive" id="row4">
+                <div class="rowleft" style="text-align: left;">
+                    <label class="class123-label  requiredfield " for="id123-captcha" id="verifno">
+                        Verificación:
+                    </label>
+                    <label class="class123-labelinfo labelinfo" id="id123-titlemic1735481">
+                        Escribe los números que aparecen encima
+                    </label>
+                    <!--[if lte IE 7]><span class="requiredspan">*</span><![endif]-->
+                </div>
+                <div align="left" class="rowright">
+                    <input id="id123-captcha" name="txtNumber" onclick="InputActions(this,'row4');" onkeyup="InputActions(this,'row4');" size="16" type="text" value=""/>
+                    <input name="qualityscore" type="hidden" value="729483761"/>
+                </div>
+            </div>
+            <div class="currentPage1 currentPageActive">
+                <div class="rowleft" style="text-align:right;">
+                    <a href="http://www.123contactform.com/faq.html#q1" onclick="window.open('http://www.123contactform.com/faq.html#q1','_blank','width=740, height=90, left=' + (screen.width/2-370) + ', top=250');return false;" title="Don't know why you have to enter this verification number? Click here!">
+                        <img alt="contact form faq" border="0" id="captcha-image" src="http://www.123contactform.com/images3/help_icon_form.png"/>
+                    </a>
+                </div>
+                <div align="left" class="rowright">
+                    <img alt="verification image" src="http://www.123contactform.com/random.php?t=729483761"/>
+                </div>
+            </div>
+        </div>
+        <!-- fieldcontainer   -->
         <!-- Buttons begin here -->
         <div class="fieldcontainer thebuttons">
             <div class="currentPage1 currentPageActive">
-                <div class="rowleft">
-                     
-                </div>
-                <div align="left" class="rowright">
-                    <input class="formdefaultbut" id="id123-button-send" style="background:#C80042;" type="submit" value="Contactar con nosotros"/>
+                <div class="buttons-wrapper">
+                    <a class="button" data-type="submit">Contacta con nosotros</a>
                 </div>
             </div>
         </div>
@@ -213,8 +221,7 @@ if  ((document.getElementById('id123-control'+c_id+'-1').value!='')&&(document.g
         InputRules('firsttime');
     </script>
     <input name="usage" type="hidden" value="e"/>
-</form>
-<p align='center' style='float:left; width:100%'><font size="1" face="verdana" color="#000000"><a href="http://www.123contactform.com">HTML forms</a> generated by 123ContactForm</font></p></center><!-- formalign ends -->
+</form><p align='center' style='float:left; width:100%'><font size="1" face="verdana" color="#000000"><a href="http://www.123contactform.com">HTML forms</a> generated by 123ContactForm</font></p><!-- formalign ends -->
 <script type="text/javascript">multiPageTotal=1;</script>
 <p style='clear:both'></p>
 
