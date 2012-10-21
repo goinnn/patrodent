@@ -559,25 +559,25 @@ dt {margin-bottom:22px;}
 }
 
 /***** Contact form *****/
-#contact-form {
+form.form {
 	position:relative;
 	vertical-align:top;
 	width:100%;
 	z-index:1;
 	}
-	#contact-form fieldset {
+	form.form fieldset {
 		border:none;
 		padding:0;
 		}			
-			#contact-form label {
+			form.form label {
 				display:block;
 				min-height:39px;
 			}
-			#contact-form label.message{
+			form.form label.message{
 				height:188px;
 				padding-bottom:0;
 			}
-			#contact-form input {
+			form.form input {
 				border:0;
 				margin:0;
 				background:#f2f4f5;
@@ -594,8 +594,8 @@ dt {margin-bottom:22px;}
 				-webkit-box-shadow: inset 1px 1px 2px #b4b5b6;
 				outline:none;
 			}
-			#contact-form .area .error { float:none;}
-			#contact-form textarea {
+			form.form .area .error { float:none;}
+			form.form textarea {
 				border:0;
 				margin:0;
 				background:#eceff1;
@@ -615,10 +615,10 @@ dt {margin-bottom:22px;}
 				width:270px;
 				overflow:auto;
 			}
-			#contact-form a {cursor:pointer;}
-				#contact-form .success {display:none; margin-bottom:20px;}
-				#contact-form .error,
-				#contact-form .empty {
+			form.form a {cursor:pointer;}
+				form.form .success {display:none; margin-bottom:20px;}
+				form.form .error,
+				form.form .empty {
 					color:#f00;
 					font-size:11px;
 					line-height:2em;
@@ -627,7 +627,24 @@ dt {margin-bottom:22px;}
 				}
 		.buttons-wrapper { padding:27px 0px 0 0;}
 		.buttons-wrapper a { margin-right:8px;}
-		
+
+.fieldcontainer { float: left; margin:0; padding:0; width:100%; } /* OLD: margin-bottom:3px; also had display:none, which caused bug on form 376500 */
+.fieldcontainer div .rowleft, .fieldcontainer div .rowright { display:block; float: left; }
+
+.fieldcontainer .rowleft { margin:6px 1%; width:22%; }
+.fieldcontainer .rowright { margin:6px 1%; width: 74%; }
+.fieldcontainer .rowup { margin:3px 0.5%; width: 96%; float:left; }
+.fieldcontainer .rowdown { margin:3px 0.5%; width:96%; float:left; }
+.fieldcontainer .uberfieldlat { margin:3px 1%; }
+.class123-separ-row { float:left; width:100%; background-color: transparent; }
+
+form.form .labelinfo {
+    width: 325px;
+    font-size: 13px;
+    color: #BCBCBC;
+}
+
+
 /****************************footer************************/
 footer {
 	width:100%; 
