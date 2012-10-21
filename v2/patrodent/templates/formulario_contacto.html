@@ -110,64 +110,109 @@ if  ((document.getElementById('id123-control'+c_id+'-1').value!='')&&(document.g
 }
 //-->
 </script>
-<form  id="contact-form" onsubmit="RefreshFrameHeight(1); return true;" action="http://www.123contactform.com/form-283841/Patrodent" id="mainform123" method="post" enctype="multipart/form-data">
-<input type="hidden" name="action" value="verify"/><input type="hidden" name="special_autoresponder" id="special_autoresponder" value=""/><input type="hidden" name="language" value="en"/><input type="hidden" name="languageChanged" value="no"/><div class="class123_maintable maintable_centered" style="min-width: 250px; " >
-
-<!-- Form headline begins -->
-<div class='optionscontainer headline'><div><font size="5">Formulario de Contacto</font></div></div>
-<!-- Form headline ends -->
-
-<!-- fieldcontainer -->
-<div class="fieldcontainer currentPage1 currentPageActive  fieldwidth100 " style=" ">
-<div id="row1" class="currentPage1 currentPageActive">
-<div class="rowleft"  style="text-align:left; ">
-<label class="class123-label class123-fieldname fontbold  requiredfield " id="id123-title1735479" for="id123-control1735479">Nombre</label><!--[if lte IE 7]><span class="requiredspan">*</span><![endif]--><br/><label class="class123-labelinfo" id="id123-titlemic1735479">Escribe tu nombre completo</label></div>
-<div class="rowright" align="left" style=""><input type="hidden" id="errorflagrow1" value=""/><input id="id123-control1735479" name="control1735479"  onclick="InputActions(this,'row1');" onkeyup="InputActions(this,'row1'); " onchange="InputRules(1735479); ;  " type="text" value="" style="width:280px; max-width:96% !important;" />
-</div></div>
-</div>
-<!-- fieldcontainer ends -->
-
-<!-- fieldcontainer -->
-<div class="fieldcontainer currentPage1 currentPageActive  fieldwidth100 " style=" ">
-<div id="row2" class="currentPage1 currentPageActive">
-<div class="rowleft"  style="text-align:left; ">
-<label class="class123-label class123-fieldname fontbold  requiredfield " id="id123-title1735480" for="id123-control1735480">Email</label><!--[if lte IE 7]><span class="requiredspan">*</span><![endif]--><br/><label class="class123-labelinfo" id="id123-titlemic1735480">Escribe tu email para poder contactar contigo</label></div>
-<div class="rowright" align="left" style=""><input type="hidden" id="errorflagrow2" value=""/><input id="id123-control1735480" name="control1735480"  onclick="InputActions(this,'row2');" onkeyup="InputActions(this,'row2'); " onchange="InputRules(1735480); ;  " type="text" value="" style="width:280px; max-width:96% !important;" />
-</div></div>
-</div>
-<!-- fieldcontainer ends -->
-
-<!-- fieldcontainer -->
-<div class="fieldcontainer currentPage1 currentPageActive  fieldwidth100 " style=" ">
-<div id="row3" class="currentPage1 currentPageActive">
-<div class="rowleft"  style="text-align:left; ">
-<label class="class123-label class123-fieldname fontbold  requiredfield " id="id123-title1735481" for="id123-control1735481">Mensaje</label><!--[if lte IE 7]><span class="requiredspan">*</span><![endif]--><br/><label class="class123-labelinfo" id="id123-titlemic1735481">Escribe cual es tu consulta, y te atenderemos lo antes posible</label></div>
-<div class="rowright" align="left" style=""><input type="hidden" id="errorflagrow3" value=""/><textarea id="id123-control1735481" name="control1735481" onclick="InputActions(this,'row3');" onkeyup="InputActions(this,'row3'); " onchange="InputRules(1735481); ;  " rows="4" style="width:280px; max-width:96% !important;"></textarea>
-</div></div>
-</div>
-<!-- fieldcontainer ends -->
-
-
-<!-- Buttons begin here -->
-<div class='fieldcontainer thebuttons'>
-<div class="currentPage1 currentPageActive"><div class='rowleft'> </div><div class='rowright' align="left"><input type="submit"  class="formdefaultbut" style="background:#C80042;" id="id123-button-send" value="Contactar con nosotros"/> </div></div>
-</div>
-<!-- fieldcontainer ends -->
-<!-- Buttons end here -->
-</div>
-<div style="height:1px; display: none; visibility: hidden;">
-<input type="text" name="email"/>
-</div>
-
-        <input type="hidden" name="hiddenfields" id="hiddenfields" value=""/>
-        <input type="hidden" name="hiddenfields_pages" id="hiddenfields_pages" value=""/>
-        <input type="hidden" name="activepage" id="activepage" value="1"/>      
-        <input type="hidden" name="totalpages" id="totalpages" value="1"/>      
-        <input type="hidden" name="nextpagenr" id="nextpagenr" value="2"/>
-        <input type="hidden" name="prevpagenr" id="prevpagenr" value="0"/>      
-        <script type="text/javascript">
+<?xml version="1.0" ?>
+<form id="contact-form" action="http://www.123contactform.com/form-283841/Patrodent" enctype="multipart/form-data" id="mainform123" method="post" onsubmit="RefreshFrameHeight(1); return true;">
+    <input name="action" type="hidden" value="verify"/>
+    <input id="special_autoresponder" name="special_autoresponder" type="hidden" value=""/>
+    <input name="language" type="hidden" value="en"/>
+    <input name="languageChanged" type="hidden" value="no"/>
+    <div class="class123_maintable maintable_centered" style="min-width: 250px; ">
+        <!-- Form headline begins -->
+        <div class="optionscontainer headline">
+            <div>
+                <font size="5">
+                    Formulario de Contacto
+                </font>
+            </div>
+        </div>
+        <!-- Form headline ends -->
+        <!-- fieldcontainer -->
+        <div class="fieldcontainer currentPage1 currentPageActive  fieldwidth100 " style=" ">
+            <div class="currentPage1 currentPageActive" id="row1">
+                <div class="rowleft" style="text-align:left; ">
+                    <label class="class123-label class123-fieldname fontbold  requiredfield " for="id123-control1735479" id="id123-title1735479">
+                        Nombre
+                    </label>
+                    <!--[if lte IE 7]><span class="requiredspan">*</span><![endif]-->
+                    <br/>
+                    <label class="class123-labelinfo" id="id123-titlemic1735479">
+                        Escribe tu nombre completo
+                    </label>
+                </div>
+                <div align="left" class="rowright" style="">
+                    <input id="errorflagrow1" type="hidden" value=""/>
+                    <input id="id123-control1735479" name="control1735479" onchange="InputRules(1735479); ;  " onclick="InputActions(this,'row1');" onkeyup="InputActions(this,'row1'); " style="width:280px; max-width:96% !important;" type="text" value=""/>
+                </div>
+            </div>
+        </div>
+        <!-- fieldcontainer ends -->
+        <!-- fieldcontainer -->
+        <div class="fieldcontainer currentPage1 currentPageActive  fieldwidth100 " style=" ">
+            <div class="currentPage1 currentPageActive" id="row2">
+                <div class="rowleft" style="text-align:left; ">
+                    <label class="class123-label class123-fieldname fontbold  requiredfield " for="id123-control1735480" id="id123-title1735480">
+                        Email
+                    </label>
+                    <!--[if lte IE 7]><span class="requiredspan">*</span><![endif]-->
+                    <br/>
+                    <label class="class123-labelinfo" id="id123-titlemic1735480">
+                        Escribe tu email para poder contactar contigo
+                    </label>
+                </div>
+                <div align="left" class="rowright" style="">
+                    <input id="errorflagrow2" type="hidden" value=""/>
+                    <input id="id123-control1735480" name="control1735480" onchange="InputRules(1735480); ;  " onclick="InputActions(this,'row2');" onkeyup="InputActions(this,'row2'); " style="width:280px; max-width:96% !important;" type="text" value=""/>
+                </div>
+            </div>
+        </div>
+        <!-- fieldcontainer ends -->
+        <!-- fieldcontainer -->
+        <div class="fieldcontainer currentPage1 currentPageActive  fieldwidth100 " style=" ">
+            <div class="currentPage1 currentPageActive" id="row3">
+                <div class="rowleft" style="text-align:left; ">
+                    <label class="class123-label class123-fieldname fontbold  requiredfield " for="id123-control1735481" id="id123-title1735481">
+                        Mensaje
+                    </label>
+                    <!--[if lte IE 7]><span class="requiredspan">*</span><![endif]-->
+                    <br/>
+                    <label class="class123-labelinfo" id="id123-titlemic1735481">
+                        Escribe cual es tu consulta, y te atenderemos lo antes posible
+                    </label>
+                </div>
+                <div align="left" class="rowright" style="">
+                    <input id="errorflagrow3" type="hidden" value=""/>
+                    <textarea id="id123-control1735481" name="control1735481" onchange="InputRules(1735481); ;  " onclick="InputActions(this,'row3');" onkeyup="InputActions(this,'row3'); " rows="4" style="width:280px; max-width:96% !important;"></textarea>
+                </div>
+            </div>
+        </div>
+        <!-- fieldcontainer ends -->
+        <!-- Buttons begin here -->
+        <div class="fieldcontainer thebuttons">
+            <div class="currentPage1 currentPageActive">
+                <div class="rowleft">
+                     
+                </div>
+                <div align="left" class="rowright">
+                    <input class="formdefaultbut" id="id123-button-send" style="background:#C80042;" type="submit" value="Contactar con nosotros"/>
+                </div>
+            </div>
+        </div>
+        <!-- fieldcontainer ends -->
+        <!-- Buttons end here -->
+    </div>
+    <div style="height:1px; display: none; visibility: hidden;">
+        <input name="email" type="text"/>
+    </div>
+    <input id="hiddenfields" name="hiddenfields" type="hidden" value=""/>
+    <input id="hiddenfields_pages" name="hiddenfields_pages" type="hidden" value=""/>
+    <input id="activepage" name="activepage" type="hidden" value="1"/>
+    <input id="totalpages" name="totalpages" type="hidden" value="1"/>
+    <input id="nextpagenr" name="nextpagenr" type="hidden" value="2"/>
+    <input id="prevpagenr" name="prevpagenr" type="hidden" value="0"/>
+    <script type="text/javascript">
         InputRules('firsttime');
-        </script><input type="hidden" name="usage" value="e"/>
+    </script>
+    <input name="usage" type="hidden" value="e"/>
 </form>
 <p align='center' style='float:left; width:100%'><font size="1" face="verdana" color="#000000"><a href="http://www.123contactform.com">HTML forms</a> generated by 123ContactForm</font></p></center><!-- formalign ends -->
 <script type="text/javascript">multiPageTotal=1;</script>
