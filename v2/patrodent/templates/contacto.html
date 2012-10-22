@@ -31,55 +31,46 @@
 {% block class-contacto-link %}class="active"{% endblock %}
 
 {% block content %}
-    <div class="main">
-        <div class="container_24">
-            <div class="grid_24">
-                <div class="top-pad">
-                    <div class="content-inner">
-                        <div class="wrapper">
-                            <div class="alpha prefix_1 grid_14">
-                                <div class="border-1">
-                                    <h2 class="p3">Como encontrarnos</h2>
-                                    <div class="wrapper">
-                                        <figure class="img-style img-indent">
-                                            <div id="map_canvas"></div>
-                                        </figure>
-                                        <div class="extra-wrap">
-                                            <h5 class="indent-bot">Cum sociis natoque <span>uset magnis dis.</span></h5>
-                                            <p>Sed ullamcorper pulvinar nisi, in auctor nibh rutrum eleifend. Nullam rutrum placerat ligula eget <br />molestie. Donec ullamcorper nulla hendrerit tellus sodales ultricies. In condimentum venenatis orci et.</p>
-                                            <p>Pellentesque rhoncus magna euismod. Nam lorem mi, vehicula <br />ut tempor non, commodo vitae <br />nibh. Maecenas congue aliquam tus, ac auctor lorem.</p>
-                                        </div>
-                                        <p>Pellentesque rhoncus magna euismod. Nam lorem mi, vehicula ut tempor non, commodo vitae nibh. Maecenas congue aliquam tus, ac auctor lorem.</p>
-                                        <p>Pellentesque rhoncus magna euismod. Nam lorem mi, vehicula ut tempor non, commodo vitae nibh. Maecenas congue aliquam tus, ac auctor lorem.</p>
-                                        <p>Pellentesque rhoncus magna euismod. Nam lorem mi, vehicula ut tempor non, commodo vitae nibh. Maecenas congue aliquam tus, ac auctor lorem.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid_8 suffix_1 omega">
-                                <!-- 123ContactForm.com script begins here -->
-                                {% include "formulario_contacto.html"%}
-                            </div>
-                        </div>
+    <div class="wrapper">
+        <div class="alpha prefix_1 grid_14">
+            <div class="border-1">
+                <h2 class="p3">Como encontrarnos</h2>
+                <div class="wrapper">
+                    <figure class="img-style img-indent">
+                        <div id="map_canvas"></div>
+                    </figure>
+                    <div class="extra-wrap">
+                        <h5 class="indent-bot">Cum sociis natoque <span>uset magnis dis.</span></h5>
+                        <p>Sed ullamcorper pulvinar nisi, in auctor nibh rutrum eleifend. Nullam rutrum placerat ligula eget <br />molestie. Donec ullamcorper nulla hendrerit tellus sodales ultricies. In condimentum venenatis orci et.</p>
+                        <p>Pellentesque rhoncus magna euismod. Nam lorem mi, vehicula <br />ut tempor non, commodo vitae <br />nibh. Maecenas congue aliquam tus, ac auctor lorem.</p>
                     </div>
+                    <p>Pellentesque rhoncus magna euismod. Nam lorem mi, vehicula ut tempor non, commodo vitae nibh. Maecenas congue aliquam tus, ac auctor lorem.</p>
+                    <p>Pellentesque rhoncus magna euismod. Nam lorem mi, vehicula ut tempor non, commodo vitae nibh. Maecenas congue aliquam tus, ac auctor lorem.</p>
+                    <p>Pellentesque rhoncus magna euismod. Nam lorem mi, vehicula ut tempor non, commodo vitae nibh. Maecenas congue aliquam tus, ac auctor lorem.</p>
                 </div>
             </div>
-            <div class="clear"></div>
-            <div id="address_info" style="display:none">
-                <div class="info" style="float: left">
-                    <h4> Clínica dental Patrodent </h4>
-                    <a href="http://maps.google.es/maps?f=q&source=s_q&hl=es&geocode=&q=sevilla,+marques+de+paradas,+22&sll=40.396764,-3.713379&sspn=10.586993,23.203125&ie=UTF8&view=map" style="width: 220px; float:left">
-                        Calle Marqués de Paradas, 22
-                        41001 Sevilla, Andalucía
-                    </a>
-                </div>
-            </div>
+        </div>
+        <div class="grid_8 suffix_1 omega">
+            <!-- 123ContactForm.com script begins here -->
+            {% include "formulario_contacto.html"%}
+        </div>
+    </div>
+{% endblock %}
+
+{% block extracontent %}
+    <div id="address_info" style="display:none">
+        <div class="info" style="float: left">
+            <h4> Clínica dental Patrodent </h4>
+            <a href="http://maps.google.es/maps?f=q&source=s_q&hl=es&geocode=&q=sevilla,+marques+de+paradas,+22&sll=40.396764,-3.713379&sspn=10.586993,23.203125&ie=UTF8&view=map" style="width: 220px; float:left">
+                Calle Marqués de Paradas, 22
+                41001 Sevilla, Andalucía
+            </a>
         </div>
     </div>
 {% endblock %}
 
 {% block footerjs %}
     {{ block.super }}
-
     <script type="text/javascript">
         $(window).load(function(){
             $('#contact-form').forms({
