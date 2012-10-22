@@ -2,12 +2,12 @@
 
 {% block js %}
     {{ block.super }}
-    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.after-before.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.swap-images.js"></script>
     <script type="text/javascript">
         (function($){
             $(document).ready(function () {
                 setTimeout(function() {
-                    $(".after").hoverAfterBefore({before: "antes", after: "despues"});
+                    $(".after").swapImages({before: "antes", after: "despues"});
                 }, 500);
             });
           })(jQuery);

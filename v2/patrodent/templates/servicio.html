@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block class-servicios-link %}class="active"{% endblock %}
+
+{% block js %}
+    {{ block.super }}
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.swap-images.js"></script>
+    <script type="text/javascript">
+        (function($){
+            $(document).ready(function () {
+                setTimeout(function() {
+                    $(".after").swapImages({before: "antes", after: "despues"});
+                }, 500);
+            });
+          })(jQuery);
+    </script>
+{% endblock %}
+
+{% block content %}
+    <div class="wrapper">
+        <div class="alpha prefix_1 grid_15">
+            <div class="border-1">
+                <h2 class="p3">{% block content-title %}{% endblock %}</h2>
+                {% block content-body %}{% endblock %}
+            </div>
+        </div>
+        <div class="grid_7 suffix_1 omega">
+            <h3 class="margin-bot">Antes y después</h3>
+            <p> Pasa el ratón por encima de las imágenes para ver el antes (casos reales)</p>
+            {% block before-after %}
+            <div class="wrapper indent-bot2">
+                <figure class="img-style img-indent">
+                    <img src="{{ STATIC_URL }}images/limpieza_despues.jpg" class="after" />
+                    <span class="afterBeforeText">Después</span>
+                </figure>
+                <figure class="img-style"><img src="{{ STATIC_URL }}images/periodoncia_despues.jpg" alt="" class="after" />
+                    <span class="afterBeforeText">Después</span>
+                </figure>
+            </div>
+            <div class="wrapper indent-bot2">
+                <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/limpieza_despues.jpg" alt="" class="after" />
+                    <span class="afterBeforeText">Después</span>
+                </figure>
+                <figure class="img-style"><img src="{{ STATIC_URL }}images/periodoncia_despues.jpg" alt="" class="after" />
+                    <span class="afterBeforeText">Después</span>
+                </figure>
+            </div>
+           {% endblock %}
+        </div>
+    </div>
+{% endblock %}
