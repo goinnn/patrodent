@@ -106,8 +106,23 @@
   {% endblock %}
     <!--==============================content================================-->
     <section id="content">
-      {% block content %}
-      {% endblock %}
+        {% block wrapper-content %}
+        <div class="main">
+            <div class="container_24">
+                <div class="grid_24">
+                    <div class="top-pad">
+                        <div class="content-inner">
+                        {% block content %}
+                        {% endblock %}
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                {% block extracontent %}
+                {% endblock %}
+            </div>
+        </div>
+        {% endblock %}
     </section>
 
     <!--==============================footer=================================-->
