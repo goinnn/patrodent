@@ -18,9 +18,17 @@
                             <div class="wrapper bot-pad">
                                 <div class="alpha prefix_1 grid_9">
                                     <h2>Clínica Dental Patrodent</h2>
-                                    <h6 class="p2">Welcome</h6>
-                                    <p class="text-1">Donec acumsan malesuada orcidonec sitmet erolorem isum dolor amet incon. Adipiscing elit maurise phartra magn in ccumsan. Malesuada orcdonec umet lorem. <br />Malesg elit mauris sifer mentum. Tellus dolor, dapibus eget, elementum. </p>
-                                    <a class="sign" href="index-1.html">Patrocinio Gomez</a>
+                                    <h6 class="p2">Bienvenidos a tu clinica</h6>
+                                    <p class="text-1">
+                                        La clínica dental de la Dra. Patrocinio Gómez Martínez es una consulta de odontología integral, que le permitirá resolver todos los problemas de salud y estética buco dental de una manera sencilla cómoda y eficaz.
+                                    </p>
+                                    <p class="text-1">
+                                        Te ofrecemos todas las especialidades de la odontología moderna: Odontología conservadora y preventiva, ortodoncia, periodoncia, endodoncia,  prótesis, estética dental, blanqueamiento, cirugía e implantología, odontopediatría y radiología digital. 
+                                    </p>
+                                    <p class="text-1">
+                                        Ven y confía en nosotros
+                                    </p>
+                                    <a class="sign" href="index-1.html">Patrocinio Gomez Martinez</a>
                                 </div>
                                 <div class="grid_14 omega">
                                     <div class="slider-wrapper">
@@ -45,25 +53,18 @@
                         </div>
                         <div class="wrapper">
                             <div class="alpha prefix_1 grid_7 suffix_1">
-                                <h3 class="p3">About Our Clinic</h3>
-                                <p class="p3">At “Brilliant Smile” our goal is to provide the highest level of patient care and dentistry in a relaxing and homely envi- ronment. We offer the latest pioneering techniques in cosmetic dentistry, including teeth whitening, dental implants...</p>
-                                <a class="button" href="#">read more</a>
+                                <h3 class="p3">Financiación</h3>
+                                <p class="p3">Contamos con un sistema de financiación, que le será totalmente de su agrado. Dado el carácter particular de cada paciente no es posible dar un presupuesto estándar sin estudiar detenidamente el tratamiento individual de cada paciente.. Por ello le invitamos a visitar nuestra clínica para concertar una cita o déjenos sus datos y nosotros le llamaremos para concertar una cita.</p>
                             </div>
                             <div class="grid_7 suffix_1">
-                                <h3 class="p3">Professional Services</h3>
+                                <h3 class="p3"><a href="{% url template_view "servicios" %}">Nuestros Servicios</a></h3>
                                 <ul class="list-1 p3">
-                                    <li><a href="#">Acumsan malesada orcid sitmet</a></li>
-                                    <li><a href="#">Erolorem isum dolor amet adipiscg</a></li>
-                                    <li><a href="#">Maurise phartra magn orcdonec</a></li>
-                                    <li><a href="#">Doloronsec tetuer malesg mauris</a></li>
-                                    <li class="last"><a href="#">Unean auctor wisi aliquam</a></li>
+                                    {% include "inc.servicios.html" %}
                                 </ul>
-                                <a class="button" href="#">read more</a>
                             </div>
                             <div class="grid_6 suffix_1 omega">
                                 <h3 class="p3">Testimonials</h3>
                                 <blockquote>Donec acumsan malesuada orcidon sitmet erolorem isum dolor amet adipiscg maurise phartra magn msan. Malesuada orcdonec umet lorem. Doloronsec tetuer malesg elit mauris sifer mentum.</blockquote>
-                                <a class="button" href="#">all testimonials</a>
                             </div>
                         </div>
                     </div>

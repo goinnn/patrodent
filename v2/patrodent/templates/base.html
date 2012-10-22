@@ -79,30 +79,21 @@
                         <nav>
                             <ul class="menu">
                                 <li>
-                                    <a href="index.html" {% block class-patrodent-link %}{% endblock %}>Patrodent</a>
+                                    <a href="{% url template_view "index" %}" {% block class-patrodent-link %}{% endblock %}>Patrodent</a>
                                     <ul>
-                                        <li><a href="quienes_somos.html">Quienes somos</a></li>
-                                        <li><a href="instalaciones.html">Instalaciones</a></li>
+                                        <li><a href="{% url template_view "quienes_somos" %}">Quienes somos</a></li>
+                                        <li><a href="{% url template_view "instalaciones" %}">Instalaciones</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="servicios.html" {% block class-servicios-link %}{% endblock %}>Servicios</a>
+                                    <a href="{% url template_view "servicios" %}" {% block class-servicios-link %}{% endblock %}>Servicios</a>
                                     <ul>
-                                        <li><a href="odontologia.html">Odontología General</a></li>
-                                        <li><a href="ortodoncia.html">Ortodoncia</a></li>
-                                        <li><a href="odontopediatria.html">Odontopediatría</a></li>
-                                        <li><a href="estetica.html">Estética dental y blanqueamiento</a></li>
-                                        <li><a href="atm.html">Problemas de articulación (atm)</a></li>
-                                        <li><a href="periodoncia.html">Periodoncia</a></li>
-                                        <li><a href="implantes.html">Implantes</a></li>
+                                        {% include "inc.servicios.html" %}
                                     </ul>
                                 </li>
-                                <li><a href="antes_y_despues.html" {% block class-antes-despues-link %}{% endblock %}>Antes y despues</a></li>
-                                <li><a href="contacto.html" {% block class-contacto-link %}{% endblock %}>Contacto</a></li>
-<!--                                 <li><a href="index-2.html">Services</a></li> -->
-<!--                                 <li><a href="index-3.html">Before and After's</a></li> -->
-<!--                                 <li><a href="index-4.html">News</a></li> -->
-<!--                                 <li><a href="index-5.html">Contacts</a></li> -->
+                                <li><a href="{% url template_view "antes_y_despues" %}" {% block class-antes-despues-link %}{% endblock %}>Antes y despues</a></li>
+                                <li><a href="{% url template_view "contacto" %}" {% block class-contacto-link %}{% endblock %}>Contacto</a></li>
+
                             </ul>
                         </nav>
                     </div>
