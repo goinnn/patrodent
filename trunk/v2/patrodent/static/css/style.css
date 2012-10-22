@@ -31,7 +31,10 @@ a:hover {text-decoration:none;}
 .wrapper {width:100%; overflow:hidden;}
 .extra-wrap {overflow:hidden;}
  
-p {margin-bottom:18px;}
+p {
+    margin-bottom:18px;
+    text-align: justify;
+}
 .p1 {margin-bottom:8px;}
 .p2 {margin-bottom:15px;}
 .p3 {margin-bottom:30px;}
@@ -346,6 +349,7 @@ blockquote {
 	color:#bcbcbc;
 	margin-bottom:30px;
 	width:100%;
+    text-align: justify;
 }
 .border-1 {
 	border-right:1px solid #e0e0e0;
@@ -539,6 +543,10 @@ color:#29bce0;
 	background:url(../images/marker-3.gif) right 8px no-repeat;
 }
 .link-1:hover {color:#fff;} 
+
+.text-left-index {
+    margin-right: 10px;
+}
 
 .text-1 {
 	font-size:15px;
