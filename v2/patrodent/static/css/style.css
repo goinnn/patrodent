@@ -197,7 +197,9 @@ h1 a {
 	line-height:	1.214em;
 	text-align:		left;
 }
-.menu li li a:hover, .menu li li.sfHover > a {color:#2fc6eb;}
+.menu li li a:hover, .menu li li.sfHover > a {
+    color:#C8FFFF;
+}
 
 .menu ul ul {
 	width:142px;
