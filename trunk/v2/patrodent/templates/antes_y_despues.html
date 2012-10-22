@@ -6,7 +6,9 @@
     <script type="text/javascript">
         (function($){
             $(document).ready(function () {
-                $(".after").hoverAfterBefore({before: "antes", after: "despues"});
+                setTimeout(function() {
+                    $(".after").hoverAfterBefore({before: "antes", after: "despues"});
+                }, 500);
             });
           })(jQuery);
     </script>
