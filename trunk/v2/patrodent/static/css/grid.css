@@ -24,6 +24,7 @@
 .grid_4,
 .grid_5,
 .grid_6,
+.grid_65,
 .grid_7,
 .grid_8,
 .grid_9,
@@ -84,7 +85,11 @@
 }
 
 .container_24 .grid_6 {
-	width:230px;
+    width:230px;
+}
+
+.container_24 .grid_65 {
+    width:250px;
 }
 
 .container_24 .grid_7 {

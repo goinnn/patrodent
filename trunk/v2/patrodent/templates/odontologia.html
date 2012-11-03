@@ -1,4 +1,37 @@
 {% extends "servicio.html" %}
 
-{% block content-title %}Odontologia{% endblock %}
+{% block content-title %}Odontología General{% endblock %}
+
+{% block content-body %}
+   <p>
+       La odontología conservadora y restauradora nos permite prevenir, detener y curar las caries dentales. La caries dental puede afectar levemente a la estructura dentaria, destruyendo únicamente el esmalte o progresar a estadios mas graves, invadiendo tejidos más profundos como son la dentina o la pulpa dental. El objetivo de la odontología conservadora es la reparación de los dientes dañados por caries, fracturas, traumatismos o erosiones mediante su reconstrucción . Para que se produzca una caries se necesitan 3 factores: Dientes susceptibles de carearse, azúcar en la dieta y bacterias cariogénicas.
+    </p>
+   <p>
+        En principio cuando el proceso es incipiente no presenta síntomas, pero, a medida que avanza y se aproxima al nervio, provoca sensibilidad al frío, posteriormente al calor, y acaba transformándose en dolor. Cuando el nervio está inflamado hablamos de pulpitis. Si el nervio no ha quedado afectado, el tratamiento adecuado es una obturación o reconstrucción, dependiendo de la magnitud de la caries. Si la caries ya ha llegado al nervio (pulpitis), hay que endodonciar la pieza dentaria afectada, que es lo que comúnmente llamamos “matar el nervio” (endodoncia). 
+    </p>
+   <p>
+        Para prevenir la caries se ha de acutar a diferentes niveles:
+        <ol class="levels">
+            <li>A nivel de dientes, reforzando el esmalte con flúor (enjuagues, pastillas, fluorizaciones y pastas de dientes).</li>
+            <li>A nivel de dieta, disminuyendo el consumo de azúcar, sobre todo entre horas.</li>
+            <li>A nivel de bacterias, realizando un correcto cepillado dental.</li>
+        </ol>
+    </p>
+    <p>
+        Hay que acudir periódicamente al dentista para someterse a revisiones. De este modo las caries se pueden detectar en estado precoz y los tratamientos son menos agresivos.
+    </p>
+{% endblock %}
+
+{% block before-after %}
+    <div class="wrapper indent-bot2">
+        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/ortodoncia_despues_1.jpg" alt="Caso real ortodoncia" title="Caso real ortodoncia" class="after" />
+            <span class="afterBeforeText">Después</span>
+        </figure>
+    </div>
+    <div class="wrapper indent-bot2">
+        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/ortodoncia_despues_2.jpg" alt="Caso real ortodoncia" title="Caso real ortodoncia" class="after" />
+            <span class="afterBeforeText">Después</span>
+        </figure>
+    </div>
+{% endblock %}
 

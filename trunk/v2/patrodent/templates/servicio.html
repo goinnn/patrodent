@@ -4,16 +4,18 @@
 
 {% block js %}
     {{ block.super }}
-    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.swap-images.js"></script>
-    <script type="text/javascript">
-        (function($){
-            $(document).ready(function () {
-                setTimeout(function() {
-                    $(".after").swapImages({before: "antes", after: "despues"});
-                }, 500);
-            });
-          })(jQuery);
-    </script>
+    {% block js-after-before %}
+        <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.swap-images.js"></script>
+        <script type="text/javascript">
+            (function($){
+                $(document).ready(function () {
+                    setTimeout(function() {
+                        $(".after").swapImages({before: "antes", after: "despues"});
+                    }, 500);
+                });
+            })(jQuery);
+        </script>
+    {% endblock %}
 {% endblock %}
 
 {% block content %}
@@ -25,15 +27,17 @@
             </div>
         </div>
         <div class="grid_7 suffix_1 omega">
-            <h3 class="margin-bot">Antes y después</h3>
-            <p> Pasa el ratón por encima de las imágenes para ver el antes (casos reales)</p>
+            {% block before-after-title %}
+                <h3 class="margin-bot">Antes y después</h3>
+                <p> Pasa el ratón por encima de las imágenes para ver el antes (casos reales)</p>
+            {% endblock %}
             {% block before-after %}
             <div class="wrapper indent-bot2">
                 <figure class="img-style img-indent">
                     <img src="{{ STATIC_URL }}images/limpieza_despues.jpg" class="after" />
                     <span class="afterBeforeText">Después</span>
                 </figure>
-                <figure class="img-style"><img src="{{ STATIC_URL }}images/periodoncia_despues.jpg" alt="" class="after" />
+                <figure class="img-style"><img src="{{ STATIC_URL }}images/periodoncia_despues2.jpg" alt="" class="after" />
                     <span class="afterBeforeText">Después</span>
                 </figure>
             </div>
@@ -41,7 +45,7 @@
                 <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/limpieza_despues.jpg" alt="" class="after" />
                     <span class="afterBeforeText">Después</span>
                 </figure>
-                <figure class="img-style"><img src="{{ STATIC_URL }}images/periodoncia_despues.jpg" alt="" class="after" />
+                <figure class="img-style"><img src="{{ STATIC_URL }}images/periodoncia_despues2.jpg" alt="" class="after" />
                     <span class="afterBeforeText">Después</span>
                 </figure>
             </div>

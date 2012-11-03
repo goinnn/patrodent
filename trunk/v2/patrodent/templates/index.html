@@ -30,16 +30,17 @@
                     <div class="slider">
                         <ul class="items">
                             <li><img src="{{ STATIC_URL }}images/logo_galeria.png" alt=""></li>
-                            <li><img src="{{ STATIC_URL }}images/image1.jpg" alt=""></li>
-                            <li><img src="{{ STATIC_URL }}images/image2.jpg" alt=""></li>
-                            <li><img src="{{ STATIC_URL }}images/image3.jpg" alt=""></li>
-                            <li><img src="{{ STATIC_URL }}images/image4.jpg" alt=""></li>
+                            <li><img src="{{ STATIC_URL }}images/patrocinio_limpiando.jpg" alt=""></li>
+                            <li><img src="{{ STATIC_URL }}images/equipo_operando.jpg" alt=""></li>
+                            <li><img src="{{ STATIC_URL }}images/sala_de_esperas.jpg" alt=""></li>
+                            <li><img src="{{ STATIC_URL }}images/recepcion_con_personal.jpg" alt=""></li>
                         </ul>
                         <ul class="pagination">
                             <li><a href="#"><span>1</span></a></li>
                             <li><a href="#"><span>2</span></a></li>
                             <li><a href="#"><span>3</span></a></li>
                             <li><a href="#"><span>4</span></a></li>
+                            <li><a href="#"><span>5</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -47,37 +48,67 @@
         </div>
     </div>
     <div class="wrapper">
-        <div class="alpha prefix_1 grid_7 suffix_1">
+        <div class="alpha prefix_1 grid_65 suffix_1">
             <h3 class="p3">Financiación</h3>
             <p class="p3">Contamos con un sistema de financiación, que le será totalmente de su agrado. Dado el carácter particular de cada paciente no es posible dar un presupuesto estándar sin estudiar detenidamente el tratamiento individual de cada paciente.. Por ello le invitamos a visitar nuestra clínica para concertar una cita o déjenos sus datos y nosotros le llamaremos para concertar una cita.</p>
         </div>
-        <div class="grid_7 suffix_1">
+        <div class="grid_6 grid_65 suffix_1">
             <h3 class="p3"><a href="{% url template_view "servicios" %}">Nuestros Servicios</a></h3>
             <ul class="list-1 p3">
                 {% include "inc.servicios.html" %}
             </ul>
         </div>
-        <div class="grid_6 suffix_1 omega">
-            <h3 class="p3">Testimonials</h3>
-            <blockquote>Donec acumsan malesuada orcidon sitmet erolorem isum dolor amet adipiscg maurise phartra magn msan. Malesuada orcdonec umet lorem. Doloronsec tetuer malesg elit mauris sifer mentum.</blockquote>
+        <div class="grid_7 suffix_1 omega">
+            <h3 class="p3">Renovandonos por ti...</h3>
+            <blockquote><p>Nuestra vocación es ofrecer un excelente servicio y atención a nuestros pacientes para que queden totalmente satisfechos. Por ello, nos renovamos día a día intentando superarnos en nuestros logros; renovando la imágen de <a href="{% url template_view "instalaciones" %}"> nuestra clínica</a> que le invitamos a conocer.</p>
+            <p>Nuestro <a href="{% url template_view "quienes_somos" %}">equipo humano</a> muy cualificado está a su disposición para ayudarle a resolver todas sus consultas en cualquier momento.”</p></blockquote>
         </div>
     </div>
 {% endblock %}
 
+{% block footergallery %}
+    <figure>
+        <a href="{{ STATIC_URL }}images/equipo_trabajando2.jpg" rel="shadowbox[index]" title="Equipo trabajando">
+            <img src="{{ STATIC_URL }}images/equipo_trabajando2.min.jpg" alt="Equipo trabajando" title="Equipo trabajando" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{{ STATIC_URL }}images/consulta1.jpg" rel="shadowbox[index]" title="Imágen de la consulta">
+            <img src="{{ STATIC_URL }}images/consulta1.min.jpg" alt="Imágen de la consulta" title="Imágen de la consulta" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{{ STATIC_URL }}images/patrocinio_tv.jpg" rel="shadowbox[index]" title="Patrocinio diagnosticando">
+            <img src="{{ STATIC_URL }}images/patrocinio_tv.min.jpg" alt="Patrocinio diagnosticando" title="Patrocinio diagnosticando" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{{ STATIC_URL }}images/consulta2.jpg" rel="shadowbox[index]" title="Imágen de la consulta">
+            <img src="{{ STATIC_URL }}images/consulta2.min.jpg" alt="Imágen de la consulta" title="Imágen de la consulta" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{{ STATIC_URL }}images/patrocinio2.jpg" rel="shadowbox[index]" title="Patrocinio Gómez">
+            <img src="{{ STATIC_URL }}images/patrocinio2.min.jpg" alt="Patrocinio Gómez" title="Patrocinio Gómez" />
+        </a>
+    </figure>
+{% endblock %}
+
+
 {% block footerjs %}
     {{ block.super }}
-	<script type="text/javascript">
-	$(window).load(function(){
-		$('.slider')._TMS({
-			duration:800,
-			easing:'easeOutQuad',
-			preset:'simpleFade',
-			pagination:'.pagination',
-			slideshow:7000,
-			banners:'fade',
-			waitBannerAnimation:false,
-			pauseOnHover:true
-		})
-	});
-	</script>
+    <script type="text/javascript">
+    $(window).load(function(){
+        $('.slider')._TMS({
+            duration:800,
+            easing:'easeOutQuad',
+            preset:'zabor',
+            pagination:'.pagination',
+            slideshow:3000,
+            banners:'fade',
+            waitBannerAnimation:false,
+            pauseOnHover:true
+        })
+    });
+    </script>
 {% endblock %}

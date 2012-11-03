@@ -1,0 +1,52 @@
+{% extends "servicio.html" %}
+
+{% block content-title %}Estética dental y blanqueamiento{% endblock %}
+
+{% block content-body %}
+    <p>
+        Es el medio de unión de la mandíbula con el craneo. Todos los procesos que aumentan la presión dentro de la ATM, el bruxismo, apretar y rechinar los dientes o sobrecargas masticatorias, pueden ocasionar deformaciones del hueso, destrucción del disco o lesión de los ligamentos que forman parte de la ATM. La degeneración mantenida de la ATM origina su artrosis y el Síndrome de Disfunción Cráneo-Mandibular.
+
+    </p>
+    <p>
+        La sintomatología es:
+        <ul class="levels">
+            <li>Dolores de cabeza, normalmente a un lado del cráneo.</li>
+            <li>Dolor a nivel de la articulación (delante de la oreja).</li>
+            <li>Dolores y contracturas a nivel de las cervicales, que pueden incluso producir contracturas lumbares.</li>
+            <li>Ruidos/chasquidos articulares que se perciben como situados en el oído (clicks o chasquidos).</li>
+            <li>Limitación de la movilidad de la mandíbula (bloqueo) debido a la luxación.</li>
+        </ul>
+    </p>
+    <p>
+        Una vez que ha aparecido la sintomatología se ha de hacer un diagnóstico correcto por medio de exploración, radiografías y Resonancia Magnética, para averiguar la causa que la origina. Existen diversos tratamientos en función del origen de la disfunción:Placas de descarga, tratamiento ortodoncico, rehabilitacion protésica y cirugía
+    </p>
+    <p>
+        En muchos casos un simple balanceo de la mordida (ajuste oclusal) puede dar un descanso inmediato. El método mas usado para conseguir esta relajación inmediata es la férula de descarga
+    </p>
+    <p>
+        Placa de descarga: Consiste en una férula de resina de “quita y pon” que se adapta y estabiliza en los dientes de la arcada superior. Con ella se estabiliza la mordida, se descarga la tensión muscular y el dolor, evitando un mayor desgaste de los dientes por el efecto de apretarlos. Generalmente se usa por la noche, para dormir, aunque en algunos casos puede usarse de día.
+    </p>
+{% endblock %}
+
+{% block before-after-title %}
+    <h3 class="margin-bot">XXX</h3>
+    <p>XXX</p>
+{% endblock %}
+
+{% block before-after %}
+    <div class="wrapper indent-bot2">
+        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/no-image.jpg" alt="XXX" title="XXX"/>
+            <span class="afterBeforeText">Imagen de algo 1</span>
+        </figure>
+    </div>
+    <div class="wrapper indent-bot2">
+        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/no-image.jpg" alt="XXX" title="XXX"/>
+            <span class="afterBeforeText">Imagen de algo 2</span>
+        </figure>
+    </div>
+    <div class="wrapper indent-bot2">
+        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/no-image.jpg" alt="XXX" title="XXX"/>
+            <span class="afterBeforeText">Imagen de algo 3</span>
+        </figure>
+    </div>
+{% endblock %}

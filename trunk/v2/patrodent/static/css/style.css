@@ -345,7 +345,8 @@ a .sign, .sign {
 a.sign:hover{
 	color:#32ac9c;
 }
-blockquote {
+blockquote,
+blockquote a{
 	background:url(../images/quotes.png) left top no-repeat;
 	font-style:italic;
 	color:#bcbcbc;
@@ -400,9 +401,6 @@ blockquote {
 }
 .box:hover {
 	background-position: 0 top;
-}
-.box:hover strong {
-color:#29bce0;
 }
 .box strong {
 	font-size:14px;
@@ -566,6 +564,19 @@ dt {margin-bottom:22px;}
 	width:260px;
 	height:296px;
 	overflow:hidden;
+}
+
+#content ol.levels li,
+#content ul.levels li {
+    padding-left: 15px;
+}
+
+#content ol.levels {
+    list-style: decimal inside;
+}
+
+#content ul.levels {
+    list-style: square inside;
 }
 
 /***** Contact form *****/
