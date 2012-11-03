@@ -1,0 +1,31 @@
+{% extends "servicio.html" %}
+
+{% block content-title %}Protesis{% endblock %}
+
+{% block content-body %}
+    <p>
+        Perdemos dientes por diversas causas, ya sea por caries, enfermedad periodontal, traumatismos, etc. Su pérdida produce varias consecuencias: Atrofia ósea ,inclinaciones dentarias, perdida de puntos de contacto, alteración del plano oclusal, sobrecarga de los dientes remanenetes y problemas en la articulación temporomandibular.
+    </p>
+    <p>
+        El correcto funcionamiento de las piezas dentarias favorece la conservación del hueso que las rodea. Por ello es importante su reposición.
+    </p>
+    <p>
+       La reposición de los dientes perdidos se hace mediante prótesis. Las prótesis pueden ser unitarias (un solo diente), parciales (varios dientes) y completas (todos los dientes). Asimismo esta puede ser removible (“de quita y pon”): Esqueléticos y prótesis parciales o completas de resina, o puede ser fija y apoyarse sobre los dientes remanentes (puentes) o sobre implantes.
+    </p>
+    <p>
+       También puede reponerse el volumen óseo perdido por la atrofia debida a la ausencia de dientes.
+    </p>
+{% endblock %}
+
+{% block before-after %}
+    <div class="wrapper indent-bot2">
+        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/protesis_despues_1.jpg" alt="Caso real protesis" title="Caso real protesis" class="after" />
+            <span class="afterBeforeText">Después</span>
+        </figure>
+    </div>
+    <div class="wrapper indent-bot2">
+        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/protesis_despues_2.jpg" alt="Caso real protesis" title="Caso real protesis" class="after" />
+            <span class="afterBeforeText">Después</span>
+        </figure>
+    </div>
+{% endblock %}

@@ -1,33 +1,5 @@
 {% extends "base.html" %}
 
-{% block js %}
-    {{ block.super }}
-    <script src="{{ STATIC_URL }}js/forms.js" type="text/javascript"></script>
-    <script src="{{ STATIC_URL }}js/jquery.googlemaps1.01.js" type="text/javascript"></script>
-    <!--<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;hl=en&amp;sensor=true&amp;key=ABQIAAAAWCGzSMrk7YDL2KSdECDFthRCU6CW1wRB4NQsX5PSi053h5zzZhQIZ5ivn4VAQx53xyYuNrvkOmgO1w&amp;q=sevilla,+marques+de+paradas,+22&amp;z=14&amp;output=embed" type="text/javascript"></script>-->
-    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;hl=es&amp;sensor=true&amp;key=ABQIAAAAWCGzSMrk7YDL2KSdECDFthRCU6CW1wRB4NQsX5PSi053h5zzZhQIZ5ivn4VAQx53xyYuNrvkOmgO1w" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#map_canvas').googleMaps({
-                hl: 'es',
-                latitude: 37.406045,
-                longitude: -5.993344,
-                markers: {
-                        latitude: 	37.390045,
-                        longitude: -6.001344,
-                        icon: {
-                            image: '{{ STATIC_URL}}images/gmap_patrodent.png'
-                        },
-                        info: {
-                            popup: true,
-                            layer: '#address_info'
-                        },
-                    }
-                });
-        });
-    </script>
-{% endblock %}
-
 {% block class-contacto-link %}class="active"{% endblock %}
 
 {% block content %}
@@ -40,13 +12,12 @@
                         <div id="map_canvas"></div>
                     </figure>
                     <div class="extra-wrap">
-                        <h5 class="indent-bot">Cum sociis natoque <span>uset magnis dis.</span></h5>
-                        <p>Sed ullamcorper pulvinar nisi, in auctor nibh rutrum eleifend. Nullam rutrum placerat ligula eget <br />molestie. Donec ullamcorper nulla hendrerit tellus sodales ultricies. In condimentum venenatis orci et.</p>
-                        <p>Pellentesque rhoncus magna euismod. Nam lorem mi, vehicula <br />ut tempor non, commodo vitae <br />nibh. Maecenas congue aliquam tus, ac auctor lorem.</p>
+                        <h5 class="indent-bot">Donde estamos</h5>
+                        <p>Nuestra clínica se encuentra en pleno centro de Sevilla. En la calle Marqués de Paradas junto al ambulatorio de la Seguridad Social. A 100 metros se encuentra el centro comercial Plaza de Armas en el cual hay un aparcamiento público abierto las 24 horas. A 150 metros está situada la Estación de Autobuses Plaza de Armas de donde parten autobuses para la parte norte y oeste de la provincia de Sevilla, así como a Madrid y otras rutas importantes.</p>
                     </div>
-                    <p>Pellentesque rhoncus magna euismod. Nam lorem mi, vehicula ut tempor non, commodo vitae nibh. Maecenas congue aliquam tus, ac auctor lorem.</p>
-                    <p>Pellentesque rhoncus magna euismod. Nam lorem mi, vehicula ut tempor non, commodo vitae nibh. Maecenas congue aliquam tus, ac auctor lorem.</p>
-                    <p>Pellentesque rhoncus magna euismod. Nam lorem mi, vehicula ut tempor non, commodo vitae nibh. Maecenas congue aliquam tus, ac auctor lorem.</p>
+                    <p>Para llegar y volver en autobús pueden coger las líneas: B2 ,B5, C3, C4, 43, 40</p>
+                    <p>Para volver en taxi puede coger uno en la parada junto a la estación de autobuses de plaza de arma</p>
+                    <p>Muy cerca de nosotros se encuentra el Corte Inglés de la Magdalena así como numerosas tiendas de moda.</p>
                 </div>
             </div>
         </div>
@@ -71,6 +42,31 @@
 
 {% block footerjs %}
     {{ block.super }}
+    <script src="{{ STATIC_URL }}js/jquery.googlemaps1.01.js" type="text/javascript"></script>
+    <script src="http://maps.google.com/maps?file=api&amp;v=3&amp;hl=es&amp;sensor=true" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#map_canvas').googleMaps({
+                hl: 'es',
+                latitude: 37.406045,
+                longitude: -5.993344,
+                markers: {
+                        latitude:   37.390045,
+                        longitude: -6.001344,
+                        icon: {
+                            image: '{{ STATIC_URL}}images/gmap_patrodent.png'
+                        },
+                        info: {
+                            popup: true,
+                            layer: '#address_info'
+                        },
+                    }
+                });
+            if (document.referrer == "http://www.123contactform.com/form-283841/Patrodent" || document.location.href.indexOf("sucess") != -1) {
+                alert("Email enviado con exito, nos pondremos en contacto lo más rapidamente posible")
+            }
+        });
+    </script>
     <script type="text/javascript">
         $(window).load(function(){
             $('#contact-form').forms({

@@ -1,0 +1,45 @@
+{% extends "servicio.html" %}
+
+{% block content-title %}Periodoncia{% endblock %}
+
+{% block content-body %}
+    <p>
+        La periodoncia es una especialidad odontológica dedicada a la prevención, diagnóstico y tratamiento de las enfermedades de las encías y los tejidos de soporte de los dientes. La enfermedad periodontal es muy común y está causada por las bacterias de la placa bacteriana que habitan en nuestra boca.
+    </p>
+    <p>
+        La <strong>gingivitis</strong> consiste en una infección situada debajo de la encía, generalmente indolora, que inflama la encía y hace que sangre fácilmente. Si no se trata, en algunos individuos progresa a <strong>periodontitis</strong>. La periodontitis, antiguamente llamada piorrea, destruye el hueso y el ligamento que soporta los dientes, provocando movilidad y separación de los dientes y, si no se trata, pérdida de los mismos. Las enfermedades periodontales se pueden prevenir o, en su defecto, tratar con gran éxito, pudiendo así conservar los dientes toda nuestra vida. 
+    </p>
+    <p>
+       Las bacterias por si mismas no son capaces de provocar las consecuencias de estas enfermedades, sino que necesitan de un individuo susceptible (predisposición genética) y un medio ambiente adecuado. El tabaco, la diabetes o el estrés son factores de alto riesgo en la colonización de estas bacterias.
+    </p>
+    <p>
+        En su inicio esta enfermedad pasa desapercibida. Los pacientes pueden tener enrojecimiento e hinchazón de la encía, sangrado de las encías al cepillarse los dientes o de un modo espontáneo, mal sabor en la boca y mal aliento, sensibilidad al frío, retracción gingival, movilidad de los dientes y flemones en las encías, sin supuración. 
+    </p>
+    <p>
+        Algunos pacientes evolucionan de modo muy rápido y otros lo hacen lentamente. Los de evolución rápida acostumbran a ser jóvenes y pueden perder sus dientes en 5 años. En otros casos la evolución puede ser más lenta, pero si no se tratan adecuadamente también pueden llegar a perder sus dientes.
+    </p>
+    <p>
+        El mejor tratamiento es la prevención. Un cepillado correcto de los dientes después de cada comida, higienes bucales y revisiones periódicas con el dentista evitarán la enfermedad. 
+    </p>
+    <p>
+        Si ésta aparece, hay que tratarla lo más temprano posible. El objetivo del tratamiento es eliminar la infección que origina la enfermedad mediante la eliminación de la placa bacteriana y del sarro con curetajes,y higienes profundas y en los casos más avanzados cirugías. Una vez controlada la infección, el proceso destructivo del hueso se detiene, pudiendo conservar los dientes y los tejidos periodontales sanos. Dependiendo de la cantidad de hueso de soporte destruido, los dientes, una vez tratados, tendrán mejor o peor pronóstico. Por ello es vital un tratamiento precoz
+    </p>
+{% endblock %}
+
+{% block before-after %}
+    <div class="wrapper indent-bot2">
+        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/periodoncia_despues.jpg" alt="XXX" title="XXX" class="after" />
+            <span class="afterBeforeText">Después</span>
+        </figure>
+    </div>
+    <div class="wrapper indent-bot2">
+        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/no-image.jpg" alt="XXX" title="XXX" class="after" />
+            <span class="afterBeforeText">Después</span>
+        </figure>
+    </div>
+    <div class="wrapper indent-bot2">
+        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/no-image.jpg" alt="XXX" title="XXX" class="after" />
+            <span class="afterBeforeText">Después</span>
+        </figure>
+    </div>
+{% endblock %}

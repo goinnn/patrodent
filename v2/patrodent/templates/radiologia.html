@@ -1,0 +1,33 @@
+{% extends "servicio.html" %}
+
+{% block content-title %}Radiología Digital{% endblock %}
+
+{% block js-after-before %}
+{% endblock %}
+
+{% block content-body %}
+   <p>
+        Nuestra clinica tiene entre sus instalaciones, el departamento de radiología dental en el que se pueden hacer tanto ortopantomografias (radiografías de toda la boca de frente) como teleradiografías (radiografías de cráneo laterales, necesarias sobretodo en ortodoncia), radiografías carpales (de la mano) para evolución del crecimiento y todo tipo de radiología intraoral
+    </p>
+   <p>
+        La radiología digital nos permite obtener radiografías en menor tiempo y reducir en un 80% la dosis de radiación que reciben nuestros pacientes.
+    </p>
+{% endblock %}
+
+{% block before-after-title %}
+    <h3 class="margin-bot">XXX</h3>
+    <p>XXX</p>
+{% endblock %}
+
+{% block before-after %}
+    <div class="wrapper indent-bot2">
+        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/no-image.jpg" alt="XXX" title="XXX"/>
+            <span class="afterBeforeText">Imagen de juguete 1</span>
+        </figure>
+    </div>
+    <div class="wrapper indent-bot2">
+        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/no-image.jpg" alt="XXX" title="XXX"/>
+            <span class="afterBeforeText">Imagen de juguete 2</span>
+        </figure>
+    </div>
+{% endblock %}
