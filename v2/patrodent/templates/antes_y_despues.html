@@ -14,21 +14,32 @@
     </script>
 {% endblock %}
 
+{% block class-antes-despues-link %}class="active"{% endblock %}
 
 {% block content %}
     <div class="wrapper">
-        <div class="alpha prefix_1 grid_22 suffix_8 omega">
-            <h3 class="p3">Casos reales de nuestros pacientes</h3>
-            <p class="p7">Aliquam erat volutpat. Praesent vel tempus mi. Etiam tellus mi, ornare imperdiet varius vel, feugiat pulvinar purus! Duis nec nisi augue. Nunc id risus ac ipsum venenatis tincidunt. Proin nulla urna, porttitor nec accumsan eu, laoreet eu lects. Ut consectetur imperdiet malesuada. Nulla auctor, erat vitae lacinia lacinia, ipsum quam consectetur libero, sit amet suscipit enim lacus a justo. Nullam nec risus euism.</p>
-            <div class="wrapper">
-                <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/page4-img1.jpg" alt="" /></figure>
-                <div class="extra-wrap">
-                    <h3 class="indent-bot2">
-                        A Combination of art and <span>Science to Optimally Improve</span> <span>Dental Health</span>
-                    </h3>
-                    Praesent vestibulum molestie lacus. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridicu- lus mus. Nulla dui. Fusce feugiat malesuada <br />odio. Morbi nunc odio, ravida.
-                </div>
-            </div>
+        <div class="alpha prefix_1 grid_22 suffix_8 omega afterAndBeforePage">
+            <h2 class="p3">Casos reales de nuestros pacientes</h2>
+            <p>
+                Creemos que la mejor manera de que que creas en nosotros es enseñarte lo que hemos hecho por otros pacientes.
+                Aqui puedes ver una recopilación de estos casos.
+            </p>
+            <p> Pasa el ratón por encima de las imágenes para ver el antes</p>
+            <h3>Odontología General</h3>
+            {% include "templates/after_before/inc.odontologia.html" %}
+            <div class="clear"></div>
+            <h3>Ortodoncia</h3>
+            {% include "templates/after_before/inc.ortodoncia.html" %}
+            <div class="clear"></div>
+            <h3>Periodoncia</h3>
+            {% include "templates/after_before/inc.periodoncia.html" %}
+            <div class="clear"></div>
+            <h3>Prótesis</h3>
+            {% include "templates/after_before/inc.protesis.html" %}
+            <div class="clear"></div>
+            <h3>Estética y blanqueamiento dental</h3>
+            {% include "templates/after_before/inc.odontologia.html" %}
+            <div class="clear"></div>
         </div>
     </div>
 {% endblock %}

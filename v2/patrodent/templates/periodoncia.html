@@ -27,19 +27,5 @@
 {% endblock %}
 
 {% block before-after %}
-    <div class="wrapper indent-bot2">
-        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/periodoncia_despues.jpg" alt="XXX" title="XXX" class="after" />
-            <span class="afterBeforeText">Después</span>
-        </figure>
-    </div>
-    <div class="wrapper indent-bot2">
-        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/no-image.jpg" alt="XXX" title="XXX" class="after" />
-            <span class="afterBeforeText">Después</span>
-        </figure>
-    </div>
-    <div class="wrapper indent-bot2">
-        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/no-image.jpg" alt="XXX" title="XXX" class="after" />
-            <span class="afterBeforeText">Después</span>
-        </figure>
-    </div>
+    {% include "templates/after_before/inc.periodoncia.html"%}
 {% endblock %}
