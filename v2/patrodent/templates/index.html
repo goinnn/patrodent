@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "templates/base.html" %}
 
 {% block js %}
     {{ block.super }}
@@ -55,7 +55,7 @@
         <div class="grid_6 grid_65 suffix_1">
             <h3 class="p3"><a href="{% url template_view "servicios" %}">Nuestros Servicios</a></h3>
             <ul class="list-1 p3">
-                {% include "inc.servicios.html" %}
+                {% include "templates/inc.servicios.html" %}
             </ul>
         </div>
         <div class="grid_7 suffix_1 omega">
