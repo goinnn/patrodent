@@ -286,7 +286,7 @@ ul.menu li li:hover li ul, ul.menu li li.sfHover li ul {
 	border-radius:10px 10px 0 0;
 	-moz-border-radius:10px 10px 0 0 ;
 	-webkit-border-radius:10px 10px 0 0;
-	padding: 25px 0 90px;
+	padding: 25px 0 30px;
 }
 #page1 .content-inner {padding:0 0 80px;}
 #page3 .content-inner {padding-bottom:70px;}
@@ -320,7 +320,7 @@ h2 span {
 	display:inline-block;
 }
 h5 {
-	font-size:18px;
+	font-size:15px;
 	line-height:1.222em;
 	color:#32AC9C;
 	text-transform:uppercase;
@@ -732,4 +732,8 @@ footer .style-1 {
 }
 footer .contact_info {
     float:right;
+}
+
+ul.curriculum li {
+    padding-bottom: 10px;
 }

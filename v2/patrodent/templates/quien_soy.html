@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block class-patrodent-link %}class="active"{% endblock %}
+
+{% block footergallery %}
+    <figure>
+        <a href="http://www.youtube.com/v/8ufZVHkkGPg" rel="shadowbox[quienesSomos]" title="Títulos de Patrocinio Gómez">
+            <img src="{{ STATIC_URL }}images/titulos.min.jpg" alt="Títulos de Patrocinio Gómez" title="Títulos de Patrocinio Gómez" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{{ STATIC_URL }}images/patrocinio_despacho.jpg" rel="shadowbox[quienesSomos]" title="Patrocinio en el despacho">
+            <img src="{{ STATIC_URL }}images/patrocinio_despacho.min.jpg" alt="Patrocinio en el despacho" title="Patrocinio en el despacho" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{{ STATIC_URL }}images/patrocinio2.jpg" rel="shadowbox[quienesSomos]" title="Angela Martín">
+            <img src="{{ STATIC_URL }}images/patrocinio2.min.jpg" alt="Angela Martín" title="Angela Martín" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{{ STATIC_URL }}images/equipo_trabajando.jpg" rel="shadowbox[quienesSomos]" title="Equipo trabajando">
+            <img src="{{ STATIC_URL }}images/equipo_trabajando.min.jpg" alt="Equipo trabajando" title="Equipo trabajando" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{{ STATIC_URL }}images/patrocinio_trabajando.jpg" rel="shadowbox[quienesSomos]" title="Patrocinio trabajando">
+            <img src="{{ STATIC_URL }}images/patrocinio_trabajando.min.jpg" alt="Patrocinio trabajando" title="Patrocinio trabajando" />
+        </a>
+    </figure>
+{% endblock %}
+
+
+{% block content %}
+    <div class="wrapper">
+        <div class="alpha prefix_1 grid_9">
+            <div class="border-1">
+                <h3 class="margin-bot">Patrocinio Gómez</h3>
+                <figure class="img-style indent-bot2"><img src="{{ STATIC_URL }}images/patrocinio4.jpg" alt="" /></figure>
+                <div class="clear"></div>
+                <div class="wrapper indent-bot2">
+                    <figure class="img-style img-indent">
+                        <iframe width="300" height="200" src="http://www.youtube.com/embed/8ufZVHkkGPg" frameborder="0" allowfullscreen></iframe>
+                        <span class="afterBeforeText">C.V. Interactivo</span>
+                    </figure>
+                </div>
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet risus sit amet sapien sodales gravida nec et nisi. Vestibulum nec eleifend purus. Suspendisse bibendum mi ut augue scelerisque at laoreet mauris semper.</blockquote>
+                <div class="sign p7">Patrocinio Gomez Martinez</div>
+            </div>
+        </div>
+        <div class="grid_13 suffix_1 omega">
+            <h2 class="p3">Conoceme a mi</h2>
+            <h5 class="indent-bot">Como mejor se conoce a un profesional es por su C.V.</h5>
+            <ul class="curriculum">
+                <li>Licenciada por la Universidad de Sevilla en Medicina y Cirugía General, en el año 1980 ( promoción 1974 - 1980 ).</li>
+                <li>Especialista en Estomatología por la Escuela de Estomatología de la Universidad de Sevilla en 1992: promoción 1980 - 1982. </li>
+                <li>Participación como congresista activo en las I Jornadas Andaluzas de Odontoestomatología, por el Dr. Gómez de la Mata y el Dr. Alvaro García Perla ( 1981).</li>
+                <li>Curso de endodoncia con el profesor D. Ángel Lasala ( 1982).</li>
+                <li>Curso teórico practico sobre articuladores semiajustables ( 1987).</li>
+                <li>Curso anual de Ortodoncia teórico práctico de las clases I, II, III de Angle por el profesor Cervera    ( 1990).</li>
+                <li>Curso anual I sobre terapéutica bioprogresiva en el centro internacional de estudios y clínica de ortodoncia dependiente de la Universidad de Nantes, Francia, dada por el profesor Dr. Duchateaux   ( 1992)superando el examen de aptitud realizado al final del curso.</li>
+                <li>Curso anual II sobre terapéutica bioprogresiva en el centro internacional de estudios y clínica de ortodoncia dependiente de la Universidad de Nantes, Francia, dada por el profesor Dr. Duchateaux   ( 1993 - 1994). Superando el examen de aptitud realizado al final del curso.</li>
+                <li>Certificado del Ministerio de Sanidad y Consumo que acredita estar habilitado como medico de medicina general en el sistema nacional de Salud Español, así como en los Sistemas Públicos de Seguridad Social de los demás Estados miembros de las Comunidades Europeas. (1994)</li>
+
+            </ul>
+            <a href="{{ STATIC_URL }}files/curriculum_vitae.pdf">Ver curriculum completo</a>
+        </div>
+    </div>
+{% endblock %}
