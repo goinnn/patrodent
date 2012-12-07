@@ -2,31 +2,6 @@
 
 {% block content-title %}Estética dental y blanqueamiento{% endblock %}
 
-
-La Odontología Estética se encarga de tratar todas aquellas alteraciones y patologías
-de la morfología bucodental para lograr un canon de belleza que se ajuste al ideal
-social de hoy en dia.
-En este contexto, una sonrisa clara y perfecta se ha convertido en un requisito
-esencial, donde dientes blancos, saludables y alineados son referenciales de una
-persona atractiva
-
-No obstante, más que un mero caso estético, el estado de nuestra boca es una
-cuestión de salud, al cual debemos estar atentos, por lo que elegimos el material mas
-adecuado para cada caso en particular.
-
-Técnica progresiva en composites (empastes esteticos) asi como las FUNDAS DE
-PORCELANA, el BLANQUEAMIENTO DENTAL, injertos y estética de encías y la
-ORTODONCIA han sufrido una gran evolución principalmente orientada hacia la
-estética, para satisfacer las demandas actuales de la población.
-
-Hoy en día es posible realizar desde un sencillo blanqueamiento dental, hasta la
-reposición completa de todos los dientes y la transformación total de una sonrisa.
-
-Con éstos tratamientos podemos mejorar la imagen de la persona y su propia
-autoestima.
-
-Actualmente, tener una buena sonrisa es sinónimo de salud y bienestar social.
-
 {% block content-body %}
     <p>
         La Odontología Estética se encarga de tratar todas aquellas alteraciones y patologías de la morfología bucodental para lograr un canon de belleza que se ajuste al ideal social de hoy en dia.
@@ -48,14 +23,5 @@ Actualmente, tener una buena sonrisa es sinónimo de salud y bienestar social.
 {% endblock %}
 
 {% block before-after %}
-    <div class="wrapper indent-bot2">
-        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/estetica_despues_1.jpg" alt="Caso real odontología conservadora" title="Caso real odontología conservadora" class="after" />
-            <span class="afterBeforeText">Después</span>
-        </figure>
-    </div>
-    <div class="wrapper indent-bot2">
-        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/estetica_despues_2.jpg" alt="Caso real odontología conservadora" title="Caso real odontología conservadora" class="after" />
-            <span class="afterBeforeText">Después</span>
-        </figure>
-    </div>
+    {% include "templates/after_before/inc.estetica.html"%}
 {% endblock %}

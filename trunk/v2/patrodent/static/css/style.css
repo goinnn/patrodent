@@ -737,3 +737,8 @@ footer .contact_info {
 ul.curriculum li {
     padding-bottom: 10px;
 }
+
+.afterAndBeforePage .afterAndBefore {
+    float: left;
+    width: auto;
+}

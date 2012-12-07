@@ -18,14 +18,5 @@
 {% endblock %}
 
 {% block before-after %}
-    <div class="wrapper indent-bot2">
-        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/protesis_despues_1.jpg" alt="Caso real protesis" title="Caso real protesis" class="after" />
-            <span class="afterBeforeText">Después</span>
-        </figure>
-    </div>
-    <div class="wrapper indent-bot2">
-        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/protesis_despues_2.jpg" alt="Caso real protesis" title="Caso real protesis" class="after" />
-            <span class="afterBeforeText">Después</span>
-        </figure>
-    </div>
+    {% include "templates/after_before/inc.protesis.html" %}
 {% endblock %}
