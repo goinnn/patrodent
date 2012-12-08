@@ -519,8 +519,9 @@ blockquote a{
 		padding-left:25px;
         font-weight: bold;
 	}
+        .important-block ul li a.active,
 		.important-block ul li a:hover {
-			color: black;
+			color: #5F5F5F;
 			background-position:0 bottom;
 		}
 

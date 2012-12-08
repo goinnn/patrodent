@@ -1,24 +1,20 @@
-{% extends "templates/base.html" %}
+{% extends "templates/servicio.html" %}
 
 {% block class-servicios-link %}class="active"{% endblock %}
 
+{% block js-after-before %}
+{% endblock %}
+
+{% block before-after-title-wrapper %}
+{% endblock %}
+
+{% block content-body-wrapper %}
+{% endblock %}
+
 {% block content %}
+    {{ block.super }}
     <div class="wrapper">
         <div class="alpha prefix_1 grid_22 suffix_1 omega">
-            <div class="important-block">
-                <div class="wrapper">
-                    <div class="alpha grid_23">
-                        <div class="indent-l">
-                            <div class="border">
-                                <div class="title">Servicios</div>
-                                <ul class="list-1 columns3">
-                                    {% include "templates/inc.servicios.html" %}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet risus sit amet sapien sodales gravida nec et nisi. Vestibulum nec eleifend purus. Suspendisse bibendum mi ut augue scelerisque at laoreet mauris semper. Nullam nulla lectus, lobortis dignissim auctor in, imperdiet in mauris. Praesent facilisis venenatis diam, non fermentum elit condimentum non. Sed sodales sapien et purus ultrices placerat. Sed tempus tortor ut risus tincidunt blandit sit amet nec felis. Nam scelerisque placerat velit, sit amet lobortis ligula iaculis sit amet.
             </p>
