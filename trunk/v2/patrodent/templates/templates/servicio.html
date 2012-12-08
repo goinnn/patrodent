@@ -20,12 +20,31 @@
 
 {% block content %}
     <div class="wrapper">
+        <div class="alpha prefix_1 grid_22 suffix_1 omega">
+            <div class="important-block">
+                <div class="wrapper">
+                    <div class="alpha grid_23">
+                        <div class="indent-l">
+                            <div class="border">
+                                <div class="title"><a href="{% url template_view "servicios" %}">Servicios</a></div>
+                                <ul class="list-1 columns3">
+                                    {% include "templates/inc.servicios.html" %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% block content-body-wrapper %}
         <div class="alpha prefix_1 grid_15">
             <div class="border-1">
                 <h2 class="p3">{% block content-title %}{% endblock %}</h2>
                 {% block content-body %}{% endblock %}
             </div>
         </div>
+        {% endblock %}
+        {% block before-after-title-wrapper %}
         <div class="grid_7 suffix_1 omega">
             {% block before-after-title %}
                 <h3 class="margin-bot">Antes y después</h3>
@@ -51,5 +70,35 @@
             </div>
            {% endblock %}
         </div>
+        {% endblock %}
     </div>
+{% endblock %}
+
+
+{% block footergallery %}
+    <figure>
+        <a href="{{ STATIC_URL }}images/equipo_trabajando.jpg" rel="shadowbox[servicio]" title="Equipo trabajando">
+            <img src="{{ STATIC_URL }}images/equipo_trabajando.min.jpg" alt="Equipo trabajando" title="Equipo trabajando" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{{ STATIC_URL }}images/equipo_trabajando2.jpg" rel="shadowbox[servicio]" title="Equipo trabajando">
+            <img src="{{ STATIC_URL }}images/equipo_trabajando2.min.jpg" alt="Equipo trabajando" title="Equipo trabajando" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{{ STATIC_URL }}images/patrocinio_prabajando.jpg" rel="shadowbox[servicio]" title="Patrocinio trabajando">
+            <img src="{{ STATIC_URL }}images/patrocinio_trabajando.min.jpg" alt="Patrocinio diagnosticando" title="Patrocinio trabajando" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{{ STATIC_URL }}images/consulta2.jpg" rel="shadowbox[servicio]" title="Imágen de la consulta">
+            <img src="{{ STATIC_URL }}images/consulta2.min.jpg" alt="Imágen de la consulta" title="Imágen de la consulta" />
+        </a>
+    </figure>
+    <figure>
+        <a href="http://www.youtube.com/v/BBjFInC26Fo" rel="shadowbox[servicio]" title="Instalaciones de Patrodent">
+            <img src="{{ STATIC_URL }}images/instalaciones.min.jpg" alt="Instalaciones de Patrodent" title="Instalaciones de Patrodent" />
+        </a>
+    </figure>
 {% endblock %}

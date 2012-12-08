@@ -9,6 +9,11 @@ from django.views.generic.base import TemplateView as DjangoTemplateView
 
 class TemplateView(DjangoTemplateView):
 
+    def get_context_data(self, **kwargs):
+        context = super(TemplateView, self).get_context_data(**kwargs)
+        context['full_path'] = self.request.get_full_path()
+        return context
+
     def get_template_names(self, *args, **kwargs):
         return '%(page_slug)s.html' % (self.kwargs)
 

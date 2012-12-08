@@ -1,9 +1,19 @@
-<li><a href="{% url template_view "odontologia" %}">Odontología General</a></li>
-<li><a href="{% url template_view "ortodoncia" %}">Ortodoncia</a></li>
-<li><a href="{% url template_view "odontopediatria" %}">Odontopediatría</a></li>
-<li><a href="{% url template_view "periodoncia" %}">Periodoncia</a></li>
-<li><a href="{% url template_view "implantes" %}">Implantes</a></li>
-<li><a href="{% url template_view "protesis" %}">Prótesis</a></li>
-<li><a href="{% url template_view "estetica" %}">Estética dental y blanqueamiento</a></li>
-<li><a href="{% url template_view "atm" %}">Problemas de articulación (ATM)</a></li>
-<li><a href="{% url template_view "radiologia" %}">Radiología digital</a></li>
+{% url template_view "odontologia" as odontologia_url %}
+{% url template_view "ortodoncia" as ortodoncia_url %}
+{% url template_view "odontopediatria" as odontopediatria_url %}
+{% url template_view "periodoncia" as periodoncia_url %}
+{% url template_view "implantes" as implantes_url %}
+{% url template_view "protesis" as protesis_url %}
+{% url template_view "estetica" as estetica_url %}
+{% url template_view "atm" as atm_url %}
+{% url template_view "radiologia" as radiologia_url %}
+
+<li><a href="{{ odontologia_url }}" {% ifequal odontologia_url full_path %} class="active"{% endifequal %}>Odontología General</a></li>
+<li><a href="{{ ortodoncia_url }}" {% ifequal ortodoncia_url full_path %} class="active"{% endifequal %}>Ortodoncia</a></li>
+<li><a href="{{ odontopediatria_url }}" {% ifequal odontopediatria_url full_path %} class="active"{% endifequal %}>Odontopediatría</a></li>
+<li><a href="{{ periodoncia_url }}" {% ifequal periodoncia_url full_path %} class="active"{% endifequal %}>Periodoncia</a></li>
+<li><a href="{{ implantes_url }}" {% ifequal implantes_url full_path %} class="active"{% endifequal %}>Implantes</a></li>
+<li><a href="{{ protesis_url }}" {% ifequal protesis_url full_path %} class="active"{% endifequal %}>Prótesis</a></li>
+<li><a href="{{ estetica_url }}" {% ifequal estetica_url full_path %} class="active"{% endifequal %}>Estética dental y blanqueamiento</a></li>
+<li><a href="{{ atm_url }}" {% ifequal atm_url full_path %} class="active"{% endifequal %}>Problemas de articulación (ATM)</a></li>
+<li><a href="{{ radiologia_url }}" {% ifequal radiologia_url full_path %} class="active"{% endifequal %}>Radiología digital</a></li>
