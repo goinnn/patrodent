@@ -1,5 +1,5 @@
-{% url template_view "odontologia" as odontologia_url %}
 {% url template_view "ortodoncia" as ortodoncia_url %}
+{% url template_view "odontologia" as odontologia_url %}
 {% url template_view "odontopediatria" as odontopediatria_url %}
 {% url template_view "periodoncia" as periodoncia_url %}
 {% url template_view "implantes" as implantes_url %}
@@ -8,8 +8,8 @@
 {% url template_view "atm" as atm_url %}
 {% url template_view "radiologia" as radiologia_url %}
 
-<li><a href="{{ odontologia_url }}" {% ifequal odontologia_url full_path %} class="active"{% endifequal %}>Odontología General</a></li>
 <li><a href="{{ ortodoncia_url }}" {% ifequal ortodoncia_url full_path %} class="active"{% endifequal %}>Ortodoncia</a></li>
+<li><a href="{{ odontologia_url }}" {% ifequal odontologia_url full_path %} class="active"{% endifequal %}>Odontología General - Endodoncia</a></li>
 <li><a href="{{ odontopediatria_url }}" {% ifequal odontopediatria_url full_path %} class="active"{% endifequal %}>Odontopediatría</a></li>
 <li><a href="{{ periodoncia_url }}" {% ifequal periodoncia_url full_path %} class="active"{% endifequal %}>Periodoncia</a></li>
 <li><a href="{{ implantes_url }}" {% ifequal implantes_url full_path %} class="active"{% endifequal %}>Implantes</a></li>

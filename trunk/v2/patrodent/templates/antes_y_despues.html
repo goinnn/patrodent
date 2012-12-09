@@ -25,9 +25,6 @@
                 Aqui puedes ver una recopilación de estos casos.
             </p>
             <p> Pasa el ratón por encima de las imágenes para ver el antes</p>
-            <h3>Odontología General</h3>
-            {% include "templates/after_before/inc.odontologia.html" %}
-            <div class="clear"></div>
             <h3>Ortodoncia</h3>
             {% include "templates/after_before/inc.ortodoncia.html" %}
             <div class="clear"></div>
@@ -38,6 +35,11 @@
             {% include "templates/after_before/inc.protesis.html" %}
             <div class="clear"></div>
             <h3>Estética y blanqueamiento dental</h3>
+            <div class="wrapper indent-bot2 afterAndBefore">
+                <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/estetica_despues_1.jpg" alt="Caso real odontología conservadora" title="Caso real odontología conservadora" class="after" />
+                    <span class="afterBeforeText">Después</span>
+                </figure>
+            </div>
             {% include "templates/after_before/inc.estetica.html" %}
             <div class="clear"></div>
         </div>
@@ -48,13 +50,24 @@
 
 {% block footergallery %}
     <figure>
+        <a href="{{ STATIC_URL }}images/ortodoncia_caso_antes3.jpg" rel="shadowbox[antes_y_despues]" title="Ortodoncia caso real (antes)">
+            <img src="{{ STATIC_URL }}images/ortodoncia_caso_antes3.min.jpg" alt="Ortodoncia caso real (antes)" title="Ortodoncia caso real (antes)" />
+        </a>
+    </figure>
+    <figure>
         <a href="{{ STATIC_URL }}images/ortodoncia_caso_antes1.jpg" rel="shadowbox[antes_y_despues]" title="Ortodoncia caso real (antes)">
             <img src="{{ STATIC_URL }}images/ortodoncia_caso_antes1.min.jpg" alt="Ortodoncia caso real (antes)" title="Ortodoncia caso real (antes)" />
         </a>
     </figure>
     <figure>
-        <a href="{{ STATIC_URL }}images/ortodoncia_caso_antes3.jpg" rel="shadowbox[antes_y_despues]" title="Ortodoncia caso real (antes)">
-            <img src="{{ STATIC_URL }}images/ortodoncia_caso_antes3.min.jpg" alt="Ortodoncia caso real (antes)" title="Ortodoncia caso real (antes)" />
+        <a href="{{ STATIC_URL }}images/ortodoncia_caso_antes2.jpg" rel="shadowbox[antes_y_despues]" title="Ortodoncia caso real (antes)">
+            <img src="{{ STATIC_URL }}images/ortodoncia_caso_antes2.min.jpg" alt="Ortodoncia caso real (antes)" title="Ortodoncia caso real (antes)" />
+        </a>
+    </figure>
+    <div class="clear"></div>
+    <figure>
+        <a href="{{ STATIC_URL }}images/ortodoncia_caso_despues2.jpg" rel="shadowbox[antes_y_despues]" title="Ortodoncia caso real (después)">
+            <img src="{{ STATIC_URL }}images/ortodoncia_caso_despues2.min.jpg" alt="Ortodoncia caso real (después)" title="Ortodoncia caso real (después)" />
         </a>
     </figure>
     <figure>
@@ -63,8 +76,8 @@
         </a>
     </figure>
     <figure>
-        <a href="{{ STATIC_URL }}images/ortodoncia_caso_despues2.jpg" rel="shadowbox[antes_y_despues]" title="Ortodoncia caso real (después)">
-            <img src="{{ STATIC_URL }}images/ortodoncia_caso_despues2.min.jpg" alt="Ortodoncia caso real (después)" title="Ortodoncia caso real (después)" />
+        <a href="{{ STATIC_URL }}images/ortodoncia_caso_despues3.jpg" rel="shadowbox[antes_y_despues]" title="Ortodoncia caso real (después)">
+            <img src="{{ STATIC_URL }}images/ortodoncia_caso_despues3.min.jpg" alt="Ortodoncia caso real (después)" title="Ortodoncia caso real (después)" />
         </a>
     </figure>
 {% endblock %}
