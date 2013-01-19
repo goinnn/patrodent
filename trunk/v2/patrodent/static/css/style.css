@@ -293,14 +293,14 @@ ul.menu li li:hover li ul, ul.menu li li.sfHover li ul {
 #page4 .content-inner {padding-top:29px;}
 #page5 .content-inner, #page6 .content-inner {padding-bottom:85px;}
 
-h3 {
+h4 {
 	font-size:24px; 
 	line-height:1.208em; 
 	color:#657181;
 	font-weight:normal;
 	letter-spacing:-1px;
 }
-h3 span {
+h4 span {
 	display:block;
 	margin-top:-3px;
 }
@@ -326,7 +326,7 @@ h5 {
 	text-transform:uppercase;
 	font-weight:normal;
 }
-h6 {
+h3 {
 	font-size:48px; 
 	line-height:1.208em; 
 	color:#32ac9c;
