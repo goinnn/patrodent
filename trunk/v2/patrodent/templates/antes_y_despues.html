@@ -1,5 +1,8 @@
 {% extends "templates/base.html" %}
 
+{% block metadescription %}Casos reales de nuestros pacientes (antes y después){% endblock %}
+
+
 {% block js %}
     {{ block.super }}
     <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.swap-images.js"></script>
@@ -24,7 +27,7 @@
                 Creemos que la mejor manera de que creas en nosotros es enseñandote lo que hemos hecho por otros pacientes.
                 Aqui puedes ver una recopilación de estos casos.
             </p>
-            <p> Pasa el ratón por encima de las imágenes para ver el antes</p>
+            <p> <strong>Pasa el ratón por encima de las imágenes para ver el antes</strong></p>
             <h4>Ortodoncia</h4>
             {% include "templates/after_before/inc.ortodoncia.html" %}
             <div class="clear"></div>
