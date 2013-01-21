@@ -2,7 +2,7 @@
 
 {% block class-servicios-link %}class="active"{% endblock %}
 
-{% block js %}
+{% block footerjs %}
     {{ block.super }}
     {% block js-after-before %}
         <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.swap-images.js"></script>
@@ -11,7 +11,7 @@
                 $(document).ready(function () {
                     setTimeout(function() {
                         $(".after").swapImages({before: "antes", after: "despues"});
-                    }, 500);
+                    }, 1000);
                 });
             })(jQuery);
         </script>
