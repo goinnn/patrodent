@@ -2,8 +2,7 @@
 
 {% block metadescription %}Casos reales de nuestros pacientes (antes y después){% endblock %}
 
-
-{% block js %}
+{% block footerjs %}
     {{ block.super }}
     <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.swap-images.js"></script>
     <script type="text/javascript">
@@ -11,7 +10,7 @@
             $(document).ready(function () {
                 setTimeout(function() {
                     $(".after").swapImages({before: "antes", after: "despues"});
-                }, 500);
+                }, 1000);
             });
           })(jQuery);
     </script>
