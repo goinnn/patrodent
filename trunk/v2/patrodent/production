@@ -1,3 +1,5 @@
+== Conseguir Web estática ==
+
 cd /tmp
 mkdir patrodent
 cd patrodent/
@@ -7,6 +9,8 @@ rpl "/static/" "static/" *.html
 rpl "”" "\"" *.html
 rpl "“" "\"" *.html
 
+
+== Convertir formato iso-8859-1 ==
 
 iconv -t iso-8859-1 -f utf8 index.html > index.html.tmp; mv index.html.tmp index.html
 iconv -t iso-8859-1 -f utf8 atm.html > atm.html.tmp; mv atm.html.tmp atm.html
@@ -26,8 +30,18 @@ iconv -t iso-8859-1 -f utf8 protesis.html > protesis.html.tmp; mv protesis.html.
 iconv -t iso-8859-1 -f utf8 radiologia.html > radiologia.html.tmp; mv radiologia.html.tmp radiologia.html
 rpl "charset=\"utf-8\"" "charset=\"iso-8859-1\"" -R .
 
+== Subida ftp ==
+
 gftp
     ftp  ftp.patrodent.com
     Usuario:              patrodent
-    Pass:                 ***
+    Contraseña:                 ***
 
+
+cd /home/pmartin/ftp_proyectos/patrodent/v2/patrodent/static/images
+ftp ftp.patrodent.com
+    Usuario:                    patrodent
+    Contraseña:                 ***
+cd httpdocs
+cd static
+cd images
