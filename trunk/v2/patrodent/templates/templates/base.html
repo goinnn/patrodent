@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+{% block head %}
     <title>{% block title %}{% endblock %}Clínica Dental Patrodent</title>
     <meta charset="utf-8">
     <link type="image/gif" href="{{ STATIC_URL }}images/favicon.ico" rel="shortcut icon" />
     <meta name="Keywords" content="{% block keywords %}Dentistas en Sevilla, Dentistas, Sevilla, Odontologos Sevilla, Odontologos, Dentistas plaza de armas, Denstistas centro de Sevilla, Clinica Dental Sevilla, Clinica Dental, Ortodoncia Sevilla, Ortodoncia, Odontología Sevilla, Odontologia, ATM, Periodoncia, ATM Sevilla, Periodoncia Sevilla, plaza de armas{% endblock %}">
     <meta name="Description" content="{% block metadescription %}Clínica Dental Patrocinio Gómez Martínez C/ Marques de Paradas nº 22 1 º dcha Sevilla (junto a plaza de armas){% endblock %}">
    {% block css %}
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/reset.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/grid.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/animate-flip.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/shadowbox.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/grid.css" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/animate-flip.css" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/shadowbox.css" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/superfish.css" media="all">
    {% endblock %}
    {% block js %}
-    <script src="{{ STATIC_URL }}js/jquery-1.6.3.min.js" type="text/javascript"></script>
-    <script src="{{ STATIC_URL }}js/jquery.hoverIntent.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}js/hoverIntent.js" type="text/javascript"></script>
     <script src="{{ STATIC_URL }}js/cufon-yui.js" type="text/javascript"></script>
     <script src="{{ STATIC_URL }}js/cufon-replace.js" type="text/javascript"></script> 
     <script src="{{ STATIC_URL }}js/superfish.js" type="text/javascript"></script>
@@ -70,6 +72,7 @@
    {% endblock %}
    {% block extrahead %}
    {% endblock %}
+{% endblock %}
 </head>
 <body id="page2">
     <!--==============================header=================================-->
@@ -90,31 +93,33 @@
                         </div>
                         <div class="clear"></div>
                         <nav>
-                            <ul class="menu">
-                                <li>
-                                    <a href="{% url template_view "index" %}" {% block class-patrodent-link %}{% endblock %}>Patrodent</a>
-                                    <ul>
-                                        <li><a href="{% url template_view "quienes_somos" %}">Quienes somos</a></li>
-                                        <li><a href="{% url template_view "quien_soy" %}">Quien Soy</a></li>
-                                        <li><a href="{% url template_view "instalaciones" %}">Instalaciones</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="{% url template_view "servicios" %}" {% block class-servicios-link %}{% endblock %}>Servicios</a>
-                                    <ul style="width:250px">
-                                        {% include "templates/inc.servicios.html" %}
-                                    </ul>
-                                </li>
-                                <li><a href="{% url template_view "antes_y_despues" %}" {% block class-antes-despues-link %}{% endblock %}>Antes y despues</a></li>
-                                <li>
-                                    <a href="{% url template_view "contacto" %}" {% block class-contacto-link %}{% endblock %}>Contacto</a>
-                                    <ul>
-                                        <li>
-                                            <a href="http://es-es.facebook.com/patrodent.patrodent" target="_blank">Facebook</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            {% block nav %}
+                                <ul class="menu">
+                                    <li>
+                                        <a href="{% url template_view "index" %}" class="{% block class-patrodent-link %}{% endblock %}">Patrodent</a>
+                                        <ul>
+                                            <li><a href="{% url template_view "quienes_somos" %}">Quienes somos</a></li>
+                                            <li><a href="{% url template_view "quien_soy" %}">Quien Soy</a></li>
+                                            <li><a href="{% url template_view "instalaciones" %}">Instalaciones</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="{% url template_view "servicios" %}" class="{% block class-servicios-link %}{% endblock %}">Servicios</a>
+                                        <ul style="width:250px">
+                                            {% include "templates/inc.servicios.html" %}
+                                        </ul>
+                                    </li>
+                                    <li><a href="{% url template_view "antes_y_despues" %}" {% block class-antes-despues-link %}{% endblock %}>Antes y despues</a></li>
+                                    <li>
+                                        <a href="{% url template_view "contacto" %}" class="{% block class-contacto-link %}{% endblock %}">Contacto</a>
+                                        <ul>
+                                            <li>
+                                                <a href="http://es-es.facebook.com/patrodent.patrodent" target="_blank">Facebook</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            {% endblock %}
                         </nav>
                     </div>
                     <div class="clear"></div>
