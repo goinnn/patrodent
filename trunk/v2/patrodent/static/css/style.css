@@ -748,3 +748,28 @@ ul.curriculum li {
     width: 250px;
     height: 156px;
 }
+
+/* ShadowBox */
+
+#sb-info, #sb-info-inner {
+    height: 70px;
+}
+
+#sb-nav {
+    height: 64px;
+}
+
+#sb-nav a {
+    height: 64px;
+    width: 64px;
+}
+
+#sb-counter {
+    font-size: 24px;
+}
+
+#sb-nav #sb-nav-close,
+#sb-nav #sb-nav-next {
+    margin-left: 40px;
+}
+
