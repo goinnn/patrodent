@@ -38,10 +38,27 @@ gftp
     Contraseña:                 ***
 
 
-cd /home/pmartin/ftp_proyectos/patrodent/v2/patrodent/static/images
+cd /tmp/patrodent/localhost:8000
 ftp ftp.patrodent.com
     Usuario:                    patrodent
     Contraseña:                 ***
 cd httpdocs
+mput *.html
+mput *.xml
 cd static
-cd images
+cd js
+/home/pmartin/ftp_proyectos/patrodent/v2/patrodent/static/js
+mput *.js
+lcd ../css/
+mput *.css
+lcd ../files/
+mput *.*
+lcd ../images/
+image
+mput *.*
+
+
+Para subir todos los archivos de un directorio:
+    mput *.*
+Si es una imagen hay que pasar a imagen antes:
+    image
