@@ -57,8 +57,25 @@ lcd ../images/
 image
 mput *.*
 
+Si falla ftp, podemos utilizar otro cliente:
+     yafc ftp://patrodent@patrodent.com
+     cd httpdocs
+     put *.html
+     mput *.xml
+     cd static
+     cd js
+     /home/pmartin/ftp_proyectos/patrodent/v2/patrodent/static/js
+     put *.js
+     lcd ../css/
+     put *.css
+     lcd ../files/
+     put *.*
+     lcd ../images/
+     put *.*
+
+
 
 Para subir todos los archivos de un directorio:
-    mput *.*
+    mput *.* o put *.* en yafc
 Si es una imagen hay que pasar a imagen antes:
-    image
+    image (solo con ftp)
