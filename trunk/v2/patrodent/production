@@ -61,7 +61,7 @@ Si falla ftp, podemos utilizar otro cliente:
      yafc ftp://patrodent@patrodent.com
      cd httpdocs
      put *.html
-     mput *.xml
+     put *.xml
      cd static
      cd js
      /home/pmartin/ftp_proyectos/patrodent/v2/patrodent/static/js
