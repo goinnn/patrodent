@@ -4,19 +4,7 @@
 
 {% block metadescription %}Casos reales de nuestros pacientes (antes y después){% endblock %}
 
-{% block footerjs %}
-    {{ block.super }}
-    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.swap-images.js"></script>
-    <script type="text/javascript">
-        (function($){
-            $(document).ready(function () {
-                setTimeout(function() {
-                    $(".after").swapImages({before: "antes", after: "despues"});
-                }, 1000);
-            });
-          })(jQuery);
-    </script>
-{% endblock %}
+{% block pageclass %}beforeAfter{% endblock %}
 
 {% block class-antes-despues-link %} active{% endblock %}
 
@@ -89,4 +77,19 @@
             <img src="{{ STATIC_URL }}images/ortodoncia_caso_despues3.min.jpg" alt="Ortodoncia caso real (después)" title="Ortodoncia caso real (después)" />
         </a>
     </figure>
+{% endblock %}
+
+
+{% block footerjs %}
+    {{ block.super }}
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.swap-images.js"></script>
+    <script type="text/javascript">
+        (function($){
+            $(document).ready(function () {
+                setTimeout(function() {
+                    $(".after").swapImages({before: "antes", after: "despues"});
+                }, 1000);
+            });
+          })(jQuery);
+    </script>
 {% endblock %}
