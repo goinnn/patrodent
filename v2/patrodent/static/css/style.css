@@ -227,15 +227,15 @@ ul.menu li li:hover li ul, ul.menu li li.sfHover li ul {
 
 /*********************************slider*************************************/
 .slider-wrapper {
-	height:372px;
-	width:490px;
-	position:relative;
-	z-index:1;
-	border:1px solid #e0e0e0;
-	border-radius:10px;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	padding:14px 14px 14px 16px;
+    height:372px;
+    width:490px;
+    position:relative;
+    z-index:1;
+    border:1px solid #e0e0e0;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    padding:14px 14px 14px 16px;
 }
 
 .items {
@@ -952,6 +952,10 @@ nav a#pull {
     .contact section .container_24 .wrapper  .border-1 {
         border: none;
     }
+    .slider-wrapper {
+        height: 397px;
+        width: 524px;
+    }
 }
 
 @media only screen and (max-width : 843px) {
@@ -1038,12 +1042,30 @@ nav a#pull {
     section .container_24 .wrapper .grid_7 .wrapper.indent-bot2 .img-indent {
         margin: 0 10px 0 0;
     }
-    .index .slider-wrapper {
-        display: none;
-        visibility: hidden;
+    .index .slider-container {
+        z-index:1;
+        border:1px solid #e0e0e0;
+        border-radius:10px;
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
+        padding:14px 14px 14px 16px;
+        width: 500;
+        height: 380px;
     }
 }
-@media only screen and (max-width : 595px) {
+
+@media only screen and (max-width : 580px) {
+    header .slogon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .index section .container_24 .wrapper .list-1.p3 li {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 560px) {
     header {
         zoom: 0.6;
         margin-top: 4.2em;
@@ -1054,12 +1076,28 @@ nav a#pull {
     h3 {
         font-size: 40px;
     }
+    .index .slider-wrapper {
+        zoom: 0.8;
+    }
 }
 
-@media only screen and (max-width : 365px) {
-
+@media only screen and (max-width : 560px) {
+    .index .slider-wrapper {
+        zoom: 0.7;
+    }
 }
 
+@media only screen and (max-width : 400px) {
+    .index .slider-wrapper {
+        zoom: 0.6;
+    }
+}
+
+@media only screen and (max-width : 350px) {
+    .index .slider-wrapper {
+        zoom: 0.5;
+    }
+}
 @media only screen and (max-width : 320px) {
     nav.responsiveNav li {
         display: block;
@@ -1068,5 +1106,11 @@ nav a#pull {
     }
     nav.responsiveNav li a {
         border-bottom: 1px solid #576979;
+    }
+}
+
+@media only screen and (max-width : 300px) {
+    .index .slider-wrapper {
+        zoom: 0.4;
     }
 }
