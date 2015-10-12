@@ -504,27 +504,41 @@ blockquote a{
 	
 }
 .important-block .border {
-	background:url(../images/border-1.png) right 0 repeat-y;
-	margin-right:14px;
-	padding-right:21px;
+    background:url(../images/border-1.png) right 0 repeat-y;
+    margin-right:14px;
+    padding-right:21px;
 }
 
 .important-block ul li {
-	padding-bottom:6px;
+    padding-bottom:6px;
 }
 .important-block ul li.last {padding-bottom:0;}
-	.important-block ul li a {
-		background:url(../images/marker-3.png) 0 3px no-repeat;
-		display:inline-block;
-		color:#fff;
-		padding-left:25px;
-        font-weight: bold;
-	}
-        .important-block ul li a.active,
-		.important-block ul li a:hover {
-			color: #5F5F5F;
-			background-position:0 bottom;
-		}
+
+.important-block ul li a {
+    position: relative;
+    display:inline-block;
+    color:#fff;
+    padding-left:25px;
+    font-weight: bold;
+    background-image: none;
+}
+.important-block ul li a i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background:url(../images/marker-3.png) 0 3px no-repeat;
+}
+.important-block ul li a.active i,
+.important-block ul li a:hover i {
+    background-position:0 -22px;
+}
+.important-block ul li a.active,
+.important-block ul li a:hover {
+    color: #5F5F5F;
+}
 
 .date-style {
 	font-weight:bold;
@@ -952,6 +966,7 @@ form.form .labelinfo {
     .contact section .container_24 .wrapper .img-style {
         width: 98%;
         padding: 0.3em;
+        box-sizing: border-box;
         margin-bottom: 1em;
     }
     .contact section .container_24 .wrapper .img-style #map_canvas {
@@ -1000,6 +1015,7 @@ form.form .labelinfo {
     .Place section .container_24 .grid_9,
     .who section .container_24 .grid_9 {
         padding-left: 20px;
+        padding-right: 20px;
         width: 100%;
         text-align: center;
     }
@@ -1036,6 +1052,32 @@ form.form .labelinfo {
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .imgswrapper .wrapper {
+        width: auto;
+        display: inline-block;
+    }
+    .imgswrapper {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .imgswrapper div figure div {
+        position: relative;
+    }
+    .imgswrapper div figure div img {
+        left: 0;
+    }
+    .imgswrapper .img-style {
+        float: none;
+        display: inline-block;
+    }
+    .afterAndBeforePage .imgswrapper .afterAndBefore {
+        float: none;
+        display: inline-block;
+    }
+    .beforeAfter .content-inner {
+        padding: 1em;
     }
 }
 @media only screen and (max-width : 610px) {
@@ -1075,31 +1117,6 @@ form.form .labelinfo {
     }
 }
 
-@media only screen and (max-width : 575px) {
-    .imgswrapper {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-    .imgswrapper div figure div {
-        position: relative;
-    }
-    .imgswrapper div figure div img {
-        left: 0;
-    }
-    .imgswrapper .img-style {
-        float: none;
-        display: inline-block;
-    }
-    .afterAndBeforePage .imgswrapper .afterAndBefore {
-        float: none;
-        display: inline-block;
-    }
-    .beforeAfter .content-inner {
-        padding: 1em;
-    }
-}
-
 @media only screen and (max-width : 560px) {
     header {
         zoom: 0.6;
@@ -1113,6 +1130,10 @@ form.form .labelinfo {
     }
     .index .slider-wrapper {
         zoom: 0.8;
+    }
+    img,
+    iframe {
+        max-width: 100%;
     }
 }
 
@@ -1141,7 +1162,6 @@ form.form .labelinfo {
     .index .slider-wrapper {
         zoom: 0.6;
     }
-
 }
 
 @media only screen and (max-width : 350px) {
@@ -1154,9 +1174,6 @@ form.form .labelinfo {
         display: block;
         float: none;
         width: 100%;
-    }
-    nav.responsiveNav li a {
-        border-bottom: 1px solid #576979;
     }
 }
 
