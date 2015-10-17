@@ -47,8 +47,10 @@ mput *.html
 mput *.xml
 cd static
 cd js
-/home/pmartin/ftp_proyectos/patrodent/v2/patrodent/static/js
+lcd static
+lcd js
 mput *.js
+cd ../css/
 lcd ../css/
 mput *.css
 lcd ../files/
@@ -64,8 +66,10 @@ Si falla ftp, podemos utilizar otro cliente:
      put *.xml
      cd static
      cd js
-     /home/pmartin/ftp_proyectos/patrodent/v2/patrodent/static/js
+     lcd static
+     lcd js
      put *.js
+     cd ../css/
      lcd ../css/
      put *.css
      lcd ../files/
