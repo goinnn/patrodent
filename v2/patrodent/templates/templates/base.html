@@ -66,12 +66,15 @@
             });
             $(function() {
                 var pull        = $('#pull');
-                    menu        = $('nav ul');
+                    menu        = $('nav.responsiveNav ul');
                     menuHeight  = menu.height();
             
                 $(pull).on('click', function(e) {
                     e.preventDefault();
                     menu.slideToggle();
+                });
+                $(window).resize(function () {
+                    $('ul.menu li').superfish("hide");
                 });
             });
           })(jQuery);
@@ -119,7 +122,7 @@
                     {% include "templates/inc.servicios.html" %}
                 </ul>
             </li>
-            <li class="beforeAfter"><a href="{% url template_view "antes_y_despues" %}" {% block class-antes-despues-link2 %}{% endblock %}>Antes y despues</a></li>
+            <li class="beforeAfter"><a href="{% url template_view "antes_y_despues" %}" class="{% block class-antes-despues-link2 %}{% endblock %}">Antes y despues</a></li>
             <li class="contact">
                 <a href="{% url template_view "contacto" %}" class="{% block class-contacto-link2 %}{% endblock %}">Contacto</a>
                 <ul>
@@ -163,7 +166,7 @@
                                             {% include "templates/inc.servicios.html" %}
                                         </ul>
                                     </li>
-                                    <li><a href="{% url template_view "antes_y_despues" %}" {% block class-antes-despues-link %}{% endblock %}>Antes y despues</a></li>
+                                    <li><a href="{% url template_view "antes_y_despues" %}" class="{% block class-antes-despues-link %}{% endblock %}">Antes y despues</a></li>
                                     <li>
                                         <a href="{% url template_view "contacto" %}" class="{% block class-contacto-link %}{% endblock %}">Contacto</a>
                                         <ul>
@@ -173,7 +176,6 @@
                                         </ul>
                                     </li>
                                 </ul>
-                                <a href="#" id="pull">Menu</a>
                             {% endblock %}
                         </nav>
                     </div>
