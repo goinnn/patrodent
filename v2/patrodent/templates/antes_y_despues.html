@@ -4,19 +4,7 @@
 
 {% block metadescription %}Casos reales de nuestros pacientes (antes y después){% endblock %}
 
-{% block footerjs %}
-    {{ block.super }}
-    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.swap-images.js"></script>
-    <script type="text/javascript">
-        (function($){
-            $(document).ready(function () {
-                setTimeout(function() {
-                    $(".after").swapImages({before: "antes", after: "despues"});
-                }, 1000);
-            });
-          })(jQuery);
-    </script>
-{% endblock %}
+{% block pageclass %}beforeAfter{% endblock %}
 
 {% block class-antes-despues-link %} active{% endblock %}
 
@@ -30,26 +18,36 @@
             </p>
             <p> <strong>Pasa el ratón por encima de las imágenes (o tocalas desde un movil o una tablet) para ver el antes</strong></p>
             <h4>Ortodoncia</h4>
+            <div class="imgswrapper">
             {% include "templates/after_before/inc.ortodoncia.html" %}
+            </div>
             <div class="clear"></div>
             <h4>Periodoncia</h4>
+            <div class="imgswrapper">
             {% include "templates/after_before/inc.periodoncia.html" %}
+            </div>
             <div class="clear"></div>
             <h4>Prótesis</h4>
+            <div class="imgswrapper">
             {% include "templates/after_before/inc.protesis.html" %}
             <div class="wrapper indent-bot2 afterAndBefore">
                 <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/protesis_despues_3.jpg" alt="Caso real protesis" title="Caso real protesis" class="after" />
                     <span class="afterBeforeText">Después</span>
                 </figure>
             </div>
+            </div>
             <div class="clear"></div>
             <h4>Estética y blanqueamiento dental</h4>
+            <div class="imgswrapper">
             <div class="wrapper indent-bot2 afterAndBefore">
                 <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/estetica_despues_4.jpg" alt="Caso real odontología conservadora" title="Caso real odontología conservadora" class="after" />
                     <span class="afterBeforeText">Después</span>
                 </figure>
             </div>
+            </div>
+            <div class="imgswrapper">
             {% include "templates/after_before/inc.estetica.html" %}
+            </div>
             <div class="clear"></div>
         </div>
     </div>
@@ -89,4 +87,19 @@
             <img src="{{ STATIC_URL }}images/ortodoncia_caso_despues3.min.jpg" alt="Ortodoncia caso real (después)" title="Ortodoncia caso real (después)" />
         </a>
     </figure>
+{% endblock %}
+
+
+{% block footerjs %}
+    {{ block.super }}
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.swap-images.js"></script>
+    <script type="text/javascript">
+        (function($){
+            $(document).ready(function () {
+                setTimeout(function() {
+                    $(".after").swapImages({before: "antes", after: "despues"});
+                }, 1000);
+            });
+          })(jQuery);
+    </script>
 {% endblock %}

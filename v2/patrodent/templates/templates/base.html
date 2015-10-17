@@ -4,6 +4,7 @@
 {% block head %}
     <title>{% block title %}{% endblock %}Clínica Dental Patrodent</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link type="image/gif" href="{{ STATIC_URL }}images/favicon.ico" rel="shortcut icon" />
     <meta name="Keywords" content="{% block keywords %}Dentistas en Sevilla, Dentistas, Sevilla, Odontologos Sevilla, Odontologos, Dentistas plaza de armas, Denstistas centro de Sevilla, Clinica Dental Sevilla, Clinica Dental, Ortodoncia Sevilla, Ortodoncia, Odontología Sevilla, Odontologia, ATM, Periodoncia, ATM Sevilla, Periodoncia Sevilla, plaza de armas{% endblock %}">
     <meta name="Description" content="{% block metadescription %}Clínica Dental Patrocinio Gómez Martínez C/ Marques de Paradas nº 22 1 º dcha Sevilla (junto a plaza de armas){% endblock %}">
@@ -63,6 +64,16 @@
                                     $("iframe").css("visibility", "visible");
                                 }});
             });
+            $(function() {
+                var pull        = $('#pull');
+                    menu        = $('nav ul');
+                    menuHeight  = menu.height();
+            
+                $(pull).on('click', function(e) {
+                    e.preventDefault();
+                    menu.slideToggle();
+                });
+            });
           })(jQuery);
     </script>
    {% endblock %}
@@ -88,12 +99,41 @@
    {% endblock %}
 {% endblock %}
 </head>
-<body id="page2">
+<body id="page2" class="{% block pageclass %}{% endblock %}">
     <!--==============================header=================================-->
    {% block header %}
+   <nav class="responsiveNav">
+        <a href="#" id="pull">Menu</a>
+        <ul class="responsiveNav">
+            <li class="index">
+                <a href="{% url template_view "index" %}" class="{% block class-patrodent-link2 %}{% endblock %}">Patrodent</a>
+                <ul>
+                    <li class="whoWeAre"><a href="{% url template_view "quienes_somos" %}">Quienes somos</a></li>
+                    <li class="who"><a href="{% url template_view "quien_soy" %}">Quien Soy</a></li>
+                    <li class="Place"><a href="{% url template_view "instalaciones" %}">Instalaciones</a></li>
+                </ul>
+            </li>
+            <li class="services">
+                <a href="{% url template_view "servicios" %}" class="{% block class-servicios-link2 %}{% endblock %}">Servicios</a>
+                <ul>
+                    {% include "templates/inc.servicios.html" %}
+                </ul>
+            </li>
+            <li class="beforeAfter"><a href="{% url template_view "antes_y_despues" %}" {% block class-antes-despues-link2 %}{% endblock %}>Antes y despues</a></li>
+            <li class="contact">
+                <a href="{% url template_view "contacto" %}" class="{% block class-contacto-link2 %}{% endblock %}">Contacto</a>
+                <ul>
+                    <li>
+                        <a href="http://es-es.facebook.com/patrodent.patrodent" target="_blank">Facebook</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
     <header>
         <div class="main">
             <div class="container_24">
+                
                 <div class="grid_24">
                     <h1 class="sign">
                         <a href="index.html">
@@ -106,7 +146,7 @@
                             Estamos disponibles de 9 a 21 horas
                         </div>
                         <div class="clear"></div>
-                        <nav>
+                        <nav class="navigation">
                             {% block nav %}
                                 <ul class="menu">
                                     <li>
@@ -133,6 +173,7 @@
                                         </ul>
                                     </li>
                                 </ul>
+                                <a href="#" id="pull">Menu</a>
                             {% endblock %}
                         </nav>
                     </div>

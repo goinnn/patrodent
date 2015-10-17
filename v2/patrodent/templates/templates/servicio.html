@@ -25,7 +25,7 @@
                 <div class="wrapper">
                     <div class="alpha grid_23">
                         <div class="indent-l">
-                            <div class="border">
+                            <div>
                                 <div class="title"><a href="{% url template_view "servicios" %}">Servicios</a></div>
                                 <ul class="list-1 columns3">
                                     {% include "templates/inc.servicios.html" %}
@@ -50,25 +50,27 @@
                 <h4 class="margin-bot">Antes y después</h4>
                 <p> Pasa el <strong>ratón</strong> por encima de las imágenes (o tocalas desde tu movil o tablet) para ver el antes (casos reales)</p>
             {% endblock %}
-            {% block before-after %}
-            <div class="wrapper indent-bot2">
-                <figure class="img-style img-indent">
-                    <img src="{{ STATIC_URL }}images/limpieza_despues.jpg" class="after" />
-                    <span class="afterBeforeText">Después</span>
-                </figure>
-                <figure class="img-style"><img src="{{ STATIC_URL }}images/periodoncia_despues2.jpg" alt="" class="after" />
-                    <span class="afterBeforeText">Después</span>
-                </figure>
-            </div>
-            <div class="wrapper indent-bot2">
-                <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/limpieza_despues.jpg" alt="" class="after" />
-                    <span class="afterBeforeText">Después</span>
-                </figure>
-                <figure class="img-style"><img src="{{ STATIC_URL }}images/periodoncia_despues2.jpg" alt="" class="after" />
-                    <span class="afterBeforeText">Después</span>
-                </figure>
-            </div>
-           {% endblock %}
+            <div class="imgswrapper">
+                {% block before-after %}
+                    <div class="wrapper indent-bot2">
+                        <figure class="img-style img-indent">
+                            <img src="{{ STATIC_URL }}images/limpieza_despues.jpg" class="after" />
+                            <span class="afterBeforeText">Después</span>
+                        </figure>
+                        <figure class="img-style"><img src="{{ STATIC_URL }}images/periodoncia_despues2.jpg" alt="" class="after" />
+                            <span class="afterBeforeText">Después</span>
+                        </figure>
+                    </div>
+                    <div class="wrapper indent-bot2">
+                        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/limpieza_despues.jpg" alt="" class="after" />
+                            <span class="afterBeforeText">Después</span>
+                        </figure>
+                        <figure class="img-style"><img src="{{ STATIC_URL }}images/periodoncia_despues2.jpg" alt="" class="after" />
+                            <span class="afterBeforeText">Después</span>
+                        </figure>
+                    </div>
+                {% endblock %}
+           </div>
         </div>
         {% endblock %}
     </div>
