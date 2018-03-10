@@ -36,6 +36,8 @@
                             <li><img src="{{ STATIC_URL }}images/equipo_operando.jpg" alt=""></li>
                             <li><img src="{{ STATIC_URL }}images/sala_de_esperas.jpg" alt=""></li>
                             <li><img src="{{ STATIC_URL }}images/recepcion_con_personal.jpg" alt=""></li>
+                            <li><img src="{{ STATIC_URL }}images/conocenos.jpg" alt=""></li>
+                            <li><img src="{{ STATIC_URL }}images/conocenos2.jpg" alt=""></li>
                         </ul>
                         <ul class="pagination">
                             <li><a href="#"><span>1</span></a></li>
@@ -44,6 +46,8 @@
                             <li><a href="#"><span>4</span></a></li>
                             <li><a href="#"><span>5</span></a></li>
                             <li><a href="#"><span>6</span></a></li>
+                            <li><a href="#"><span>7</span></a></li>
+                            <li><a href="#"><span>8</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -56,9 +60,9 @@
             <p class="p3">Contamos con un sistema de financiación, que le será totalmente de su agrado. Dado el carácter particular de cada paciente no es posible dar un presupuesto estándar sin estudiar detenidamente el tratamiento individual de cada paciente. Por ello le invitamos a visitar nuestra clínica para concertar una cita o déjenos sus datos y nosotros le llamaremos.</p>
         </div>
         <div class="grid_6 grid_65 suffix_1">
-            <h4 class="p3"><a href="{% url template_view "servicios" %}">Nuestros Servicios</a></h4>
+            <h4 class="p3"><a href="{% url template_view "tratamientos" %}">Nuestros Tratamientos</a></h4>
             <ul class="list-1 p3">
-                {% include "templates/inc.servicios.html" %}
+                {% include "templates/inc.tratamientos.html" %}
             </ul>
         </div>
         <div class="grid_7 suffix_1 omega">
@@ -91,7 +95,7 @@
         </a>
     </figure>
     <figure>
-        <a href="http://www.youtube.com/v/5-JuMRmbmXo?autoplay=1" rel="shadowbox[index]" title="Instalaciones de Patrodent">
+        <a href="http://www.youtube.com/watch?v=5-JuMRmbmXo" target="_blank" title="Instalaciones de Patrodent">
             <img src="{{ STATIC_URL }}images/instalaciones.min.jpg" alt="Instalaciones de Patrodent" title="Instalaciones de Patrodent" />
         </a>
     </figure>

@@ -170,7 +170,7 @@ h1 a {
 .menu {
 	padding:0 18px 0;
 	float:right;
-    margin-top: -30px;
+    margin-top: -33px;
 }
 .menu li {
 	float:left; 
@@ -639,7 +639,7 @@ ul.default li {
 }
 
 .secondDoctor {
-    margin-top: 140px;
+    margin-top: 90px;
 }
 
 .map-margin {
@@ -1020,7 +1020,9 @@ form.form .labelinfo {
         height: 397px;
         width: 524px;
     }
-
+    .secondDoctor {
+        margin-top: 30px;
+    }
 }
 
 @media only screen and (max-width : 843px) {

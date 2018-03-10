@@ -116,7 +116,7 @@
                 <a href="{% url template_view "index" %}" class="{% block class-patrodent-link2 %}{% endblock %}">Clínica</a>
                 <ul>
                     <li class="whoWeAre"><a href="{% url template_view "quienes_somos" %}">Quienes somos</a></li>
-                    <li class="KnowUs"><a href="{% url template_view "conocenos" %}">Conocenos</a></li>
+                    <li class="KnowUs"><a href="{% url template_view "conocenos" %}">Conócenos</a></li>
                     <li class="Place"><a href="{% url template_view "instalaciones" %}">Instalaciones</a></li>
                 </ul>
             </li>
@@ -124,6 +124,12 @@
                 <a href="{% url template_view "servicios" %}" class="{% block class-servicios-link2 %}{% endblock %}">Servicios</a>
                 <ul>
                     {% include "templates/inc.servicios.html" %}
+                </ul>
+            </li>
+            <li class="treatments">
+                <a href="{% url template_view "tratamientos" %}" class="{% block class-tratamientos-link2 %}{% endblock %}">Tratamientos</a>
+                <ul>
+                    {% include "templates/inc.tratamientos.html" %}
                 </ul>
             </li>
             <li class="beforeAfter"><a href="{% url template_view "antes_y_despues" %}" class="{% block class-antes-despues-link2 %}{% endblock %}">Antes y despues</a></li>
@@ -177,7 +183,7 @@
                                     <li>
                                         <a href="{% url template_view "tratamientos" %}" class="{% block class-tratamientos-link %}{% endblock %}">Tratamientos</a>
                                         <ul style="width:250px">
-                                            {% include "templates/inc.servicios.html" %}
+                                            {% include "templates/inc.tratamientos.html" %}
                                         </ul>
                                     </li>
                                     <li><a href="{% url template_view "antes_y_despues" %}" class="{% block class-antes-despues-link %}{% endblock %}">Antes y despues</a></li>
