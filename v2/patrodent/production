@@ -28,6 +28,15 @@ iconv -t iso-8859-1 -f utf8 servicios.html > servicios.html.tmp; mv servicios.ht
 iconv -t iso-8859-1 -f utf8 antes_y_despues.html > antes_y_despues.html.tmp; mv antes_y_despues.html.tmp antes_y_despues.html
 iconv -t iso-8859-1 -f utf8 protesis.html > protesis.html.tmp; mv protesis.html.tmp protesis.html
 iconv -t iso-8859-1 -f utf8 radiologia.html > radiologia.html.tmp; mv radiologia.html.tmp radiologia.html
+iconv -t iso-8859-1 -f utf8 conocenos.html > conocenos.html.tmp; mv conocenos.html.tmp conocenos.html
+iconv -t iso-8859-1 -f utf8 endodoncia.html > endodoncia.html.tmp; mv endodoncia.html.tmp endodoncia.html
+iconv -t iso-8859-1 -f utf8 financiacion.html > financiacion.html.tmp; mv financiacion.html.tmp financiacion.html
+iconv -t iso-8859-1 -f utf8 software_ortodoncia.html > software_ortodoncia.html.tmp; mv software_ortodoncia.html.tmp software_ortodoncia.html
+iconv -t iso-8859-1 -f utf8 tratamientos.html > tratamientos.html.tmp; mv tratamientos.html.tmp tratamientos.html
+iconv -t iso-8859-1 -f utf8 software_diseno.html > software_diseno.html.tmp; mv software_diseno.html.tmp software_diseno.html
+iconv -t iso-8859-1 -f utf8 plan_salud.html > plan_salud.html.tmp; mv plan_salud.html.tmp plan_salud.html
+
+
 rpl "charset=\"utf-8\"" "charset=\"iso-8859-1\"" -R .
 
 == Subida ftp ==
