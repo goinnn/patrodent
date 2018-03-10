@@ -17,7 +17,6 @@ iconv -t iso-8859-1 -f utf8 atm.html > atm.html.tmp; mv atm.html.tmp atm.html
 iconv -t iso-8859-1 -f utf8 contacto.html > contacto.html.tmp; mv contacto.html.tmp contacto.html
 iconv -t iso-8859-1 -f utf8 odontologia.html > odontologia.html.tmp; mv odontologia.html.tmp odontologia.html
 iconv -t iso-8859-1 -f utf8 ortodoncia.html > ortodoncia.html.tmp; mv ortodoncia.html.tmp ortodoncia.html
-iconv -t iso-8859-1 -f utf8 quien_soy.html > quien_soy.html.tmp; mv quien_soy.html.tmp quien_soy.html
 iconv -t iso-8859-1 -f utf8 quienes_somos.html > quienes_somos.html.tmp; mv quienes_somos.html.tmp quienes_somos.html
 iconv -t iso-8859-1 -f utf8 estetica.html > estetica.html.tmp; mv estetica.html.tmp estetica.html
 iconv -t iso-8859-1 -f utf8 implantes.html > implantes.html.tmp; mv implantes.html.tmp implantes.html
@@ -81,8 +80,10 @@ Si falla ftp, podemos utilizar otro cliente:
      cd ../css/
      lcd ../css/
      put *.css
+     cd ../files/
      lcd ../files/
      put *.*
+     cd ../images/
      lcd ../images/
      put *.*
 
