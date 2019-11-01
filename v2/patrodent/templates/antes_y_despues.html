@@ -19,7 +19,9 @@
             <p> <strong>Pasa el ratón por encima de las imágenes (o tocalas desde un movil o una tablet) para ver el antes</strong></p>
             <h4>Ortodoncia</h4>
             <div class="imgswrapper">
-            {% include "templates/after_before/inc.ortodoncia.html" %}
+            {% with all=1 %}
+                {% include "templates/after_before/inc.ortodoncia.html" %}
+            {% endwith %}
             </div>
             <div class="clear"></div>
             <h4>Periodoncia</h4>
@@ -47,6 +49,13 @@
             </div>
             <div class="imgswrapper">
             {% include "templates/after_before/inc.estetica.html" %}
+            </div>
+            <div class="clear"></div>
+            <h4>Odontología general</h4>
+            <div class="imgswrapper">
+            {% with all=1 %}
+            {% include "templates/after_before/inc.odontologia.html" %}
+            {% endwith %}
             </div>
             <div class="clear"></div>
         </div>
