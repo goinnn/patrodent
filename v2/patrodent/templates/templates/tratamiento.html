@@ -1,6 +1,6 @@
 {% extends "templates/base.html" %}
 
-{% block class-servicios-link %} active{% endblock %}
+{% block class-tratamientos-link %} active{% endblock %}
 
 {% block footerjs %}
     {{ block.super }}
@@ -26,9 +26,9 @@
                     <div class="alpha grid_23">
                         <div class="indent-l">
                             <div>
-                                <div class="title"><a href="{% url template_view "servicios" %}">Servicios</a></div>
+                                <div class="title"><a href="{% url template_view "tratamientos" %}">Tratamientos</a></div>
                                 <ul class="list-1 columns3">
-                                    {% include "templates/inc.servicios.html" %}
+                                    {% include "templates/inc.tratamientos.html" %}
                                 </ul>
                             </div>
                         </div>
@@ -48,7 +48,7 @@
         <div class="grid_7 suffix_1 omega">
             {% block before-after-title %}
                 <h4 class="margin-bot">Antes y después</h4>
-                <p> Pasa el <strong>ratón</strong> por encima de las imágenes (o tocalas desde tu movil o tablet) para ver el antes (casos reales)</p>
+                <p> Pasa el <strong>ratón</strong> por encima de las imágenes (o tócalas) para ver el antes (casos reales)</p>
             {% endblock %}
             <div class="imgswrapper">
                 {% block before-after %}

@@ -1,0 +1,91 @@
+{% extends "templates/base.html" %}
+
+{% block metadescription %}¿Quienes son las doctoras de la clínica? ¿Cómo se ha formado?{% endblock %}
+
+{% block class-patrodent-link %} active{% endblock %}
+
+{% block title %}Conócenos - {% endblock %}
+
+{% block pageclass %}who{% endblock %}
+
+{% block footergallery %}
+    <figure>
+        <a href="https://www.youtube.com/watch?v=gt4ECC3SROg"  title="Títulos de Patrocinio Gómez" target="_blank">
+            <img src="{{ STATIC_URL }}images/titulos.min.jpg" alt="Títulos de Patrocinio Gómez" title="Títulos de Patrocinio Gómez" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{{ STATIC_URL }}images/patrocinio_despacho.jpg" rel="shadowbox[quienSoy]" title="Patrocinio en el despacho">
+            <img src="{{ STATIC_URL }}images/patrocinio_despacho.min.jpg" alt="Patrocinio en el despacho" title="Patrocinio en el despacho" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{{ STATIC_URL }}images/figurita.jpg" rel="shadowbox[quienSoy]" title="Figurita mujer estudiando">
+            <img src="{{ STATIC_URL }}images/figurita.min.jpg" alt="Patrocinio trabajando" title="Figurita mujer estudiando" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{{ STATIC_URL }}images/patrocinio_operando2.jpg" rel="shadowbox[quienSoy]" title="Patrocinio operando">
+            <img src="{{ STATIC_URL }}images/patrocinio_operando2.min.jpg" alt="Patrocinio operando" title="Patrocinio operando" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{{ STATIC_URL }}images/patrocinio_trabajando.jpg" rel="shadowbox[quienSoy]" title="Patrocinio trabajando">
+            <img src="{{ STATIC_URL }}images/patrocinio_trabajando.min.jpg" alt="Patrocinio trabajando" title="Patrocinio trabajando" />
+        </a>
+    </figure>
+{% endblock %}
+
+
+{% block content %}
+    <div class="wrapper">
+        <div class="alpha prefix_1 grid_9">
+            <div class="border-1">
+                <figure class="img-style indent-bot2"><img src="{{ STATIC_URL }}images/patrocinio4.jpg" alt="" /></figure>
+                <div class="clear"></div>
+                <div class="wrapper indent-bot2">
+                    <figure class="img-style img-indent">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/j-zu4kHMklw?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                        <span class="afterBeforeText">Valores</span>
+                    </figure>
+                </div>
+                <figure class="img-style indent-bot2"><img src="{{ STATIC_URL }}images/angela-conocenos2.jpg" alt="" /></figure>
+                <div class="wrapper indent-bot2">
+                    <figure class="img-style img-indent">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/DaudboD7-bw?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                        <span class="afterBeforeText">Vocación</span>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="grid_13 suffix_1 omega">
+            <h2 class="p3">Dra. Patrocinio Gómez Martínez</h2>
+            <p>
+                Médico - Estomatólogo especializada en Ortodoncia de niños y  adultos. En la actualidad, dirige la Clínica Dental PATRODENT de Sevilla junto con la Dra. Ángela Martín Gómez.
+            </p>
+            <p>
+                Formada en España y Francia, la Dra. Patrocinio ha compaginado su carrera médica con la participación en distintos y diversos cursos, conferencias y jornadas científicas centradas en la odontología y la ortodoncia. 
+            </p>
+            <ul class="default">
+                <li>Licenciada por la Universidad de Sevilla en Medicina y Cirugía General (1974 - 1980)</li>
+                <li>Especialista en Estomatología por la Escuela de Estomatología de la Universidad de Sevilla (1980 - 1982)</li>
+                <li>DIPLÔME D´UNIVERSITÉ EN ORTHODONTIE por la Universidad de Nantes (1992 - 1995)</li>
+            </ul>
+
+            <p><a href="{{ STATIC_URL }}files/curriculum_vitae_patrocinio.pdf" target="_blank">Ver curriculum completo</a></p>
+
+            <h2 class="p3 secondDoctor">Dra. Ángela Martín Gómez</h2>
+            <p>
+                Odontóloga especializada en Cirugía Bucal e Implantes. 
+            </p>
+            <p>
+                <ul class="default">
+                    <li>Grado en Odontología por la Universidad Europea de Madrid (2010-2015)</li>
+                    <li>Título Experto en Implantes, Cirugía Oral y Rehabilitación Implantológica por la Universidad de Sevilla (2015-2016)</li>
+                    <li>Máster en Cirugía Bucal por la Universidad de Sevilla (2016 - 2019)</li>
+                </ul>
+            </p>
+            <p><a href="{{ STATIC_URL }}files/curriculum_vitae_angela.pdf" target="_blank">Ver curriculum completo</a></p>
+        </div>
+    </div>
+{% endblock %}

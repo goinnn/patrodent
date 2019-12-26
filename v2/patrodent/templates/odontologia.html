@@ -1,34 +1,37 @@
-{% extends "templates/servicio.html" %}
+{% extends "templates/tratamiento.html" %}
 
 {% block keywords %}Odontología general, Odontología general en Sevilla, endodoncia, endodoncia Sevilla, quitar el nervio, matar el nervio, desvitalizar, Odontopediatría: Pulpotomía, tratamientos infantiles, control de habitos, logopedia{% endblock %}
 
 {% block metadescription %}La odontología conservadora y restauradora nos permite prevenir, detener y curar las caries dentales{% endblock %}
 
-{% block title %}Odontología General / Endodoncia - {% endblock %}
+{% block title %}Odontología General / Estética - {% endblock %}
 
-{% block content-title %}Odontología General - Endodoncia{% endblock %}
+{% block content-title %}Odontología General - Estética{% endblock %}
 
 {% block content-body %}
    <p>
-       La <strong>odontología conservadora y restauradora</strong> nos permite prevenir, detener y curar las <strong>caries</strong> dentales. La <strong>caries</strong> dental puede afectar levemente a la estructura dentaria, destruyendo únicamente el esmalte o progresar a estadios mas graves, invadiendo tejidos más profundos como son la dentina o la pulpa dental. El objetivo de la <strong>odontología conservadora</strong> es la reparación de los dientes dañados por <strong>caries</strong>, <strong>fracturas</strong>, <strong>traumatismos</strong> o <strong>erosiones mediante su reconstrucción</strong>. Para que se produzca una caries se necesitan 3 factores: Dientes susceptibles de carearse, azúcar en la dieta y bacterias cariogénicas.
+       Es la manera más natural de sustituir <strong>dientes perdidos</strong>. Los <strong>implantes dentales</strong> son fijaciones de <strong>titanio</strong> que se colocan en el maxilar o en la mandíbula para sustituir los <strong>dientes ausentes</strong>.
     </p>
    <p>
-        En principio cuando el proceso es incipiente no presenta síntomas, pero, a medida que avanza y se aproxima al <strong>nervio</strong>, provoca sensibilidad al frío, posteriormente al calor, y acaba transformándose en dolor. Cuando el nervio está inflamado hablamos de <strong>pulpitis</strong>. Si el nervio no ha quedado afectado, el tratamiento adecuado es una <strong>obturación o reconstrucción</strong>, dependiendo de la magnitud de la caries. Si la caries ya ha llegado al nervio (pulpitis), hay que <strong>endodonciar</strong> la pieza dentaria afectada, que es lo que comúnmente llamamos <strong>“matar el nervio” (endodoncia)</strong>. 
+        Los <strong>implantes</strong> se intentan colocar en donde estaban las raíces de los dientes (son raíces artificiales). Sobre ellos colocaremos las <strong>coronas de cerámica</strong> para imitar los dientes naturales. De esta forma no tocamos los dientes vecinos a la zona desdentada con puentes convencionales, ni tenemos los inconvenientes de las prótesis removibles. Con los implantes dentales podemos sustituir desde dientes aislados hasta arcadas completamente desdentadas.
     </p>
    <p>
-        Para prevenir la caries se ha de acutar a diferentes niveles:
-        <ol class="levels">
-            <li>A nivel de dientes, reforzando el esmalte con flúor (enjuagues, pastillas, fluorizaciones y pastas de dientes).</li>
-            <li>A nivel de dieta, disminuyendo el consumo de azúcar, sobre todo entre horas.</li>
-            <li>A nivel de bacterias, realizando un correcto cepillado dental.</li>
-        </ol>
-    </p>
-    <p>
-        Hay que acudir <strong>periódicamente</strong> al dentista para someterse a revisiones. De este modo las caries se pueden detectar en estado precoz y los tratamientos son menos agresivos.
+        A veces se puede aprovechar el mismo momento de la extracción del diente deteriorado para colocar el implante en la misma sesión y así se evita el tener que realizar una segunda intervención. Los implantes colocados de esta manera se les denomina implantes inmediatos.
+        Este procedimiento se realiza bajo <strong>anestesia local</strong> (sin pérdida del conocimiento). La colocación de implantes no es dolorosa. En algunos casos puede generarse una pequeña inflamación de la zona que suele remitir en <strong>24-48 horas</strong>.
     </p>
 {% endblock %}
 
 {% block before-after %}
     {% include "templates/after_before/inc.odontologia.html" %}
+{% endblock %}
+
+{% block before-after-title %}
+    <div class="wrapper indent-bot2">
+        <figure class="img-style img-indent">
+            <iframe width="250" height="156" src="https://www.youtube.com/embed/sftZ6TXTO_o?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            <span class="afterBeforeText"></span>
+        </figure>
+    </div>
+    {{block.super}}
 {% endblock %}
 

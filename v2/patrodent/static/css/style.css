@@ -64,9 +64,19 @@ p {
 .color-4 {color:#5f5f5f;}
 
 /*********************************boxes**********************************/
-.margin-bot {margin-bottom:35px;}
+.margin-bot {margin-bottom:10px;}
 
 .spacing {margin-right:35px;}
+
+.center {
+    width: 630px;
+    margin: 0 auto;
+}
+
+.center2 {
+    width: 468px;
+    margin: 0 auto;
+}
 
 .indent {padding:0 0 0px 30px;}
 .indent2 {padding-left:50px;}
@@ -140,6 +150,7 @@ h1 a {
 	position:relative;
 	overflow:hidden;
 	float:right;
+    z-index: 2;
 }
 .slogon .tel {
 	font-size:22px;
@@ -151,11 +162,16 @@ h1 a {
 	font-size:26px;
 }
 
+.slogon .whats {
+    margin: 10px 0;
+    color: white;
+}
 
 /*********************************menu*************************************/
 .menu {
 	padding:0 18px 0;
 	float:right;
+    margin-top: -33px;
 }
 .menu li {
 	float:left; 
@@ -164,7 +180,7 @@ h1 a {
 .menu li a {
 	background:url(../images/menu-bg.png) 0 top repeat-x;
 	display:block; 
-	font-size:17px; 
+	font-size:16px; 
 	line-height:1.235em;
 	color:#fff; 
 	text-align:center;
@@ -388,7 +404,7 @@ blockquote a{
 }
 
 .box {
-	width:159px; 
+	width:190px; 
 	background:url(../images/box-bg.gif) 0 bottom repeat-x;
 	border-radius:10px;
 	-moz-border-radius:10px;
@@ -400,6 +416,11 @@ blockquote a{
 	position:relative;
 	overflow:hidden;
 }
+
+.box-big {
+    width:272px;
+}
+
 .box:hover {
 	background-position: 0 top;
 }
@@ -607,6 +628,23 @@ dt {margin-bottom:22px;}
 
 #content ul.levels {
     list-style: square inside;
+}
+
+ul.default {
+    list-style: circle;
+    margin-bottom: 20px;
+}
+
+ul.default li {
+    margin-left: 30px;
+}
+
+.secondDoctor {
+    margin-top: 90px;
+}
+
+.map-margin {
+    margin-top: 40px;
 }
 
 /***** Contact form *****/
@@ -884,6 +922,14 @@ form.form .labelinfo {
     body div {
         box-sizing: border-box;
     }
+    body div.box {
+        box-sizing: content-box;
+    }
+
+    .border-1 {
+        border-right: none;
+    }
+
     header div.main, div.container_24 .grid_24 {
         width: 98%;
     }
@@ -941,10 +987,6 @@ form.form .labelinfo {
     .whoWeAre section .container_24 .wrapper .grid_15 {
         width: 55%;
     }
-    .whoWeAre section .container_24 .wrapper .box {
-        width: 185px;
-        margin-bottom: 1em;
-    }
     .Place section .container_24 .grid_9,
     .who section .container_24 .grid_9 {
         padding-left: 8px;
@@ -979,14 +1021,19 @@ form.form .labelinfo {
         height: 397px;
         width: 524px;
     }
-
+    .secondDoctor {
+        margin-top: 30px;
+    }
 }
 
 @media only screen and (max-width : 843px) {
     header .slogon {
         padding-left: 0;
-        font-size: 16px;
-        margin-top: 2.5em;
+        font-size: 22px;
+        margin-top: 1.25em;
+    }
+    header .slogon .tel{ 
+        font-size: 28px;
     }
     footer .footer-content {
         padding: 1em;
@@ -1080,7 +1127,32 @@ form.form .labelinfo {
         padding: 1em;
     }
 }
+@media only screen and (max-width : 700px) {
+    header .slogon .tel{
+        font-size: 22px;
+    }
+    header .slogon {
+        font-size: 16px;
+    }
+}
+
 @media only screen and (max-width : 610px) {
+    header .slogon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .box-big,
+    .box {
+        width: 185px;
+    }
+    .center {
+        width: 468px;
+    }
+    img,
+    iframe {
+        max-width: 100%;
+    }
     section .list-1.columns3 li {
         width: 100%;
     }
@@ -1107,11 +1179,6 @@ form.form .labelinfo {
 }
 
 @media only screen and (max-width : 580px) {
-    header .slogon {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
     .index section .container_24 .wrapper .list-1.p3 li {
         width: 100%;
     }
@@ -1119,8 +1186,11 @@ form.form .labelinfo {
 
 @media only screen and (max-width : 560px) {
     header {
-        zoom: 0.6;
-        margin-top: 4.2em;
+        zoom: 0.7;
+        margin-top: 3.5em;
+    }
+    .slogon .whats {
+        margin: 15px 0;
     }
     h2 {
         font-size: 29px;
@@ -1130,10 +1200,6 @@ form.form .labelinfo {
     }
     .index .slider-wrapper {
         zoom: 0.8;
-    }
-    img,
-    iframe {
-        max-width: 100%;
     }
 }
 
@@ -1147,13 +1213,18 @@ form.form .labelinfo {
 }
 
 @media only screen and (max-width : 480px) {
+    .center,
+    .center2 {
+        width: 100%;
+    }
     .imgwrapper {
         display: block;
         text-align: center;
     }
     .imgwrapper div {
         float: none;
-        margin: 0 auto 1em;
+        margin: 0 auto 0.5em;
+        width: 185px;
     }
 
 }

@@ -12,18 +12,29 @@
     <div class="wrapper">
         <div class="alpha prefix_1 grid_14">
             <div class="border-1">
-                <h2 class="p3">Como encontrarnos</h2>
+                <h2 class="p3">Contacto</h2>
                 <div class="wrapper">
                     <figure class="img-style img-indent">
                         <div id="map_canvas"></div>
                     </figure>
-                    <div class="extra-wrap">
-                        <h5 class="indent-bot">Donde estamos</h5>
-                        <p>Nuestra clínica se encuentra en pleno centro de Sevilla. En la calle Marqués de Paradas frente al ambulatorio de la Seguridad Social. A 100 metros se encuentra el centro comercial Plaza de Armas en el cual hay un aparcamiento público abierto las 24 horas. A 150 metros está situada la Estación de Autobuses Plaza de Armas de donde parten autobuses para la parte norte y oeste de la provincia de Sevilla, así como a Madrid y otras rutas importantes.</p>
+                    <div class="extra-wrap map-margin">
+                        <h5 class="indent-bot">Como encontrarnos</h5>
+                        <dl class="contacts">
+                            <dt>Estamos disponibles de 9 a 21 horas</dt>
+                            <dt>Marqués de Paradas 22 1 º dcha<br/>41001 Sevilla</dt>
+                            <dd><span>E-mail:</span><a class="link" href="mailto:info@patrodent.com">info@patrodent.com</a></dd>
+                            <dd><span>Teléfono:</span><a class="link" href="tel:954 21 14 22">954 21 14 22</a></dd>
+                            <dd class="noLinkWhatsapp"><span>WhatsApp:</span><a class="link" href="https://api.whatsapp.com/send?phone=+34954211422&text=Hola%20quisiera%20hacerle%20una%20consulta" target="_blank">954 21 14 22</a></dd>
+                            <dd><span>Facebook:</span><a class="link" href="https://www.facebook.com/patrodent.patrodent" target="_blank">patrodent.patrodent</a></dd>
+                        </dl>
                     </div>
+                    <div class="clear"></div>
+                    <div class="map-margin">
+                     <p>Nuestra clínica se encuentra en pleno centro de Sevilla. En la calle Marqués de Paradas frente al ambulatorio de la Seguridad Social. A 100 metros se encuentra el centro comercial Plaza de Armas en el cual hay un aparcamiento público abierto las 24 horas. A 150 metros está situada la Estación de Autobuses Plaza de Armas de donde parten autobuses para la parte norte y oeste de la provincia de Sevilla, así como a Madrid y otras rutas importantes.</p>
                     <p>Para llegar y volver en autobús pueden coger las líneas: B2 ,B5, C3, C4, 43, 40</p>
                     <p>Para volver en taxi puede cogerlo en una parada de taxis a 30 metros de la clínica en la misma acera</p>
                     <p>Muy cerca de nosotros se encuentra el Corte Inglés de la Magdalena así como numerosas tiendas de moda.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -38,7 +49,7 @@
     <div id="address_info" style="display:none">
         <div class="info" style="float: left">
             <h5> Clínica dental Patrodent </h5>
-            <a href="http://maps.google.es/maps?f=q&source=s_q&hl=es&geocode=&q=sevilla,+marques+de+paradas,+22&sll=40.396764,-3.713379&sspn=10.586993,23.203125&ie=UTF8&view=map" style="width: 220px; float:left">
+            <a href="https://maps.google.es/maps?f=q&source=s_q&hl=es&geocode=&q=sevilla,+marques+de+paradas,+22&sll=40.396764,-3.713379&sspn=10.586993,23.203125&ie=UTF8&view=map" style="width: 220px; float:left">
                 Calle Marqués de Paradas, 22
                 41001 Sevilla, Andalucía
             </a>
@@ -96,7 +107,7 @@
         document.write(unescape("%3Cscript src='" + cfJsHost + "www.123contactform.com/includes/interactive123cf.js?2480' type='text/javascript'%3E%3C/script%3E"));
     </script>
     <script src="{{ STATIC_URL }}js/jquery.googlemaps1.01.js" type="text/javascript"></script>
-    <script src="http://maps.google.com/maps?file=api&amp;v=3&amp;hl=es&amp;sensor=true&amp;key=AIzaSyAgfMglec3JH1xa-E_M13YolNAeM6N2p1s" type="text/javascript"></script>
+    <script src="https://maps.google.com/maps?file=api&amp;v=3&amp;hl=es&amp;sensor=true&amp;key=AIzaSyAgfMglec3JH1xa-E_M13YolNAeM6N2p1s" type="text/javascript"></script>
 <!--     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.9&sensor=true"></script> -->
     <script type="text/javascript">
         $(document).ready(function() {
@@ -116,7 +127,7 @@
                         },
                     }
                 });
-            if (document.referrer == "http://www.123contactform.com/form-283841/Patrodent" || document.location.href.indexOf("sucess") != -1) {
+            if (document.referrer == "https://www.123formbuilder.com/form-283841/Patrodent" || document.location.href.indexOf("sucess") != -1) {
                 alert("Email enviado con exito, nos pondremos en contacto lo más rapidamente posible")
             }
         });
