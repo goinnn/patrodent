@@ -1,5 +1,7 @@
 {% extends "templates/base.html" %}
 
+{% load static %}
+
 {% block metadescription %}¿Quienes son las doctoras de la clínica? ¿Cómo se ha formado?{% endblock %}
 
 {% block class-patrodent-link %} active{% endblock %}
@@ -11,27 +13,27 @@
 {% block footergallery %}
     <figure>
         <a href="https://www.youtube.com/watch?v=gt4ECC3SROg"  title="Títulos de Patrocinio Gómez" target="_blank">
-            <img src="{{ STATIC_URL }}images/titulos.min.jpg" alt="Títulos de Patrocinio Gómez" title="Títulos de Patrocinio Gómez" />
+            <img src="{% static 'images/titulos.min.jpg' %}" alt="Títulos de Patrocinio Gómez" title="Títulos de Patrocinio Gómez" />
         </a>
     </figure>
     <figure>
-        <a href="{{ STATIC_URL }}images/patrocinio_despacho.jpg" rel="shadowbox[quienSoy]" title="Patrocinio en el despacho">
-            <img src="{{ STATIC_URL }}images/patrocinio_despacho.min.jpg" alt="Patrocinio en el despacho" title="Patrocinio en el despacho" />
+        <a href="{% static 'images/patrocinio_despacho.jpg' %}" rel="shadowbox[quienSoy]" title="Patrocinio en el despacho">
+            <img src="{% static 'images/patrocinio_despacho.min.jpg' %}" alt="Patrocinio en el despacho" title="Patrocinio en el despacho" />
         </a>
     </figure>
     <figure>
-        <a href="{{ STATIC_URL }}images/figurita.jpg" rel="shadowbox[quienSoy]" title="Figurita mujer estudiando">
-            <img src="{{ STATIC_URL }}images/figurita.min.jpg" alt="Patrocinio trabajando" title="Figurita mujer estudiando" />
+        <a href="{% static 'images/figurita.jpg' %}" rel="shadowbox[quienSoy]" title="Figurita mujer estudiando">
+            <img src="{% static 'images/figurita.min.jpg' %}" alt="Patrocinio trabajando" title="Figurita mujer estudiando" />
         </a>
     </figure>
     <figure>
-        <a href="{{ STATIC_URL }}images/patrocinio_operando2.jpg" rel="shadowbox[quienSoy]" title="Patrocinio operando">
-            <img src="{{ STATIC_URL }}images/patrocinio_operando2.min.jpg" alt="Patrocinio operando" title="Patrocinio operando" />
+        <a href="{% static 'images/patrocinio_operando2.jpg' %}" rel="shadowbox[quienSoy]" title="Patrocinio operando">
+            <img src="{% static 'images/patrocinio_operando2.min.jpg' %}" alt="Patrocinio operando" title="Patrocinio operando" />
         </a>
     </figure>
     <figure>
-        <a href="{{ STATIC_URL }}images/patrocinio_trabajando.jpg" rel="shadowbox[quienSoy]" title="Patrocinio trabajando">
-            <img src="{{ STATIC_URL }}images/patrocinio_trabajando.min.jpg" alt="Patrocinio trabajando" title="Patrocinio trabajando" />
+        <a href="{% static 'images/patrocinio_trabajando.jpg' %}" rel="shadowbox[quienSoy]" title="Patrocinio trabajando">
+            <img src="{% static 'images/patrocinio_trabajando.min.jpg' %}" alt="Patrocinio trabajando" title="Patrocinio trabajando" />
         </a>
     </figure>
 {% endblock %}
@@ -41,7 +43,7 @@
     <div class="wrapper">
         <div class="alpha prefix_1 grid_9">
             <div class="border-1">
-                <figure class="img-style indent-bot2"><img src="{{ STATIC_URL }}images/patrocinio4.jpg" alt="" /></figure>
+                <figure class="img-style indent-bot2"><img src="{% static 'images/patrocinio4.jpg' %}" alt="" /></figure>
                 <div class="clear"></div>
                 <div class="wrapper indent-bot2">
                     <figure class="img-style img-indent">
@@ -49,7 +51,7 @@
                         <span class="afterBeforeText">Valores</span>
                     </figure>
                 </div>
-                <figure class="img-style indent-bot2"><img src="{{ STATIC_URL }}images/angela-conocenos2.jpg" alt="" /></figure>
+                <figure class="img-style indent-bot2"><img src="{% static 'images/angela-conocenos2.jpg' %}" alt="" /></figure>
                 <div class="wrapper indent-bot2">
                     <figure class="img-style img-indent">
                         <iframe width="300" height="200" src="https://www.youtube.com/embed/DaudboD7-bw?autoplay=1" frameborder="0" allowfullscreen></iframe>
@@ -72,7 +74,7 @@
                 <li>DIPLÔME D´UNIVERSITÉ EN ORTHODONTIE por la Universidad de Nantes (1992 - 1995)</li>
             </ul>
 
-            <p><a href="{{ STATIC_URL }}files/curriculum_vitae_patrocinio.pdf" target="_blank">Ver curriculum completo</a></p>
+            <p><a href="{% static 'files/curriculum_vitae_patrocinio.pdf' %}" target="_blank">Ver curriculum completo</a></p>
 
             <h2 class="p3 secondDoctor">Dra. Ángela Martín Gómez</h2>
             <p>
@@ -85,7 +87,7 @@
                     <li>Máster en Cirugía Bucal por la Universidad de Sevilla (2016 - 2019)</li>
                 </ul>
             </p>
-            <p><a href="{{ STATIC_URL }}files/curriculum_vitae_angela.pdf" target="_blank">Ver curriculum completo</a></p>
+            <p><a href="{% static 'files/curriculum_vitae_angela.pdf' %}" target="_blank">Ver curriculum completo</a></p>
         </div>
     </div>
 {% endblock %}
