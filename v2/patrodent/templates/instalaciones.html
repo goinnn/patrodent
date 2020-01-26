@@ -4,6 +4,15 @@
 
 {% block metadescription %}Instalaciones de la Clínica Dental Patrocinio Gómez Martínez (Patrodent){% endblock %}
 
+
+{% block meta %}
+<meta property="og:title" content="Nuestras Instalaciones" />
+<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{% url 'template_view' 'instalaciones' %}">
+<meta property="og:description" content="Instalaciones de la Clínica Dental Patrocinio Gómez Martínez (Patrodent)">
+<meta property="og:type" content="image/jpeg" />
+<meta property="og:image" content="http{% if request.is_secure %}{% endif %}://{% static 'images/consulta5.jpg' %}" />
+{% endblock %}
+
 {% block class-patrodent-link %}class="active"{% endblock %}
 
 {% block title %}Instalaciones - {% endblock %}

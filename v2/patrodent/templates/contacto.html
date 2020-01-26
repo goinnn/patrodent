@@ -6,6 +6,12 @@
 
 {% block metadescription %}Como contactar con la Clínica Dental Patrocinio Gómez Martínez (Patrodent){% endblock %}
 
+{% block meta %}
+<meta property="og:title" content="Contacto" />
+<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{% url 'template_view' 'contacto' %}">
+<meta property="og:description" content="Como contactar con la Clínica Dental Patrocinio Gómez Martínez (Patrodent">
+{% endblock %}
+
 {% block pageclass %}contact{% endblock %}
 
 {% block class-contacto-link %} active{% endblock %}
@@ -42,7 +48,7 @@
         </div>
         <div class="grid_8 suffix_1 omega">
             <!-- 123ContactForm.com script begins here -->
-            {% include "templates/formulario_contacto.html"%}
+            {% include "templates/formulario-contacto.html" %}
         </div>
     </div>
 {% endblock %}

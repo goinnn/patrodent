@@ -6,6 +6,12 @@
 
 {% block metadescription %}Casos reales de nuestros pacientes (antes y después){% endblock %}
 
+{% block meta %}
+<meta property="og:title" content="Casos reales de nuestros pacientes" />
+<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{{ request.get_host }}{% url 'template_view' 'antes-y-despues' %}">
+<meta property="og:description" content="Casos reales de nuestros pacientes (antes y después)">
+{% endblock %}
+
 {% block pageclass %}beforeAfter{% endblock %}
 
 {% block class-antes-despues-link %} active{% endblock %}

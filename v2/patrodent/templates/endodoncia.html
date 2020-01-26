@@ -1,7 +1,11 @@
 {% extends "templates/tratamiento.html" %}
 
 {% block metadescription %}Software de diseño de sonrisa digital.{% endblock %}
-
+{% block meta %}
+<meta property="og:title" content="Endodoncia" />
+<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{% url 'template_view' 'endoconcia' %}">
+<meta property="og:description" content="Software de diseño de sonrisa digital">
+{% endblock %}
 {% block title %}Endodoncia - {% endblock %}
 
 {% block js-after-before %}

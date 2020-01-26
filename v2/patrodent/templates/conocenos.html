@@ -4,6 +4,15 @@
 
 {% block metadescription %}¿Quienes son las doctoras de la clínica? ¿Cómo se ha formado?{% endblock %}
 
+{% block meta %}
+<meta property="og:title" content="Conocenos" />
+<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{% url 'template_view' 'conocenos' %}">
+<meta property="og:description" content="¿Quienes son las doctoras de la clínica? ¿Cómo se ha formado?">
+<meta property="og:type" content="image/jpeg" />
+<meta property="og:image" content="http{% if request.is_secure %}{% endif %}://{% static 'images/equipo.jpg' %}" />
+{% endblock %}
+
+
 {% block class-patrodent-link %} active{% endblock %}
 
 {% block title %}Conócenos - {% endblock %}

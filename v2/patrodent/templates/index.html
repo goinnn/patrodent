@@ -1,6 +1,14 @@
 {% extends "templates/base.html" %}
 {% load static %}
 
+{% block meta %}
+<meta property="og:title" content="Clínica Dental Patrodent" />
+<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{{ request.get_host }}{% url 'template_view' 'index' %}">
+<meta property="og:description" content="Clínica Dental Patrocinio Gómez Martínez C/ Marques de Paradas nº 22 1 º dcha Sevilla (junto a plaza de armas)">
+<meta property="og:type" content="image/jpeg" />
+<meta property="og:image" content="http{% if request.is_secure %}{% endif %}://{{ request.get_host }}{% static 'images/sala_de_esperas.jpg' %}" />
+{% endblock %}
+
 {% block js %}
     {{ block.super }}
     <script src="{% static 'js/tms-0.3.js' %}" type="text/javascript"></script>
@@ -84,8 +92,8 @@
         </a>
     </figure>
     <figure>
-        <a href="{% static 'images/patrocinio_tv.jpg' %}" rel="shadowbox[index]" title="Patrocinio diagnosticando">
-            <img src="{% static 'images/patrocinio_tv.min.jpg' %}" alt="Patrocinio diagnosticando" title="Patrocinio diagnosticando" />
+        <a href="{% static 'images/patrocinio-tv.jpg' %}" rel="shadowbox[index]" title="Patrocinio diagnosticando">
+            <img src="{% static 'images/patrocinio-tv.min.jpg' %}" alt="Patrocinio diagnosticando" title="Patrocinio diagnosticando" />
         </a>
     </figure>
     <figure>

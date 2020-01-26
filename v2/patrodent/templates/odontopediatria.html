@@ -2,6 +2,12 @@
 
 {% load static %}
 
+{% block meta %}
+<meta property="og:title" content="Odontopediatría" />
+<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{% url 'template_view' 'odontopediatria' %}">
+<meta property="og:description" content="Odontopediatría Pediátrica en tres grupos: Prevención, Odontopediatría y Ortodoncia infantil">
+{% endblock %}
+
 {% block title %}Odontopediatría - {% endblock %}
 
 {% block content-title %}Odontopediatría{% endblock %}

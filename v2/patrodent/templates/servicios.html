@@ -4,7 +4,11 @@
 
 {% block js-after-before %}
 {% endblock %}
-
+{% block meta %}
+<meta property="og:title" content="Servicios" />
+<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{{ request.get_host }}{% url 'template_view' 'servicios' %}">
+<meta property="og:description" content="Servicios que ofrece la Clínica Dental Patrocinio Gómez Martínez (Patrodent)">
+{% endblock %}
 {% block title %}Servicios - {% endblock %}
 
 {% block pageclass %}services{% endblock %}

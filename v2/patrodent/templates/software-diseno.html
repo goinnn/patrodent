@@ -4,6 +4,12 @@
 
 {% block metadescription %}Software de diseño de sonrisa digital.{% endblock %}
 
+{% block meta %}
+<meta property="og:title" content="Software de diseño de sonrisa digital" />
+<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{{ request.get_host }}{% url 'template_view' 'software-diseno' %}">
+<meta property="og:description" content="Software de diseño de sonrisa digital">
+{% endblock %}
+
 {% block title %}Software de diseño de sonrisa digital - {% endblock %}
 
 {% block content-title %}Software de diseño de sonrisa digital{% endblock %}

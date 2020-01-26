@@ -4,6 +4,12 @@
 
 {% block metadescription %}La reposición de los dientes perdidos se hace mediante prótesis.{% endblock %}
 
+{% block meta %}
+<meta property="og:title" content="Prótesis dental e implantológica " />
+<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{{ request.get_host }}{% url 'template_view' 'protesis' %}">
+<meta property="og:description" content="La reposición de los dientes perdidos se hace mediante prótesis.">
+{% endblock %}
+
 {% block title %}Prótesis dental e implantológica - {% endblock %}
 
 {% block content-title %}Prótesis dental e implantológica{% endblock %}

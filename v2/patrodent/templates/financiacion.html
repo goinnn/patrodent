@@ -2,6 +2,12 @@
 
 {% block metadescription %}Financiación a tu medida sin intereses{% endblock %}
 
+{% block meta %}
+<meta property="og:title" content="Financiación a tu medida sin intereses" />
+<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{% url 'template_view' 'financiación' %}">
+<meta property="og:description" content="Financiación a tu medida sin intereses">
+{% endblock %}
+
 {% block title %}Financiación a tu medida sin intereses - {% endblock %}
 
 
