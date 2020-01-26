@@ -1,5 +1,7 @@
 {% extends "templates/base.html" %}
 
+{% load static %}
+
 {% block metadescription %}¿Quién es Patrocinio Gómez Martínez? ¿Cómo se ha formado?{% endblock %}
 
 {% block class-patrodent-link %} active{% endblock %}
@@ -11,27 +13,27 @@
 {% block footergallery %}
     <figure>
         <a href="https://www.youtube.com/v/gt4ECC3SROg?autoplay=1" rel="shadowbox[quienSoy]" title="Títulos de Patrocinio Gómez">
-            <img src="{{ STATIC_URL }}images/titulos.min.jpg" alt="Títulos de Patrocinio Gómez" title="Títulos de Patrocinio Gómez" />
+            <img src="{% static 'images/titulos.min.jpg' %}" alt="Títulos de Patrocinio Gómez" title="Títulos de Patrocinio Gómez" />
         </a>
     </figure>
     <figure>
-        <a href="{{ STATIC_URL }}images/patrocinio_despacho.jpg" rel="shadowbox[quienSoy]" title="Patrocinio en el despacho">
-            <img src="{{ STATIC_URL }}images/patrocinio_despacho.min.jpg" alt="Patrocinio en el despacho" title="Patrocinio en el despacho" />
+        <a href="{% static 'images/patrocinio_despacho.jpg' %}" rel="shadowbox[quienSoy]" title="Patrocinio en el despacho">
+            <img src="{% static 'images/patrocinio_despacho.min.jpg' %}" alt="Patrocinio en el despacho" title="Patrocinio en el despacho" />
         </a>
     </figure>
     <figure>
-        <a href="{{ STATIC_URL }}images/figurita.jpg" rel="shadowbox[quienSoy]" title="Figurita mujer estudiando">
-            <img src="{{ STATIC_URL }}images/figurita.min.jpg" alt="Patrocinio trabajando" title="Figurita mujer estudiando" />
+        <a href="{% static 'images/figurita.jpg' %}" rel="shadowbox[quienSoy]" title="Figurita mujer estudiando">
+            <img src="{% static 'images/figurita.min.jpg' %}" alt="Patrocinio trabajando" title="Figurita mujer estudiando" />
         </a>
     </figure>
     <figure>
-        <a href="{{ STATIC_URL }}images/patrocinio_operando2.jpg" rel="shadowbox[quienSoy]" title="Patrocinio operando">
-            <img src="{{ STATIC_URL }}images/patrocinio_operando2.min.jpg" alt="Patrocinio operando" title="Patrocinio operando" />
+        <a href="{% static 'images/patrocinio_operando2.jpg' %}" rel="shadowbox[quienSoy]" title="Patrocinio operando">
+            <img src="{% static 'images/patrocinio_operando2.min.jpg' %}" alt="Patrocinio operando" title="Patrocinio operando" />
         </a>
     </figure>
     <figure>
-        <a href="{{ STATIC_URL }}images/patrocinio_trabajando.jpg" rel="shadowbox[quienSoy]" title="Patrocinio trabajando">
-            <img src="{{ STATIC_URL }}images/patrocinio_trabajando.min.jpg" alt="Patrocinio trabajando" title="Patrocinio trabajando" />
+        <a href="{% static 'images/patrocinio_trabajando.jpg' %}" rel="shadowbox[quienSoy]" title="Patrocinio trabajando">
+            <img src="{% static 'images/patrocinio_trabajando.min.jpg' %}" alt="Patrocinio trabajando" title="Patrocinio trabajando" />
         </a>
     </figure>
 {% endblock %}
@@ -42,7 +44,7 @@
         <div class="alpha prefix_1 grid_9">
             <div class="border-1">
                 <h4 class="margin-bot">Patrocinio Gómez</h4>
-                <figure class="img-style indent-bot2"><img src="{{ STATIC_URL }}images/patrocinio4.jpg" alt="" /></figure>
+                <figure class="img-style indent-bot2"><img src="{% static 'images/patrocinio4.jpg' %}" alt="" /></figure>
                 <div class="clear"></div>
                 <div class="wrapper indent-bot2">
                     <figure class="img-style img-indent">
@@ -68,7 +70,7 @@
                 <li>DIPLÔME D´UNIVERSITÉ EN ORTHODONTIE por la Universidad de Nantes acreditativo de haber superado los tres cursos anteriores.</li>
                 <li>VIII Curso de Formación en Periodóncia e Implantología Clínica. Dr. Rafael Malpartida - Sevilla-oct 2005</li>
             </ul>
-            <a href="{{ STATIC_URL }}files/curriculum_vitae.pdf" target="_blank">Ver curriculum completo</a>
+            <a href="{% static 'files/curriculum_vitae.pdf' %}" target="_blank">Ver curriculum completo</a>
         </div>
     </div>
 {% endblock %}

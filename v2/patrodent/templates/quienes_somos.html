@@ -1,5 +1,7 @@
 {% extends "templates/base.html" %}
 
+{% load static %}
+
 {% block metadescription %}¿Quienes forman Patrodent? ¿Cual es nuestro equipo?{% endblock %}
 
 {% block class-patrodent-link %} active{% endblock %}
@@ -10,28 +12,28 @@
 
 {% block footergallery %}
     <figure>
-        <a href="{{ STATIC_URL }}images/patrocinio_despacho.jpg" rel="shadowbox[quienesSomos]" title="Patrocinio en el despacho">
-            <img src="{{ STATIC_URL }}images/patrocinio_despacho.min.jpg" alt="Patrocinio en el despacho" title="Patrocinio en el despacho" />
+        <a href="{% static 'images/patrocinio_despacho.jpg' %}" rel="shadowbox[quienesSomos]" title="Patrocinio en el despacho">
+            <img src="{% static 'images/patrocinio_despacho.min.jpg' %}" alt="Patrocinio en el despacho" title="Patrocinio en el despacho" />
         </a>
     </figure>
     <figure>
-        <a href="{{ STATIC_URL }}images/angela2.jpg" rel="shadowbox[quienesSomos]" title="Angela Martín">
-            <img src="{{ STATIC_URL }}images/angela2.min.jpg" alt="Angela Martín" title="Angela Martín" />
+        <a href="{% static 'images/angela2.jpg' %}" rel="shadowbox[quienesSomos]" title="Angela Martín">
+            <img src="{% static 'images/angela2.min.jpg' %}" alt="Angela Martín" title="Angela Martín" />
         </a>
     </figure>
     <figure>
-        <a href="{{ STATIC_URL }}images/equipo_trabajando.jpg" rel="shadowbox[quienesSomos]" title="Equipo trabajando">
-            <img src="{{ STATIC_URL }}images/equipo_trabajando.min.jpg" alt="Equipo trabajando" title="Equipo trabajando" />
+        <a href="{% static 'images/equipo_trabajando.jpg' %}" rel="shadowbox[quienesSomos]" title="Equipo trabajando">
+            <img src="{% static 'images/equipo_trabajando.min.jpg' %}" alt="Equipo trabajando" title="Equipo trabajando" />
         </a>
     </figure>
     <figure>
-        <a href="{{ STATIC_URL }}images/patrocinio_trabajando.jpg" rel="shadowbox[quienesSomos]" title="Patrocinio trabajando">
-            <img src="{{ STATIC_URL }}images/patrocinio_trabajando.min.jpg" alt="Patrocinio trabajando" title="Patrocinio trabajando" />
+        <a href="{% static 'images/patrocinio_trabajando.jpg' %}" rel="shadowbox[quienesSomos]" title="Patrocinio trabajando">
+            <img src="{% static 'images/patrocinio_trabajando.min.jpg' %}" alt="Patrocinio trabajando" title="Patrocinio trabajando" />
         </a>
     </figure>
     <figure>
         <a href="https://www.youtube.com/watch?v=gt4ECC3SROg" target="_blank" title="Títulos de Patrocinio Gómez">
-            <img src="{{ STATIC_URL }}images/titulos.min.jpg" alt="Títulos de Patrocinio Gómez" title="Títulos de Patrocinio Gómez" />
+            <img src="{% static 'images/titulos.min.jpg' %}" alt="Títulos de Patrocinio Gómez" title="Títulos de Patrocinio Gómez" />
         </a>
     </figure>
 {% endblock %}
@@ -46,14 +48,14 @@
             <div class="wrapper indent-bot center">
                 <div class="imgwrapper">
                     <div class="box box-big img-indent">
-                        <figure class="img-style p2"><img src="{{ STATIC_URL }}images/patrocinio.jpg" alt="" /></figure>
+                        <figure class="img-style p2"><img src="{% static 'images/patrocinio.jpg' %}" alt="" /></figure>
                         <strong>Dra. Patrocinio Gómez Martínez</strong>
                         <span class="bl p1">Médico. Estomatólogo. Especialista en Ortodoncia</span>
                     </div>
                 </div>
                 <div class="imgwrapper">
                     <div class="box box-big img-indent">
-                        <figure class="img-style p2"><img src="{{ STATIC_URL }}images/angela.jpg" alt="" /></figure>
+                        <figure class="img-style p2"><img src="{% static 'images/angela.jpg' %}" alt="" /></figure>
                         <strong>Dra. Ángela Martín Gómez</strong>
                         <span class="bl p1">Odontóloga. Especialista en Cirugía Bucal</span>
                     </div>
@@ -62,14 +64,14 @@
             <div class="wrapper indent-bot center2">
                 <div class="imgwrapper">
                     <div class="box img-indent">
-                        <figure class="img-style p2"><img src="{{ STATIC_URL }}images/empleada2.jpg" alt="" /></figure>
+                        <figure class="img-style p2"><img src="{% static 'images/empleada2.jpg' %}" alt="" /></figure>
                         <strong>Rosario Fernández Torrejón</strong>
                         <span class="bl p1">Higienista dental</span>
                     </div>
                 </div>
                 <div class="imgwrapper">
                     <div class="box">
-                        <figure class="img-style p2"><img src="{{ STATIC_URL }}images/empleada1.jpg" alt="" /></figure>
+                        <figure class="img-style p2"><img src="{% static 'images/empleada1.jpg' %}" alt="" /></figure>
                         <strong>Alba Lozano Pavón</strong>
                         <span class="bl p1">Higienista dental</span>
                     </div>

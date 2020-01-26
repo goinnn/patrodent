@@ -1,5 +1,7 @@
 {% extends "templates/tratamiento.html" %}
 
+{%  load static %}
+
 {% block keywords %}ATM, ATM en Sevilla, dolor articular, chasquido articular, disfuncion mandibular, férula de descarga{% endblock %}
 
 {% block metadescription %}La articulación temporomandibular es el medio de unión de la mandíbula con el craneo{% endblock %}
@@ -40,17 +42,17 @@
 
 {% block before-after %}
     <div class="wrapper indent-bot2">
-        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/atm1.jpg" alt="Articulación temporomandibular" title="Articulación temporomandibular"/>
+        <figure class="img-style img-indent"><img src="{% static 'images/atm1.jpg' %}" alt="Articulación temporomandibular" title="Articulación temporomandibular"/>
             <span class="afterBeforeText">Articulación temporomandibular</span>
         </figure>
     </div>
     <div class="wrapper indent-bot2">
-        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/atm2.jpg" alt="Articulación temporomandibular" title="Articulación temporomandibular"/>
+        <figure class="img-style img-indent"><img src="{% static 'images/atm2.jpg' %}" alt="Articulación temporomandibular" title="Articulación temporomandibular"/>
             <span class="afterBeforeText">ATM ampliación</span>
         </figure>
     </div>
     <div class="wrapper indent-bot2">
-        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/ferula.jpg" alt="Férula de descarga" title="Férula de descarga"/>
+        <figure class="img-style img-indent"><img src="{% static 'images/ferula.jpg' %}" alt="Férula de descarga" title="Férula de descarga"/>
             <span class="afterBeforeText">Férula de descarga</span>
         </figure>
     </div>

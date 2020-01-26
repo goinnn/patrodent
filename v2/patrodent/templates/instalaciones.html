@@ -1,5 +1,7 @@
 {% extends "templates/base.html" %}
 
+{% load static %}
+
 {% block metadescription %}Instalaciones de la Clínica Dental Patrocinio Gómez Martínez (Patrodent){% endblock %}
 
 {% block class-patrodent-link %}class="active"{% endblock %}
@@ -19,7 +21,7 @@
                     </figure>
                 </div>
                 <div class="wrapper indent-bot2">
-                    <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/consulta5.jpg" alt="Gabinete número 1" title="Gabinete número 1"/>
+                    <figure class="img-style img-indent"><img src="{% static 'images/consulta5.jpg' %}" alt="Gabinete número 1" title="Gabinete número 1"/>
                         <span class="afterBeforeText">Gabinete número 1</span>
                     </figure>
                 </div>
@@ -45,27 +47,27 @@
 {% block footergallery %}
     <figure>
         <a href="https://www.youtube.com/watch?v=5-JuMRmbmXo" target="_blank" title="Instalaciones de Patrodent">
-            <img src="{{ STATIC_URL }}images/instalaciones.min.jpg" alt="Instalaciones de Patrodent" title="Instalaciones de Patrodent" />
+            <img src="{% static 'images/instalaciones.min.jpg' %}" alt="Instalaciones de Patrodent" title="Instalaciones de Patrodent" />
         </a>
     </figure>
     <figure>
-        <a href="{{ STATIC_URL }}images/consulta1.jpg" rel="shadowbox[instalaciones]" title="Imágen de la consulta">
-            <img src="{{ STATIC_URL }}images/consulta1.min.jpg" alt="Imágen de la consulta" title="Imágen de la consulta" />
+        <a href="{% static 'images/consulta1.jpg' %}" rel="shadowbox[instalaciones]" title="Imágen de la consulta">
+            <img src="{% static 'images/consulta1.min.jpg' %}" alt="Imágen de la consulta" title="Imágen de la consulta" />
         </a>
     </figure>
     <figure>
-        <a href="{{ STATIC_URL }}images/consulta2.jpg" rel="shadowbox[instalaciones]" title="Imágen de la consulta">
-            <img src="{{ STATIC_URL }}images/consulta2.min.jpg" alt="Imágen de la consulta" title="Imágen de la consulta" />
+        <a href="{% static 'images/consulta2.jpg' %}" rel="shadowbox[instalaciones]" title="Imágen de la consulta">
+            <img src="{% static 'images/consulta2.min.jpg' %}" alt="Imágen de la consulta" title="Imágen de la consulta" />
         </a>
     </figure>
     <figure>
-        <a href="{{ STATIC_URL }}images/consulta3.jpg" rel="shadowbox[instalaciones]" title="Sala de espera">
-            <img src="{{ STATIC_URL }}images/consulta3.min.jpg" alt="Sala de espera" title="Sala de espera" />
+        <a href="{% static 'images/consulta3.jpg' %}" rel="shadowbox[instalaciones]" title="Sala de espera">
+            <img src="{% static 'images/consulta3.min.jpg' %}" alt="Sala de espera" title="Sala de espera" />
         </a>
     </figure>
     <figure>
-        <a href="{{ STATIC_URL }}images/consulta4.jpg" rel="shadowbox[instalaciones]" title="Sala de espera">
-            <img src="{{ STATIC_URL }}images/consulta4.min.jpg" alt="Sala de espera" title="Sala de espera" />
+        <a href="{% static 'images/consulta4.jpg' %}" rel="shadowbox[instalaciones]" title="Sala de espera">
+            <img src="{% static 'images/consulta4.min.jpg' %}" alt="Sala de espera" title="Sala de espera" />
         </a>
     </figure>
 {% endblock %}

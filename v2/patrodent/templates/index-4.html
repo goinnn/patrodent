@@ -1,13 +1,15 @@
 {% extends "templates/base.html" %}
 
+{% load static %}
+
 {% block css %}
     {{ block.super }}
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/jquery-ui.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}" type="text/css" media="screen">
 {% endblock %}
 
 {% block js %}
     {{ block.super }}
-    <script src="{{ STATIC_URL }}js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="{% static 'js/jquery-ui.min.js' %}" type="text/javascript"></script>
     <script type="text/javascript">
 		$(document).ready(function() { 
 			$("#datepicker").datepicker({ dayNamesMin: ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'] });
@@ -41,14 +43,14 @@
         <div class="grid_14 suffix_1 omega">
             <h3 class="p3">Upcoming Events</h3>
             <div class="wrapper indent-bot2">
-                <figure class="img-style img-indent2"><a href="#"><img src="{{ STATIC_URL }}images/page5-img1.jpg" alt="" /></a></figure>
+                <figure class="img-style img-indent2"><a href="#"><img src="{% static 'images/page5-img1.jpg' %}" alt="" /></a></figure>
                 <div class="extra-wrap">
                     <time class="date-style" datetime="2011-02-01">01.02.2011</time>
                     Fusce suscipit varius mi. Cum sociis natoque penatibus et <br />ent montes, nascetur ridus mus. Sed a orci erat. Vestibulum viverr is dui nec mattis. Vestibulum ante ipsum primis in <br />cibus luctus et ltrices posuere cubilia.
                 </div>
             </div>
             <div class="wrapper p8">
-                <figure class="img-style img-indent2"><a href="#"><img src="{{ STATIC_URL }}images/page5-img2.jpg" alt="" /></a></figure>
+                <figure class="img-style img-indent2"><a href="#"><img src="{% static 'images/page5-img2.jpg' %}" alt="" /></a></figure>
                 <div class="extra-wrap">
                     <time class="date-style" datetime="2011-05-02">02.05.2011</time>
                     Fusce suscipit varius mi. Cum sociis natoque penatibus et <br />ent montes, nascetur ridus mus. Sed a orci erat. Vestibulum viverr is dui nec mattis. Vestibulum ante ipsum primis in <br />cibus luctus et ltrices posuere cubilia.
@@ -56,7 +58,7 @@
             </div>
             <h3 class="margin-bot">What’s New?</h3>
             <div class="wrapper">
-                <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/page5-img3.jpg" alt="" /></figure>
+                <figure class="img-style img-indent"><img src="{% static 'images/page5-img3.jpg' %}" alt="" /></figure>
                 <div class="extra-wrap">
                     <h5 class="p2">Cum sociis natoque penatia uset magnis dis parturientw montes, nasce.</h5>
                     Praesent vestibulum molestie lacus. Aenean nonumy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculs mus. Nulla dui fusce feugiat.

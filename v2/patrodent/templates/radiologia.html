@@ -1,5 +1,7 @@
 {% extends "templates/servicio.html" %}
 
+{% load static %}
+
 {% block keywords %}Radiología Digital, Radiología Digital en Sevilla, radiologia 2D, radiologia 3D, panorex, radiografía panorámica, radiografía intraoral, teleradiografía, radiografía de la mano, radiografía carpal{% endblock %}
 
 {% block metadescription %}La radiología digital nos permite obtener radiografías en menor tiempo y reducir en un 80% la dosis de radiación que reciben nuestros pacientes.{% endblock %}
@@ -29,12 +31,12 @@
 
 {% block before-after %}
     <div class="wrapper indent-bot2">
-        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/aparato_radiologia.jpg" alt="Aparato radiología" title="Aparato radiología"/>
+        <figure class="img-style img-indent"><img src="{% static 'images/aparato_radiologia.jpg' %}" alt="Aparato radiología" title="Aparato radiología"/>
             <span class="afterBeforeText">Aparato radiología</span>
         </figure>
     </div>
     <div class="wrapper indent-bot2">
-        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/cbct.jpg" alt="Radiología digital" title="Radiología digital"/>
+        <figure class="img-style img-indent"><img src="{% static 'images/cbct.jpg' %}" alt="Radiología digital" title="Radiología digital"/>
             <span class="afterBeforeText">CBCT</span>
         </figure>
     </div>

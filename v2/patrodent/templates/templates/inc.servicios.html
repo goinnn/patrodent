@@ -1,8 +1,8 @@
-{% url template_view "financiacion" as financiacion_url %}
-{% url template_view "plan_salud" as plan_salud_url %}
-{% url template_view "radiologia" as radiologia_url %}
-{% url template_view "software_diseno" as software_diseno_url %}
-{% url template_view "software_ortodoncia" as software_ortodoncia_url %}
+{% url 'template_view' "financiacion" as financiacion_url %}
+{% url 'template_view' "plan_salud" as plan_salud_url %}
+{% url 'template_view' "radiologia" as radiologia_url %}
+{% url 'template_view' "software_diseno" as software_diseno_url %}
+{% url 'template_view' "software_ortodoncia" as software_ortodoncia_url %}
 <li><a href="{{ financiacion_url }}" {% ifequal financiacion_url full_path %} class="active"{% endifequal %}><i></i>Financiación sin intereses</a></li>
 <li><a href="{{ plan_salud_url }}" {% ifequal plan_salud_url full_path %} class="active"{% endifequal %}><i></i>Plan de Salud Bucodental</a></li>
 <li><a href="{{ radiologia_url }}" {% ifequal radiologia_url full_path %} class="active"{% endifequal %}><i></i>Radiología digital</a></li>

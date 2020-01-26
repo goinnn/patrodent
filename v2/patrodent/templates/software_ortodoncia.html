@@ -1,5 +1,6 @@
 {% extends "templates/servicio.html" %}
 
+{% load static %}
 
 {% block metadescription %}Software digital de ortodoncia.{% endblock %}
 
@@ -28,7 +29,7 @@
 
 {% block before-after %}
     <div class="wrapper indent-bot2">
-        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/digital_ortodoncia.png" alt="Software digital de ortodoncia" title="Software digital de ortodoncia"/>
+        <figure class="img-style img-indent"><img src="{% static 'images/digital_ortodoncia.png' %}" alt="Software digital de ortodoncia" title="Software digital de ortodoncia"/>
             <span class="afterBeforeText">Software digital de ortodoncia</span>
         </figure>
     </div>

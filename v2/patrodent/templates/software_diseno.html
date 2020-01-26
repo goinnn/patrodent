@@ -1,5 +1,7 @@
 {% extends "templates/servicio.html" %}
 
+{% load static %}
+
 {% block metadescription %}Software de diseño de sonrisa digital.{% endblock %}
 
 {% block title %}Software de diseño de sonrisa digital - {% endblock %}
@@ -24,7 +26,7 @@
 
 {% block before-after %}
     <div class="wrapper indent-bot2">
-        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/diseno_sonrisa.png" alt="Software de diseño de sonrisa digital" title="Software de diseño de sonrisa digital"/>
+        <figure class="img-style img-indent"><img src="{% static 'images/diseno_sonrisa.png' %}" alt="Software de diseño de sonrisa digital" title="Software de diseño de sonrisa digital"/>
             <span class="afterBeforeText">Software de diseño de sonrisa digital</span>
         </figure>
     </div>
