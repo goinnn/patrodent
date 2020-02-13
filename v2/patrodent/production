@@ -17,23 +17,24 @@ iconv -t iso-8859-1 -f utf8 atm.html > atm.html.tmp; mv atm.html.tmp atm.html
 iconv -t iso-8859-1 -f utf8 contacto.html > contacto.html.tmp; mv contacto.html.tmp contacto.html
 iconv -t iso-8859-1 -f utf8 odontologia.html > odontologia.html.tmp; mv odontologia.html.tmp odontologia.html
 iconv -t iso-8859-1 -f utf8 ortodoncia.html > ortodoncia.html.tmp; mv ortodoncia.html.tmp ortodoncia.html
-iconv -t iso-8859-1 -f utf8 quienes_somos.html > quienes_somos.html.tmp; mv quienes_somos.html.tmp quienes_somos.html
+iconv -t iso-8859-1 -f utf8 quienes-somos.html > quienes-somos.html.tmp; mv quienes-somos.html.tmp quienes-somos.html
 iconv -t iso-8859-1 -f utf8 estetica.html > estetica.html.tmp; mv estetica.html.tmp estetica.html
 iconv -t iso-8859-1 -f utf8 implantes.html > implantes.html.tmp; mv implantes.html.tmp implantes.html
 iconv -t iso-8859-1 -f utf8 instalaciones.html > instalaciones.html.tmp; mv instalaciones.html.tmp instalaciones.html
 iconv -t iso-8859-1 -f utf8 odontopediatria.html > odontopediatria.html.tmp; mv odontopediatria.html.tmp odontopediatria.html
 iconv -t iso-8859-1 -f utf8 periodoncia.html > periodoncia.html.tmp; mv periodoncia.html.tmp periodoncia.html
 iconv -t iso-8859-1 -f utf8 servicios.html > servicios.html.tmp; mv servicios.html.tmp servicios.html
-iconv -t iso-8859-1 -f utf8 antes_y_despues.html > antes_y_despues.html.tmp; mv antes_y_despues.html.tmp antes_y_despues.html
+iconv -t iso-8859-1 -f utf8 antes-y-despues.html > antes-y-despues.html.tmp; mv antes-y-despues.html.tmp antes-y-despues.html
 iconv -t iso-8859-1 -f utf8 protesis.html > protesis.html.tmp; mv protesis.html.tmp protesis.html
 iconv -t iso-8859-1 -f utf8 radiologia.html > radiologia.html.tmp; mv radiologia.html.tmp radiologia.html
 iconv -t iso-8859-1 -f utf8 conocenos.html > conocenos.html.tmp; mv conocenos.html.tmp conocenos.html
 iconv -t iso-8859-1 -f utf8 endodoncia.html > endodoncia.html.tmp; mv endodoncia.html.tmp endodoncia.html
 iconv -t iso-8859-1 -f utf8 financiacion.html > financiacion.html.tmp; mv financiacion.html.tmp financiacion.html
-iconv -t iso-8859-1 -f utf8 software_ortodoncia.html > software_ortodoncia.html.tmp; mv software_ortodoncia.html.tmp software_ortodoncia.html
+iconv -t iso-8859-1 -f utf8 software-ortodoncia.html > software-ortodoncia.html.tmp; mv software-ortodoncia.html.tmp software-ortodoncia.html
 iconv -t iso-8859-1 -f utf8 tratamientos.html > tratamientos.html.tmp; mv tratamientos.html.tmp tratamientos.html
-iconv -t iso-8859-1 -f utf8 software_diseno.html > software_diseno.html.tmp; mv software_diseno.html.tmp software_diseno.html
-iconv -t iso-8859-1 -f utf8 plan_salud.html > plan_salud.html.tmp; mv plan_salud.html.tmp plan_salud.html
+iconv -t iso-8859-1 -f utf8 software-diseno.html > software-diseno.html.tmp; mv software-diseno.html.tmp software-diseno.html
+iconv -t iso-8859-1 -f utf8 plan-salud.html > plan-salud.html.tmp; mv plan-salud.html.tmp plan-salud.html
+iconv -t iso-8859-1 -f utf8 pedir-cita.html > plan-salud.html.tmp; mv plan-salud.html.tmp plan-salud.html
 
 
 rpl "charset=\"utf-8\"" "charset=\"iso-8859-1\"" -R .

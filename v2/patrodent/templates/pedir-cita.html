@@ -1,0 +1,23 @@
+{% extends "templates/base.html" %}
+{% load static %}
+
+{% block meta %}
+<meta property="og:title" content="Clínica Dental Patrodent Reservar Cita" />
+<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{{ request.get_host }}{% url 'template_view' 'pedir-cita' %}">
+<meta property="og:description" content="Pedir cita en Clínica Dental Patrocinio Gómez Martínez C/ Marques de Paradas nº 22 1 º dcha Sevilla (junto a plaza de armas)">
+<meta property="og:type" content="image/jpeg" />
+<meta property="og:image" content="http{% if request.is_secure %}{% endif %}://{{ request.get_host }}{% static 'images/sala_de_esperas.jpg' %}" />
+{% endblock %}
+
+{% block pageclass %}booking{% endblock %}
+{% block class-patrodent-link %} active{% endblock %}
+
+{% block content %}
+    <div class="wrapper">
+        <div class="alpha prefix_1 grid_22 suffix_8 omega">
+            <h2>Clínica Dental Patrodent</h2>
+            <p>Puede solicitar una cita con nosotros a traves de doctoralia.</p>
+            <a id="zl-url" class="zl-url" href="https://www.doctoralia.es/angela-martin-gomez/dentista-dentista-infantil/sevilla" rel="nofollow" data-zlw-doctor="angela-martin-gomez" data-zlw-type="big_with_calendar" data-zlw-opinion="false" data-zlw-hide-branding="true">Ángela Martín Gómez - Doctoralia.es</a><script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//platform.docplanner.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script>
+        </div>
+    </div>
+{% endblock %}
