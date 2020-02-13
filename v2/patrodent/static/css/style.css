@@ -78,6 +78,11 @@ p {
     margin: 0 auto;
 }
 
+.center3 {
+	width: 300px;
+	margin: 0 auto;
+}
+
 .indent {padding:0 0 0px 30px;}
 .indent2 {padding-left:50px;}
 .indent-bot {margin-bottom:20px;}
