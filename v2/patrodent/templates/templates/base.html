@@ -125,6 +125,7 @@
                     <li class="whoWeAre"><a href="{% url 'template_view' 'quienes-somos' %}">Quienes somos</a></li>
                     <li class="KnowUs"><a href="{% url 'template_view' "conocenos" %}">Conócenos</a></li>
                     <li class="Place"><a href="{% url 'template_view' "instalaciones" %}">Instalaciones</a></li>
+                    <li class="booking"><a href="{% url 'template_view' 'pedir-cita' %}">Pedir Cita</a></li>
                 </ul>
             </li>
             <li class="services">
@@ -172,6 +173,7 @@
                             <div class="whats noLinkWhatsapp">...o escribenos un <span><a href="https://api.whatsapp.com/send?phone=+34954211422&text=Hola%20quisiera%20hacerle%20una%20consulta">Whatsapp</a></span></div>
                             Estamos disponibles de 9 a 21 horas
                         </div>
+                        <div class="fright headerBooking"><a id="zl-url" class="zl-url" href="https://www.doctoralia.es/angela-martin-gomez/dentista-dentista-infantil/sevilla" rel="nofollow" data-zlw-doctor="angela-martin-gomez" data-zlw-type="button_calendar_medium" data-zlw-opinion="false" data-zlw-hide-branding="true">Ángela Martín Gómez - Doctoralia.es</a><script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//platform.docplanner.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script></div>
                         <div class="clear"></div>
                         <nav class="navigation">
                             {% block nav %}
@@ -182,6 +184,7 @@
                                             <li><a href="{% url 'template_view' "quienes-somos" %}">Quienes somos</a></li>
                                             <li class="KnowUs"><a href="{% url 'template_view' "conocenos" %}">Conocenos</a></li>
                                             <li><a href="{% url 'template_view' "instalaciones" %}">Instalaciones</a></li>
+                                            <li class="booking"><a href="{% url 'template_view' 'pedir-cita' %}">Pedir Cita</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -281,6 +284,9 @@
                                     </figure>
                                    {% endblock %}
                                 </div>
+                            <div class="grid_10 vspace">
+                                <a id="zl-url" class="zl-url" href="https://www.doctoralia.es/angela-martin-gomez/dentista-dentista-infantil/sevilla" rel="nofollow" data-zlw-doctor="angela-martin-gomez" data-zlw-type="small" data-zlw-opinion="false" data-zlw-hide-branding="true">Ángela Martín Gómez - Doctoralia.es</a><script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//platform.docplanner.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script>
+                            </div>
                             </div>
                             <div class="grid_6 omega contact_info">
                                 <div class="footer-title">Información de contacto</div>

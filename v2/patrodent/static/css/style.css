@@ -62,7 +62,9 @@ p {
 .color-2 {color:#000;}
 .color-3 {color:#bcbcbc;}
 .color-4 {color:#5f5f5f;}
-
+.vspace {
+	margin-top: 1em;
+}
 /*********************************boxes**********************************/
 .margin-bot {margin-bottom:10px;}
 
@@ -149,7 +151,7 @@ h1 a {
 	line-height:1.222em;
 	color:#C8FFFF;
 	background:url(../images/slogon-bg.png) right 35px no-repeat;
-	padding:32px 43px 28px;
+	padding:32px 43px 28px 0px;
 	text-align:right;	
 	margin-right:2px;
 	position:relative;
@@ -170,6 +172,9 @@ h1 a {
 .slogon .whats {
     margin: 10px 0;
     color: white;
+}
+.headerBooking {
+	margin-top: 2em;
 }
 
 /*********************************menu*************************************/
