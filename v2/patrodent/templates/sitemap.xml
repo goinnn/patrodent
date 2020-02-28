@@ -145,4 +145,28 @@
     <lastmod>2020-2-25T11:06:17+00:00</lastmod>
     <changefreq>yearly</changefreq>
   </url>
+  <url>
+    <loc>https://www.patrodent.com/nuestra-historia.html</loc>
+    <priority>0.9</priority>
+    <lastmod>2020-2-25T11:06:17+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+  </url>
+    <url>
+    <loc>https://www.patrodent.com/fidelizacion.html</loc>
+    <priority>0.9</priority>
+    <lastmod>2020-2-25T11:06:17+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.patrodent.com/sedacion-consciente.html</loc>
+    <priority>0.9</priority>
+    <lastmod>2020-2-25T11:06:17+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.patrodent.com/analisis-anatomopatologico.html</loc>
+    <priority>0.9</priority>
+    <lastmod>2020-2-25T11:06:17+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+  </url>
 </urlset>
