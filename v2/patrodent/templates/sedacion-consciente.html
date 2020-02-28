@@ -1,0 +1,69 @@
+{% extends "templates/base.html" %}
+
+{% load static %}
+
+{% block metadescription %}La sedación consciente en odontología permite conseguir un estado de relajación y tranquilidad para el paciente{% endblock %}
+
+{% block meta %}
+<meta property="og:title" content="Sedación Consciente" />
+<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{% url 'template_view' 'sedacion-consciente' %}">
+<meta property="og:description" content="La sedación consciente en odontología permite conseguir un estado de relajación y tranquilidad para el paciente.">
+<meta property="og:type" content="image/jpeg" />
+<meta property="og:image" content="http{% if request.is_secure %}{% endif %}://{% static 'images/sala_de_esperas.jpg' %}" />
+{% endblock %}
+
+
+{% block class-patrodent-link %} active{% endblock %}
+
+{% block title %}Fidelización - {% endblock %}
+
+{% block pageclass %}loyalty{% endblock %}
+
+{% block footergallery %}
+    <figure>
+        <a href="https://www.youtube.com/watch?v=gt4ECC3SROg"  title="Títulos de Patrocinio Gómez" target="_blank">
+            <img src="{% static 'images/titulos.min.jpg' %}" alt="Títulos de Patrocinio Gómez" title="Títulos de Patrocinio Gómez" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{% static 'images/patrocinio_despacho.jpg' %}" rel="shadowbox[quienSoy]" title="Patrocinio en el despacho">
+            <img src="{% static 'images/patrocinio_despacho.min.jpg' %}" alt="Patrocinio en el despacho" title="Patrocinio en el despacho" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{% static 'images/figurita.jpg' %}" rel="shadowbox[quienSoy]" title="Figurita mujer estudiando">
+            <img src="{% static 'images/figurita.min.jpg' %}" alt="Patrocinio trabajando" title="Figurita mujer estudiando" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{% static 'images/patrocinio_operando2.jpg' %}" rel="shadowbox[quienSoy]" title="Patrocinio operando">
+            <img src="{% static 'images/patrocinio_operando2.min.jpg' %}" alt="Patrocinio operando" title="Patrocinio operando" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{% static 'images/patrocinio_trabajando.jpg' %}" rel="shadowbox[quienSoy]" title="Patrocinio trabajando">
+            <img src="{% static 'images/patrocinio_trabajando.min.jpg' %}" alt="Patrocinio trabajando" title="Patrocinio trabajando" />
+        </a>
+    </figure>
+{% endblock %}
+
+
+{% block content %}
+    <div class="wrapper">
+        <div class="alpha prefix_1 suffix_1">
+            <h2 class="p3">Sedación Consciente</h2>
+            <p>
+                Las personas que padecen fobia al dentista, padecen estrés y ansiedad ante cualquier visita, ya sea para el tratamiento que sea.
+            </p>
+            <p>La sedación consciente en odontología permite conseguir un estado de relajación y tranquilidad para el paciente, pero además tiene otras ventajas:
+            </p>
+            <ul class="default">
+                <li>Disminución de la ansiedad del paciente</li>
+                <li>Mayor seguridad en la consulta</li>
+                <li>Más facilidad para la realización de tratamientos en una sóla sesión</li>
+                <li>Mejor recuperación y postoperatorio. </li>
+            </ul>
+            <p>En Patrodent contamos con los servicios de un Médico - Anestesista cuando el paciente lo demande, para hacer de su visita lo más placentera posible. </p>
+        </div>
+    </div>
+{% endblock %}

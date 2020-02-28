@@ -1,0 +1,69 @@
+{% extends "templates/base.html" %}
+
+{% load static %}
+
+{% block metadescription %}Gracias a todos estos años de fidelidad, Patrodent ha querido premiar a todos nuestros pacientes con nuestra tarjeta de fidelización PATRODENT 2.0, por seguir confiando en nuestra filosofía de trabajo. {% endblock %}
+
+{% block meta %}
+<meta property="og:title" content="Nuestra historia" />
+<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{% url 'template_view' 'fidelizacion' %}">
+<meta property="og:description" content="Gracias a todos estos años de fidelidad, Patrodent ha querido premiar a todos nuestros pacientes con nuestra tarjeta de fidelización PATRODENT 2.0, por seguir confiando en nuestra filosofía de trabajo. ">
+<meta property="og:type" content="image/jpeg" />
+<meta property="og:image" content="http{% if request.is_secure %}{% endif %}://{% static 'images/tarjeta-fidelizacion.jpg' %}" />
+{% endblock %}
+
+
+{% block class-patrodent-link %} active{% endblock %}
+
+{% block title %}Fidelización - {% endblock %}
+
+{% block pageclass %}loyalty{% endblock %}
+
+{% block footergallery %}
+    <figure>
+        <a href="https://www.youtube.com/watch?v=gt4ECC3SROg"  title="Títulos de Patrocinio Gómez" target="_blank">
+            <img src="{% static 'images/titulos.min.jpg' %}" alt="Títulos de Patrocinio Gómez" title="Títulos de Patrocinio Gómez" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{% static 'images/patrocinio_despacho.jpg' %}" rel="shadowbox[quienSoy]" title="Patrocinio en el despacho">
+            <img src="{% static 'images/patrocinio_despacho.min.jpg' %}" alt="Patrocinio en el despacho" title="Patrocinio en el despacho" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{% static 'images/figurita.jpg' %}" rel="shadowbox[quienSoy]" title="Figurita mujer estudiando">
+            <img src="{% static 'images/figurita.min.jpg' %}" alt="Patrocinio trabajando" title="Figurita mujer estudiando" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{% static 'images/patrocinio_operando2.jpg' %}" rel="shadowbox[quienSoy]" title="Patrocinio operando">
+            <img src="{% static 'images/patrocinio_operando2.min.jpg' %}" alt="Patrocinio operando" title="Patrocinio operando" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{% static 'images/patrocinio_trabajando.jpg' %}" rel="shadowbox[quienSoy]" title="Patrocinio trabajando">
+            <img src="{% static 'images/patrocinio_trabajando.min.jpg' %}" alt="Patrocinio trabajando" title="Patrocinio trabajando" />
+        </a>
+    </figure>
+{% endblock %}
+
+
+{% block content %}
+    <div class="wrapper">
+        <div class="alpha prefix_1 grid_9">
+            <div class="border-1">
+                <figure class="img-style indent-bot2"><img src="{% static 'images/tarjeta-fidelizacion.jpg' %}" alt="Tarjeta de fidelización" /></figure>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="grid_13 suffix_1 omega">
+            <h2 class="p3">Fidelización</h2>
+            <p>
+                Gracias a todos estos años de fidelidad, Patrodent ha querido premiar a todos nuestros pacientes con nuestra tarjeta de fidelización <b>PATRODENT 2.0</b>, por seguir confiando en nuestra filosofía de trabajo.
+            </p>
+            <p><b>¿Qué ventajas tiene?</b> Somos conscientes que la confianza durante tantos años hace que nuestros pacientes nos sigan recomendando día a día, y es por ello que hemos querido premiarles con un obsequio en sus tratamientos por cada paciente a quién nos recomiende.
+            </p>
+            <p>Llámanos e infórmate bien de todas sus ventajas</p>
+        </div>
+    </div>
+{% endblock %}

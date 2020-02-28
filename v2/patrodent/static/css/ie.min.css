@@ -1,0 +1,31 @@
+.important-block .border {
+  zoom: 1;
+}
+.menu ul,
+.menu ul ul,
+.menu li a {
+  behavior: url(js/PIE.htc);
+}
+.content-inner,
+.slider-wrapper,
+.button,
+footer figure,
+.img-style,
+.box,
+.subscribetext,
+.important-block,
+.datepicker-wrap,
+#contact-form textarea,
+#contact-form input {
+  behavior: url(js/PIE.htc);
+  position: relative;
+}
+#contact-form textarea,
+#contact-form input,
+.subscribetext {
+  border-top: 2px solid #dadbdb;
+  border-left: 2px solid #dadbdb;
+}
+* + html h4 {
+  padding-bottom: 22px;
+}

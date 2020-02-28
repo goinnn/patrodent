@@ -4,22 +4,26 @@
 <html lang="es">
 <head>
 {% block head %}
-    <title>{% block title %}{% endblock %}Clínica Dental Patrodent</title>
+    <title>{% block title %}{% endblock %}Clínica Dental Patrodent, C/ Marques de Paradas, Sevilla</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link type="image/gif" href="{% static 'images/favicon.ico' %}" rel="shortcut icon" />
     <meta name="Keywords" content="{% block keywords %}Dentistas en Sevilla, Dentistas, Sevilla, Odontologos Sevilla, Odontologos, Dentistas plaza de armas, Denstistas centro de Sevilla, Clinica Dental Sevilla, Clinica Dental, Ortodoncia Sevilla, Ortodoncia, Odontología Sevilla, Odontologia, ATM, Periodoncia, ATM Sevilla, Periodoncia Sevilla, plaza de armas{% endblock %}">
     <meta name="Description" content="{% block metadescription %}Clínica Dental Patrocinio Gómez Martínez C/ Marques de Paradas nº 22 1 º dcha Sevilla (junto a plaza de armas){% endblock %}">
     <meta property="og:locale" content="es_ES" />
-    <meta property="og:site_name" content="Clínica Dental Patrodent" />
+    <meta property="og:site_name" content="Clínica Dental Patrodent, C/ Marques de Paradas, Sevilla" />
     {% block meta %}{% endblock%}
    {% block css %}
-    <link rel="stylesheet" href="{% static 'css/reset.css' %}" type="text/css" media="all">
-    <link rel="stylesheet" href="{% static 'css/grid.css' %}" type="text/css" media="all">
-    <link rel="stylesheet" href="{% static 'css/animate-flip.css' %}" type="text/css" media="all">
-    <link rel="stylesheet" href="{% static 'css/shadowbox.css' %}" type="text/css" media="all">
-    <link rel="stylesheet" href="{% static 'css/superfish.css' %}" media="all">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all">
+        <link rel="stylesheet" href="{% static 'css/reset.min.css' %}" type="text/css" media="all">
+        <link rel="stylesheet" href="{% static 'css/grid.min.css' %}" type="text/css" media="all">
+        <link rel="stylesheet" href="{% static 'css/animate-flip.min.css' %}" type="text/css" media="all">
+        <link rel="stylesheet" href="{% static 'css/shadowbox.min.css' %}" type="text/css" media="all">
+        <link rel="stylesheet" href="{% static 'css/superfish.min.css' %}" media="all">
+       {% if debug %}
+           <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all">
+       {% else %}
+            <link rel="stylesheet" href="{% static 'css/style.min.css' %}" type="text/css" media="all">
+       {% endif %}
    {% endblock %}
    {% block js %}
     <script src="{% static 'js/jquery-1.7.2.min.js' %}" type="text/javascript"></script>
@@ -123,7 +127,9 @@
                 <a href="{% url 'template_view' 'index' %}" class="{% block class-patrodent-link2 %}{% endblock %}">Clínica</a>
                 <ul>
                     <li class="whoWeAre"><a href="{% url 'template_view' 'quienes-somos' %}">Quienes somos</a></li>
+                    <li class="history"><a href="{% url 'template_view' "nuestra-historia" %}">Nuestra Historia</a></li>
                     <li class="KnowUs"><a href="{% url 'template_view' "conocenos" %}">Conócenos</a></li>
+                    <li class="loyalty"><a href="{% url 'template_view' "fidelizacion" %}">Fidelización</a></li>
                     <li class="Place"><a href="{% url 'template_view' "instalaciones" %}">Instalaciones</a></li>
                     <li class="booking"><a href="{% url 'template_view' 'pedir-cita' %}">Pedir Cita</a></li>
                 </ul>
@@ -145,7 +151,7 @@
                 <a href="{% url 'template_view' "contacto" %}" class="{% block class-contacto-link2 %}{% endblock %}">Contacto</a>
                 <ul>
                     <li class="hideWhatsapp">
-                        <a href="https://api.whatsapp.com/send?phone=+34954211422&text=Hola%20quisiera%20hacerle%20una%20consulta" target="_blank">Whatsapp</a>
+                        <a href="https://wa.me/34954211422" target="_blank"><img class="whatssap" src="{% static 'images/logo-whatssap.png' %}" alt="Whatsapp"></a>
                     </li>
                     <li>
                         <a href="https://www.facebook.com/patrodent.patrodent" target="_blank">Facebook</a>
@@ -162,15 +168,21 @@
             <div class="container_24">
                 
                 <div class="grid_24">
-                    <h1 class="sign">
+                    <h1>
                         <a href="{% url 'template_view' 'index' %}">
-                            Clinica Dental Patrodent
+                            <img src="{% static 'images/logo_patrodent.png' %}" alt="Logo Clinica dental patrodent">
                         </a>
                     </h1>
+{#                    <h1 class="sign">#}
+{#                        <a href="{% url 'template_view' 'index' %}">#}
+{#                            Clinica Dental Patrodent#}
+{#                        </a>#}
+{#                    </h1>#}
                     <div class="fright">
                         <div class="slogon">
                             <div class="tel">Llamanos <span><a href="tel:954 21 14 22">954 21 14 22</a></span></div>
-                            <div class="whats noLinkWhatsapp">...o escribenos un <span><a href="https://api.whatsapp.com/send?phone=+34954211422&text=Hola%20quisiera%20hacerle%20una%20consulta">Whatsapp</a></span></div>
+                            <div class="whats ">...o escribenos un <a href="https://wa.me/34954211422" target="_blank"><span>Whatsapp</span> <img class="whatssap" src="{% static 'images/logo-whatssap.png' %}" alt="Whatsapp"></a>
+                            </div>
                             Estamos disponibles de 9 a 21 horas
                         </div>
                         <div class="fright headerBooking"><a id="zl-url" class="zl-url" href="https://www.doctoralia.es/angela-martin-gomez/dentista-dentista-infantil/sevilla" rel="nofollow" data-zlw-doctor="angela-martin-gomez" data-zlw-type="button_calendar_medium" data-zlw-opinion="false" data-zlw-hide-branding="true">Ángela Martín Gómez - Doctoralia.es</a><script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//platform.docplanner.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script></div>
@@ -181,9 +193,11 @@
                                     <li>
                                         <a href="{% url 'template_view' "index" %}" class="{% block class-patrodent-link %}{% endblock %}">Clínica</a>
                                         <ul>
-                                            <li><a href="{% url 'template_view' "quienes-somos" %}">Quienes somos</a></li>
-                                            <li class="KnowUs"><a href="{% url 'template_view' "conocenos" %}">Conocenos</a></li>
-                                            <li><a href="{% url 'template_view' "instalaciones" %}">Instalaciones</a></li>
+                                            <li class="whoWeAre"><a href="{% url 'template_view' 'quienes-somos' %}">Quienes somos</a></li>
+                                            <li class="history"><a href="{% url 'template_view' "nuestra-historia" %}">Nuestra Historia</a></li>
+                                            <li class="KnowUs"><a href="{% url 'template_view' "conocenos" %}">Conócenos</a></li>
+                                            <li class="loyalty"><a href="{% url 'template_view' "fidelizacion" %}">Fidelización</a></li>
+                                            <li class="Place"><a href="{% url 'template_view' "instalaciones" %}">Instalaciones</a></li>
                                             <li class="booking"><a href="{% url 'template_view' 'pedir-cita' %}">Pedir Cita</a></li>
                                         </ul>
                                     </li>
@@ -284,7 +298,7 @@
                                     </figure>
                                    {% endblock %}
                                 </div>
-                            <div class="grid_10 vspace">
+                            <div class="grid_10 vspace hidden-xs">
                                 <a id="zl-url" class="zl-url" href="https://www.doctoralia.es/angela-martin-gomez/dentista-dentista-infantil/sevilla" rel="nofollow" data-zlw-doctor="angela-martin-gomez" data-zlw-type="small" data-zlw-opinion="false" data-zlw-hide-branding="true">Ángela Martín Gómez - Doctoralia.es</a><script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//platform.docplanner.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script>
                             </div>
                             </div>
@@ -314,7 +328,6 @@
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-27507431-1']);
         _gaq.push(['_trackPageview']);
-
         (function() {
             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';

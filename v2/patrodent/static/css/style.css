@@ -65,6 +65,13 @@ p {
 .vspace {
 	margin-top: 1em;
 }
+
+figure img {
+	max-width: 100%;
+}
+.whatssap {
+	width: 25px;
+}
 /*********************************boxes**********************************/
 .margin-bot {margin-bottom:10px;}
 
@@ -127,8 +134,8 @@ header {
 h1 {
 	position:relative;
 	float:left;
-    background:url(../images/logo.png) 0px 0 no-repeat;
 }
+
 h1 a {
 	display:block; 
 	font-size: 40px;
@@ -137,7 +144,7 @@ h1 a {
 	text-decoration:none;
 	width:250px;
 	height:135px;
-    margin-top: 65px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -943,6 +950,7 @@ form.form .labelinfo {
     header div.main, div.container_24 .grid_24 {
         width: 98%;
     }
+
     .wrapper.bot-pad > div {
         width: 100%;
     }
@@ -1042,6 +1050,14 @@ form.form .labelinfo {
         font-size: 22px;
         margin-top: 1.25em;
     }
+	header .headerBooking {
+		position: absolute;
+		margin: 0;
+		top: 0.6em;
+		right: 0;
+		float: none;
+		z-index: 99;
+	}
     header .slogon .tel{ 
         font-size: 28px;
     }
@@ -1183,7 +1199,7 @@ form.form .labelinfo {
         -moz-border-radius:10px;
         -webkit-border-radius:10px;
         padding:14px 14px 14px 16px;
-        width: 500;
+        width: 500px;
         height: 380px;
     }
 }
@@ -1202,6 +1218,10 @@ form.form .labelinfo {
     .slogon .whats {
         margin: 15px 0;
     }
+	header .headerBooking {
+		right: 320px;
+		top: 2.9em;
+	}
     h2 {
         font-size: 29px;
     }
@@ -1220,9 +1240,16 @@ form.form .labelinfo {
     .container_24 .grid_13 {
         width: auto;
     }
+	header .headerBooking {
+		right: 0px;
+		top: 0.3em;
+	}
 }
 
 @media only screen and (max-width : 480px) {
+	h1 a {
+		width: 150px;
+	}
     .center,
     .center2 {
         width: 100%;
@@ -1236,7 +1263,10 @@ form.form .labelinfo {
         margin: 0 auto 0.5em;
         width: 185px;
     }
-
+	.hidden-xs {
+		display: none;
+		visibility: hidden;
+	}
 }
 
 @media only screen and (max-width : 400px) {

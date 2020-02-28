@@ -34,8 +34,13 @@ iconv -t iso-8859-1 -f utf8 software-ortodoncia.html > software-ortodoncia.html.
 iconv -t iso-8859-1 -f utf8 tratamientos.html > tratamientos.html.tmp; mv tratamientos.html.tmp tratamientos.html
 iconv -t iso-8859-1 -f utf8 software-diseno.html > software-diseno.html.tmp; mv software-diseno.html.tmp software-diseno.html
 iconv -t iso-8859-1 -f utf8 plan-salud.html > plan-salud.html.tmp; mv plan-salud.html.tmp plan-salud.html
-iconv -t iso-8859-1 -f utf8 pedir-cita.html > plan-salud.html.tmp; mv plan-salud.html.tmp plan-salud.html
-
+iconv -t iso-8859-1 -f utf8 pedir-cita.html > pedir-cita.html.tmp; mv pedir-cita.html.tmp pedir-cita.html
+iconv -t iso-8859-1 -f utf8 nuestra-historia.html > nuestra-historia.html.tmp; mv nuestra-historia.html.tmp nuestra-historia.html
+iconv -t iso-8859-1 -f utf8 fidelizacion.html > fidelizacion.html.tmp; mv fidelizacion.html.tmp fidelizacion.html
+iconv -t iso-8859-1 -f utf8 sedacion-consciente.html > sedacion-consciente.html.tmp; mv sedacion-consciente.html.tmp sedacion-consciente.html
+iconv -t iso-8859-1 -f utf8 analisis-anatomopatologico.html > analisis-anatomopatologico.html.tmp; mv analisis-anatomopatologico.html.tmp analisis-anatomopatologico.html
+iconv -t iso-8859-1 -f utf8 robots.txt > robots.txt.tmp; mv robots.txt.tmp robots.txt
+iconv -t iso-8859-1 -f utf8 sitemap.xml > sitemap.xml.tmp; mv sitemap.xml.tmp sitemap.xml
 
 rpl "charset=\"utf-8\"" "charset=\"iso-8859-1\"" -R .
 

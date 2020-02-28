@@ -1,0 +1,74 @@
+{% extends "templates/base.html" %}
+
+{% load static %}
+
+{% block metadescription %}Con más de 35 años de experiencia, en Clínica Dental Patrodent mantenemos la tradición por la excelencia en nuestros tratamientos.{% endblock %}
+
+{% block meta %}
+<meta property="og:title" content="Nuestra historia" />
+<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{% url 'template_view' 'nuestra-historia' %}">
+<meta property="og:description" content="Con más de 35 años de experiencia, en Clínica Dental Patrodent mantenemos la tradición por la excelencia en nuestros tratamientos.">
+<meta property="og:type" content="image/jpeg" />
+<meta property="og:image" content="http{% if request.is_secure %}{% endif %}://{% static 'images/equipo.jpg' %}" />
+{% endblock %}
+
+
+{% block class-patrodent-link %} active{% endblock %}
+
+{% block title %}Nuestra historia - {% endblock %}
+
+{% block pageclass %}history{% endblock %}
+
+{% block footergallery %}
+    <figure>
+        <a href="https://www.youtube.com/watch?v=gt4ECC3SROg"  title="Títulos de Patrocinio Gómez" target="_blank">
+            <img src="{% static 'images/titulos.min.jpg' %}" alt="Títulos de Patrocinio Gómez" title="Títulos de Patrocinio Gómez" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{% static 'images/patrocinio_despacho.jpg' %}" rel="shadowbox[quienSoy]" title="Patrocinio en el despacho">
+            <img src="{% static 'images/patrocinio_despacho.min.jpg' %}" alt="Patrocinio en el despacho" title="Patrocinio en el despacho" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{% static 'images/figurita.jpg' %}" rel="shadowbox[quienSoy]" title="Figurita mujer estudiando">
+            <img src="{% static 'images/figurita.min.jpg' %}" alt="Patrocinio trabajando" title="Figurita mujer estudiando" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{% static 'images/patrocinio_operando2.jpg' %}" rel="shadowbox[quienSoy]" title="Patrocinio operando">
+            <img src="{% static 'images/patrocinio_operando2.min.jpg' %}" alt="Patrocinio operando" title="Patrocinio operando" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{% static 'images/patrocinio_trabajando.jpg' %}" rel="shadowbox[quienSoy]" title="Patrocinio trabajando">
+            <img src="{% static 'images/patrocinio_trabajando.min.jpg' %}" alt="Patrocinio trabajando" title="Patrocinio trabajando" />
+        </a>
+    </figure>
+{% endblock %}
+
+
+{% block content %}
+    <div class="wrapper">
+        <div class="alpha prefix_1 grid_9">
+            <div class="border-1">
+                <figure class="img-style indent-bot2"><img src="{% static 'images/patrocinio_y_angela2.jpg' %}" alt="Foto de Patrocinio y Angela" /></figure>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="grid_13 suffix_1 omega">
+            <h2 class="p3">Nuestra Historia</h2>
+            <p>
+                Con más de 35 años de experiencia, en Clínica Dental Patrodent mantenemos la tradición por la excelencia en nuestros tratamientos.
+            </p>
+            <p>
+                Desde 1982, la clínica ha estado en constante actualización tanto científica como tecnológica para ofrecer a nuestros pacientes lo mejor de la odontología actual.
+La Dra. Patrocinio Gómez destaca que han sido su honradez y empatía con el paciente, los valores fundamentales que le definen como profesional y lo cual se ha reflajado en la satisfacción de sus pacientes durante todos estos años.
+            </p>
+            <p>
+                Ella ha sabido transmitir esta filosofía a la perfección a su hija, la Dra. Ángela Martín Gómez, quien actualmente lleva la dirección médica de la clínica.
+            </p>
+            <p>En Patrodent, mantenemos la filosofía del trato cercano y familiar. La tradición y la experiencia se unen para ofrecerte el mejor servicio. </p>
+        </div>
+    </div>
+{% endblock %}

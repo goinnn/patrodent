@@ -1,3 +1,3 @@
-Sitemap: http://jorge.theysay.me/sitemap.xml
+Sitemap: https://www.patrodent.com/sitemap.xml
 User-agent: *
 Disallow:s
