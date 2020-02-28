@@ -134,6 +134,7 @@ header {
 h1 {
 	position:relative;
 	float:left;
+	background: url(../images/logo.png) 0px 0 no-repeat;
 }
 
 h1 a {
@@ -144,7 +145,7 @@ h1 a {
 	text-decoration:none;
 	width:250px;
 	height:135px;
-    margin-top: 10px;
+    margin-top: 65px;
     text-align: center;
 }
 
