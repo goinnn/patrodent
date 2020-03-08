@@ -37,12 +37,6 @@
     <changefreq>yearly</changefreq>
   </url>
   <url>
-    <loc>http://www.patrodent.com/odontologia.html</loc>
-    <priority>0.9</priority>
-    <lastmod>2018-03-30</lastmod>
-    <changefreq>yearly</changefreq>
-  </url>
-  <url>
     <loc>http://www.patrodent.com/odontopediatria.html</loc>
     <priority>0.8</priority>
     <lastmod>2018-03-30</lastmod>
@@ -85,12 +79,6 @@
     <changefreq>yearly</changefreq>
   </url>
   <url>
-    <loc>http://www.patrodent.com/antes-y-despues.html</loc>
-    <priority>1</priority>
-    <lastmod>2018-03-30</lastmod>
-    <changefreq>yearly</changefreq>
-  </url>
-  <url>
     <loc>http://www.patrodent.com/contacto.html</loc>
     <priority>1</priority>
     <lastmod>2018-03-30</lastmod>
@@ -115,12 +103,6 @@
     <changefreq>yearly</changefreq>
   </url>
   <url>
-    <loc>http://www.patrodent.com/software-ortodoncia.html</loc>
-    <priority>0.9</priority>
-    <lastmod>2018-03-30</lastmod>
-    <changefreq>yearly</changefreq>
-  </url>
-  <url>
     <loc>http://www.patrodent.com/tratamientos.html</loc>
     <priority>0.9</priority>
     <lastmod>2018-03-30</lastmod>
@@ -128,12 +110,6 @@
   </url>
   <url>
     <loc>http://www.patrodent.com/software-diseno.html</loc>
-    <priority>0.9</priority>
-    <lastmod>2018-03-30</lastmod>
-    <changefreq>yearly</changefreq>
-  </url>
-  <url>
-    <loc>http://www.patrodent.com/plan-salud.html</loc>
     <priority>0.9</priority>
     <lastmod>2018-03-30</lastmod>
     <changefreq>yearly</changefreq>

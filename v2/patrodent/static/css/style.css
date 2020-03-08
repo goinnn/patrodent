@@ -134,7 +134,7 @@ header {
 h1 {
 	position:relative;
 	float:left;
-	background: url(../images/logo.png) 0px 0 no-repeat;
+	/*background: url(../images/logo.png) 0px 0 no-repeat;*/
 }
 
 h1 a {
@@ -143,15 +143,59 @@ h1 a {
 	line-height:1.211em;
 	color:#FFF;
 	text-decoration:none;
-	width:250px;
-	height:135px;
-    margin-top: 65px;
+	width: 278px;
+    margin-top: 30px;
     text-align: center;
 }
 
 .head-right {
 	float:right;
 	position:relative;
+}
+
+.btn-cita {
+	color: white;
+	text-decoration: none;
+	background: #1c8c7d;
+	border-radius: 0.5em;
+	padding: 0.5em 1em;
+	margin: 0 0 0.5em 1em;
+}
+.contactheader {
+	float:right;
+	height: 100px;
+	margin: 35px 10px 13px;
+	color:#C8FFFF;
+	z-index: 2;
+	font-size: 16px;
+	line-height:1.222em;
+}
+.contactheader div {
+	line-height: 40px;
+}
+.socialheader {
+	clear: both;
+	margin-left: 1em;
+	margin-top: 0.3em;
+	display: inline-block;
+	list-style: none;
+}
+.socialheader li {
+	display: inline-block;
+	float: left;
+	margin: 0.4em;
+}
+.socialheader img{
+	width: 25px;
+}
+.contactheader a.phone {
+	font-size: 18px;
+	font-weight: bold;
+	display: inline-block;
+	text-decoration: none;
+	padding-left: 35px;
+	line-height: 40px;
+	background: url(../images/phone-bg.png) 5px 5px no-repeat;
 }
 
 .slogon {
@@ -182,7 +226,7 @@ h1 a {
     color: white;
 }
 .headerBooking {
-	margin-top: 2em;
+	margin-top: 40px;
 }
 
 /*********************************menu*************************************/
@@ -1045,20 +1089,18 @@ form.form .labelinfo {
     }
 }
 
-@media only screen and (max-width : 843px) {
+@media only screen and (max-width : 875px) {
+	header h1 a {
+		width: 235px;
+	}
+	header h1 a img {
+		max-width: 100%;
+	}
     header .slogon {
         padding-left: 0;
         font-size: 22px;
         margin-top: 1.25em;
     }
-	header .headerBooking {
-		position: absolute;
-		margin: 0;
-		top: 0.6em;
-		right: 0;
-		float: none;
-		z-index: 99;
-	}
     header .slogon .tel{ 
         font-size: 28px;
     }
@@ -1154,6 +1196,15 @@ form.form .labelinfo {
         padding: 1em;
     }
 }
+@media only screen and (max-width : 830px) {
+	header h1 a {
+		width: 167px;
+	}
+	.contactheader {
+		max-width: 361px;
+		margin-top: 28px;
+	}
+}
 @media only screen and (max-width : 700px) {
     header .slogon .tel{
         font-size: 22px;
@@ -1161,9 +1212,17 @@ form.form .labelinfo {
     header .slogon {
         font-size: 16px;
     }
+	.contactheader {
+		max-width: 272px;
+		margin-top: 28px;
+	}
 }
 
 @media only screen and (max-width : 610px) {
+	.contactheader {
+		max-width: 246px;
+		margin-top: 28px;
+	}
     header .slogon {
         position: absolute;
         top: 0;
@@ -1209,6 +1268,13 @@ form.form .labelinfo {
     .index section .container_24 .wrapper .list-1.p3 li {
         width: 100%;
     }
+	.contactheader {
+		max-width: 227px;
+		margin-top: 28px;
+	}
+	.contactheader a.phone {
+		font-size: 16px;
+	}
 }
 
 @media only screen and (max-width : 560px) {
@@ -1243,7 +1309,7 @@ form.form .labelinfo {
     }
 	header .headerBooking {
 		right: 0px;
-		top: 0.3em;
+		top: 1em;
 	}
 }
 
@@ -1276,7 +1342,30 @@ form.form .labelinfo {
     }
 }
 
-@media only screen and (max-width : 350px) {
+@media only screen and (max-width : 392px) {
+    .index .slider-wrapper {
+        zoom: 0.5;
+    }
+	.contactheader {
+		max-width: 218px;
+		margin-right: 0px;
+	}
+}
+@media only screen and (max-width : 378px) {
+	header .fright {
+		float: none;
+		z-index: 1;
+	}
+	header h1 a {
+		z-index: 10;
+	}
+	.headerBooking {
+		margin-top: 0.8em;
+	}
+	header .contactheader {
+		max-width: none;
+		width: 100%;
+	}
     .index .slider-wrapper {
         zoom: 0.5;
     }

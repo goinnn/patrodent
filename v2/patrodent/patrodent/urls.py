@@ -13,6 +13,7 @@ class TemplateView(DjangoTemplateView):
     def get_context_data(self, **kwargs):
         context = super(TemplateView, self).get_context_data(**kwargs)
         context['full_path'] = self.request.get_full_path()
+        context['STATIC_URL'] = settings.STATIC_URL
         return context
 
     def get_template_names(self, *args, **kwargs):

@@ -124,43 +124,47 @@
         <a href="#" id="pull">Menu</a>
         <ul class="responsiveNav">
             <li class="index">
-                <a href="{% url 'template_view' 'index' %}" class="{% block class-patrodent-link2 %}{% endblock %}">Clínica</a>
+                <a href="{% url 'template_view' 'index' %}" class="{% block class-patrodent-link2 %}{% endblock %}">Conócenos</a>
                 <ul>
-                    <li class="whoWeAre"><a href="{% url 'template_view' 'quienes-somos' %}">Quienes somos</a></li>
                     <li class="history"><a href="{% url 'template_view' "nuestra-historia" %}">Nuestra Historia</a></li>
-                    <li class="KnowUs"><a href="{% url 'template_view' "conocenos" %}">Conócenos</a></li>
+                    <li class="whoWeAre"><a href="{% url 'template_view' 'quienes-somos' %}">Equipo Médico</a></li>
                     <li class="loyalty"><a href="{% url 'template_view' "fidelizacion" %}">Fidelización</a></li>
+                </ul>
+            </li>
+            <li class="location">
+                <a href="{% url 'template_view' "instalaciones" %}">Nuestra Clínica</a>
+                <ul>
                     <li class="Place"><a href="{% url 'template_view' "instalaciones" %}">Instalaciones</a></li>
-                    <li class="booking"><a href="{% url 'template_view' 'pedir-cita' %}">Pedir Cita</a></li>
+                    <li class="Place"><a href="{% url 'template_view' "contacto" %}">Contacto</a></li>
                 </ul>
             </li>
             <li class="services">
-                <a href="{% url 'template_view' "servicios" %}" class="{% block class-servicios-link2 %}{% endblock %}">Servicios</a>
+                <a href="{% url 'template_view' "servicios" %}" class="{% block class-servicios-link2 %}{% endblock %}">Servicios Dentales</a>
                 <ul>
                     {% include "templates/inc.servicios.html" %}
                 </ul>
             </li>
             <li class="treatments">
-                <a href="{% url 'template_view' "tratamientos" %}" class="{% block class-tratamientos-link2 %}{% endblock %}">Tratamientos</a>
+                <a href="{% url 'template_view' "tratamientos" %}" class="{% block class-tratamientos-link2 %}{% endblock %}">Excelencia</a>
                 <ul>
                     {% include "templates/inc.tratamientos.html" %}
                 </ul>
             </li>
-            <li class="beforeAfter"><a href="{% url 'template_view' "antes-y-despues" %}" class="{% block class-antes-despues-link2 %}{% endblock %}">Antes y despues</a></li>
-            <li class="contact">
-                <a href="{% url 'template_view' "contacto" %}" class="{% block class-contacto-link2 %}{% endblock %}">Contacto</a>
-                <ul>
-                    <li class="hideWhatsapp">
-                        <a href="https://wa.me/34954211422" target="_blank"><img class="whatssap" src="{% static 'images/logo-whatssap.png' %}" alt="Whatsapp"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/patrodent.patrodent" target="_blank">Facebook</a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/clinicadentalpatrodent/" target="_blank">Instagram</a>
-                    </li>
-                </ul>
-            </li>
+{#            <li class="beforeAfter"><a href="{% url 'template_view' "antes-y-despues" %}" class="{% block class-antes-despues-link2 %}{% endblock %}">Antes y despues</a></li>#}
+{#            <li class="contact">#}
+{#                <a href="{% url 'template_view' "contacto" %}" class="{% block class-contacto-link2 %}{% endblock %}">Contacto</a>#}
+{#                <ul>#}
+{#                    <li class="hideWhatsapp">#}
+{#                        <a href="https://wa.me/34954211422" target="_blank"><img class="whatssap" src="{% static 'images/logo-whatssap.png' %}" alt="Whatsapp"></a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                        <a href="https://www.facebook.com/patrodent.patrodent" target="_blank">Facebook</a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                        <a href="https://www.instagram.com/clinicadentalpatrodent/" target="_blank">Instagram</a>#}
+{#                    </li>#}
+{#                </ul>#}
+{#            </li>#}
         </ul>
     </nav>
     <header>
@@ -170,59 +174,83 @@
                 <div class="grid_24">
                     <h1 class="sign">
                         <a href="{% url 'template_view' 'index' %}">
-                            Clinica Dental Patrodent
+                            <img src="{% static 'images/patrodent_logo_horizontal.png' %}" title="Clínica dental Patrodent">
                         </a>
                     </h1>
                     <div class="fright">
-                        <div class="slogon">
-                            <div class="tel">Llamanos <span><a href="tel:954 21 14 22">954 21 14 22</a></span></div>
-                            <div class="whats ">...o escribenos un <a href="https://wa.me/34954211422" target="_blank"><span>Whatsapp</span> <img class="whatssap" src="{% static 'images/logo-whatssap.png' %}" alt="Whatsapp"></a>
-                            </div>
-                            Estamos disponibles de 9 a 21 horas
+                        <div class="fright headerBooking">
+                            <a class="btn btn-cita" target="_blank" href="https://reservas.doctoralia.es/book.php?type=doctor&lang=es&id=24230&utm_source=widget-doctor-24230#highlight-calendar">
+                                <img src="{% static 'images/calendar-icon.png' %}" alt="icono calendario">
+                                Pedir cita
+                            </a>
+                            <br>
+                             <ul class="socialheader">
+                                <li>
+                                    <a href="https://www.instagram.com/clinicadentalpatrodent/" target="_blank"><img src="{% static 'images/instagram.png' %}" title="Instagram"></a>
+                                </li>
+                                <li>
+                                   <a href="https://www.facebook.com/patrodent.patrodent" target="_blank"><img src="{% static 'images/facebook.png' %}" title="Facebook"></a>
+                                </li>
+                                <li>
+                                   <a href="https://www.linkedin.com/in/ángela-m-75988674/" target="_blank"><img src="{% static 'images/linkedin.png' %}" title="linkedin"></a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="fright headerBooking"><a id="zl-url" class="zl-url" href="https://www.doctoralia.es/angela-martin-gomez/dentista-dentista-infantil/sevilla" rel="nofollow" data-zlw-doctor="angela-martin-gomez" data-zlw-type="button_calendar_medium" data-zlw-opinion="false" data-zlw-hide-branding="true">Ángela Martín Gómez - Doctoralia.es</a><script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//platform.docplanner.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script></div>
+                        <div class="contactheader">
+                            <div class="tel">Nuestra experiencia a tu servicio <a class="phone" href="tel:954 21 14 22">954 21 14 22</a> <img class="whatssap" src="{% static 'images/logo-whatssap.png' %}" alt="whatssap"></div>
+{#                            <div class="whats noLinkWhatsapp">...o escribenos un <span><a href="https://wa.me/34954211422">Whatsapp</a></span></div>#}
+                            Horario: lunes a jueves 16:00 a 21:00 viernes 9:00 a 14:00
+                        </div>
                         <div class="clear"></div>
+                    </div>
+                    <div class="Menu">
                         <nav class="navigation">
                             {% block nav %}
                                 <ul class="menu">
                                     <li>
-                                        <a href="{% url 'template_view' "index" %}" class="{% block class-patrodent-link %}{% endblock %}">Clínica</a>
+                                        <a href="{% url 'template_view' "index" %}" class="{% block class-patrodent-link %}{% endblock %}">Conócenos</a>
                                         <ul>
-                                            <li class="whoWeAre"><a href="{% url 'template_view' 'quienes-somos' %}">Quienes somos</a></li>
                                             <li class="history"><a href="{% url 'template_view' "nuestra-historia" %}">Nuestra Historia</a></li>
-                                            <li class="KnowUs"><a href="{% url 'template_view' "conocenos" %}">Conócenos</a></li>
+                                            <li class="whoWeAre"><a href="{% url 'template_view' 'quienes-somos' %}">Equipo Médico</a></li>
                                             <li class="loyalty"><a href="{% url 'template_view' "fidelizacion" %}">Fidelización</a></li>
-                                            <li class="Place"><a href="{% url 'template_view' "instalaciones" %}">Instalaciones</a></li>
-                                            <li class="booking"><a href="{% url 'template_view' 'pedir-cita' %}">Pedir Cita</a></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="{% url 'template_view' "servicios" %}" class="{% block class-servicios-link %}{% endblock %}">Servicios</a>
+                                        <a href="{% url 'template_view' "instalaciones" %}" class="{% block class-clinica-link %}{% endblock %}">Nuestra Clínica</a>
+                                        <ul>
+                                            <li class="Place"><a href="{% url 'template_view' "instalaciones" %}">Instalaciones</a></li>
+                                            <li class="Place"><a href="{% url 'template_view' "contacto" %}">Contacto</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'template_view' "servicios" %}" class="{% block class-servicios-link %}{% endblock %}">Servicios Dentales</a>
                                         <ul style="width:250px">
                                             {% include "templates/inc.servicios.html" %}
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="{% url 'template_view' "tratamientos" %}" class="{% block class-tratamientos-link %}{% endblock %}">Tratamientos</a>
+                                        <a href="{% url 'template_view' "tratamientos" %}" class="{% block class-tratamientos-link %}{% endblock %}">Excelencia</a>
                                         <ul style="width:250px">
                                             {% include "templates/inc.tratamientos.html" %}
                                         </ul>
                                     </li>
-                                    <li><a href="{% url 'template_view' "antes-y-despues" %}" class="{% block class-antes-despues-link %}{% endblock %}">Antes y despues</a></li>
-                                    <li>
-                                        <a href="{% url 'template_view' "contacto" %}" class="{% block class-contacto-link %}{% endblock %}">Contacto</a>
-                                        <ul>
-                                            <li class="hideWhatsapp">
-                                                <a href="https://api.whatsapp.com/send?phone=+34954211422&text=Hola%20quisiera%20hacerle%20una%20consulta" target="_blank">Whatsapp</a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.facebook.com/patrodent.patrodent" target="_blank">Facebook</a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.instagram.com/clinicadentalpatrodent/" target="_blank">Instagram</a>
-                                            </li>
-                                        </ul>
-                                    </li>
+{#                                    <li>#}
+{#                                        <a href="">Blog</a>#}
+{#                                    </li>#}
+{#                                    <li>#}
+{#                                        <a href="{% url 'template_view' "contacto" %}" class="{% block class-contacto-link %}{% endblock %}">Contacto</a>#}
+{#                                        <ul>#}
+{#                                            <li class="hideWhatsapp">#}
+{#                                                <a href="https://api.whatsapp.com/send?phone=+34954211422&text=Hola%20quisiera%20hacerle%20una%20consulta" target="_blank">Whatsapp</a>#}
+{#                                            </li>#}
+{#                                            <li>#}
+{#                                                <a href="https://www.facebook.com/patrodent.patrodent" target="_blank">Facebook</a>#}
+{#                                            </li>#}
+{#                                            <li>#}
+{#                                                <a href="https://www.instagram.com/clinicadentalpatrodent/" target="_blank">Instagram</a>#}
+{#                                            </li>#}
+{#                                        </ul>#}
+{#                                    </li>#}
                                 </ul>
                             {% endblock %}
                         </nav>
@@ -297,17 +325,18 @@
                                 <a id="zl-url" class="zl-url" href="https://www.doctoralia.es/angela-martin-gomez/dentista-dentista-infantil/sevilla" rel="nofollow" data-zlw-doctor="angela-martin-gomez" data-zlw-type="small" data-zlw-opinion="false" data-zlw-hide-branding="true">Ángela Martín Gómez - Doctoralia.es</a><script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//platform.docplanner.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script>
                             </div>
                             </div>
-                            <div class="grid_6 omega contact_info">
+                            <div class="grid_7 omega contact_info">
                                 <div class="footer-title">Información de contacto</div>
-                                <dl class="contacts">
-                                    <dt>Marqués de Paradas 22 1 º dcha<br/>41001 Sevilla</dt>
-                                    <dd><span>E-mail:</span><a class="link" href="mailto:info@patrodent.com">info@patrodent.com</a></dd>
-                                    <dd><span>Teléfono:</span><a class="link" href="tel:954 21 14 22">954 21 14 22</a></dd>
-                                    <dd class="noLinkWhatsapp"><span>WhatsApp:</span><a class="link" href="https://api.whatsapp.com/send?phone=+34954211422&text=Hola%20quisiera%20hacerle%20una%20consulta" target="_blank">954 21 14 22</a></dd>
-                                    <dd><span>Facebook:</span><a class="link" href="https://www.facebook.com/patrodent.patrodent" target="_blank">patrodent.patrodent</a></dd>
-                                    <dd><span>Instagram:</span><a class="link" href="https://www.instagram.com/clinicadentalpatrodent/" target="_blank">clinicadentalpatrodent</a></dd>
-                                    <dd><span>Doctoralia:</span><a class="ling" target="_blank" href="https://www.doctoralia.es/angela-martin-gomez/dentista/sevilla" rel="nofollow" data-zlw-doctor="angela-martin-gomez">Angela Martin Gomez</a></dd>
-                                </dl>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.518966954089!2d-6.002534633885874!3d37.390150981440264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c127b462e0f%3A0xcebc2c2e1156dfdd!2sCl%C3%ADnica%20Dental%20PATRODENT%20en%20Sevilla%20-%20Odontolog%C3%ADa%20Avanzada!5e0!3m2!1ses!2ses!4v1583685844082!5m2!1ses!2ses" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+{#                                <dl class="contacts">#}
+{#                                    <dt>Marqués de Paradas 22 1 º dcha<br/>41001 Sevilla</dt>#}
+{#                                    <dd><span>E-mail:</span><a class="link" href="mailto:info@patrodent.com">info@patrodent.com</a></dd>#}
+{#                                    <dd><span>Teléfono:</span><a class="link" href="tel:954 21 14 22">954 21 14 22</a></dd>#}
+{#                                    <dd class="noLinkWhatsapp"><span>WhatsApp:</span><a class="link" href="https://api.whatsapp.com/send?phone=+34954211422&text=Hola%20quisiera%20hacerle%20una%20consulta" target="_blank">954 21 14 22</a></dd>#}
+{#                                    <dd><span>Facebook:</span><a class="link" href="https://www.facebook.com/patrodent.patrodent" target="_blank">patrodent.patrodent</a></dd>#}
+{#                                    <dd><span>Instagram:</span><a class="link" href="https://www.instagram.com/clinicadentalpatrodent/" target="_blank">clinicadentalpatrodent</a></dd>#}
+{#                                    <dd><span>Doctoralia:</span><a class="ling" target="_blank" href="https://www.doctoralia.es/angela-martin-gomez/dentista/sevilla" rel="nofollow" data-zlw-doctor="angela-martin-gomez">Angela Martin Gomez</a></dd>#}
+{#                                </dl>#}
                             </div>
                         </div>
                     </div>
