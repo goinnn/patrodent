@@ -1,9 +1,9 @@
-from django.urls import path, re_path
+from django.urls import re_path, include  #  path
 from django.conf import settings
 
 # Uncomment the next two lines to enable the admin:
-# from django.contrib import admin
-# admin.autodiscover()
+from django.contrib import admin
+admin.autodiscover()
 
 from django.views.generic.base import TemplateView as DjangoTemplateView
 
@@ -29,7 +29,9 @@ if settings.DEBUG:
     urlpatterns = [
         re_path(r'^robots\.txt/$', DjangoTemplateView.as_view(template_name='robots.txt', content_type='text/plain')),
         re_path(r'^sitemap\.xml/$', DjangoTemplateView.as_view(template_name='sitemap.xml', content_type='text/plain')),
+        re_path(r'^blog/', include('zinnia.urls')),
         re_path(r'^$', TemplateView.as_view(), name='template_view_index'),
+
     ]
 
 urlpatterns += [

@@ -71,6 +71,10 @@ figure img {
 }
 .whatssap {
 	width: 25px;
+	display: inline-block;
+}
+.whatssap img {
+	width: 25px;
 }
 /*********************************boxes**********************************/
 .margin-bot {margin-bottom:10px;}
@@ -126,7 +130,7 @@ header {
 	position:relative; 
 	z-index:2;
     background-color: #32ac9c;
-	background:url(../images/header-bg.jpg) center 0 no-repeat; 
+	background:url(../images/header-bg.jpg) center 0 no-repeat;
 	border-bottom:4px solid #32AC9C;
 	height:180px;
 }
@@ -186,10 +190,11 @@ h1 a {
 	margin: 0.4em;
 }
 .socialheader img{
-	width: 25px;
+	width: 19px;
 }
 .contactheader a.phone {
 	font-size: 18px;
+	color: white;
 	font-weight: bold;
 	display: inline-block;
 	text-decoration: none;
@@ -674,7 +679,7 @@ dl span {float:left; width:84px;}
 dt {margin-bottom:22px;}
 
 #map_canvas {
-	width:260px;
+	width: 514px;
 	height:296px;
 	overflow:hidden;
 }
@@ -898,6 +903,28 @@ form.form .labelinfo {
     width: 100%;
     text-align: left;
     clear: both;
+}
+.fridaytime {
+	margin-left: 60px;
+}
+.home3colums {
+	padding-top: 40px;
+}
+.home3colums a {
+	text-decoration: none;
+}
+.home3colums > div {
+	background: #eceff1;
+	position: relative;
+	padding: 0.3em 0.5em;
+	text-align: center;
+	height: 200px;
+}
+.home3colums > div.center {
+	margin: 0 2em;
+}
+.home3colums img {
+	margin-top: -36px;
 }
 
 @media only screen and (max-width : 1024px) {
@@ -1205,6 +1232,30 @@ form.form .labelinfo {
 		margin-top: 28px;
 	}
 }
+@media only screen and (max-width : 720px) {
+	header h1.sign {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		line-height: 1em;
+	}
+	header h1.sign a {
+		display: block;
+		margin: 0 auto;
+		background: white;
+		border-radius: 0.2em;
+		line-height: 1em;
+	}
+	header .grid_24 > .fright {
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.contactheader {
+		max-width: None;
+		margin-top: 28px;
+	}
+}
 @media only screen and (max-width : 700px) {
     header .slogon .tel{
         font-size: 22px;
@@ -1212,17 +1263,9 @@ form.form .labelinfo {
     header .slogon {
         font-size: 16px;
     }
-	.contactheader {
-		max-width: 272px;
-		margin-top: 28px;
-	}
 }
 
 @media only screen and (max-width : 610px) {
-	.contactheader {
-		max-width: 246px;
-		margin-top: 28px;
-	}
     header .slogon {
         position: absolute;
         top: 0;
@@ -1264,13 +1307,16 @@ form.form .labelinfo {
     }
 }
 
-@media only screen and (max-width : 580px) {
+@media only screen and (max-width : 585px) {
     .index section .container_24 .wrapper .list-1.p3 li {
         width: 100%;
     }
+	.headerBooking {
+		margin-top: 21px;
+	}
 	.contactheader {
-		max-width: 227px;
-		margin-top: 28px;
+		max-width: 357px;
+		margin-top: 9px;
 	}
 	.contactheader a.phone {
 		font-size: 16px;

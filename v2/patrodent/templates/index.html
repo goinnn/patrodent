@@ -6,7 +6,7 @@
 <meta property="og:url" content="http{% if request.is_secure %}{% endif %}://patrodent.com{% url 'template_view' 'index' %}">
 <meta property="og:description" content="Clínica Dental Patrocinio Gómez Martínez C/ Marques de Paradas nº 22 1 º dcha Sevilla (junto a plaza de armas)">
 <meta property="og:type" content="image/jpeg" />
-<meta property="og:image" content="http{% if request.is_secure %}{% endif %}://patrodent.com{% static 'images/sala_de_esperas.jpg' %}" />
+<meta property="og:image" content="http{% if request.is_secure %}{% endif %}://patrodent.com/{% static 'images/sala_de_esperas.jpg' %}" />
 {% endblock %}
 
 {% block js %}
@@ -61,31 +61,22 @@
             </div>
         </div>
     </div>
-    <div class="wrapper">
-        <div class="alpha prefix_1 grid_65 suffix_1">
-            <h4 class="p3">Financiación</h4>
-            <p class="p3">Contamos con un sistema de financiación, que le será totalmente de su agrado. Dado el carácter particular de cada paciente no es posible dar un presupuesto estándar sin estudiar detenidamente el tratamiento individual de cada paciente. Por ello le invitamos a visitar nuestra clínica para concertar una cita o déjenos sus datos y nosotros le llamaremos.</p>
+    <div class="wrapper home3colums">
+        <div class="grid_7">
+            <img src="{% static 'images/logo_1982_green.png' %}" class="tip-logo" alt="1982">
+            <h4 class="p3"><a href="{% url 'template_view' "nuestra-historia" %}">Tu clínica de confianza desde 1982</a></h4>
+            <p>Creemos en la tradición del trato cercano y la excelencia clínica.</p>
         </div>
-        <div class="grid_6 grid_65 suffix_1">
-            <h4 class="p3"><a href="{% url 'template_view' "tratamientos" %}">Nuestros Tratamientos</a></h4>
-            <ul class="list-1 p3">
-                {% include "templates/inc.tratamientos.html" %}
-            </ul>
+        <div class="grid_7 center">
+            <img src="{% static 'images/logo_finanza_green.png' %}" alt="Finanzciación">
+            <h4 class="p3"><a href="{% url 'template_view' "financiacion" %}">Financiación a tu medida</a></h4>
+            <p class="p3">Contamos con un sistema de financiación, que le será totalmente de su agrado. </p>
         </div>
-        <div class="grid_7 suffix_1 omega">
-            <h4 class="p3">Renovandonos por ti...</h4>
-            <blockquote><p>Nuestra vocación es ofrecer un excelente servicio y atención a nuestros pacientes para que queden totalmente satisfechos. Por ello, nos renovamos día a día intentando superarnos en nuestros logros; renovando la imágen de <a href="{% url 'template_view' "instalaciones" %}"> nuestra clínica</a> que le invitamos a conocer.</p>
-            <p>Nuestro <a href="{% url 'template_view' "quienes-somos" %}">equipo humano</a> muy cualificado está a su disposición para ayudarle a resolver todas sus consultas en cualquier momento.”</p></blockquote>
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="alpha prefix_1 grid_10 suffix_1">
-            <h4 class="p3">Tu clínica de confianza desde 1982</h4>
-            <p class="p3">Creemos en la tradición del trato cercano y la excelencia clínica. </p>
-        </div>
-        <div class="alpha prefix_1 grid_10 suffix_1">
-            <h4 class="p3">Sólo materiales Premium</h4>
-            <p class="p3">Trabajamos con brackets e implantes de alta gama, así como con laboratorios de prótesis dental de primer nivel. </p>
+
+        <div class="grid_7">
+            <img src="{% static 'images/logo_materiales_premium.png' %}" class="tip-logo" alt="materiales premium">
+            <h4 class="p3">Solo materiales Premium</h4>
+            <p class="p3">Trabajamos con materiales de alta gama, así como con laboratorios de prótesis dental de primer nivel.</p>
         </div>
     </div>
 {% endblock %}

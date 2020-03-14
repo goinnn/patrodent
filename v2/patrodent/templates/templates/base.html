@@ -135,7 +135,6 @@
                 <a href="{% url 'template_view' "instalaciones" %}">Nuestra Clínica</a>
                 <ul>
                     <li class="Place"><a href="{% url 'template_view' "instalaciones" %}">Instalaciones</a></li>
-                    <li class="Place"><a href="{% url 'template_view' "contacto" %}">Contacto</a></li>
                 </ul>
             </li>
             <li class="services">
@@ -174,7 +173,7 @@
                 <div class="grid_24">
                     <h1 class="sign">
                         <a href="{% url 'template_view' 'index' %}">
-                            <img src="{% static 'images/patrodent_logo_horizontal.png' %}" title="Clínica dental Patrodent">
+                            <img src="{% static 'images/patrodent_logo_horizontal.png' %}" alt="Clínica dental Patrodent" title="Clínica dental Patrodent">
                         </a>
                     </h1>
                     <div class="fright">
@@ -186,20 +185,20 @@
                             <br>
                              <ul class="socialheader">
                                 <li>
-                                    <a href="https://www.instagram.com/clinicadentalpatrodent/" target="_blank"><img src="{% static 'images/instagram.png' %}" title="Instagram"></a>
+                                    <a href="https://www.instagram.com/clinicadentalpatrodent/" target="_blank"><img src="{% static 'images/instagram.png' %}" title="Instagram" alt="Instagram"></a>
                                 </li>
                                 <li>
-                                   <a href="https://www.facebook.com/patrodent.patrodent" target="_blank"><img src="{% static 'images/facebook.png' %}" title="Facebook"></a>
+                                   <a href="https://www.facebook.com/patrodent.patrodent" target="_blank"><img src="{% static 'images/facebook.png' %}" title="Facebook" alt="Facebook"></a>
                                 </li>
                                 <li>
-                                   <a href="http://linkedin.com/in/patrodent-clínica-dental-a589ab111" target="_blank"><img src="{% static 'images/linkedin.png' %}" title="linkedin"></a>
+                                   <a href="https://linkedin.com/in/patrodent-clínica-dental-a589ab111" target="_blank"><img src="{% static 'images/linkedin.png' %}" title="linkedin" alt="linkedin"></a>
                                 </li>
+                                 <li><a href="https://twitter.com/@patrodent_" target="_blank"><img src="{% static 'images/logo-twitter.png' %}" title="twitter" alt="twitter"></a></li>
                             </ul>
                         </div>
                         <div class="contactheader">
-                            <div class="tel">Nuestra experiencia a tu servicio <a class="phone" href="tel:954 21 14 22">954 21 14 22</a> <img class="whatssap" src="{% static 'images/logo-whatssap.png' %}" alt="whatssap"></div>
-{#                            <div class="whats noLinkWhatsapp">...o escribenos un <span><a href="https://wa.me/34954211422">Whatsapp</a></span></div>#}
-                            Horario: lunes a jueves 16:00 a 21:00 viernes 9:00 a 14:00
+                            <div class="tel">Nuestra experiencia a tu servicio <a class="phone" href="tel:618245151">618 24 51 51</a> <div class="whatssap noLinkWhatsapp"> <span><a href="https://wa.me/34954211422"><img src="{% static 'images/logo-whatssap.png' %}" alt="whatssap"></a></span></div></div>
+                            Horario: L - J 16:00 a 21:00 <br/> <span class="fridaytime">V 9:00 a 14:00</span>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -219,7 +218,6 @@
                                         <a href="{% url 'template_view' "instalaciones" %}" class="{% block class-clinica-link %}{% endblock %}">Nuestra Clínica</a>
                                         <ul>
                                             <li class="Place"><a href="{% url 'template_view' "instalaciones" %}">Instalaciones</a></li>
-                                            <li class="Place"><a href="{% url 'template_view' "contacto" %}">Contacto</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -321,12 +319,9 @@
                                     </figure>
                                    {% endblock %}
                                 </div>
-                            <div class="grid_10 vspace hidden-xs">
-                                <a id="zl-url" class="zl-url" href="https://www.doctoralia.es/angela-martin-gomez/dentista-dentista-infantil/sevilla" rel="nofollow" data-zlw-doctor="angela-martin-gomez" data-zlw-type="small" data-zlw-opinion="false" data-zlw-hide-branding="true">Ángela Martín Gómez - Doctoralia.es</a><script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//platform.docplanner.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script>
-                            </div>
                             </div>
                             <div class="grid_7 omega contact_info">
-                                <div class="footer-title">Información de contacto</div>
+                                <div class="footer-title"><a href="{% url 'template_view' "contacto" %}">Donde estamos</a></div>
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.518966954089!2d-6.002534633885874!3d37.390150981440264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c127b462e0f%3A0xcebc2c2e1156dfdd!2sCl%C3%ADnica%20Dental%20PATRODENT%20en%20Sevilla%20-%20Odontolog%C3%ADa%20Avanzada!5e0!3m2!1ses!2ses!4v1583685844082!5m2!1ses!2ses" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 {#                                <dl class="contacts">#}
 {#                                    <dt>Marqués de Paradas 22 1 º dcha<br/>41001 Sevilla</dt>#}
