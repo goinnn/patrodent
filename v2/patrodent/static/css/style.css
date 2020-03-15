@@ -4,9 +4,34 @@ mark, rp, rt, ruby, summary, time {display:inline;}
 
 /* Global properties ======================================================== */
 html {width:100%;}
+@font-face {
+  font-family: Akzidenz;
+  src: url(../fonts/akzidenzgrote/Akzidenz-grotesk-bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Akzidenz;
+  src: url(../fonts/akzidenzgrote/Akzidenz-grotesk-light.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Akzidenz;
+  src: url(../fonts/akzidenzgrote/Akzidenz-grotesk-black.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Akzidenz;
+  src: url(../fonts/akzidenzgrote/Akzidenz-grotesk-light-italic.ttf);
+  font-weight: 500;
+  font-style: italic;
+}
 
 body { 	 
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: Akzidenz, Arial, Helvetica, sans-serif;
 	font-size:100%; 
 	color:#727272;
 	min-width:960px;
@@ -388,7 +413,6 @@ h4 span {
     margin-top:-3px;
 }
 h2 {
-    font-family:Arial, Helvetica, sans-serif;
     font-size:34px; 
     line-height:1.222em; 
     color:#32AC9C;
@@ -519,7 +543,6 @@ blockquote a{
 	color:#727272;
 	width:190px;
 	padding:9px 15px;
-	font-family:Arial, Helvetica, sans-serif;
 	border-radius:20px;
 	-moz-border-radius:20px;
 	-webkit-border-radius:20px;
@@ -924,7 +947,7 @@ form.form .labelinfo {
 	margin: 0 2em;
 }
 .home3colums img {
-	margin-top: -36px;
+	margin-top: -40px;
 }
 
 @media only screen and (max-width : 1024px) {

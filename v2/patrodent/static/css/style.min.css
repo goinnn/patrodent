@@ -34,8 +34,32 @@ time {
 html {
   width: 100%;
 }
+@font-face {
+  font-family: Akzidenz;
+  src: url(../fonts/akzidenzgrote/Akzidenz-grotesk-bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Akzidenz;
+  src: url(../fonts/akzidenzgrote/Akzidenz-grotesk-light.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Akzidenz;
+  src: url(../fonts/akzidenzgrote/Akzidenz-grotesk-black.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Akzidenz;
+  src: url(../fonts/akzidenzgrote/Akzidenz-grotesk-light-italic.ttf);
+  font-weight: 500;
+  font-style: italic;
+}
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Akzidenz, Arial, Helvetica, sans-serif;
   font-size: 100%;
   color: #727272;
   min-width: 960px;
@@ -147,6 +171,10 @@ figure img {
   max-width: 100%;
 }
 .whatssap {
+  width: 25px;
+  display: inline-block;
+}
+.whatssap img {
   width: 25px;
 }
 /*********************************boxes**********************************/
@@ -298,10 +326,11 @@ h1 a {
   margin: 0.4em;
 }
 .socialheader img {
-  width: 25px;
+  width: 19px;
 }
 .contactheader a.phone {
   font-size: 18px;
+  color: white;
   font-weight: bold;
   display: inline-block;
   text-decoration: none;
@@ -507,7 +536,6 @@ h4 span {
   margin-top: -3px;
 }
 h2 {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 34px;
   line-height: 1.222em;
   color: #32AC9C;
@@ -635,7 +663,6 @@ blockquote a {
   color: #727272;
   width: 190px;
   padding: 9px 15px;
-  font-family: Arial, Helvetica, sans-serif;
   border-radius: 20px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -797,7 +824,7 @@ dt {
   margin-bottom: 22px;
 }
 #map_canvas {
-  width: 260px;
+  width: 514px;
   height: 296px;
   overflow: hidden;
 }
@@ -1035,6 +1062,28 @@ form.form .labelinfo {
   width: 100%;
   text-align: left;
   clear: both;
+}
+.fridaytime {
+  margin-left: 60px;
+}
+.home3colums {
+  padding-top: 40px;
+}
+.home3colums a {
+  text-decoration: none;
+}
+.home3colums > div {
+  background: #eceff1;
+  position: relative;
+  padding: 0.3em 0.5em;
+  text-align: center;
+  height: 200px;
+}
+.home3colums > div.center {
+  margin: 0 2em;
+}
+.home3colums img {
+  margin-top: -40px;
 }
 @media only screen and (max-width: 1024px) {
   header {
@@ -1336,6 +1385,30 @@ form.form .labelinfo {
     margin-top: 28px;
   }
 }
+@media only screen and (max-width: 720px) {
+  header h1.sign {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 1em;
+  }
+  header h1.sign a {
+    display: block;
+    margin: 0 auto;
+    background: white;
+    border-radius: 0.2em;
+    line-height: 1em;
+  }
+  header .grid_24 > .fright {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contactheader {
+    max-width: None;
+    margin-top: 28px;
+  }
+}
 @media only screen and (max-width: 700px) {
   header .slogon .tel {
     font-size: 22px;
@@ -1343,16 +1416,8 @@ form.form .labelinfo {
   header .slogon {
     font-size: 16px;
   }
-  .contactheader {
-    max-width: 272px;
-    margin-top: 28px;
-  }
 }
 @media only screen and (max-width: 610px) {
-  .contactheader {
-    max-width: 246px;
-    margin-top: 28px;
-  }
   header .slogon {
     position: absolute;
     top: 0;
@@ -1393,13 +1458,16 @@ form.form .labelinfo {
     height: 380px;
   }
 }
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 585px) {
   .index section .container_24 .wrapper .list-1.p3 li {
     width: 100%;
   }
+  .headerBooking {
+    margin-top: 21px;
+  }
   .contactheader {
-    max-width: 227px;
-    margin-top: 28px;
+    max-width: 357px;
+    margin-top: 9px;
   }
   .contactheader a.phone {
     font-size: 16px;
