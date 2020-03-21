@@ -1,0 +1,3 @@
+minimize js
+pip install jsmin
+python -m jsmin patrodent.js  > patrodent.min.js

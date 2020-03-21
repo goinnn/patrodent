@@ -1,0 +1,39 @@
+{% load static %}
+<div class="jcarousel-wrapper">
+    <div class="jcarousel" data-jcarousel="true">
+        <ul class="gallery" itemscope="" itemtype="http://schema.org/ImageGallery" style="left: 0px; top: 0px;" data-pswp-uid="1">
+                <li class="photo-item">
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a class="image" href="{% static 'images/consulta1.jpg' %}" itemprop="contentUrl">
+                            <img itemprop="image" alt="consulta 1" src="{% static 'images/consulta1.jpg' %}" onerror="$(this).parents('.photo-item').remove()">
+                        </a>
+                    </figure>
+
+                </li>
+                <li class="photo-item">
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a class="image" href="{% static 'images/consulta2.jpg' %}" itemprop="contentUrl">
+                            <img itemprop="image" alt="consulta 2" src="{% static 'images/consulta2.jpg' %}" onerror="$(this).parents('.photo-item').remove()">
+                        </a>
+                    </figure>
+                </li>
+                <li class="photo-item">
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a class="image" href="{% static 'images/consulta3.jpg' %}" itemprop="contentUrl">
+                            <img itemprop="image" alt="Sala de espera" src="{% static 'images/consulta3.jpg' %}" onerror="$(this).parents('.photo-item').remove()">
+                        </a>
+                    </figure>
+
+                </li>
+                <li class="photo-item">
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a class="image" href="{% static 'images/consulta4.jpg' %}" itemprop="contentUrl">
+                            <img itemprop="image" alt="Sala de espera" src="{% static 'images/consulta4.jpg' %}" onerror="$(this).parents('.photo-item').remove()">
+                        </a>
+                    </figure>
+                </li>
+        </ul>
+        <span class="jcarousel-control-prev" data-jcarouselcontrol="true">‹</span>
+        <span class="jcarousel-control-next" data-jcarouselcontrol="true">›</span>
+    </div>
+</div>

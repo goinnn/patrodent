@@ -12,6 +12,12 @@ html {width:100%;}
 }
 @font-face {
   font-family: Akzidenz;
+  src: url(../fonts/akzidenzgrote/Akzidenz-grotesk-be-bold-condensed.ttf);
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Akzidenz;
   src: url(../fonts/akzidenzgrote/Akzidenz-grotesk-light.ttf);
   font-weight: normal;
   font-style: normal;
@@ -26,7 +32,7 @@ html {width:100%;}
 @font-face {
   font-family: Akzidenz;
   src: url(../fonts/akzidenzgrote/Akzidenz-grotesk-light-italic.ttf);
-  font-weight: 500;
+  font-weight: normal;
   font-style: italic;
 }
 
@@ -96,10 +102,16 @@ figure img {
 }
 .whatssap {
 	width: 25px;
+	color: #32ac9c;
 	display: inline-block;
 }
-.whatssap img {
+.whatssap a {
 	width: 25px;
+	color: #32ac9c;
+}
+
+.whatssap a:hover {
+	color: #e65e9e;
 }
 /*********************************boxes**********************************/
 .margin-bot {margin-bottom:10px;}
@@ -154,8 +166,10 @@ header {
 	width:100%;
 	position:relative; 
 	z-index:2;
-    background-color: #32ac9c;
-	background:url(../images/header-bg.jpg) center 0 no-repeat;
+	background: white;
+	font-weight: bold;
+    /*background-color: #32ac9c;*/
+	/*background:url(../images/header-bg.jpg) center 0 no-repeat;*/
 	border-bottom:4px solid #32AC9C;
 	height:180px;
 }
@@ -170,10 +184,10 @@ h1 a {
 	display:block; 
 	font-size: 40px;
 	line-height:1.211em;
-	color:#FFF;
+	color:#32ac9c;
 	text-decoration:none;
 	width: 278px;
-    margin-top: 30px;
+    margin-top: 35px;
     text-align: center;
 }
 
@@ -190,11 +204,14 @@ h1 a {
 	padding: 0.5em 1em;
 	margin: 0 0 0.5em 1em;
 }
+a.btn-cita:hover {
+	background: #e65e9e;
+}
 .contactheader {
 	float:right;
 	height: 100px;
 	margin: 35px 10px 13px;
-	color:#C8FFFF;
+	color:#32ac9c;
 	z-index: 2;
 	font-size: 16px;
 	line-height:1.222em;
@@ -214,24 +231,30 @@ h1 a {
 	float: left;
 	margin: 0.4em;
 }
+.socialheader a {
+	color: #32ac9c;
+}
+.socialheader a:hover {
+	color: #e65e9e;
+}
 .socialheader img{
 	width: 19px;
 }
 .contactheader a.phone {
 	font-size: 18px;
-	color: white;
+	color: #32ac9c;
 	font-weight: bold;
 	display: inline-block;
 	text-decoration: none;
 	padding-left: 35px;
 	line-height: 40px;
-	background: url(../images/phone-bg.png) 5px 5px no-repeat;
+	/*background: url(../images/phone-bg-green.png) 5px 5px no-repeat;*/
 }
 
 .slogon {
 	font-size:18px;
 	line-height:1.222em;
-	color:#C8FFFF;
+	color:#32ac9c;
 	background:url(../images/slogon-bg.png) right 35px no-repeat;
 	padding:32px 43px 28px 0px;
 	text-align:right;	
@@ -244,7 +267,7 @@ h1 a {
 .slogon .tel {
 	font-size:22px;
 	line-height:1.227em;
-	color:#FFF;
+	color:#32ac9c;
 	margin-bottom:5px;
 }
 .slogon .tel span{
@@ -274,7 +297,7 @@ h1 a {
 	display:block; 
 	font-size:16px; 
 	line-height:1.235em;
-	color:#fff; 
+	color:#32ac9c;
 	text-align:center;
 	padding:23px 16px 23px 17px;
 	position:relative;
@@ -285,6 +308,14 @@ h1 a {
 }
 .menu > li > a:hover, .menu > li > a.active, .menu > li.sfHover > a {
 	background-position: 0 bottom;
+	color: white;
+}
+.sf-arrows .sf-with-ul:after {
+	border-top-color: #32ac9c;
+}
+
+.menu li ul a {
+	color: white;
 }
 
 .menu ul {
@@ -413,10 +444,10 @@ h4 span {
     margin-top:-3px;
 }
 h2 {
-    font-size:34px; 
-    line-height:1.222em; 
-    color:#32AC9C;
-    font-weight:normal;
+    font-size: 30px;
+    line-height: 1.222em;
+    color: #32AC9C;
+    font-weight: 800;
     letter-spacing:-1px;
     padding:0px 0px 19px;
     border-bottom:1px solid #e2e8eb;
@@ -434,7 +465,7 @@ h5 {
     font-weight:normal;
 }
 h3 {
-    font-size:48px; 
+    font-size: 36px;
     line-height:1.208em; 
     color:#32ac9c;
     font-weight:normal;
@@ -692,8 +723,9 @@ blockquote a{
 .text-1 {
 	font-size:15px;
 	line-height:22px;
-	color:#bcbcbc;
+	color:#888;
 	font-style:italic;
+	font-weight: normal;
 	margin-bottom:11px;
 } 
 .text-2 {display:block;margin-bottom:12px;} 
@@ -868,6 +900,54 @@ footer .style-1 {
 	font-size:13px;
 	margin-bottom:3px;
 }
+.jcarousel-wrapper{
+	width: 363px;
+}
+.jcarousel {
+	width: 360px;
+}
+
+.jcarousel ul.gallery li {
+	border: none;
+	width: 360px
+}
+
+.jcarousel figure {
+	display: table;
+	width: 349px;
+}
+
+.jcarousel a {
+	display: table-cell;
+	vertical-align: middle;
+	width: 349px;
+	height: 250px;
+}
+
+.jcarousel img {
+	margin: 0 auto;
+}
+
+.jcarousel	.jcarousel-control-next,
+.jcarousel .jcarousel-control-prev {
+	  background: #32ac9c;
+}
+
+.jcarousel	.jcarousel-control-next:hover,
+.jcarousel .jcarousel-control-prev:hover {
+	  background: #e65e9e;
+}
+
+/*.jcarousel .jcarousel-control-prev {*/
+/*    left: 0;*/
+/*}*/
+
+/*.jcarousel .jcarousel-control-next {*/
+/*	right: 0;*/
+/*    background-position: -5px -96px;*/
+/*}*/
+
+
 .contacts {	
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:12px;
@@ -937,7 +1017,7 @@ form.form .labelinfo {
 	text-decoration: none;
 }
 .home3colums > div {
-	background: #eceff1;
+	background: rgba(50, 172, 156, 0.37);
 	position: relative;
 	padding: 0.3em 0.5em;
 	text-align: center;
@@ -947,9 +1027,25 @@ form.form .labelinfo {
 	margin: 0 2em;
 }
 .home3colums img {
-	margin-top: -40px;
+	margin-top: -49px;
+	background: white;
+	border-radius: 4em;
+	padding: 0.5em;
+}
+.home3colums h4 {
+	margin-top: 0.3em;
+}
+.home3colums p {
+	text-align: center;
 }
 
+#footermap {
+	max-width: 400px;
+	display: inline-block;
+}
+#footermap iframe {
+	width: 100%;
+}
 @media only screen and (max-width : 1024px) {
     header {
         margin-top: 2.5em;
@@ -1088,6 +1184,9 @@ form.form .labelinfo {
         width: 96%;
         padding: 0 1em;
     }
+	.home3colums > div.center {
+		margin: 0;
+	}
     .index section  .container_24 .wrapper .list-1.p3 li {
         width: 48%;
         display: inline-block;
@@ -1137,6 +1236,9 @@ form.form .labelinfo {
     .secondDoctor {
         margin-top: 30px;
     }
+	footer .contact_info {
+		float: none;
+	}
 }
 
 @media only screen and (max-width : 875px) {
@@ -1166,6 +1268,13 @@ form.form .labelinfo {
         clear: both;
         display: block;
     }
+	.home3colums > div,
+	.home3colums > div.center{
+		margin: 0 5px 50px;
+	}
+	.home3colums > div:last-child {
+		margin-bottom: 10px;
+	}
     .whoWeAre section .container_24 .wrapper .grid_7 {
         width: 100%;
     }
@@ -1255,6 +1364,25 @@ form.form .labelinfo {
 		margin-top: 28px;
 	}
 }
+
+@media only screen and (max-width : 800px) {
+	#footermap {
+		max-width: 260px;
+	}
+}
+
+@media only screen and (max-width : 760px) {
+	footer .contact_info {
+		width: 100%!important;
+		display: block;
+		clear: both;
+	}
+	#footermap {
+		max-width: none;
+		width: 100%;
+	}
+}
+
 @media only screen and (max-width : 720px) {
 	header h1.sign {
 		display: block;
@@ -1273,10 +1401,12 @@ form.form .labelinfo {
 		float: none;
 		width: 100%;
 		margin: 0 auto;
+		clear: both;
 	}
 	.contactheader {
 		max-width: None;
 		margin-top: 28px;
+		float: left;
 	}
 }
 @media only screen and (max-width : 700px) {
@@ -1362,7 +1492,7 @@ form.form .labelinfo {
         font-size: 29px;
     }
     h3 {
-        font-size: 40px;
+        font-size: 26px;
     }
     .index .slider-wrapper {
         zoom: 0.8;
@@ -1421,19 +1551,11 @@ form.form .labelinfo {
 	}
 }
 @media only screen and (max-width : 378px) {
-	header .fright {
-		float: none;
-		z-index: 1;
-	}
 	header h1 a {
 		z-index: 10;
 	}
 	.headerBooking {
 		margin-top: 0.8em;
-	}
-	header .contactheader {
-		max-width: none;
-		width: 100%;
 	}
     .index .slider-wrapper {
         zoom: 0.5;

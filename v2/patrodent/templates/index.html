@@ -20,11 +20,10 @@
 {% block class-patrodent-link %} active{% endblock %}
 
 {% block content %}
-    <div class="slider-bottom p5">
+    <div class="slider-bottom p2">
         <div class="wrapper bot-pad">
             <div class="alpha prefix_1 grid_9">
-                <h2>Clínica Dental Patrodent</h2>
-                <h3 class="p2">Bienvenidos a tu clinica</h3>
+                <h2>Nuestra experiencia a tu servicio</h2>
                 <p class="text-1 text-left-index">
                     La Clínica Dental PATRODENT es una consulta de Odontología Avanzada con más de 35 años de experiencia. Está situada en el centro de Sevilla y ofrece todos los servicios e innovaciones de la odontología actual.
                 </p>
@@ -45,7 +44,6 @@
                             <li><img src="{% static 'images/recepcion3.jpg' %}" alt=""></li>
                             <li><img src="{% static 'images/cristal.jpg' %}" alt=""></li>
                             <li><img src="{% static 'images/patrocinio_y_angela2.jpg' %}" alt=""></li>
-                            <li><img src="{% static 'images/equipo.jpg' %}" alt=""></li>
                         </ul>
                         <ul class="pagination">
                             <li><a href="#"><span>1</span></a></li>
@@ -54,7 +52,6 @@
                             <li><a href="#"><span>4</span></a></li>
                             <li><a href="#"><span>5</span></a></li>
                             <li><a href="#"><span>6</span></a></li>
-                            <li><a href="#"><span>7</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -80,35 +77,6 @@
         </div>
     </div>
 {% endblock %}
-
-{% block footergallery %}
-    <figure>
-        <a href="{% static 'images/equipo-trabajando2.jpg' %}" rel="shadowbox[index]" title="Equipo trabajando">
-            <img src="{% static 'images/equipo-trabajando2.min.jpg' %}" alt="Equipo trabajando" title="Equipo trabajando" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{% static 'images/consulta1.jpg' %}" rel="shadowbox[index]" title="Imágen de la consulta">
-            <img src="{% static 'images/consulta1.min.jpg' %}" alt="Imágen de la consulta" title="Imágen de la consulta" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{% static 'images/patrocinio-tv.jpg' %}" rel="shadowbox[index]" title="Patrocinio diagnosticando">
-            <img src="{% static 'images/patrocinio-tv.min.jpg' %}" alt="Patrocinio diagnosticando" title="Patrocinio diagnosticando" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{% static 'images/consulta2.jpg' %}" rel="shadowbox[index]" title="Imágen de la consulta">
-            <img src="{% static 'images/consulta2.min.jpg' %}" alt="Imágen de la consulta" title="Imágen de la consulta" />
-        </a>
-    </figure>
-    <figure>
-        <a href="https://www.youtube.com/watch?v=5-JuMRmbmXo" target="_blank" title="Instalaciones de Patrodent">
-            <img src="{% static 'images/instalaciones.min.jpg' %}" alt="Instalaciones de Patrodent" title="Instalaciones de Patrodent" />
-        </a>
-    </figure>
-{% endblock %}
-
 
 {% block footerjs %}
     {{ block.super }}
