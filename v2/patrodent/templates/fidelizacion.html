@@ -6,10 +6,10 @@
 
 {% block meta %}
 <meta property="og:title" content="Nuestra historia" />
-<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{% url 'template_view' 'fidelizacion' %}">
+<meta property="og:url" content="https://patrodent.com{% url 'template_view' 'fidelizacion' %}">
 <meta property="og:description" content="Gracias a todos estos años de fidelidad, Patrodent ha querido premiar a todos nuestros pacientes con nuestra tarjeta de fidelización PATRODENT 2.0, por seguir confiando en nuestra filosofía de trabajo. ">
 <meta property="og:type" content="image/jpeg" />
-<meta property="og:image" content="http{% if request.is_secure %}{% endif %}://{% static 'images/tarjeta-fidelizacion.jpg' %}" />
+<meta property="og:image" content="https://patrodent.com{% static 'images/tarjeta-fidelizacion.jpg' %}" />
 {% endblock %}
 
 

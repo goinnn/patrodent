@@ -902,6 +902,7 @@ footer .style-1 {
 }
 .jcarousel-wrapper{
 	width: 363px;
+	margin: 60px auto 20px;
 }
 .jcarousel {
 	width: 360px;
@@ -1140,6 +1141,7 @@ form.form .labelinfo {
 
     header div.main, div.container_24 .grid_24 {
         width: 98%;
+		margin: 0 auto;
     }
 
     .wrapper.bot-pad > div {
@@ -1242,9 +1244,6 @@ form.form .labelinfo {
 }
 
 @media only screen and (max-width : 875px) {
-	header h1 a {
-		width: 235px;
-	}
 	header h1 a img {
 		max-width: 100%;
 	}
@@ -1354,11 +1353,14 @@ form.form .labelinfo {
     .beforeAfter .content-inner {
         padding: 1em;
     }
+	.jcarousel-wrapper{
+		width: 350px;
+	}
+	.jcarousel {
+		width: 329px;
+	}
 }
 @media only screen and (max-width : 830px) {
-	header h1 a {
-		width: 167px;
-	}
 	.contactheader {
 		max-width: 361px;
 		margin-top: 28px;
@@ -1381,6 +1383,13 @@ form.form .labelinfo {
 		max-width: none;
 		width: 100%;
 	}
+	footer .container_24 .grid_12 {
+		width: 100%;
+		padding-left: 0;
+	}
+	.jcarousel-wrapper {
+		margin: 0 auto 20px;
+	}
 }
 
 @media only screen and (max-width : 720px) {
@@ -1388,13 +1397,13 @@ form.form .labelinfo {
 		display: block;
 		margin: 0 auto;
 		width: 100%;
-		line-height: 1em;
+		line-height: 0.5em;
 	}
 	header h1.sign a {
 		display: block;
+		width: 324px;
 		margin: 0 auto;
 		background: white;
-		border-radius: 0.2em;
 		line-height: 1em;
 	}
 	header .grid_24 > .fright {
@@ -1402,6 +1411,12 @@ form.form .labelinfo {
 		width: 100%;
 		margin: 0 auto;
 		clear: both;
+	}
+	header .contactheader {
+		font-size: 14px;
+	}
+	header .contactheader i.fas.fa-phone-alt {
+		font-size: 26px!important;
 	}
 	.contactheader {
 		max-width: None;
@@ -1461,6 +1476,9 @@ form.form .labelinfo {
 }
 
 @media only screen and (max-width : 585px) {
+	header h1 sign a{
+		margin-bottom: 0.3em;
+	}
     .index section .container_24 .wrapper .list-1.p3 li {
         width: 100%;
     }
@@ -1477,10 +1495,6 @@ form.form .labelinfo {
 }
 
 @media only screen and (max-width : 560px) {
-    header {
-        zoom: 0.7;
-        margin-top: 3.5em;
-    }
     .slogon .whats {
         margin: 15px 0;
     }
@@ -1513,9 +1527,6 @@ form.form .labelinfo {
 }
 
 @media only screen and (max-width : 480px) {
-	h1 a {
-		width: 150px;
-	}
     .center,
     .center2 {
         width: 100%;
@@ -1554,12 +1565,26 @@ form.form .labelinfo {
 	header h1 a {
 		z-index: 10;
 	}
+	header .contactheader {
+		font-size: 13px;
+	}
+	header .contactheader i.fas.fa-phone-alt {
+		font-size: 24px!important;
+	}
 	.headerBooking {
 		margin-top: 0.8em;
 	}
     .index .slider-wrapper {
         zoom: 0.5;
     }
+	.jcarousel-wrapper {
+		width: 300px;
+	}
+	.jcarousel,
+	.jcarousel a,
+	.jcarousel ul.gallery li {
+		width: 277px;
+	}
 }
 @media only screen and (max-width : 320px) {
     nav.responsiveNav li {

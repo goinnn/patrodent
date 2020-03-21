@@ -6,7 +6,7 @@
 
 {% block meta %}
 <meta property="og:title" content="Periodoncia" />
-<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{{ request.get_host }}{% url 'template_view' 'periodoncia' %}">
+<meta property="og:url" content="https://patrodent.com{{ request.get_host }}{% url 'template_view' 'periodoncia' %}">
 <meta property="og:description" content="La periodoncia es una especialidad odontológica dedicada a la prevención, diagnóstico y tratamiento de las enfermedades de las encías">
 {% endblock %}
 

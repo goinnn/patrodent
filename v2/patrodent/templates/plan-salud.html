@@ -4,7 +4,7 @@
 
 {% block meta %}
 <meta property="og:title" content="Plan de Salud Bucodental de la Junta de Andalucía" />
-<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{{ request.get_host }}{% url 'template_view' 'plan-salud' %}">
+<meta property="og:url" content="https://patrodent.com{{ request.get_host }}{% url 'template_view' 'plan-salud' %}">
 <meta property="og:description" content="Plan de Salud Bucodental de la Junta de Andalucía">
 {% endblock %}
 

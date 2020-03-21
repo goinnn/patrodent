@@ -6,7 +6,7 @@
 {% endblock %}
 {% block meta %}
 <meta property="og:title" content="Tratamientos" />
-<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{{ request.get_host }}{% url 'template_view' 'tratamientos' %}">
+<meta property="og:url" content="https://patrodent.com{{ request.get_host }}{% url 'template_view' 'tratamientos' %}">
 <meta property="og:description" content="Tratamientos que ofrece la Clínica Dental Patrocinio Gómez Martínez (Patrodent)">
 {% endblock %}
 {% block title %}Tratamientos - {% endblock %}

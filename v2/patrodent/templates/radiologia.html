@@ -8,7 +8,7 @@
 
 {% block meta %}
 <meta property="og:title" content="Radiología Digital" />
-<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{{ request.get_host }}{% url 'template_view' 'radiologia' %}">
+<meta property="og:url" content="https://patrodent.com{{ request.get_host }}{% url 'template_view' 'radiologia' %}">
 <meta property="og:description" content="La radiología digital nos permite obtener radiografías en menor tiempo y reducir en un 80% la dosis de radiación que reciben nuestros pacientes">
 {% endblock %}
 

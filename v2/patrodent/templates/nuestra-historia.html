@@ -6,10 +6,10 @@
 
 {% block meta %}
 <meta property="og:title" content="Nuestra historia" />
-<meta property="og:url" content="http{% if request.is_secure %}{% endif %}://{% url 'template_view' 'nuestra-historia' %}">
+<meta property="og:url" content="https://patrodent.com{% url 'template_view' 'nuestra-historia' %}">
 <meta property="og:description" content="Con más de 35 años de experiencia, en Clínica Dental Patrodent mantenemos la tradición por la excelencia en nuestros tratamientos.">
 <meta property="og:type" content="image/jpeg" />
-<meta property="og:image" content="http{% if request.is_secure %}{% endif %}://{% static 'images/equipo.jpg' %}" />
+<meta property="og:image" content="https://patrodent.com{% static 'images/equipo.jpg' %}" />
 {% endblock %}
 
 
@@ -20,31 +20,45 @@
 {% block pageclass %}history{% endblock %}
 
 {% block footergallery %}
-    <figure>
-        <a href="https://www.youtube.com/watch?v=gt4ECC3SROg"  title="Títulos de Patrocinio Gómez" target="_blank">
-            <img src="{% static 'images/titulos.min.jpg' %}" alt="Títulos de Patrocinio Gómez" title="Títulos de Patrocinio Gómez" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{% static 'images/patrocinio_despacho.jpg' %}" rel="shadowbox[quienSoy]" title="Patrocinio en el despacho">
-            <img src="{% static 'images/patrocinio_despacho.min.jpg' %}" alt="Patrocinio en el despacho" title="Patrocinio en el despacho" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{% static 'images/figurita.jpg' %}" rel="shadowbox[quienSoy]" title="Figurita mujer estudiando">
-            <img src="{% static 'images/figurita.min.jpg' %}" alt="Patrocinio trabajando" title="Figurita mujer estudiando" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{% static 'images/patrocinio_operando2.jpg' %}" rel="shadowbox[quienSoy]" title="Patrocinio operando">
-            <img src="{% static 'images/patrocinio_operando2.min.jpg' %}" alt="Patrocinio operando" title="Patrocinio operando" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{% static 'images/patrocinio_trabajando.jpg' %}" rel="shadowbox[quienSoy]" title="Patrocinio trabajando">
-            <img src="{% static 'images/patrocinio_trabajando.min.jpg' %}" alt="Patrocinio trabajando" title="Patrocinio trabajando" />
-        </a>
-    </figure>
+
+<div class="jcarousel-wrapper">
+    <div class="jcarousel" data-jcarousel="true">
+        <ul class="gallery" itemscope="" itemtype="http://schema.org/ImageGallery" style="left: 0px; top: 0px;" data-pswp-uid="1">
+                <li class="photo-item">
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a class="image" href="{% static 'images/patrocinio_despacho.jpg' %}" itemprop="contentUrl">
+                            <img src="{% static 'images/patrocinio_despacho.jpg' %}" alt="Patrocinio en el despacho" title="Patrocinio en el despacho" onerror="$(this).parents('.photo-item').remove()">
+                        </a>
+                    </figure>
+
+                </li>
+                <li class="photo-item">
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a class="image" href="{% static 'images/figurita.jpg' %}" itemprop="contentUrl">
+                            <img src="{% static 'images/figurita.jpg' %}" alt="Figurita mujer estudiando" title="Figurita mujer estudiando"  onerror="$(this).parents('.photo-item').remove()">
+                        </a>
+                    </figure>
+                </li>
+                <li class="photo-item">
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a class="image" href="{% static 'images/patrocinio_operando2.jpg' %}" itemprop="contentUrl">
+                            <img src="{% static 'images/patrocinio_operando2.jpg' %}" alt="Patrocinio operando" title="Patrocinio operando"  onerror="$(this).parents('.photo-item').remove()">
+                        </a>
+                    </figure>
+
+                </li>
+                <li class="photo-item">
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a class="image" href="{% static 'images/patrocinio_trabajando.jpg' %}" itemprop="contentUrl">
+                            <img src="{% static 'images/patrocinio_trabajando.jpg' %}" alt="Patrocinio trabajando" title="Patrocinio trabajando" onerror="$(this).parents('.photo-item').remove()">
+                        </a>
+                    </figure>
+                </li>
+        </ul>
+        <span class="jcarousel-control-prev" data-jcarouselcontrol="true">‹</span>
+        <span class="jcarousel-control-next" data-jcarouselcontrol="true">›</span>
+    </div>
+</div>
 {% endblock %}
 
 
