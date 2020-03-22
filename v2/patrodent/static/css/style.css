@@ -907,7 +907,10 @@ footer .style-1 {
 .jcarousel {
 	width: 360px;
 }
-
+.jcarousel i {
+	font-size: 16px;
+	line-height: 29px;
+}
 .jcarousel ul.gallery li {
 	border: none;
 	width: 360px
@@ -999,7 +1002,7 @@ ul.curriculum li {
 
 /* changes */
 nav.responsiveNav,
-nav a#pull {
+nav span#pull {
     display: none;
 }
 
@@ -1102,7 +1105,7 @@ form.form .labelinfo {
         margin-top: 0.3em;
         margin-bottom: 0.5em;
     }
-    nav a#pull {
+    nav span#pull {
         color: #283744;
         display: block;
         background-color: #283744;
@@ -1112,7 +1115,7 @@ form.form .labelinfo {
         height: 2.5em;
         position: relative;
     }
-    nav a#pull:after {
+    nav span#pull:after {
         content:"";
         background: url('../images/nav-icon.png') no-repeat;
         width: 30px;

@@ -54,31 +54,51 @@
 
 
 {% block footergallery %}
-    <figure>
-        <a href="{% static 'images/recepcion1.jpg' %}" rel="shadowbox[index]" title="Recepción">
-            <img src="{% static 'images/recepcion1.min.jpg' %}" alt="Recepción" title="Recepción" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{% static 'images/recepcion2.jpg' %}" rel="shadowbox[index]" title="Recepción">
-            <img src="{% static 'images/recepcion2.min.jpg' %}" alt="Recepción" title="Recepción" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{% static 'images/reloj.jpg' %}" rel="shadowbox[index]" title="Reloj">
-            <img src="{% static 'images/reloj.min.jpg' %}" alt="Reloj" title="Reloj" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{% static 'images/pasillo.jpg' %}" rel="shadowbox[index]" title="Pasillo de la consulta">
-            <img src="{% static 'images/pasillo.min.jpg' %}" alt="Pasillo de la consulta" title="Pasillo de la consulta" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{% static 'images/despacho.jpg' %}" rel="shadowbox[index]" title="Despacho">
-            <img src="{% static 'images/despacho.min.jpg' %}" alt="Despacho" title="Despacho" />
-        </a>
-    </figure>
+<div class="jcarousel-wrapper">
+    <div class="jcarousel" data-jcarousel="true">
+        <ul class="gallery" itemscope="" itemtype="http://schema.org/ImageGallery" style="left: 0px; top: 0px;" data-pswp-uid="1">
+                <li class="photo-item">
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a class="image" href="{% static 'images/recepcion1.jpg' %}" itemprop="contentUrl">
+                            <img src="{% static 'images/recepcion1.jpg' %}" alt="Recepción" title="Recepción" onerror="$(this).parents('.photo-item').remove()">
+                        </a>
+                    </figure>
+
+                </li>
+                <li class="photo-item">
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a class="image" href="{% static 'images/recepcion2.jpg' %}" itemprop="contentUrl">
+                            <img src="{% static 'images/recepcion2.jpg' %}" alt="Recepción" title="Recepción"  onerror="$(this).parents('.photo-item').remove()">
+                        </a>
+                    </figure>
+                </li>
+                <li class="photo-item">
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a class="image" href="{% static 'images/reloj.jpg' %}" itemprop="contentUrl">
+                           <img src="{% static 'images/reloj.jpg' %}" alt="Reloj" title="Reloj" onerror="$(this).parents('.photo-item').remove()">
+                        </a>
+                    </figure>
+
+                </li>
+                <li class="photo-item">
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a class="image" href="{% static 'images/pasillo.jpg' %}" itemprop="contentUrl">
+                           <img src="{% static 'images/pasillo.jpg' %}" alt="Pasillo de la consulta" title="Pasillo de la consulta" onerror="$(this).parents('.photo-item').remove()">
+                        </a>
+                    </figure>
+                </li>
+                <li class="photo-item">
+                    <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <a class="image" href="{% static 'images/despacho.jpg' %}" itemprop="contentUrl">
+                           <img src="{% static 'images/despacho.jpg' %}" alt="Despacho" title="Despacho" onerror="$(this).parents('.photo-item').remove()">
+                        </a>
+                    </figure>
+                </li>
+        </ul>
+        <span class="jcarousel-control-prev" data-jcarouselcontrol="true"><i class="fas fa-chevron-right"></i></span>
+        <span class="jcarousel-control-next" data-jcarouselcontrol="true"><i class="fas fa-chevron-right"></i></span>
+    </div>
+</div>
 {% endblock %}
 
 

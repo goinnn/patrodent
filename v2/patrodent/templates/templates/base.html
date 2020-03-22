@@ -23,7 +23,7 @@
        <link rel="stylesheet" href="{% static 'photoswipe/dist/photoswipe.css' %}">
        <link rel="stylesheet" href="{% static 'photoswipe/dist/default-skin/default-skin.css' %}">
        <link rel="stylesheet" type="text/css" href="{% static 'jsor-jcarousel-0.3.1/examples/responsive/jcarousel.responsive.min.css' %}">
-       <link rel="stylesheet" href="{% static 'css/style.min.css' %}" type="text/css" media="all">
+       <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all">
    {% endblock %}
    {% block js %}
     <script src="{% static 'js/jquery-1.7.2.min.js' %}" type="text/javascript"></script>
@@ -38,7 +38,7 @@
     <script src="{% static 'js/patrodent.min.js' %}"></script>
    {% endblock %}
     <!--METADATA LINE-->
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"Clinica dental Patrodent","url":"https://www.patrodent.com","address":"Marqués de Paradas 22 1 º dcha 41001 Sevilla","sameAs":["https://www.facebook.com/patrodent.patrodent", "https://www.instagram.com/clinicadentalpatrodent/", "https://www.doctoralia.es/clinicas/clinica-dental-patrodent"]}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"Clinica dental Patrodent","url":"https://www.patrodent.com","address":"Marqués de Paradas 22 1 º dcha 41001 Sevilla","sameAs":["https://www.facebook.com/patrodent.patrodent", "https://www.instagram.com/clinicadentalpatrodent/", "https://www.doctoralia.es/clinicas/clinica-dental-patrodent", "https://twitter.com/patrodent_", "https://www.linkedin.com/in/patrodent-cl%C3%ADnica-dental-a589ab111/"]}</script>
    {% block iejs %}
     <!--[if IE]>
     <style type="text/css">
@@ -65,7 +65,7 @@
     <!--==============================header=================================-->
    {% block header %}
    <nav class="responsiveNav">
-        <a href="#" id="pull">Menu</a>
+        <span id="pull">Menu</span>
         <ul class="responsiveNav">
             <li class="index">
                 <a href="{% url 'template_view' 'index' %}" class="{% block class-patrodent-link2 %}{% endblock %}">Conócenos</a>
