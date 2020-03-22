@@ -190,6 +190,9 @@ h1 a {
     margin-top: 35px;
     text-align: center;
 }
+header h1 a img {
+	width: 100%;
+}
 
 .head-right {
 	float:right;
@@ -199,7 +202,7 @@ h1 a {
 .btn-cita {
 	color: white;
 	text-decoration: none;
-	background: #1c8c7d;
+	background: #32ac9c;
 	border-radius: 0.5em;
 	padding: 0.5em 1em;
 	margin: 0 0 0.5em 1em;
@@ -1049,10 +1052,94 @@ form.form .labelinfo {
 #footermap iframe {
 	width: 100%;
 }
+
+.movileContact,
+.addressinfo {
+	visibility: hidden;
+	display: none;
+}
+
 @media only screen and (max-width : 1024px) {
-    header {
-        margin-top: 2.5em;
+	header {
+		margin-top: 2.5em;
+		height: 161px;
+	}
+    header  h1.sign {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	header	h1.sign a {
+		display: inline-block;
+		margin: 0 auto;
+		width: 350px;
     }
+	header .fright {
+		visibility: hidden;
+		display: none;
+	}
+	.movileContact {
+		display: block;
+		visibility: visible;
+		clear: both;
+		margin-bottom: 0.6em;
+		width: 100%;
+		color: #32ac9c;
+		text-align: center;
+	}
+	.movileContact > div {
+		display: inline-block;
+	}
+	.movileContact .tel{float: left}
+	.movileContact .social {
+		float: right;
+	}
+	.movileContact a.phone {
+		color: #32AC9C;
+		font-size: 20px;
+		text-decoration: none;
+	}
+	.movileContact .whatssap {
+		margin-top: -6px;
+	}
+	.movileContact > div.cita {
+		text-align: center;
+	}
+	.movileContact > div.cita .btn-cita {
+		font-size:18px;
+		line-height: 1.2em;
+	}
+	.movileContact div.social {
+		text-align: right;
+	}
+	.movileContact a {
+		text-decoration: None;
+	}
+	.movileContact .socialheader i {
+		font-size: 26px;
+		margin-top: -10px
+	}
+	.addressinfo {
+		color: white;
+		clear: both;
+		display: block;
+		visibility: visible;
+		padding: 0.2em;
+		background: #1c8c7d;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+	.addressinfo span {
+		color: white;
+		line-height: 1.8em;
+		margin: 0 0.3em;
+		display: inline-block;
+	}
+	.addressinfo i {
+		line-height: 1.6em;
+	}
     nav.responsiveNav {
         position: absolute;
         top: 0;
@@ -1105,9 +1192,9 @@ form.form .labelinfo {
         margin-bottom: 0.5em;
     }
     nav span#pull {
-        color: #283744;
+        color: #32ac9c;
         display: block;
-        background-color: #283744;
+        background-color: #32ac9c;
         box-sizing: border-box;
         width: 100%;
         line-height: 2em;
@@ -1362,6 +1449,13 @@ form.form .labelinfo {
 		width: 329px;
 	}
 }
+
+@media only screen and (max-width : 867px) {
+	header {
+		height: 180px;
+	}
+}
+
 @media only screen and (max-width : 830px) {
 	.contactheader {
 		max-width: 361px;
@@ -1395,36 +1489,36 @@ form.form .labelinfo {
 }
 
 @media only screen and (max-width : 720px) {
-	header h1.sign {
-		display: block;
-		margin: 0 auto;
-		width: 100%;
-		line-height: 0.5em;
-	}
-	header h1.sign a {
-		display: block;
-		width: 324px;
-		margin: 0 auto;
-		background: white;
-		line-height: 1em;
-	}
-	header .grid_24 > .fright {
-		float: none;
-		width: 100%;
-		margin: 0 auto;
-		clear: both;
-	}
-	header .contactheader {
-		font-size: 14px;
-	}
-	header .contactheader i.fas.fa-phone-alt {
-		font-size: 26px!important;
-	}
-	.contactheader {
-		max-width: None;
-		margin-top: 28px;
-		float: left;
-	}
+	/*header h1.sign {*/
+	/*	display: block;*/
+	/*	margin: 0 auto;*/
+	/*	width: 100%;*/
+	/*	line-height: 0.5em;*/
+	/*}*/
+	/*header h1.sign a {*/
+	/*	display: block;*/
+	/*	width: 324px;*/
+	/*	margin: 0 auto;*/
+	/*	background: white;*/
+	/*	line-height: 1em;*/
+	/*}*/
+	/*header .grid_24 > .fright {*/
+	/*	float: none;*/
+	/*	width: 100%;*/
+	/*	margin: 0 auto;*/
+	/*	clear: both;*/
+	/*}*/
+	/*header .contactheader {*/
+	/*	font-size: 14px;*/
+	/*}*/
+	/*header .contactheader i.fas.fa-phone-alt {*/
+	/*	font-size: 26px!important;*/
+	/*}*/
+	/*.contactheader {*/
+	/*	max-width: None;*/
+	/*	margin-top: 28px;*/
+	/*	float: left;*/
+	/*}*/
 }
 @media only screen and (max-width : 700px) {
     header .slogon .tel{
@@ -1522,12 +1616,16 @@ form.form .labelinfo {
     .container_24 .grid_13 {
         width: auto;
     }
-	header .headerBooking {
-		right: 0px;
-		top: 1em;
+	/*header .headerBooking {*/
+	/*	right: 0px;*/
+	/*	top: 1em;*/
+	/*}*/
+}
+@media only screen and (max-width : 513px) {
+	header {
+		height: 214px;
 	}
 }
-
 @media only screen and (max-width : 480px) {
     .center,
     .center2 {
@@ -1546,8 +1644,27 @@ form.form .labelinfo {
 		display: none;
 		visibility: hidden;
 	}
+	.movileContact a.phone {
+		font-size: 16px;
+	}
+	.movileContact .socialheader i {
+		font-size: 18px;
+	}
 }
-
+@media only screen and (max-width : 415px) {
+	header {
+		height: 225px;
+	}
+	.movileContact div.social {
+		display: block;
+		float: none;
+		text-align: left;
+		clear: both;
+		text-align: left;
+		margin-left: 0;
+		margin-top: 0.3em;
+	}
+}
 @media only screen and (max-width : 400px) {
     .index .slider-wrapper {
         zoom: 0.6;
@@ -1586,6 +1703,13 @@ form.form .labelinfo {
 	.jcarousel a,
 	.jcarousel ul.gallery li {
 		width: 277px;
+	}
+}
+
+@media only screen and (max-width : 356px) {
+	header {height: 270px}
+	header h1.sign a {
+		max-width: 100%;
 	}
 }
 @media only screen and (max-width : 320px) {

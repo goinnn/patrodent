@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'datetimepicker',
     'django_comments',
+    'sorl.thumbnail',
     'mptt',
     'tagging',
     'zinnia'
