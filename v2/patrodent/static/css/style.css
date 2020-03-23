@@ -1068,7 +1068,8 @@ form.form .labelinfo {
 		display: block;
 		width: 100%;
 		text-align: center;
-		margin-bottom: 1em;
+		margin-top: 0.5em;
+		margin-bottom: 0.8em;
 	}
 	header	h1.sign a {
 		display: inline-block;
@@ -1108,7 +1109,7 @@ form.form .labelinfo {
 	}
 	.movileContact > div.cita .btn-cita {
 		font-size:16px;
-		line-height: 1.2em;
+		line-height: 1.3em;
 	}
 	.movileContact div.social {
 		text-align: right;
@@ -1679,6 +1680,9 @@ form.form .labelinfo {
 		max-width: 218px;
 		margin-right: 0px;
 	}
+	header h1.sign a {
+		max-width: 100%;
+	}
 }
 @media only screen and (max-width : 378px) {
 	header h1 a {
@@ -1708,9 +1712,6 @@ form.form .labelinfo {
 
 @media only screen and (max-width : 356px) {
 	header {height: 270px}
-	header h1.sign a {
-		max-width: 100%;
-	}
 }
 @media only screen and (max-width : 320px) {
     nav.responsiveNav li {
