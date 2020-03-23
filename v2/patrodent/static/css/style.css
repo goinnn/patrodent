@@ -1062,7 +1062,7 @@ form.form .labelinfo {
 @media only screen and (max-width : 1024px) {
 	header {
 		margin-top: 2.5em;
-		height: 190px;
+		/*height: 190px;*/
 	}
     header  h1.sign {
 		display: block;
@@ -1099,6 +1099,7 @@ form.form .labelinfo {
 	.movileContact a.phone {
 		color: #32AC9C;
 		font-size: 20px;
+		padding-left: 5px;
 		text-decoration: none;
 	}
 	.movileContact .whatssap {
@@ -1334,6 +1335,9 @@ form.form .labelinfo {
 }
 
 @media only screen and (max-width : 875px) {
+	header .addressinfo {
+		font-size: 14px;
+	}
 	header h1 a img {
 		max-width: 100%;
 	}
@@ -1452,9 +1456,9 @@ form.form .labelinfo {
 }
 
 @media only screen and (max-width : 867px) {
-	header {
-		height: 200px;
-	}
+	/*header {*/
+	/*	height: 200px;*/
+	/*}*/
 }
 
 @media only screen and (max-width : 830px) {
@@ -1471,6 +1475,9 @@ form.form .labelinfo {
 }
 
 @media only screen and (max-width : 760px) {
+	header .addressinfo {
+		font-size: 12px;
+	}
 	footer .contact_info {
 		width: 100%!important;
 		display: block;
@@ -1529,7 +1536,11 @@ form.form .labelinfo {
         font-size: 16px;
     }
 }
-
+@media only screen and (max-width : 650px) {
+	header .addressinfo {
+		font-size: 10px;
+	}
+}
 @media only screen and (max-width : 610px) {
     header .slogon {
         position: absolute;
@@ -1623,9 +1634,9 @@ form.form .labelinfo {
 	/*}*/
 }
 @media only screen and (max-width : 513px) {
-	header {
-		height: 220px;
-	}
+	/*header {*/
+	/*	height: 220px;*/
+	/*}*/
 }
 @media only screen and (max-width : 480px) {
     .center,
@@ -1652,19 +1663,43 @@ form.form .labelinfo {
 		font-size: 18px;
 	}
 }
+
+@media only screen and (max-width : 475px) {
+	header .addressinfo{
+		font-size: 9px;
+	}
+}
+@media only screen and (max-width : 426px) {
+	header .addressinfo{
+		font-size: 8px;
+	}
+}
 @media only screen and (max-width : 415px) {
 	header {
-		height: 230px;
+		/*height: 230px;*/
+	}
+	.movileContact a.phone,
+	.movileContact > div.cita .btn-cita {
+		font-size: 14px;
+	}
+	.movileContact .whatssap {
+		margin-top: 0;
+	}
+	.movileContact .fa-whatsapp  {
+		font-size: 14px!important;
 	}
 	.movileContact div.social {
-		display: block;
-		float: none;
-		text-align: left;
-		clear: both;
-		text-align: left;
-		margin-left: 0;
-		margin-top: 0.3em;
+
 	}
+	/*.movileContact div.social {*/
+	/*	display: block;*/
+	/*	float: none;*/
+	/*	text-align: left;*/
+	/*	clear: both;*/
+	/*	text-align: left;*/
+	/*	margin-left: 0;*/
+	/*	margin-top: 0.3em;*/
+	/*}*/
 }
 @media only screen and (max-width : 400px) {
     .index .slider-wrapper {
