@@ -309,9 +309,14 @@ a.btn-cita:hover {
 	-moz-border-radius:10px 10px 0 0;
 	-webkit-border-radius:10px 10px 0 0;
 }
-.menu > li > a:hover, .menu > li > a.active, .menu > li.sfHover > a {
+.menu > li > a:hover,
+.menu > li > a.active,
+.menu > li.sfHover > a {
 	background-position: 0 bottom;
 	color: white;
+}
+.sf-arrows a.active.sf-with-ul:after {
+	border-top-color: white;
 }
 .sf-arrows .sf-with-ul:after {
 	border-top-color: #32ac9c;
@@ -436,10 +441,10 @@ ul.menu li li:hover li ul, ul.menu li li.sfHover li ul {
 #page5 .content-inner, #page6 .content-inner {padding-bottom:85px;}
 
 h4 {
-    font-size:24px; 
+    font-size: 18px;
     line-height:1.208em; 
     color:#657181;
-    font-weight:normal;
+    font-weight: 700;
     letter-spacing:-1px;
 }
 h4 span {
@@ -591,20 +596,17 @@ blockquote a{
 	display:block;
 }
 .button {
-	font-size:24px;
-	line-height:1.208em;
+	font-size: 20px;
 	display:inline-block; 
-	padding:0 20px 10px;
-	color:#32ac9c; 
-	background:url(../images/button-tail.gif) 0 0 repeat-x #f1f1f1;
-	border:1px solid #d0d0d0;
+	padding: 6px 20px;
+	color: white;
+	background: #32AC9C;
 	border-radius:20px;
 	-moz-border-radius:20px;
 	-webkit-border-radius:20px;
-	letter-spacing:-1px;
 }
 	
-	.button:hover {color:#727272;}
+.button:hover { background-color: #e65e9e}
 
 .list-1.columns3 {
   float: left;
@@ -648,6 +650,11 @@ blockquote a{
 	margin-bottom:25px;
 	
 }
+
+.important-block .title a {
+	text-decoration: none;
+	color: white
+}
 .important-block .border {
     background:url(../images/border-1.png) right 0 repeat-y;
     margin-right:14px;
@@ -669,7 +676,7 @@ blockquote a{
 }
 .important-block ul li a i {
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     display: block;
     width: 25px;
@@ -682,7 +689,7 @@ blockquote a{
 }
 .important-block ul li a.active,
 .important-block ul li a:hover {
-    color: #5F5F5F;
+    color: #e65e9e;
 }
 
 .date-style {
@@ -722,7 +729,7 @@ blockquote a{
 .text-left-index {
     margin-right: 10px;
 }
-
+p,
 .text-1 {
 	font-size:15px;
 	line-height:22px;
@@ -770,7 +777,16 @@ ul.default li {
 .map-margin {
     margin-top: 40px;
 }
+.contact .map-margin h4 {
+	margin-bottom: 0.4em;
+}
+.contact .map-margin p {
+	margin-left: 0.5em;
+}
 
+.contact .map-margin a {
+	text-decoration: none;
+}
 /***** Contact form *****/
 form.form {
 	position:relative;
@@ -778,6 +794,9 @@ form.form {
 	width:100%;
 	z-index:1;
 	}
+form.form h2{
+	margin-bottom: 32px;
+}
 	form.form fieldset {
 		border:none;
 		padding:0;
@@ -870,10 +889,21 @@ footer {
 	line-height:20px;
 	color:#727272;
 }
-
+footer .footer-title a {
+	border-radius: 1em;
+	color: white;
+	padding: 0.3em 1em;
+	background-color: #32AC9C;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+footer .footer-title a:hover {
+	background-color: #e65e9e;
+}
 .footer-title {
 	font-size:19px;
-	line-height:1.21em;
+	line-height:1.91em;
 	color:#657181;
 	letter-spacing:-1px;
 	margin-bottom:30px;
@@ -1019,15 +1049,21 @@ form.form .labelinfo {
 .home3colums {
 	padding-top: 40px;
 }
+.home3colums h4{
+	margin-bottom: 15px;
+}
 .home3colums a {
 	text-decoration: none;
+}
+.home3colums p {
+	margin-bottom: 0.3em;
 }
 .home3colums > div {
 	background: rgba(50, 172, 156, 0.37);
 	position: relative;
 	padding: 0.3em 0.5em;
 	text-align: center;
-	height: 200px;
+	height: 210px;
 }
 .home3colums > div.center {
 	margin: 0 2em;
