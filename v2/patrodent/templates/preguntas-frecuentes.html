@@ -1,0 +1,43 @@
+{% extends "templates/base.html" %}
+
+{% load static %}
+
+{% block metadescription %}Listado de preguntas frecuentes y sus respuestas{% endblock %}
+
+{% block meta %}
+<meta property="og:title" content="Preguntas frecuentes" />
+<meta property="og:url" content="https://patrodent.com{% url 'template_view' 'preguntas-frecuentes' %}">
+<meta property="og:description" content="La sedación consciente en odontología permite conseguir un estado de relajación y tranquilidad para el paciente.">
+<meta property="og:type" content="image/jpeg" />
+<meta property="og:image" content="https://patrodent.com{% static 'images/sala_de_esperas.jpg' %}" />
+{% endblock %}
+
+{% block title %}Preguntas frecuentes - {% endblock %}
+
+{% block class-faq %}active{% endblock %}
+
+{% block pageclass %}faq{% endblock %}
+
+{% block content %}
+    <div class="wrapper">
+        <div class="alpha prefix_1 grid_22 suffix_1 omega">
+            <div class="important-block">
+                <div class="wrapper">
+                    <div class="alpha grid_23">
+                        <div class="indent-l">
+                            <div>
+                                <div class="title"><a href="{% url 'template_view' "tratamientos" %}">Preguntas Frecuentes</a></div>
+                                <ul class="list-1 columns3">
+                                    {% include "templates/inc.faq.html" %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="alpha prefix_1 grid_22 indent-bot">
+        {% block faqcontent %}{% endblock %}
+    </div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% url 'template_view' 'preguntas-implantes' as implantes_url%}
+{% url 'template_view' 'preguntas-cirugia-bucal' as cirugia_url%}
+{% url 'template_view' 'preguntas-periodoncia' as periodoncia_url%}
+{% url 'template_view' 'preguntas-ortodoncia' as ortodoncia_url %}
+{% url 'template_view' 'preguntas-ortodoncia-invisible' as invisible_url %}
+{% url 'template_view' 'preguntas-muelas-juicio' as muelas_url %}
+{% url 'template_view' 'preguntas-odontopediatria' as odontopediatria_url %}
+{% url 'template_view' 'preguntas-endodoncia' as endodoncia_url%}
+{% url 'template_view' 'preguntas-estetica-dental' as estetica_url %}
+{% url 'template_view' 'preguntas-prevencion-caries' as caries_url %}
+
+<li><a href="{{ implantes_url }}" {% ifequal implantes_url full_path %}class="active"{% endifequal %}><i></i>Implantes</a></li>
+<li><a href="{{ cirugia_url }}" {% ifequal cirugia_url full_path %}class="active"{% endifequal %}><i></i>Cirugía bucal</a></li>
+<li><a href="{{ periodoncia_url }}" {% ifequal periodoncia_url full_path %}class="active"{% endifequal %}><i></i>Periodoncia</a></li>
+<li><a href="{{ ortodoncia_url }}" {% ifequal ortodoncia_url full_path %}class="active"{% endifequal %}><i></i>Ortodoncia</a></li>
+<li><a href="{{ invisible_url }}" {% ifequal invisible_url full_path %}class="active"{% endifequal %}><i></i>Ortodoncia invisible</a></li>
+<li><a href="{{ muelas_url }}" {% ifequal muelas_url full_path %}class="active"{% endifequal %}><i></i>Cordales o muelas del juicio</a></li>
+<li><a href="{{ odontopediatria_url }}" {% ifequal odontopediatria_url full_path %}class="active"{% endifequal %}><i></i>Odontopediatría</a></li>
+<li><a href="{{ endodoncia_url }}" {% ifequal endodoncia_url full_path %}class="active"{% endifequal %}><i></i>Endodoncia</a></li>
+<li><a href="{{ caries_url }}" {% ifequal caries_url full_path %}class="active"{% endifequal %}><i></i>Prevención de caries e higiene</a></li>
+<li><a href="{{ estetica_url }}" {% ifequal estetica_url full_path %}class="active"{% endifequal %}><i></i>Estética dental y blanqueamientos</a></li>

@@ -73,12 +73,7 @@
                     <li class="history"><a href="{% url 'template_view' "nuestra-historia" %}">Nuestra Historia</a></li>
                     <li class="whoWeAre"><a href="{% url 'template_view' 'quienes-somos' %}">Equipo Médico</a></li>
                     <li class="loyalty"><a href="{% url 'template_view' "fidelizacion" %}">Fidelización</a></li>
-                </ul>
-            </li>
-            <li class="location">
-                <a href="{% url 'template_view' "instalaciones" %}">Nuestra Clínica</a>
-                <ul>
-                    <li class="Place"><a href="{% url 'template_view' "instalaciones" %}">Instalaciones</a></li>
+                    <li><a href="{% url 'template_view' "instalaciones" %}">Nuestra Clínica</a></li>
                 </ul>
             </li>
             <li class="services">
@@ -93,7 +88,11 @@
                     {% include "templates/inc.tratamientos.html" %}
                 </ul>
             </li>
-            <li class="beforeAfter"><a href="{% url 'template_view' "antes-y-despues" %}">Casos Clínicos</a></li>
+            <li class="beforeAfter"><a href="{% url 'template_view' 'antes-y-despues' %}">Casos Clínicos</a></li>
+            <li class="faq">
+                <a href="{% url 'template_view' 'preguntas-frecuentes' %}">Preguntas Frecuentes</a>
+                <ul>{% include "templates/inc.faq.html" %}</ul>
+            </li>
 {#            <li class="blog"><a href="">Blog</a></li>#}
         </ul>
     </nav>
@@ -173,12 +172,7 @@
                                             <li class="history"><a href="{% url 'template_view' "nuestra-historia" %}">Nuestra Historia</a></li>
                                             <li class="whoWeAre"><a href="{% url 'template_view' 'quienes-somos' %}">Equipo Médico</a></li>
                                             <li class="loyalty"><a href="{% url 'template_view' "fidelizacion" %}">Fidelización</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="{% url 'template_view' "instalaciones" %}" class="{% block class-clinica-link %}{% endblock %}">Nuestra Clínica</a>
-                                        <ul>
-                                            <li class="Place"><a href="{% url 'template_view' "instalaciones" %}">Instalaciones</a></li>
+                                            <li class="Place"><a href="{% url 'template_view' "instalaciones" %}">Nuestra Clínica</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -194,6 +188,12 @@
                                         </ul>
                                     </li>
                                     <li><a class="{% block class-antes-despues-link %}{% endblock %}" href="{% url 'template_view' "antes-y-despues" %}">Casos Clínicos</a></li>
+                                    <li class="faq">
+                                        <a class="{% block class-faq %}{% endblock %}" href="{% url 'template_view' 'preguntas-frecuentes' %}">Preguntas Frecuentes</a>
+                                        <ul style="width:250px">
+                                            {% include "templates/inc.faq.html" %}
+                                        </ul>
+                                    </li>
 {#                                    <li class="blog"><a href="">Blog</a></li>#}
                                 </ul>
                             {% endblock %}

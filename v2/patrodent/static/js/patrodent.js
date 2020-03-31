@@ -220,6 +220,12 @@ function resizeGallery() {
             $(".noLinkWhatsapp a").removeAttr("href", "");
             $(".hideWhatsapp a").remove();
         }
+        $(".question h4").click(function () {
+            var item = $(this).parent(".question")
+            $(this).children('i').toggle();
+            item.children("div").toggle("slow");
+            item.toggleClass('open')
+        })
     });
     $(function() {
         var pull        = $('#pull');

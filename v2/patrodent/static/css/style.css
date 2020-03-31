@@ -44,6 +44,10 @@ body {
 	background:#eceff1;
 }
 
+.hidden {
+	display: none;
+}
+
 .bg {width:100%; background:url(../images/bg-top.jpg) center 0 no-repeat;}
 
 .main {
@@ -161,6 +165,24 @@ figure img {
 .button,
 .logo {text-decoration:none;}	
 
+ol.olnum {
+	padding-left: 0.5em;
+	list-style-type: decimal;
+	margin-left: 2em;
+}
+ul.enum > li {
+	margin-bottom: 1.5em;
+	list-style-type: circle;
+	margin-left: 1em;
+}
+
+ul.list {
+	margin-left: 2em;
+}
+ul.list li {
+	text-indent: -1em;
+	margin-bottom: 1em;
+}
 /*********************************header*************************************/
 header {	
 	width:100%;
@@ -171,7 +193,7 @@ header {
     /*background-color: #32ac9c;*/
 	/*background:url(../images/header-bg.jpg) center 0 no-repeat;*/
 	border-bottom:4px solid #32AC9C;
-	height:180px;
+	height: 240px;
 }
 
 h1 {
@@ -254,6 +276,102 @@ a.btn-cita:hover {
 	/*background: url(../images/phone-bg-green.png) 5px 5px no-repeat;*/
 }
 
+
+header  h1.sign {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-top: 0.5em;
+	margin-bottom: 0.8em;
+}
+header	h1.sign a {
+	display: inline-block;
+	margin: 0 auto;
+	width: 400px;
+}
+
+header .fright {
+	display: none;
+	visibility: hidden;
+}
+
+.movileContact {
+	display: block;
+	visibility: visible;
+	clear: both;
+	margin-bottom: 0.6em;
+	width: 100%;
+	color: #32ac9c;
+	text-align: center;
+}
+.movileContact > div {
+	display: inline-block;
+}
+.movileContact .tel{
+	float: left;
+	padding-left: 0.5em;
+}
+.movileContact .social {
+	float: right;
+	padding-right: 0.5em;
+}
+.movileContact a.phone {
+	color: #32AC9C;
+	font-size: 20px;
+	padding-left: 5px;
+	text-decoration: none;
+}
+.movileContact .whatssap {
+	margin-top: -6px;
+}
+.movileContact > div.cita {
+	text-align: center;
+}
+.movileContact > div.cita .btn-cita {
+	font-size:16px;
+	line-height: 1.3em;
+}
+.movileContact div.social {
+	text-align: right;
+}
+.movileContact a {
+	text-decoration: None;
+}
+.movileContact .socialheader i {
+	font-size: 26px;
+	margin-top: -10px
+}
+
+.addressinfo {
+	color: white;
+	clear: both;
+	display: block;
+	visibility: visible;
+	padding: 0.2em;
+	background: #1c8c7d;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.addressinfo span {
+	color: white;
+	line-height: 1.8em;
+	margin: 0 0.3em;
+	display: inline-block;
+}
+.addressinfo span.openTime {
+	float: left;
+}
+.addressinfo span.mail {
+	float: right;
+}
+.addressinfo i {
+	line-height: 1.8em;
+	font-size: 12px;
+}
+
 .slogon {
 	font-size:18px;
 	line-height:1.222em;
@@ -286,23 +404,32 @@ a.btn-cita:hover {
 }
 
 /*********************************menu*************************************/
+.Menu {
+	text-align: center;
+}
 .menu {
-	padding:0 18px 0;
-	float:right;
-    margin-top: -33px;
+	padding: 0;
+	float: none;
+    margin-top: 6px;
+	display: inline-block;
+}
+.menu ul {
+	text-align: left;
 }
 .menu li {
 	float:left; 
 	position:relative;
 }
 .menu li a {
-	background:url(../images/menu-bg.png) 0 top repeat-x;
+	/*background-color:   rgba(50, 172, 156, 0.3);*/
+	background: transparent;
 	display:block; 
 	font-size:16px; 
 	line-height:1.235em;
 	color:#32ac9c;
 	text-align:center;
-	padding:23px 16px 23px 17px;
+	padding: 23px 16px 23px 17px;
+	margin: 0 1px;
 	position:relative;
 	overflow:hidden;
 	border-radius:10px 10px 0 0;
@@ -312,7 +439,7 @@ a.btn-cita:hover {
 .menu > li > a:hover,
 .menu > li > a.active,
 .menu > li.sfHover > a {
-	background-position: 0 bottom;
+	background-color: #32AC9C;
 	color: white;
 }
 .sf-arrows a.active.sf-with-ul:after {
@@ -620,27 +747,32 @@ blockquote a{
     float: left;
     width: 33%
 }
+/*.list-1.columns3 li a {*/
+/*	text-shadow: 1px 1px 1px black;*/
+/*}*/
 
 .list-1 li {
 	padding-bottom:6px;
 }
 .list-1 li.last {padding-bottom:0;}
-	.list-1 li a {
+.list-1 li a {
+		font-size: 15px;
 		background:url(../images/marker-1.gif) 0 3px no-repeat;
 		display:inline-block;
 		color:#727272;
 		padding-left:25px;
-	}
-		.list-1 li a:hover {
-			background-position:0 bottom;
-		}
+}
+.list-1 li a:hover {
+	background-position:0 bottom;
+}
 
 .important-block {
 	padding:30px 0 30px;
 	border-radius:10px;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
-	background:url(../images/important-bg.png) center top no-repeat #32AC9C;
+	/*background:url(../images/important-bg.png) center top no-repeat #32AC9C;*/
+	background: rgba(50, 172, 156, 0.4);
 	color:#FFF;
 	margin-bottom:20px;
 }
@@ -653,10 +785,11 @@ blockquote a{
 
 .important-block .title a {
 	text-decoration: none;
-	color: white
+	color: #32AC9C;
+	font-weight: 800;
 }
 .important-block .border {
-    background:url(../images/border-1.png) right 0 repeat-y;
+    /*background:url(../images/border-1.png) right 0 repeat-y;*/
     margin-right:14px;
     padding-right:21px;
 }
@@ -669,7 +802,7 @@ blockquote a{
 .important-block ul li a {
     position: relative;
     display:inline-block;
-    color:#fff;
+    color: #6d7a7e;
     padding-left:25px;
     font-weight: bold;
     background-image: none;
@@ -681,7 +814,7 @@ blockquote a{
     display: block;
     width: 25px;
     height: 25px;
-    background:url(../images/marker-3.png) 0 3px no-repeat;
+    /*background:url(../images/marker-3.png) 0 3px no-repeat;*/
 }
 .important-block ul li a.active i,
 .important-block ul li a:hover i {
@@ -689,7 +822,9 @@ blockquote a{
 }
 .important-block ul li a.active,
 .important-block ul li a:hover {
-    color: #e65e9e;
+    /*color: #e65e9e;*/
+	/*color: #32AC9C;*/
+	color: #1c8c7d;
 }
 
 .date-style {
@@ -736,7 +871,11 @@ p,
 	color:#888;
 	font-weight: normal;
 	margin-bottom:11px;
-} 
+	vertical-align: baseline;
+}
+p strong {
+	vertical-align: baseline;
+}
 .text-2 {display:block;margin-bottom:12px;} 
 
 dl span {float:left; width:84px;}
@@ -1089,95 +1228,66 @@ form.form .labelinfo {
 	width: 100%;
 }
 
-.movileContact,
-.addressinfo {
-	visibility: hidden;
-	display: none;
+.question {
+	margin-bottom: 0.2em;
 }
 
+.question h4 {
+	display: block;
+	cursor: pointer;
+	color: #1c8c7d;
+	background: rgba(50, 172, 156, 0.4);
+	padding: 0.5em 1em;
+}
+
+.question.open h4 {
+	background: rgba(50, 172, 156, 1);
+	color: #added7;
+}
+
+.question h4 i {
+	float: right;
+}
+
+.question .answer {
+	display: none;
+	padding: 1em;
+	/*background: rgba(50, 172, 156, 0.3);*/
+}
+
+.Place .slider-wrapper {
+	width: 838px;
+	height: 559px;
+	margin-bottom: 40px;
+	padding: 14px;
+}
+
+.Place .slider-wrapper img {
+	max-height: 559px;
+	max-width: 838px;
+}
+
+.Place .slider-wrapper .pagination {
+	top: 580px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.Place .slider-wrapper .pagination li {
+	float: none;
+	display: inline-block;
+}
 @media only screen and (max-width : 1024px) {
 	header {
 		margin-top: 2.5em;
 		/*height: 190px;*/
 	}
-    header  h1.sign {
-		display: block;
-		width: 100%;
-		text-align: center;
-		margin-top: 0.5em;
-		margin-bottom: 0.8em;
-	}
-	header	h1.sign a {
-		display: inline-block;
-		margin: 0 auto;
-		width: 400px;
-    }
+
 	header .fright {
 		visibility: hidden;
 		display: none;
 	}
-	.movileContact {
-		display: block;
-		visibility: visible;
-		clear: both;
-		margin-bottom: 0.6em;
-		width: 100%;
-		color: #32ac9c;
-		text-align: center;
-	}
-	.movileContact > div {
-		display: inline-block;
-	}
-	.movileContact .tel{float: left}
-	.movileContact .social {
-		float: right;
-	}
-	.movileContact a.phone {
-		color: #32AC9C;
-		font-size: 20px;
-		padding-left: 5px;
-		text-decoration: none;
-	}
-	.movileContact .whatssap {
-		margin-top: -6px;
-	}
-	.movileContact > div.cita {
-		text-align: center;
-	}
-	.movileContact > div.cita .btn-cita {
-		font-size:16px;
-		line-height: 1.3em;
-	}
-	.movileContact div.social {
-		text-align: right;
-	}
-	.movileContact a {
-		text-decoration: None;
-	}
-	.movileContact .socialheader i {
-		font-size: 26px;
-		margin-top: -10px
-	}
-	.addressinfo {
-		color: white;
-		clear: both;
-		display: block;
-		visibility: visible;
-		padding: 0.2em;
-		background: #1c8c7d;
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-	}
-	.addressinfo span {
-		color: white;
-		line-height: 1.8em;
-		margin: 0 0.3em;
-		display: inline-block;
-	}
-	.addressinfo i {
-		line-height: 1.6em;
-	}
+
     nav.responsiveNav {
         position: absolute;
         top: 0;
@@ -1368,6 +1478,24 @@ form.form .labelinfo {
 	footer .contact_info {
 		float: none;
 	}
+	.Place .slider-wrapper {
+		width: 738px;
+		height: 492px;
+		margin: 0 auto 40px;
+	}
+	.Place .slider-wrapper img {
+		max-height: 465px;
+	}
+	.Place .slider-wrapper .pic {
+		margin-left: 0;
+	}
+	.Place .slider-wrapper .pic,
+	.Place .slider-wrapper .pic .mask > div {
+		background-size: cover!important;
+	}
+	.Place .slider-wrapper .pagination {
+		top: 495px;
+	}
 }
 
 @media only screen and (max-width : 875px) {
@@ -1508,6 +1636,17 @@ form.form .labelinfo {
 	#footermap {
 		max-width: 260px;
 	}
+	.Place .slider-wrapper {
+		width: 600px;
+		height: 400px;
+	}
+	.Place .slider-wrapper img {
+		max-height: 375px;
+	}
+	.Place .slider-wrapper .pic {margin-left: 0;}
+	.Place .slider-wrapper .pagination {
+		top: 402px;
+	}
 }
 
 @media only screen and (max-width : 760px) {
@@ -1575,6 +1714,17 @@ form.form .labelinfo {
 @media only screen and (max-width : 650px) {
 	header .addressinfo {
 		font-size: 10px;
+	}
+	.Place .slider-wrapper {
+		width: 500px;
+		height: 333px;
+	}
+	.Place .slider-wrapper img {
+		max-height: 310px;
+	}
+	.Place .slider-wrapper .pic {margin-left: 0;}
+	.Place .slider-wrapper .pagination {
+		top: 335px;
 	}
 }
 @media only screen and (max-width : 610px) {
@@ -1655,6 +1805,17 @@ form.form .labelinfo {
     .index .slider-wrapper {
         zoom: 0.8;
     }
+	.Place .slider-wrapper {
+		width: 350px;
+		height: 233px;
+	}
+	.Place .slider-wrapper img {
+		max-height: 215px;
+	}
+	.Place .slider-wrapper .pic {margin-left: 0;}
+	.Place .slider-wrapper .pagination {
+		top: 235px;
+	}
 }
 
 @media only screen and (max-width : 520px) {
@@ -1753,6 +1914,18 @@ form.form .labelinfo {
 	}
 	header h1.sign a {
 		max-width: 100%;
+	}
+	.Place .slider-wrapper {
+		width: 150px;
+		height: 100px;
+		margin: 0 auto 60px
+	}
+	.Place .slider-wrapper img {
+		max-height: 90px;
+	}
+	.Place .slider-wrapper .pic {margin-left: 0;}
+	.Place .slider-wrapper .pagination {
+		top: 105px;
 	}
 }
 @media only screen and (max-width : 378px) {

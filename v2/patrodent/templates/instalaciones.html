@@ -10,33 +10,56 @@
 <meta property="og:url" content="https://patrodent.com{% url 'template_view' 'instalaciones' %}">
 <meta property="og:description" content="Instalaciones de la Clínica Dental Patrocinio Gómez Martínez (Patrodent)">
 <meta property="og:type" content="image/jpeg" />
-<meta property="og:image" content="https://patrodent.com{% static 'images/consulta5.jpg' %}" />
+<meta property="og:image" content="https://patrodent.com{% static 'images/instalaciones/consulta-3.jpg' %}" />
 {% endblock %}
 
-{% block class-clinica-link %}active{% endblock %}
+{% block js %}
+    {{ block.super }}
+    <script src="{% static 'js/tms-0.3.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/tms_presets.min.js' %}" type="text/javascript"></script>
+{% endblock %}
+
+{% block class-patrodent-link %} active{% endblock %}
 
 {% block title %}Instalaciones - {% endblock %}
 
 {% block pageclass %}Place{% endblock %}
 {% block content %}
     <div class="wrapper">
-        <div class="alpha prefix_1 grid_9">
-            <div class="border-1">
-                <h4 class="margin-bot">Nuestras Instalaciones</h4>
-                <div class="wrapper indent-bot2">
-                    <figure class="img-style img-indent">
-                        <iframe width="300" height="200" src="https://www.youtube.com/embed/5-JuMRmbmXo?autoplay=1" frameborder="0" allowfullscreen></iframe>
-                        <span class="afterBeforeText">Visita nuestras instalaciones interactivamente</span>
-                    </figure>
-                </div>
-                <div class="wrapper indent-bot2">
-                    <figure class="img-style img-indent"><img src="{% static 'images/consulta5.jpg' %}" alt="Gabinete número 1" title="Gabinete número 1"/>
-                        <span class="afterBeforeText">Gabinete número 1</span>
-                    </figure>
+        <div class="alpha prefix_1 grid_22 suffix_1 omega">
+            <div class="">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <ul class="items">
+                            <li><img src="{% static 'images/instalaciones/sala-espera.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/instalaciones/sala-espera-2.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/instalaciones/recepcion.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/instalaciones/entrada.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/instalaciones/despacho.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/instalaciones/consulta.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/instalaciones/consulta-2.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/instalaciones/sala-espera-3.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/instalaciones/consulta-3.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/instalaciones/aseo.jpg' %}" alt=""></li>
+                        </ul>
+                        <ul class="pagination">
+                            <li><a href="#"><span>1</span></a></li>
+                            <li><a href="#"><span>2</span></a></li>
+                            <li><a href="#"><span>3</span></a></li>
+                            <li><a href="#"><span>4</span></a></li>
+                            <li><a href="#"><span>5</span></a></li>
+                            <li><a href="#"><span>6</span></a></li>
+                            <li><a href="#"><span>7</span></a></li>
+                            <li><a href="#"><span>8</span></a></li>
+                            <li><a href="#"><span>9</span></a></li>
+                            <li><a href="#"><span>10</span></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="grid_13 suffix_1 omega">
+
+        <div class="alpha prefix_1 grid_22 suffix_1 omega">
             <h2 class="p3">Conoce nuestras instalaciones</h2>
             <p class="text-1">
             La clínica esta dotada de 3 <strong>gabinetes</strong> completos totalmente informatizados con pantallas de televisión y ordenadores que intercomunican cada gabinete entre si y con los demás departamentos de la clínica.
@@ -50,4 +73,21 @@
             </p>
         </div>
     </div>
+{% endblock %}
+{% block footerjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+    $(window).load(function(){
+        $('.slider')._TMS({
+            duration:800,
+            easing:'easeOutQuad',
+            preset:'zabor',
+            pagination:'.pagination',
+            slideshow:3000,
+            banners:'fade',
+            waitBannerAnimation:false,
+            pauseOnHover:true
+        })
+    });
+    </script>
 {% endblock %}

@@ -39,6 +39,17 @@ iconv -t iso-8859-1 -f utf8 nuestra-historia.html > nuestra-historia.html.tmp; m
 iconv -t iso-8859-1 -f utf8 fidelizacion.html > fidelizacion.html.tmp; mv fidelizacion.html.tmp fidelizacion.html
 iconv -t iso-8859-1 -f utf8 sedacion-consciente.html > sedacion-consciente.html.tmp; mv sedacion-consciente.html.tmp sedacion-consciente.html
 iconv -t iso-8859-1 -f utf8 analisis-anatomopatologico.html > analisis-anatomopatologico.html.tmp; mv analisis-anatomopatologico.html.tmp analisis-anatomopatologico.html
+iconv -t iso-8859-1 -f utf8 preguntas-frecuentes.html > preguntas-frecuentes.html.tmp; mv preguntas-frecuentes.html.tmp preguntas-frecuentes.html
+iconv -t iso-8859-1 -f utf8 preguntas-implantes.html > preguntas-implantes.html.tmp; mv preguntas-implantes.html.tmp preguntas-implantes.html
+iconv -t iso-8859-1 -f utf8 preguntas-ortodoncia.html > preguntas-ortodoncia.html.tmp; mv preguntas-ortodoncia.html.tmp preguntas-ortodoncia.html
+iconv -t iso-8859-1 -f utf8 preguntas-odontopediatria.html > preguntas-odontopediatria.html.tmp; mv preguntas-odontopediatria.html.tmp preguntas-odontopediatria.html
+iconv -t iso-8859-1 -f utf8 preguntas-estetica-dental.html > preguntas-estetica-dental.html.tmp; mv preguntas-estetica-dental.html.tmp preguntas-estetica-dental.html
+iconv -t iso-8859-1 -f utf8 preguntas-cirugia-bucal.html > preguntas-cirugia-bucal.html.tmp; mv preguntas-cirugia-bucal.html.tmp preguntas-cirugia-bucal.html
+iconv -t iso-8859-1 -f utf8 preguntas-ortodoncia-invisible.html > preguntas-ortodoncia-invisible.html.tmp; mv preguntas-ortodoncia-invisible.html.tmp preguntas-ortodoncia-invisible.html
+iconv -t iso-8859-1 -f utf8 preguntas-endodoncia.html > preguntas-endodoncia.html.tmp; mv preguntas-endodoncia.html.tmp preguntas-endodoncia.html
+iconv -t iso-8859-1 -f utf8 preguntas-periodoncia.html > preguntas-periodoncia.html.tmp; mv preguntas-periodoncia.html.tmp preguntas-periodoncia.html
+iconv -t iso-8859-1 -f utf8 preguntas-muelas-juicio.html > preguntas-muelas-juicio.html.tmp; mv preguntas-muelas-juicio.html.tmp preguntas-muelas-juicio.html
+iconv -t iso-8859-1 -f utf8 preguntas-prevencion-caries.html > preguntas-prevencion-caries.html.tmp; mv preguntas-prevencion-caries.html.tmp preguntas-prevencion-caries.html
 iconv -t iso-8859-1 -f utf8 robots.txt > robots.txt.tmp; mv robots.txt.tmp robots.txt
 iconv -t iso-8859-1 -f utf8 sitemap.xml > sitemap.xml.tmp; mv sitemap.xml.tmp sitemap.xml
 
