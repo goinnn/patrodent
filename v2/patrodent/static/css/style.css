@@ -355,11 +355,14 @@ header .fright {
 	text-align: center;
 }
 
-.addressinfo span {
+.addressinfo span,
+.addressinfo a {
 	color: white;
 	line-height: 1.8em;
 	margin: 0 0.3em;
 	display: inline-block;
+	text-decoration: none;
+	vertical-align: baseline;
 }
 .addressinfo span.openTime {
 	float: left;
@@ -769,18 +772,13 @@ blockquote a{
 .important-block {
 	padding:30px 0 30px;
 	border-radius:10px;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	/*background:url(../images/important-bg.png) center top no-repeat #32AC9C;*/
-	background: rgba(50, 172, 156, 0.4);
-	color:#FFF;
 	margin-bottom:20px;
 }
 .important-block .title { 
 	font-size:35px;
 	line-height:1.2em;
 	margin-bottom:25px;
-	
+	border-bottom: 5px solid #1c8c7d;
 }
 
 .important-block .title a {
@@ -802,28 +800,31 @@ blockquote a{
 .important-block ul li a {
     position: relative;
     display:inline-block;
-    color: #6d7a7e;
+    color: #32ac9c;
     padding-left:25px;
     font-weight: bold;
     background-image: none;
 }
 .important-block ul li a i {
     position: absolute;
-    top: -2px;
+    top: 0px;
     left: 0;
     display: block;
-    width: 25px;
-    height: 25px;
-    /*background:url(../images/marker-3.png) 0 3px no-repeat;*/
+    width: 12px;
+    height: 12px;
+	background: #32AC9C;
+	border: 2px solid #32AC9C;
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
 }
 .important-block ul li a.active i,
 .important-block ul li a:hover i {
-    background-position:0 -22px;
+    background: transparent;
+	border-color: #1c8c7d;
 }
 .important-block ul li a.active,
 .important-block ul li a:hover {
-    /*color: #e65e9e;*/
-	/*color: #32AC9C;*/
 	color: #1c8c7d;
 }
 
@@ -1280,7 +1281,7 @@ form.form .labelinfo {
 @media only screen and (max-width : 1024px) {
 	header {
 		margin-top: 2.5em;
-		/*height: 190px;*/
+		height: 170px;
 	}
 
 	header .fright {
@@ -1478,6 +1479,9 @@ form.form .labelinfo {
 	footer .contact_info {
 		float: none;
 	}
+	.faq .container_24 .grid_22 {
+		width: 100%;
+	}
 	.Place .slider-wrapper {
 		width: 738px;
 		height: 492px;
@@ -1652,6 +1656,9 @@ form.form .labelinfo {
 @media only screen and (max-width : 760px) {
 	header .addressinfo {
 		font-size: 12px;
+	}
+	header .addressinfo i{
+		line-height: unset;
 	}
 	footer .contact_info {
 		width: 100%!important;
