@@ -56,40 +56,62 @@
     <div class="wrapper">
         <div class="alpha prefix_1 grid_22 suffix_8 omega">
             <h2 class="p3">Conoce a nuestro equipo</h2>
-            <h5 class="indent-bot">Nuestro personal está altamente cualificado</h5>
-            <p class="indent-bot2">Les presentamos a nuestro personal, de la clínica, </p>
-            <div class="wrapper indent-bot center">
-                <div class="imgwrapper">
-                    <div class="box box-big img-indent">
-                        <figure class="img-style p2"><img src="{% static 'images/patrocinio.jpg' %}" alt="" /></figure>
-                        <strong>Dra. Patrocinio Gómez Martínez</strong>
-                        <span class="bl p1">Médico. Estomatólogo. Especialista en Ortodoncia</span>
-                    </div>
-                </div>
-                <div class="imgwrapper">
-                    <div class="box box-big img-indent">
-                        <figure class="img-style p2"><img src="{% static 'images/angela.jpg' %}" alt="" /></figure>
-                        <strong>Dra. Ángela Martín Gómez</strong>
-                        <span class="bl p1">Odontóloga. Especialista en Cirugía Bucal</span>
-                    </div>
-                </div>
-            </div>
-            <div class="wrapper indent-bot center2">
-                <div class="imgwrapper">
-                    <div class="box img-indent">
-                        <figure class="img-style p2"><img src="{% static 'images/empleada2.jpg' %}" alt="" /></figure>
-                        <strong>Rosario Fernández Torrejón</strong>
-                        <span class="bl p1">Higienista dental</span>
-                    </div>
-                </div>
-                <div class="imgwrapper">
-                    <div class="box">
-                        <figure class="img-style p2"><img src="{% static 'images/empleada1.jpg' %}" alt="" /></figure>
-                        <strong>Alba Lozano Pavón</strong>
-                        <span class="bl p1">Higienista dental</span>
-                    </div>
-                </div>
-            </div>
+            <table class="profile">
+                <tr>
+                    <td>
+                        <img src="{% static 'images/patrocinio.jpg' %}" alt="" />
+                    </td>
+                    <td>
+                        <h3>Dra. Patrocinio Gómez Martínez</h3>
+                        <p>Fundadora y directora médica.  ORTODONCISTA</p>
+                        <ul class="enum">
+                            <li>Licenciada en Medicina y Cirugía General. Universidad de Sevilla</li>
+                            <li>Especialista en Estomatología. Universidad de Sevilla</li>
+                            <li>DIPLÔME D´UNIVERSITÉ EN ORTHODONTIE. Universidad de Nantes (Francia)</li>
+                            <li>Curso BRACKETS DAMON SYSTEM </li>
+                            <li>Ponente de cursos de formación oral y funcional a pediatras</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="{% static 'images/angela.jpg' %}" alt="" />
+                    </td>
+                    <td>
+                        <h3>Dra. Ángela Martín Gómez</h3>
+                        <p>Co-Directora médica. CIRUJANA BUCAL</p>
+                        <ul class="enum">
+                            <li>Graduada en Odontología. Universidad Europea de Madrid</li>
+                            <li>Título de Especialización Universitaria en Cirugía y Rehabilitación Implantológica. Universidad de Sevilla</li>
+                            <li>Máster propio en Cirugía Bucal. Universidad de Sevilla</li>
+                            <li>Máster propio en Cirugía Bucal Avanzada. Universidad de Sevilla</li>
+                            <li>Experto en Anatomía Oral aplicada a la Implantología e Implantoprótesis. Universidad de Sevilla</li>
+                            <li>Máster Europeo en Ortodoncia y Ortopedia Dentofacial. Universidad Católica de Murcia</li>
+                            <li>Miembro de la Sociedad Española de Cirugía Bucal (SECIB)</li>
+                            <li>Miembro de la Sociedad Española de Prótesis Estomatológica (SEPES)</li>
+                            <li>Comunicaciones orales en congresos y publicaciones en revistas científicas</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="{% static 'images/empleada2.jpg' %}" alt="" />
+                    </td>
+                    <td>
+                        <h3>Rosario Fernández Torrejón</h3>
+                        <p>Higienista dental</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="{% static 'images/empleada1.jpg' %}" alt="" /><
+                    </td>
+                    <td>
+                        <h3>Alba Lozano Pavón</h3>
+                        <p>Higienista dental</p>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 {% endblock %}

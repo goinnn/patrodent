@@ -215,17 +215,37 @@ function resizeGallery() {
 
 (function($){
     $(document).ready(function () {
-        var padlock = false;
+        var padlock = false,
+            pos = 0,
+			slides = $('.slide'),
+			numOfSlides = slides.length;
         if (navigator.userAgent.indexOf("Mobile") === -1) {
             $(".noLinkWhatsapp a").removeAttr("href", "");
             $(".hideWhatsapp a").remove();
         }
         $(".question h4").click(function () {
-            var item = $(this).parent(".question")
+            var item = $(this).parent(".question");
             $(this).children('i').toggle();
             item.children("div").toggle("slow");
-            item.toggleClass('open')
+            item.toggleClass('open');
         })
+        function nextSlide() {
+			// `[]` returns a vanilla DOM object from a jQuery object/collection
+			slides[pos].video.stopVideo();
+			slides.eq(pos).animate({ left: '-100%' }, 500);
+			pos = (pos >= numOfSlides - 1 ? 0 : ++pos);
+			slides.eq(pos).css({ left: '100%' }).animate({ left: 0 }, 500);
+		}
+
+		function previousSlide() {
+			slides[pos].video.stopVideo();
+			slides.eq(pos).animate({ left: '100%' }, 500);
+			pos = (pos == 0 ? numOfSlides - 1 : --pos);
+			slides.eq(pos).css({ left: '-100%' }).animate({ left: 0 }, 500);
+		}
+
+		$('.left').click(previousSlide);
+		$('.right').click(nextSlide);
     });
     $(function() {
         var pull        = $('#pull');
@@ -285,3 +305,12 @@ $(window).load(function() {
         resizeGallery();
     });
 });
+
+function onYouTubeIframeAPIReady() {
+    $('.slide').each(function (index, slide) {
+        // Get the `.video` element inside each `.slide`
+        var iframe = $(slide).find('.video')[0];
+        // Create a new YT.Player from the iFrame, and store it on the `.slide` DOM object
+        slide.video = new YT.Player(iframe);
+    })
+}

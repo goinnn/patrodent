@@ -573,7 +573,7 @@ ul.menu li li:hover li ul, ul.menu li li.sfHover li ul {
 h4 {
     font-size: 18px;
     line-height:1.208em; 
-    color:#657181;
+    color: #32AC9C;
     font-weight: 700;
     letter-spacing:-1px;
 }
@@ -1278,6 +1278,93 @@ form.form .labelinfo {
 	float: none;
 	display: inline-block;
 }
+
+/* profiles */
+.profile img {
+	margin: 0em 1em 0;
+}
+
+.profile td {
+	vertical-align: top;
+	padding-bottom: 1em;
+}
+
+.profile h3 {
+	font-weight: 700;
+}
+
+.profile p {
+	color: #32ac9c;
+}
+
+.profile ul {
+	margin-left: 1em;
+}
+
+.profile ul li {
+	margin-bottom: 0.5em;
+}
+
+/* VIDEO carousel */
+
+.video-slider {
+	width: 400px;
+	height: 232px;
+	margin-top: 5em;
+	background: #444;
+	position: relative;
+	overflow: hidden;
+}
+.slide {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+.slide:first-child{
+	left: 0;
+}
+.video{
+	height: 100%;
+	width: 100%;
+	border:0;
+}
+.slide-arrow{
+	position: absolute;
+	top: 110px;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	cursor: pointer;
+	opacity: .5;
+	background: #32ac9c;
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+}
+.slide-arrow:hover{
+	opacity: 1;
+}
+.slide-arrow {
+	text-align: center;
+	display: block;
+	position: absolute;
+	left: 5px;
+	font-size: 3em;
+}
+.slide-arrow i {
+	font-size: 14px;
+	line-height: 1.8em;
+}
+.slide-arrow.right{
+	left: auto;
+	right: 5px;
+}
+/* END VIDEO carousel */
+
 @media only screen and (max-width : 1024px) {
 	header {
 		margin-top: 2.5em;
@@ -1297,6 +1384,9 @@ form.form .labelinfo {
         display: block;
         background: #283744;
     }
+	nav.responsiveNav > ul > li > a {
+		font-weight: 700;
+	}
     nav.responsiveNav a.active,
     .index nav.responsiveNav .index > a,
     .contact nav.responsiveNav .contact > a,
@@ -1676,6 +1766,9 @@ form.form .labelinfo {
 	.jcarousel-wrapper {
 		margin: 0 auto 20px;
 	}
+	.video-slider {
+		margin: 0 auto 2em;
+	}
 }
 
 @media only screen and (max-width : 720px) {
@@ -1774,6 +1867,9 @@ form.form .labelinfo {
         width: 500px;
         height: 380px;
     }
+	.profile td {
+		display: block;
+	}
 }
 
 @media only screen and (max-width : 585px) {
