@@ -192,8 +192,7 @@ header {
 	font-weight: bold;
     /*background-color: #32ac9c;*/
 	/*background:url(../images/header-bg.jpg) center 0 no-repeat;*/
-	border-bottom:4px solid #32AC9C;
-	height: 240px;
+	height: 238px;
 }
 
 h1 {
@@ -1199,7 +1198,7 @@ form.form .labelinfo {
 	margin-bottom: 0.3em;
 }
 .home3colums > div {
-	background: rgba(50, 172, 156, 0.37);
+	background: rgba(50, 172, 156, 0.20);
 	position: relative;
 	padding: 0.3em 0.5em;
 	text-align: center;
@@ -1219,6 +1218,7 @@ form.form .labelinfo {
 }
 .home3colums p {
 	text-align: center;
+	font-color: #666;
 }
 
 #footermap {
@@ -1282,6 +1282,12 @@ form.form .labelinfo {
 /* profiles */
 .profile img {
 	margin: 0em 1em 0;
+	max-width: 25em;
+}
+
+.profile a.linkedin {
+	color: #32AC9C;
+	font-size: 25px;
 }
 
 .profile td {
@@ -1364,7 +1370,23 @@ form.form .labelinfo {
 	right: 5px;
 }
 /* END VIDEO carousel */
+.zinnia .breadcrumbs li {
+	list-style: none;
+	display: inline;
+}
+.zinnia #content, .zinnia.right-sidebar #content {
+	width: 65.89147%;
+	float: left;
+	margin-right: 1.16279%;
+}
+.zinnia #sidebar, .zinnia.right-sidebar #sidebar {
+	width: 32.94574%;
+	float: right;
+	margin-right: 0;
+}
+/* BLOG STYLES */
 
+/* end blog styles*/
 @media only screen and (max-width : 1024px) {
 	header {
 		margin-top: 2.5em;
@@ -1591,7 +1613,23 @@ form.form .labelinfo {
 		top: 495px;
 	}
 }
+@media only screen and (max-width : 887px) {
+	.loyalty .container_24 .prefix_1,
+	.loyalty .container_24 .grid_13,
+	.history .container_24 .prefix_1,
+	.history .container_24 .grid_13 {
+		margin: 0 auto;
+		padding: 0;
+		float: none;
+		display: block;
+	}
+	.loyalty .container_24 .grid_13,
+	.history .container_24 .grid_13 {
+		width: auto;
+		max-width: 95%;
+	}
 
+}
 @media only screen and (max-width : 875px) {
 	header .addressinfo {
 		font-size: 14px;

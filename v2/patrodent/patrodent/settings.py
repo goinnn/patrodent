@@ -49,6 +49,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -115,27 +116,31 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'es'
+LANGUAGE_CODE = 'es-ES'
 LANGUAGES = [
     ('es', u'Español')
 ]
 
 TIME_ZONE = 'UTC'
 
-USE_I18N = False # DISABLE all translations, to use only Spanish for the moment
-
+USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
 
 SITE_ID = 1
 
+STATIC_URL = '/static/'
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "uploads"),
 ]
-STATIC_URL = '/static/'
+
+MEDIA_ROOT = BASE_DIR
+MEDIA_URL = '/media/'
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',

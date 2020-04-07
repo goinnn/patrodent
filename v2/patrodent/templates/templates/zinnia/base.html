@@ -27,12 +27,24 @@
 {% block sidebar %}
 <aside id="widget-welcome" class="widget">
   <h3>{% trans "Welcome!" %} a mi blog</h3>
+   <ul class="">
+    <li>
+      <a href="{% url 'zinnia:sitemap' %}" title="{% trans "Sitemap" %}" class="sitemap" rel="sitemap">
+        {% trans "Sitemap" %}
+      </a>
+    </li>
+    <li>
+      <a href="{% url 'zinnia:entry_feed' %}" title="{% trans "RSS feed of last entries" %}" class="feeds">
+        {% trans "RSS feed" %}
+      </a>
+    </li>
+  </ul>
+<form method="get" action="{% url 'zinnia:entry_search' %}">
   <p>
-    {% trans "This simple theme is the default appearance of Zinnia." %}
+    <input type="text" name="pattern" placeholder="{% trans "Keywords..." %}" {% if pattern %}value="{{ pattern }}"{% endif %} />
+    <input type="submit" class="submitbutton" value="OK" />
   </p>
-  <p>
-    {% trans "Don't hesitate to override the template <strong>zinnia/base.html</strong> to start <a href='http://docs.django-blog-zinnia.com/en/latest/how-to/customize_look_and_feel.html'>customizing your Weblog</a>." %}
-  </p>
+</form>
 </aside>
 <aside id="widget-categories" class="widget">
   <h3>

@@ -4,14 +4,18 @@
 <html lang="es">
 <head>
 {% block head %}
-    <title>{% block title %}{% endblock %}Clínica Dental Patrodent, C/ Marques de Paradas, Sevilla</title>
+
     <meta charset="utf-8">
+    {% block metatags %}
+    <title>{% block title %}{% endblock %}Clínica Dental Patrodent, C/ Marques de Paradas, Sevilla</title>
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link type="image/gif" href="{% static 'images/favicon.ico' %}" rel="shortcut icon" />
     <meta name="Keywords" content="{% block keywords %}Dentistas en Sevilla, Dentistas, Sevilla, Odontologos Sevilla, Odontologos, Dentistas plaza de armas, Denstistas centro de Sevilla, Clinica Dental Sevilla, Clinica Dental, Ortodoncia Sevilla, Ortodoncia, Odontología Sevilla, Odontologia, ATM, Periodoncia, ATM Sevilla, Periodoncia Sevilla, plaza de armas{% endblock %}">
     <meta name="Description" content="{% block metadescription %}Clínica Dental Patrocinio Gómez Martínez C/ Marques de Paradas nº 22 1 º dcha Sevilla (junto a plaza de armas){% endblock %}">
+    {% endblock %}
     <meta property="og:locale" content="es_ES" />
     <meta property="og:site_name" content="Clínica Dental Patrodent, C/ Marques de Paradas, Sevilla" />
+
     {% block meta %}{% endblock%}
    {% block css %}
        <link rel="stylesheet" href="{% static 'css/reset.min.css' %}" type="text/css" media="all">
@@ -23,7 +27,7 @@
        <link rel="stylesheet" href="{% static 'photoswipe/dist/photoswipe.min.css' %}">
        <link rel="stylesheet" href="{% static 'photoswipe/dist/default-skin/default-skin.min.css' %}">
        <link rel="stylesheet" type="text/css" href="{% static 'jsor-jcarousel-0.3.1/examples/responsive/jcarousel.responsive.min.css' %}">
-       <link rel="stylesheet" href="{% static 'css/style.min.css' %}" type="text/css" media="all">
+       <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all">
    {% endblock %}
    {% block js %}
     <script src="{% static 'js/jquery-1.7.2.min.js' %}" type="text/javascript"></script>
@@ -173,7 +177,7 @@
                                             <li class="history"><a href="{% url 'template_view' "nuestra-historia" %}">Nuestra Historia</a></li>
                                             <li class="whoWeAre"><a href="{% url 'template_view' 'quienes-somos' %}">Equipo Médico</a></li>
                                             <li class="loyalty"><a href="{% url 'template_view' "fidelizacion" %}">Fidelización</a></li>
-                                            <li class="Place"><a href="{% url 'template_view' "instalaciones" %}">Nuestra Clínica</a></li>
+                                            <li class="Place"><a href="{% url 'template_view' "instalaciones" %}">Instalaciones</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -209,13 +213,14 @@
             <div class="main">
                 <span class="openTime"><i class="fas fa-clock"></i> L a J 16:00 a 21:00 V
                     9:00 a 14:00</span>
-                <span class="location"><i class="fas fa-map-marker-alt"></i> C\Marques de Paradas 22 - 1º dcha 41001, Sevilla</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> <a target="_blank" href="https://goo.gl/maps/qNqY35GcCwmyGX3y5">C\Marques de Paradas 22 - 1º dcha 41001, Sevilla</a></span>
                 <span class="mail"><i class="fas fa-envelope"></i> <a href="mailto:info@patrodent.com">info@patrodent.com</a></span>
             </div>
         </div>
     </header>
   {% endblock %}
     <!--==============================content================================-->
+    {% block main-wrapper %}
     <section id="content">
         {% block wrapper-content %}
         <div class="main">
@@ -235,7 +240,7 @@
         </div>
         {% endblock %}
     </section>
-
+    {% endblock %}
     <!--==============================footer=================================-->
    <footer>
         <div class="main">

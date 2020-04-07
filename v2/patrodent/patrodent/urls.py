@@ -3,7 +3,7 @@ from django.conf import settings
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
-
+from django.conf.urls.static import static
 from django.views.generic.base import TemplateView as DjangoTemplateView
 
 
@@ -40,4 +40,4 @@ if settings.DEBUG:
 urlpatterns += [
     # Examples:
     re_path(r'^(?P<page_slug>[\w-]+).html$', TemplateView.as_view(), name='template_view'),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
