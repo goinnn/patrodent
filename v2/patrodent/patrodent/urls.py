@@ -34,6 +34,7 @@ if settings.DEBUG:
         re_path(r'^blog/', include('zinnia.urls')),
         re_path(r'^comments/', include('django_comments.urls')),
         re_path(r'^$', TemplateView.as_view(), name='template_view_index'),
+        path('summernote/', include('django_summernote.urls')),
         path('admin/', admin.site.urls),
     ]
 

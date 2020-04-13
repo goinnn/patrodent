@@ -5,16 +5,16 @@
 <head>
 {% block head %}
 
-    <meta charset="utf-8">
-    {% block metatags %}
-    <title>{% block title %}{% endblock %}ClÃ­nica Dental Patrodent, C/ Marques de Paradas, Sevilla</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta charset="iso-8859-1">
     <link type="image/gif" href="{% static 'images/favicon.ico' %}" rel="shortcut icon" />
-    <meta name="Keywords" content="{% block keywords %}Dentistas en Sevilla, Dentistas, Sevilla, Odontologos Sevilla, Odontologos, Dentistas plaza de armas, Denstistas centro de Sevilla, Clinica Dental Sevilla, Clinica Dental, Ortodoncia Sevilla, Ortodoncia, OdontologÃ­a Sevilla, Odontologia, ATM, Periodoncia, ATM Sevilla, Periodoncia Sevilla, plaza de armas{% endblock %}">
-    <meta name="Description" content="{% block metadescription %}ClÃ­nica Dental Patrocinio GÃ³mez MartÃ­nez C/ Marques de Paradas nÂº 22 1 Âº dcha Sevilla (junto a plaza de armas){% endblock %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    {% block metatags %}
+    <title>{% block title %}{% endblock %}Clínica Dental Patrodent, C/ Marques de Paradas, Sevilla</title>
+    <meta name="Keywords" content="{% block keywords %}Dentistas en Sevilla, Dentistas, Sevilla, Odontologos Sevilla, Odontologos, Dentistas plaza de armas, Denstistas centro de Sevilla, Clinica Dental Sevilla, Clinica Dental, Ortodoncia Sevilla, Ortodoncia, Odontología Sevilla, Odontologia, ATM, Periodoncia, ATM Sevilla, Periodoncia Sevilla, plaza de armas{% endblock %}">
+    <meta name="Description" content="{% block metadescription %}Clínica Dental Patrocinio Gómez Martínez C/ Marques de Paradas nº 22 1 º dcha Sevilla (junto a plaza de armas){% endblock %}">
     {% endblock %}
     <meta property="og:locale" content="es_ES" />
-    <meta property="og:site_name" content="ClÃ­nica Dental Patrodent, C/ Marques de Paradas, Sevilla" />
+    <meta property="og:site_name" content="Clínica Dental Patrodent, C/ Marques de Paradas, Sevilla" />
 
     {% block meta %}{% endblock%}
    {% block css %}
@@ -27,7 +27,7 @@
        <link rel="stylesheet" href="{% static 'photoswipe/dist/photoswipe.min.css' %}">
        <link rel="stylesheet" href="{% static 'photoswipe/dist/default-skin/default-skin.min.css' %}">
        <link rel="stylesheet" type="text/css" href="{% static 'jsor-jcarousel-0.3.1/examples/responsive/jcarousel.responsive.min.css' %}">
-       <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all">
+       <link rel="stylesheet" href="{% static 'css/style.min.css' %}" type="text/css" media="all">
    {% endblock %}
    {% block js %}
     <script src="{% static 'js/jquery-1.7.2.min.js' %}" type="text/javascript"></script>
@@ -43,7 +43,7 @@
     <script src="{% static 'js/patrodent.min.js' %}"></script>
    {% endblock %}
     <!--METADATA LINE-->
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"Clinica dental Patrodent","url":"https://www.patrodent.com","address":"MarquÃ©s de Paradas 22 1 Âº dcha 41001 Sevilla","sameAs":["https://www.facebook.com/patrodent.patrodent", "https://www.instagram.com/clinicadentalpatrodent/", "https://www.doctoralia.es/clinicas/clinica-dental-patrodent", "https://twitter.com/patrodent_", "https://www.linkedin.com/in/patrodent-cl%C3%ADnica-dental-a589ab111/"]}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"Clinica dental Patrodent","url":"https://www.patrodent.com","address":"Marqués de Paradas 22 1 º dcha 41001 Sevilla","sameAs":["https://www.facebook.com/patrodent.patrodent", "https://www.instagram.com/clinicadentalpatrodent/", "https://www.doctoralia.es/clinicas/clinica-dental-patrodent", "https://twitter.com/patrodent_", "https://www.linkedin.com/in/patrodent-cl%C3%ADnica-dental-a589ab111/"]}</script>
    {% block iejs %}
     <!--[if IE]>
     <style type="text/css">
@@ -73,11 +73,11 @@
         <span id="pull">Menu</span>
         <ul class="responsiveNav">
             <li class="index">
-                <a href="{% url 'template_view' 'index' %}" class="{% block class-patrodent-link2 %}{% endblock %}">ConÃ³cenos</a>
+                <a href="{% url 'template_view' 'index' %}" class="{% block class-patrodent-link2 %}{% endblock %}">Conócenos</a>
                 <ul>
                     <li class="history"><a href="{% url 'template_view' "nuestra-historia" %}">Nuestra Historia</a></li>
-                    <li class="whoWeAre"><a href="{% url 'template_view' 'quienes-somos' %}">Equipo MÃ©dico</a></li>
-                    <li class="loyalty"><a href="{% url 'template_view' "fidelizacion" %}">FidelizaciÃ³n</a></li>
+                    <li class="whoWeAre"><a href="{% url 'template_view' 'quienes-somos' %}">Equipo Médico</a></li>
+                    <li class="loyalty"><a href="{% url 'template_view' "fidelizacion" %}">Fidelización</a></li>
                     <li><a href="{% url 'template_view' "instalaciones" %}">Instalaciones</a></li>
                 </ul>
             </li>
@@ -93,12 +93,12 @@
                     {% include "templates/inc.tratamientos.html" %}
                 </ul>
             </li>
-            <li class="beforeAfter"><a href="{% url 'template_view' 'antes-y-despues' %}">Casos ClÃ­nicos</a></li>
+            <li class="beforeAfter"><a href="{% url 'template_view' 'antes-y-despues' %}">Casos Clínicos</a></li>
             <li class="faq">
                 <a href="{% url 'template_view' 'preguntas-frecuentes' %}">Preguntas Frecuentes</a>
                 <ul>{% include "templates/inc.faq.html" %}</ul>
             </li>
-{#            <li class="blog"><a href="">Blog</a></li>#}
+{#            <li class="blog"><a href="{% url 'zinnia:entry_archive_index' %}">Blog</a></li>#}
         </ul>
     </nav>
     <header>
@@ -108,7 +108,7 @@
                 <div class="grid_24">
                     <h1 class="sign">
                         <a href="{% url 'template_view' 'index' %}">
-                            <img src="{% static 'images/patrodent_logo_horizontal.jpg' %}" alt="ClÃ­nica dental Patrodent" title="ClÃ­nica dental Patrodent">
+                            <img src="{% static 'images/patrodent_logo_horizontal.jpg' %}" alt="Clínica dental Patrodent" title="Clínica dental Patrodent">
                         </a>
                     </h1>
                     <div class="fright">
@@ -126,7 +126,7 @@
                                     <a href="https://www.facebook.com/patrodent.patrodent" target="_blank"><i class="fab fa-facebook" style="font-size: 20px" title="Facebook" alt="Facebook"></i></a>
                                 </li>
                                 <li>
-                                    <a href="https://linkedin.com/in/patrodent-clÃ­nica-dental-a589ab111" target="_blank"><i class="fab fa-linkedin" style="font-size: 20px" title="linkedin" alt="linkedin"></i></a>
+                                    <a href="https://linkedin.com/in/patrodent-clínica-dental-a589ab111" target="_blank"><i class="fab fa-linkedin" style="font-size: 20px" title="linkedin" alt="linkedin"></i></a>
                                 </li>
                                  <li><a href="https://twitter.com/@patrodent_" target="_blank"><i class="fab fa-twitter" style="font-size: 20px" title="twitter" alt="twitter"></i></a></li>
                             </ul>
@@ -161,7 +161,7 @@
                                         <a href="https://www.facebook.com/patrodent.patrodent" target="_blank"><i class="fab fa-facebook" title="Facebook" alt="Facebook"></i></a>
                                     </li>
                                     <li>
-                                        <a href="https://linkedin.com/in/patrodent-clÃ­nica-dental-a589ab111" target="_blank"><i class="fab fa-linkedin" title="linkedin" alt="linkedin"></i></a>
+                                        <a href="https://linkedin.com/in/patrodent-clínica-dental-a589ab111" target="_blank"><i class="fab fa-linkedin" title="linkedin" alt="linkedin"></i></a>
                                     </li>
                                      <li><a href="https://twitter.com/@patrodent_" target="_blank"><i class="fab fa-twitter" title="twitter" alt="twitter"></i></a></li>
                             </ul>
@@ -172,11 +172,11 @@
                             {% block nav %}
                                 <ul class="menu">
                                     <li>
-                                        <a href="{% url 'template_view' "index" %}" class="{% block class-patrodent-link %}{% endblock %}">ConÃ³cenos</a>
+                                        <a href="{% url 'template_view' "index" %}" class="{% block class-patrodent-link %}{% endblock %}">Conócenos</a>
                                         <ul>
                                             <li class="history"><a href="{% url 'template_view' "nuestra-historia" %}">Nuestra Historia</a></li>
-                                            <li class="whoWeAre"><a href="{% url 'template_view' 'quienes-somos' %}">Equipo MÃ©dico</a></li>
-                                            <li class="loyalty"><a href="{% url 'template_view' "fidelizacion" %}">FidelizaciÃ³n</a></li>
+                                            <li class="whoWeAre"><a href="{% url 'template_view' 'quienes-somos' %}">Equipo Médico</a></li>
+                                            <li class="loyalty"><a href="{% url 'template_view' "fidelizacion" %}">Fidelización</a></li>
                                             <li class="Place"><a href="{% url 'template_view' "instalaciones" %}">Instalaciones</a></li>
                                         </ul>
                                     </li>
@@ -192,14 +192,14 @@
                                             {% include "templates/inc.tratamientos.html" %}
                                         </ul>
                                     </li>
-                                    <li><a class="{% block class-antes-despues-link %}{% endblock %}" href="{% url 'template_view' "antes-y-despues" %}">Casos ClÃ­nicos</a></li>
+                                    <li><a class="{% block class-antes-despues-link %}{% endblock %}" href="{% url 'template_view' "antes-y-despues" %}">Casos Clínicos</a></li>
                                     <li class="faq">
-                                        <a class="{% block class-faq %}{% endblock %}" href="{% url 'template_view' 'preguntas-frecuentes' %}">Preguntas Frecuentes</a>
+                                        <a class="{% block class-faq-link %}{% endblock %}" href="{% url 'template_view' 'preguntas-frecuentes' %}">Preguntas Frecuentes</a>
                                         <ul style="width:250px">
                                             {% include "templates/inc.faq.html" %}
                                         </ul>
                                     </li>
-{#                                    <li class="blog"><a href="">Blog</a></li>#}
+{#                                    <li class="blog"><a class="{% block class-blog-ling %}{% endblock %}" href="{% url 'zinnia:entry_archive_index' %}">Blog</a></li>#}
                                 </ul>
                             {% endblock %}
                         </nav>
@@ -213,7 +213,7 @@
             <div class="main">
                 <span class="openTime"><i class="fas fa-clock"></i> L a J 16:00 a 21:00 V
                     9:00 a 14:00</span>
-                <span class="location"><i class="fas fa-map-marker-alt"></i> <a target="_blank" href="https://goo.gl/maps/qNqY35GcCwmyGX3y5">C\Marques de Paradas 22 - 1Âº dcha 41001, Sevilla</a></span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> <a target="_blank" href="https://goo.gl/maps/qNqY35GcCwmyGX3y5">C\Marques de Paradas 22 - 1º dcha 41001, Sevilla</a></span>
                 <span class="mail"><i class="fas fa-envelope"></i> <a href="mailto:info@patrodent.com">info@patrodent.com</a></span>
             </div>
         </div>

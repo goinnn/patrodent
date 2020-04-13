@@ -43,7 +43,9 @@ INSTALLED_APPS = [
     'sorl.thumbnail',
     'mptt',
     'tagging',
-    'zinnia'
+    'zinnia',
+    'django_summernote',
+    'blog'
 ]
 
 MIDDLEWARE = [

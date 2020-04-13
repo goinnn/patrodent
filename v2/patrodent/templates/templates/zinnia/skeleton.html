@@ -3,24 +3,19 @@
     {% block metatags %}
     <title>{% block title %}{% endblock title %}{% block title-page %}{% endblock title-page %} - Zinnia's Weblog</title>
     <meta name="robots" content="follow, all" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="{% block meta-description %}Patrodent Blog{% endblock meta-description %}{% block meta-description-page %}{% endblock meta-description-page %}" />
     <meta name="keywords" content="{% block meta-keywords %} blog, Dentistas en Sevilla, Dentistas, Sevilla, Odontologos Sevilla, Odontologos, Dentistas plaza de armas, Denstistas centro de Sevilla, Clinica Dental Sevilla, Clinica Dental, Ortodoncia Sevilla, Ortodoncia, Odontología Sevilla, Odontologia, ATM, Periodoncia, ATM Sevilla, Periodoncia Sevilla, plaza de armas{% endblock meta-keywords %}" />
 
 
     <link rel="pingback" href="/xmlrpc/" />
     <link rel="home" href="{% url 'zinnia:entry_archive_index' %}" />
-    <link rel="stylesheet" type="text/css" media="screen, projection" href="{% static "zinnia/theme/css/screen.css" %}" />
-    <link rel="stylesheet" type="text/css" media="print" href="{% static "zinnia/theme/css/print.css" %}" />
-    <!--[if lt IE 8]>
-        <link rel="stylesheet" type="text/css" media="screen, projection" href="{% static "zinnia/theme/css/ie.css" %}" />
-    <![endif]-->
-
     {% block link %}{% endblock link %}
     {% block script %}{% endblock script %}
 {% endblock %}
 
-{% block pageclass %}zinnia {% block theme-class %}default{% endblock theme-class %} {% block color-class %}blue{% endblock color-class %} {% block sidebar-class %}right-sidebar{% endblock sidebar-class %} {% block body-class %}{% endblock body-class %}{% endblock %}
+{% block pageclass %}zinnia {% block theme-class %}default{% endblock theme-class %} {% block sidebar-class %}right-sidebar{% endblock sidebar-class %} {% block body-class %}{% endblock body-class %}{% endblock %}
+
+{% block class-blog-ling %}active{% endblock %}
 {% block main-wrapper %}
     <div class="container">
         {% block breadcrumbs %}{% endblock breadcrumbs %}

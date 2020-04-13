@@ -36,11 +36,12 @@ html {width:100%;}
   font-style: italic;
 }
 
-body { 	 
+body,
+body.zinnia {
 	font-family: Akzidenz, Arial, Helvetica, sans-serif;
 	font-size:100%; 
 	color:#727272;
-	min-width:960px;
+	min-width: 960px;
 	background:#eceff1;
 }
 
@@ -196,8 +197,11 @@ header {
 }
 
 h1 {
+    font-size: 35px;
+    color: #32AC9C;
+    font-weight: 800;
 	position:relative;
-	float:left;
+	/*float:left;*/
 	/*background: url(../images/logo.png) 0px 0 no-repeat;*/
 }
 
@@ -352,6 +356,9 @@ header .fright {
 	bottom: 0;
 	width: 100%;
 	text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 .addressinfo span,
@@ -602,10 +609,10 @@ h5 {
     font-weight:normal;
 }
 h3 {
-    font-size: 36px;
-    line-height:1.208em; 
+    font-size: 25px;
+    line-height:1.208em;
+    font-weight: 800;
     color:#32ac9c;
-    font-weight:normal;
     letter-spacing:-1px;
 }
 
@@ -1018,6 +1025,7 @@ form.form .labelinfo {
 
 /****************************footer************************/
 footer {
+    clear: both;
 	width:100%; 
 	padding:44px 0 30px;
 	border-top:4px solid #32AC9C;
@@ -1370,19 +1378,124 @@ form.form .labelinfo {
 	right: 5px;
 }
 /* END VIDEO carousel */
+.zinnia ul.breadcrumbs {
+    margin-left: 1em;
+}
 .zinnia .breadcrumbs li {
 	list-style: none;
-	display: inline;
+	display: inline-block;
+    padding: 0.5em 0;
+}
+.zinnia .breadcrumbs li:after {
+    content: "/";
+}
+
+.zinnia .breadcrumbs li a {
+    text-decoration: none;
+}
+
+.zinnia .container {
+    max-width: 960px;
+    padding: 0;
+    margin: 0 auto;
+    clear: both;
 }
 .zinnia #content, .zinnia.right-sidebar #content {
 	width: 65.89147%;
 	float: left;
 	margin-right: 1.16279%;
+    padding: 1em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.zinnia #content {
+    background: white;
 }
 .zinnia #sidebar, .zinnia.right-sidebar #sidebar {
 	width: 32.94574%;
 	float: right;
 	margin-right: 0;
+}
+
+.zinnia .entry-header {
+    height:  auto;
+    background: none;
+}
+.zinnia .entry-title a {
+    color: #32AC9C;
+    text-decoration: none;
+}
+
+.zinnia .entry-summary img,
+.zinnia .entry-content img {
+    padding: 0.5em;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    margin: 0 1em 1em 0;
+}
+.zinnia .entry-summary p > img,
+.zinnia .entry-content p > img {
+	border: none;
+}
+
+.zinnia .entry-summary p,
+.zinnia .entry-content p {
+	text-align: left;
+}
+
+.zinnia blockquote {
+    background: rgba(50, 172, 156, 0.20);
+    padding: 0.5em;
+    border: 1px dashed #32AC9C;
+    width: auto;
+}
+
+.zinnia #sidebar h3 {
+    background: rgba(50, 172, 156, 0.20);
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.zinnia #sidebar ul {
+    margin: 0 1.5em 1.5em 0;
+    padding-left: 1.5em;
+    list-style-type: disc;
+}
+.zinnia #sidebar li {
+    list-style-image: url("../zinnia/theme/img/bullet.png");
+    margin-bottom: 0.3em;
+}
+.zinnia #sidebar a {
+    text-decoration: none;
+    color: #32AC9C;
+}
+.zinnia #sidebar table {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.zinnia #sidebar table caption {
+    color: #32AC9C;
+    font-weight: 700;
+}
+.zinnia #sidebar table th {
+    color: #666;
+    font-weight: 500;
+}
+.zinnia #sidebar table.entries-calendar caption {
+    font-size: 20px;
+    line-height: 2em;
+}
+
+.zinnia #sidebar table.entries-calendar th,
+.zinnia #sidebar table.entries-calendar td {
+    padding: 4px 0;
+    text-align: center;
+}
+
+.zinnia #sidebar table.entries-calendar td a {
+    font-weight: bold;
 }
 /* BLOG STYLES */
 
@@ -1630,6 +1743,15 @@ form.form .labelinfo {
 	}
 
 }
+@media only screen and (max-width : 960px) {
+    .zinnia #content,
+    .zinnia.right-sidebar #content,
+    .zinnia #sidebar, .zinnia.right-sidebar #sidebar {
+        float: none;
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width : 875px) {
 	header .addressinfo {
 		font-size: 14px;
@@ -1865,6 +1987,7 @@ form.form .labelinfo {
 		top: 335px;
 	}
 }
+
 @media only screen and (max-width : 610px) {
     header .slogon {
         position: absolute;
@@ -2005,17 +2128,20 @@ form.form .labelinfo {
 @media only screen and (max-width : 475px) {
 	header .addressinfo{
 		font-size: 9px;
+		width: 100%;
+	}
+	header .addressinfo div.main {
+		margin: 0;
+		width: 100%;
 	}
 }
-@media only screen and (max-width : 426px) {
+@media only screen and (max-width : 433px) {
 	header .addressinfo{
 		font-size: 8px;
 	}
+	.btn-cita  {margin-left: 0.7em;}
 }
 @media only screen and (max-width : 415px) {
-	header {
-		/*height: 230px;*/
-	}
 	.movileContact a.phone,
 	.movileContact > div.cita .btn-cita {
 		font-size: 14px;
@@ -2094,7 +2220,24 @@ form.form .labelinfo {
 		width: 277px;
 	}
 }
-
+@media only screen and (max-width : 360px) {
+	.addressinfo i {
+		font-size: 8px;
+	}
+	.addressinfo a {
+		margin: 0;
+	}
+	header .addressinfo {
+		font-size: 7px;
+	}
+	.movileContact .social{
+		padding: 0;
+	}
+	.socialheader {
+		margin-left: 0;
+	}
+	.btn-cita  {margin-left: 0em;}
+}
 @media only screen and (max-width : 356px) {
 	header {height: 270px}
 }

@@ -21,3 +21,4 @@ traitlets==4.3.3
 wcwidth==0.1.7
 django-blog-zinnia==0.20
 sorl-thumbnail==12.6.3
+django-summernote==0.8.11.6
