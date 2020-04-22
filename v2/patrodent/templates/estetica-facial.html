@@ -1,0 +1,38 @@
+{% extends "templates/servicio.html" %}
+
+{% load static %}
+
+{% block metadescription %}El ácido hialurónico es el relleno temporal que más se utiliza en Estados Unidos. Es muy seguro y tiene un potencial alérgico extremadamente bajo; no exige pruebas de alergia previas.{% endblock %}
+
+{% block meta %}
+<meta property="og:title" content="Sedación Consciente" />
+<meta property="og:url" content="https://patrodent.com{% url 'template_view' 'sedacion-consciente' %}">
+<meta property="og:description" content="La sedación consciente en odontología permite conseguir un estado de relajación y tranquilidad para el paciente.">
+<meta property="og:type" content="image/jpeg" />
+<meta property="og:image" content="https://patrodent.com{% static 'images/sala_de_esperas.jpg' %}" />
+{% endblock %}
+
+{% block title %}Estética Facial - {% endblock %}
+
+{% block pageclass %}loyalty{% endblock %}
+
+{% block content-body-wrapper %}
+    <div class="wrapper">
+        <div class="alpha prefix_1 suffix_1">
+            <h2 class="p3">Estética facial - Rellenos con Ácido Hialurónico </h2>
+            <p>
+                Con el paso de los años la piel y los tejidos subcutáneos sufren envejecimiento provocando su caída y también gran pérdida de volumen. A día de hoy existen muchos tipos de rellenos faciales, cada uno con sus ventajas e inconvenientes.
+            </p>
+
+            <p>Desde hace unos años los dentistas estamos avalados para realizar rellenos faciales mediante ácido hialurónico para terminar de mejorar la estética facial y la sonrisa de nuestros pacientes.
+            </p>
+
+            <p>El <strong>ácido hialurónico</strong> es el <strong>relleno temporal</strong> que más se utiliza en Estados Unidos. Es muy seguro y tiene un potencial alérgico extremadamente bajo; no exige pruebas de alergia previas. </p>
+
+            <p>El resultado tras la infiltración del producto es inmediato y éste tiene una duración de entre 8 meses – 1 año. Las zonas que se suelen tratar son los labios y los pliegues peribucales.
+Si quieres saber más sobre este tipo de tratamientos estéticos llámanos y te informaremos de todo.
+            </p>
+        </div>
+    </div>
+{% endblock %}
+{% block before-after-title-wrapper %}{% endblock %}

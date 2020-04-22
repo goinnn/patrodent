@@ -39,6 +39,7 @@ iconv -t iso-8859-1 -f utf8 nuestra-historia.html > nuestra-historia.html.tmp; m
 iconv -t iso-8859-1 -f utf8 fidelizacion.html > fidelizacion.html.tmp; mv fidelizacion.html.tmp fidelizacion.html
 iconv -t iso-8859-1 -f utf8 sedacion-consciente.html > sedacion-consciente.html.tmp; mv sedacion-consciente.html.tmp sedacion-consciente.html
 iconv -t iso-8859-1 -f utf8 analisis-anatomopatologico.html > analisis-anatomopatologico.html.tmp; mv analisis-anatomopatologico.html.tmp analisis-anatomopatologico.html
+iconv -t iso-8859-1 -f utf8 estetica-facial.html > estetica-facial.html.tmp; mv estetica-facial.html.tmp estetica-facial.html
 iconv -t iso-8859-1 -f utf8 preguntas-frecuentes.html > preguntas-frecuentes.html.tmp; mv preguntas-frecuentes.html.tmp preguntas-frecuentes.html
 iconv -t iso-8859-1 -f utf8 preguntas-implantes.html > preguntas-implantes.html.tmp; mv preguntas-implantes.html.tmp preguntas-implantes.html
 iconv -t iso-8859-1 -f utf8 preguntas-ortodoncia.html > preguntas-ortodoncia.html.tmp; mv preguntas-ortodoncia.html.tmp preguntas-ortodoncia.html

@@ -5,6 +5,7 @@
 {% url 'template_view' "software-diseno" as software_diseno_url %}
 {% url 'template_view' "software-ortodoncia" as software_ortodoncia_url %}
 {% url 'template_view' "analisis-anatomopatologico-muestras-orales" as analisis_url %}
+{% url 'template_view' "estetica-facial" as estetica_facial_url %}
 <li><a href="{{ sedacion_url }}" {% ifequal sedacion_url full_path %} class="active"{% endifequal %}><i></i>Sedación Consciente</a></li>
 <li><a href="{{ financiacion_url }}" {% ifequal financiacion_url full_path %} class="active"{% endifequal %}><i></i>Financiación a tu medida</a></li>
 {#<li><a href="{{ plan_salud_url }}" {% ifequal plan_salud_url full_path %} class="active"{% endifequal %}><i></i>Plan de Salud Bucodental</a></li>#}
@@ -12,3 +13,4 @@
 <li><a href="{{ software_diseno_url }}" {% ifequal software_diseno_url full_path %} class="active"{% endifequal %}><i></i>Diseño de sonrisa digital&nbsp;&nbsp;</a></li>
 {#<li><a href="{{ software_ortodoncia_url }}" {% ifequal software_ortodoncia_url full_path %} class="active"{% endifequal %}><i></i>Software digital de ortodoncia</a></li>#}
 <li><a href="{{ analisis_url }}" {% ifequal analisis_url full_path %} class="active"{% endifequal %}><i></i>Análisis Anatomopatológico&nbsp;&nbsp;</a></li>
+<li><a href="{{ estetica_facial_url }}" {% ifequal estetica_facial_url full_path %} class="active"{% endifequal %}><i></i>Estética Facial - Ácido Hialurónico&nbsp;&nbsp;</a></li>

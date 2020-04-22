@@ -1497,6 +1497,15 @@ form.form .labelinfo {
 .zinnia #sidebar table.entries-calendar td a {
     font-weight: bold;
 }
+/* blog hidden */
+.entry-info,
+.entry-widgets,
+#pingbacks,
+#trackbacks,
+.entry-last-update {
+	visibility: hidden;
+	display: none;
+}
 /* BLOG STYLES */
 
 /* end blog styles*/
@@ -1588,7 +1597,8 @@ form.form .labelinfo {
 }
 
 @media only screen and (max-width : 980px) {
-    body {
+    body,
+	body.zinnia {
         min-width: 100%;
     }
     body div {
@@ -1606,7 +1616,10 @@ form.form .labelinfo {
         width: 98%;
 		margin: 0 auto;
     }
-
+ 	div.container_24 .grid_24 {
+		float: none;
+		display: block;
+	}
     .wrapper.bot-pad > div {
         width: 100%;
     }
