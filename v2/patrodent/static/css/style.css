@@ -1508,6 +1508,39 @@ form.form .labelinfo {
 }
 /* BLOG STYLES */
 
+
+/*cookie law */
+#CookielawBanner {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	color: white;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background: rgba(68, 68, 68, 0.9);
+	z-index: 9999;
+	padding: 1em;
+}
+#CookielawBanner a {
+	color: #32ac9c;
+	text-decoration: none;
+}
+#CookielawBanner p,
+#CookielawBanner .cookie-buttons {
+	color: white;
+	text-align: center;
+}
+
+#CookielawBanner a.btn {
+	background: #1c8c7d;
+	color: white;
+	border-radius: 1em;
+	text-decoration: none;
+	padding: 0.5em 1em;
+}
+
 /* end blog styles*/
 @media only screen and (max-width : 1024px) {
 	header {
@@ -1740,8 +1773,6 @@ form.form .labelinfo {
 	}
 }
 @media only screen and (max-width : 887px) {
-	.loyalty .container_24 .prefix_1,
-	.loyalty .container_24 .grid_13,
 	.history .container_24 .prefix_1,
 	.history .container_24 .grid_13 {
 		margin: 0 auto;
@@ -1749,10 +1780,9 @@ form.form .labelinfo {
 		float: none;
 		display: block;
 	}
-	.loyalty .container_24 .grid_13,
 	.history .container_24 .grid_13 {
 		width: auto;
-		max-width: 95%;
+		max-width: 90%;
 	}
 
 }
