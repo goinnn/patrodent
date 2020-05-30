@@ -25,8 +25,8 @@ class TemplateView(DjangoTemplateView):
             return 'index.html'
 
 urlpatterns = [
-    re_path(r'^robots\.txt/$', DjangoTemplateView.as_view(template_name='robots.txt', content_type='text/plain')),
-    re_path(r'^sitemap\.xml/$', DjangoTemplateView.as_view(template_name='sitemap.xml', content_type='text/plain')),
+    re_path(r'^robots\.txt$', DjangoTemplateView.as_view(template_name='robots.txt', content_type='text/plain')),
+    re_path(r'^sitemap\.xml$', DjangoTemplateView.as_view(template_name='sitemap.xml', content_type='text/plain')),
     re_path(r'^blog/', include('zinnia.urls')),
     re_path(r'^comments/', include('django_comments.urls')),
     re_path(r'^$', TemplateView.as_view(), name='template_view_index'),
