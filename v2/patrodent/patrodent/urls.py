@@ -24,19 +24,15 @@ class TemplateView(DjangoTemplateView):
         else:
             return 'index.html'
 
-
-urlpatterns = []
-
-if settings.DEBUG:
-    urlpatterns = [
-        re_path(r'^robots\.txt/$', DjangoTemplateView.as_view(template_name='robots.txt', content_type='text/plain')),
-        re_path(r'^sitemap\.xml/$', DjangoTemplateView.as_view(template_name='sitemap.xml', content_type='text/plain')),
-        re_path(r'^blog/', include('zinnia.urls')),
-        re_path(r'^comments/', include('django_comments.urls')),
-        re_path(r'^$', TemplateView.as_view(), name='template_view_index'),
-        path('summernote/', include('django_summernote.urls')),
-        path('admin/', admin.site.urls),
-    ]
+urlpatterns = [
+    re_path(r'^robots\.txt/$', DjangoTemplateView.as_view(template_name='robots.txt', content_type='text/plain')),
+    re_path(r'^sitemap\.xml/$', DjangoTemplateView.as_view(template_name='sitemap.xml', content_type='text/plain')),
+    re_path(r'^blog/', include('zinnia.urls')),
+    re_path(r'^comments/', include('django_comments.urls')),
+    re_path(r'^$', TemplateView.as_view(), name='template_view_index'),
+    path('summernote/', include('django_summernote.urls')),
+    path('admin/', admin.site.urls),
+]
 
 urlpatterns += [
     # Examples:
