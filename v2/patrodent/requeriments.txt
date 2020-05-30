@@ -22,3 +22,4 @@ wcwidth==0.1.7
 django-blog-zinnia==0.20
 sorl-thumbnail==12.6.3
 django-summernote==0.8.11.6
+django-cookie-law==2.0.3

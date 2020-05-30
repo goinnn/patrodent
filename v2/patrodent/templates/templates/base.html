@@ -1,4 +1,4 @@
-{% load static %}
+{% load static cookielaw_tags %}
 
 <!DOCTYPE html>
 <html lang="es">
@@ -39,7 +39,8 @@
     <script type="text/javascript" src="{% static 'jsor-jcarousel-0.3.1/dist/jquery.jcarousel.min.js' %}"></script>
     <script src="{% static 'photoswipe/dist/photoswipe.min.js' %}"></script>
     <script src="{% static 'photoswipe/dist/photoswipe-ui-default.min.js' %}"></script>
-   <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="{% static 'cookielaw/js/cookielaw.js' %}"></script>
     <script src="{% static 'js/patrodent.min.js' %}"></script>
    {% endblock %}
     <!--METADATA LINE-->
@@ -98,7 +99,7 @@
                 <a href="{% url 'template_view' 'preguntas-implantes' %}">Preguntas Frecuentes</a>
 {#                <ul>{% include "templates/inc.faq.html" %}</ul>#}
             </li>
-{#            <li class="blog"><a href="{% url 'zinnia:entry_archive_index' %}">Blog</a></li>#}
+            <li class="blog"><a href="{% url 'zinnia:entry_archive_index' %}">Blog</a></li>
         </ul>
     </nav>
     <header>
@@ -199,7 +200,7 @@
                                             {% include "templates/inc.faq.html" %}
                                         </ul>
                                     </li>
-{#                                    <li class="blog"><a class="{% block class-blog-ling %}{% endblock %}" href="{% url 'zinnia:entry_archive_index' %}">Blog</a></li>#}
+                                    <li class="blog"><a class="{% block class-blog-ling %}{% endblock %}" href="{% url 'zinnia:entry_archive_index' %}">Blog</a></li>
                                 </ul>
                             {% endblock %}
                         </nav>
@@ -271,6 +272,14 @@
     {% include "templates/inc.photoswipe.html" %}
     {% block footerjs %}
     {% endblock %}
+    {% cookielaw_banner %}
+    <script type="application/javascript">
+    $(document).ready(function () {
+       $('.close-cookies').click(function () {
+           $(this).parent().hide();
+       });
+    });
+    </script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-27507431-1']);

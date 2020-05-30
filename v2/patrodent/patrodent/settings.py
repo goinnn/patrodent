@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'tagging',
     'zinnia',
     'django_summernote',
-    'blog'
+    'blog',
+    'cookielaw'
 ]
 
 MIDDLEWARE = [
