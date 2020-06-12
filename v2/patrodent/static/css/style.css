@@ -1630,6 +1630,9 @@ form.form .labelinfo {
 }
 
 @media only screen and (max-width : 980px) {
+	.grid_9 {
+		margin: 0;
+	}
     body,
 	body.zinnia {
         min-width: 100%;
@@ -1692,7 +1695,6 @@ form.form .labelinfo {
     .index section .container_24 .wrapper .alpha,
     .index section .container_24 .wrapper .omega,
     .index section  .container_24 .wrapper .grid_6 {
-        width: 96%;
         padding: 0 1em;
     }
 	.home3colums > div.center {
@@ -1796,6 +1798,9 @@ form.form .labelinfo {
 }
 
 @media only screen and (max-width : 875px) {
+	header h1.sign {
+		padding-top: 0.5em;
+	}
 	header .addressinfo {
 		font-size: 14px;
 	}
@@ -2129,6 +2134,9 @@ form.form .labelinfo {
     .index .slider-wrapper {
         zoom: 0.7;
     }
+	header h1.sign {
+		padding-top: 1em;
+	}
     .container_24 .grid_13 {
         width: auto;
     }
