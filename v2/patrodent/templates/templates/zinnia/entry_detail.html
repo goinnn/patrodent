@@ -1,0 +1,15 @@
+{% extends "zinnia/entry_detail_base.html" %}
+
+{%  load blog_tags %}
+
+{% block meta %}
+    {{ block.super }}
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ object.title }}" />
+    <meta property="og:description" content="{{ object.excerpt|safe }}" />
+    {% if object.image %}
+    <meta property="og:image" content="{% if request.is_secure %}https://{% else %}http://{% endif %}{{ request.get_host }}{{ object.image.url }}" />
+    {% else %}
+        <meta property="og:image" content="{% get_entry_image object %}" />
+    {% endif %}
+{% endblock meta %}
