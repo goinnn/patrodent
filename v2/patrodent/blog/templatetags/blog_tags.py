@@ -10,7 +10,7 @@ def get_entry_image(context, entry):
     imgurl = None
     leadsoup = BeautifulSoup(entry.lead)
     contentsoup = BeautifulSoup(entry.content)
-    img = leadsoup.img or contentsoup()
+    img = leadsoup.img or contentsoup.img
     if img:
         imgsrc = img["src"]
         if imgsrc.endswith("jpg") or imgsrc.endswith("png"):
