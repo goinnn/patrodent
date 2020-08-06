@@ -6,6 +6,8 @@
 
 {% block meta %}
     <meta name="generator" content="Zinnia {{ ZINNIA_VERSION }}" />
+    <meta property="og:url" content="{{ request.build_absolute_uri }}" />
+
 {% endblock meta %}
 
 {% block link %}
