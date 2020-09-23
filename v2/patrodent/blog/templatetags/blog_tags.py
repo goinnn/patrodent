@@ -15,8 +15,5 @@ def get_entry_image(context, entry):
         imgsrc = img["src"]
         if imgsrc.endswith("jpg") or imgsrc.endswith("png"):
             request = context['request']
-            if request.is_secure():
-                imgurl = 'https://%s%s' %(request.get_host(), imgsrc)
-            else:
-                imgurl = 'http://%s%s' % (request.get_host(), imgsrc)
+            imgurl = 'https://%s%s' %(request.get_host(), imgsrc)
     return imgurl
