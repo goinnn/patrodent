@@ -4,6 +4,12 @@
 
 {% block metadescription %}La ortodoncia es una especialidad de la odontología que se encarga de estudiar y corregir las malposiciones y maloclusiones dentarias{% endblock %}
 
+{% block meta %}
+<meta property="og:title" content="Ortodoncia" />
+<meta property="og:url" content="https://patrodent.com{% url 'template_view' 'ortodoncia' %}">
+<meta property="og:description" content="La ortodoncia es una especialidad de la odontología que se encarga de estudiar y corregir las malposiciones y maloclusiones dentarias">
+{% endblock %}
+
 {% block title %}Ortodoncia - {% endblock %}
 
 {% block content-title %}Ortodoncia{% endblock %}
@@ -22,14 +28,4 @@
 
 {% block before-after %}
     {% include "templates/after_before/inc.ortodoncia.html" %}
-{% endblock %}
-
-{% block before-after-title %}
-    <div class="wrapper indent-bot2">
-        <figure class="img-style img-indent">
-            <iframe width="250" height="156" src="https://www.youtube.com/embed/7rjFl-wYP34?autoplay=1" frameborder="0" allowfullscreen></iframe>
-            <span class="afterBeforeText"></span>
-        </figure>
-    </div>
-    {{block.super}}
 {% endblock %}

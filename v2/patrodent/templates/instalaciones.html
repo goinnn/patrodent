@@ -1,71 +1,91 @@
 {% extends "templates/base.html" %}
 
+{% load static %}
+
 {% block metadescription %}Instalaciones de la Clínica Dental Patrocinio Gómez Martínez (Patrodent){% endblock %}
 
-{% block class-patrodent-link %}class="active"{% endblock %}
+
+{% block meta %}
+<meta property="og:title" content="Nuestras Instalaciones" />
+<meta property="og:url" content="https://patrodent.com{% url 'template_view' 'instalaciones' %}">
+<meta property="og:description" content="Instalaciones de la Clínica Dental Patrocinio Gómez Martínez (Patrodent)">
+<meta property="og:type" content="image/jpeg" />
+<meta property="og:image" content="https://patrodent.com{% static 'images/instalaciones/consulta-3.jpg' %}" />
+{% endblock %}
+
+{% block js %}
+    {{ block.super }}
+    <script src="{% static 'js/tms-0.3.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/tms_presets.min.js' %}" type="text/javascript"></script>
+{% endblock %}
+
+{% block class-patrodent-link %} active{% endblock %}
 
 {% block title %}Instalaciones - {% endblock %}
 
 {% block pageclass %}Place{% endblock %}
 {% block content %}
     <div class="wrapper">
-        <div class="alpha prefix_1 grid_9">
-            <div class="border-1">
-                <h4 class="margin-bot">Nuestras Instalaciones</h4>
-                <div class="wrapper indent-bot2">
-                    <figure class="img-style img-indent">
-                        <iframe width="300" height="200" src="https://www.youtube.com/embed/5-JuMRmbmXo?autoplay=1" frameborder="0" allowfullscreen></iframe>
-                        <span class="afterBeforeText">Visita nuestras instalaciones interactivamente</span>
-                    </figure>
-                </div>
-                <div class="wrapper indent-bot2">
-                    <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/consulta5.jpg" alt="Gabinete número 1" title="Gabinete número 1"/>
-                        <span class="afterBeforeText">Gabinete número 1</span>
-                    </figure>
+        <div class="alpha prefix_1 grid_22 suffix_1 omega">
+            <div class="">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <ul class="items">
+                            <li><img src="{% static 'images/instalaciones/sala-espera.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/instalaciones/sala-espera-2.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/instalaciones/recepcion.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/instalaciones/entrada.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/instalaciones/despacho.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/instalaciones/consulta.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/instalaciones/consulta-2.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/instalaciones/sala-espera-3.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/instalaciones/consulta-3.jpg' %}" alt=""></li>
+                        </ul>
+                        <ul class="pagination">
+                            <li><a href="#"><span>1</span></a></li>
+                            <li><a href="#"><span>2</span></a></li>
+                            <li><a href="#"><span>3</span></a></li>
+                            <li><a href="#"><span>4</span></a></li>
+                            <li><a href="#"><span>5</span></a></li>
+                            <li><a href="#"><span>6</span></a></li>
+                            <li><a href="#"><span>7</span></a></li>
+                            <li><a href="#"><span>8</span></a></li>
+                            <li><a href="#"><span>9</span></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="grid_13 suffix_1 omega">
+
+        <div class="alpha prefix_1 grid_22 suffix_1 omega">
             <h2 class="p3">Conoce nuestras instalaciones</h2>
-            <h5 class="indent-bot">Nuestro instalaciones han sido totalmente remodeladas</h5>
+            <p class="text-1">
             La clínica esta dotada de 3 <strong>gabinetes</strong> completos totalmente informatizados con pantallas de televisión y ordenadores que intercomunican cada gabinete entre si y con los demás departamentos de la clínica.
             </p>
-            <p>
+            <p class="text-1">
             Cada uno de nuestros <strong>gabinetes</strong>, así como nuestras salas de rayos y de esterilización, se encuentran completamente equipados para poder ofrecer el máximo nivel de calidad y seguridad en todos nuestros tratamientos.
             </p>
-            <p>La sala de <strong>radiología digital</strong> está completamente <strong>aislada</strong> e <strong>informatizada</strong> para la realización de radiografías extraorales 2D (panorex y teleradiografías), así como 3D (TAC). La radiología digital intraoral se realiza en todos los gabinetes. La radiología digital nos permite obtener radiografías en menor tiempo y reducir en un 80% la dosis de radiación que reciben nuestros pacientes.</p>
-            <p>Una <strong>sala de esterilización y limpieza del instrumental</strong>, junto con una zona de <strong>preparación de modelos de escayola</strong> (recortadora de modelos).
+            <p class="text-1">La sala de <strong>radiología digital</strong> está completamente <strong>aislada</strong> e <strong>informatizada</strong> para la realización de radiografías extraorales 2D (panorex y teleradiografías), así como 3D (TAC). La radiología digital intraoral se realiza en todos los gabinetes. La radiología digital nos permite obtener radiografías en menor tiempo y reducir en un 80% la dosis de radiación que reciben nuestros pacientes.</p>
+            <p class="text-1">Una <strong>sala de esterilización y limpieza del instrumental</strong>, junto con una zona de <strong>preparación de modelos de escayola</strong> (recortadora de modelos).
             Un <strong>despacho para la atención personal</strong> con el paciente, la recepción y la sala de espera muy confortable con pantalla de televisión y videos informativos, infantiles  y de recreo completan y amenizan su estancia en la clínica.
             </p>
         </div>
     </div>
 {% endblock %}
-
-
-{% block footergallery %}
-    <figure>
-        <a href="https://www.youtube.com/watch?v=5-JuMRmbmXo" target="_blank" title="Instalaciones de Patrodent">
-            <img src="{{ STATIC_URL }}images/instalaciones.min.jpg" alt="Instalaciones de Patrodent" title="Instalaciones de Patrodent" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{{ STATIC_URL }}images/consulta1.jpg" rel="shadowbox[instalaciones]" title="Imágen de la consulta">
-            <img src="{{ STATIC_URL }}images/consulta1.min.jpg" alt="Imágen de la consulta" title="Imágen de la consulta" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{{ STATIC_URL }}images/consulta2.jpg" rel="shadowbox[instalaciones]" title="Imágen de la consulta">
-            <img src="{{ STATIC_URL }}images/consulta2.min.jpg" alt="Imágen de la consulta" title="Imágen de la consulta" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{{ STATIC_URL }}images/consulta3.jpg" rel="shadowbox[instalaciones]" title="Sala de espera">
-            <img src="{{ STATIC_URL }}images/consulta3.min.jpg" alt="Sala de espera" title="Sala de espera" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{{ STATIC_URL }}images/consulta4.jpg" rel="shadowbox[instalaciones]" title="Sala de espera">
-            <img src="{{ STATIC_URL }}images/consulta4.min.jpg" alt="Sala de espera" title="Sala de espera" />
-        </a>
-    </figure>
+{% block footerjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+    $(window).load(function(){
+        $('.slider')._TMS({
+            duration:800,
+            easing:'easeOutQuad',
+            preset:'zabor',
+            pagination:'.pagination',
+            slideshow:3000,
+            banners:'fade',
+            waitBannerAnimation:false,
+            pauseOnHover:true
+        })
+    });
+    </script>
 {% endblock %}

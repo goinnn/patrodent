@@ -1,0 +1,39 @@
+{% extends "templates/servicio.html" %}
+
+{% load static %}
+
+{% block metadescription %}Software de diseño de sonrisa digital.{% endblock %}
+
+{% block meta %}
+<meta property="og:title" content="Software de diseño de sonrisa digital" />
+<meta property="og:url" content="https://patrodent.com{{ request.get_host }}{% url 'template_view' 'software-diseno' %}">
+<meta property="og:description" content="Software de diseño de sonrisa digital">
+{% endblock %}
+
+{% block title %}Software de diseño de sonrisa digital - {% endblock %}
+
+{% block content-title %}Software de diseño de sonrisa digital{% endblock %}
+
+{% block js-after-before %}
+{% endblock %}
+
+{% block content-body %}
+   <p>
+        La auténtica revolución de la odontología estética ha sido dada gracias al <strong>software de diseño digital de la sonrisa</strong>. Esta técnica permite ver el resultado final de su sonrisa, como también, mejorar la precisión de los tratamientos que se deben realizar, para que así pueda valorar el resultado final de su sonrisa antes de empezar con el tratamiento.
+    </p>
+   <p>
+        Esta técnica la utilizamos tanto a <strong>nivel estético</strong> en casos que queramos cambiar forma, color y tamaño de los dientes para la realización de carillas estéticas; como a nivel <strong>ortodóncico</strong> para estudiar los espacios y estética de los dientes previo al tratamiento. 
+    </p>
+{% endblock %}
+
+{% block before-after-title %}
+    <h4 class="margin-bot">Diseño de sonrisa digital</h4>
+{% endblock %}
+
+{% block before-after %}
+    <div class="wrapper indent-bot2">
+        <figure class="img-style img-indent"><img src="{% static 'images/diseno_sonrisa.png' %}" alt="Software de diseño de sonrisa digital" title="Software de diseño de sonrisa digital"/>
+            <span class="afterBeforeText">Software de diseño de sonrisa digital</span>
+        </figure>
+    </div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "templates/servicio.html" %}
+
+{% load static %}
+
+{% block metadescription %}Análisis anatomopatológico de muestras orales{% endblock %}
+
+{% block meta %}
+<meta property="og:title" content="Análisis anatomopatológico de muestras orales" />
+<meta property="og:url" content="https://patrodent.com{% url 'template_view' 'analisis-anatomopatologico-muestras-orales' %}">
+<meta property="og:description" content="En Patrodent, tenemos como rutina realizar en cada revisión un estudio minucioso de todas las mucosas orales para anticiparnos a cualquier adversidad. ">
+<meta property="og:type" content="image/jpeg" />
+<meta property="og:image" content="http{% if request.is_secure %}{% endif %}://{% static 'images/patrocinio_y_angela.jpg' %}" />
+{% endblock %}
+
+{% block title %}Análisis anatomopatológico de muestras orales - {% endblock %}
+
+{% block pageclass %}anatomopatologico{% endblock %}
+
+{% block content-body-wrapper %}
+    <div class="wrapper">
+        <div class="alpha prefix_1 suffix_1">
+            <h2 class="p3">Análisis anatomopatológico de muestras orales</h2>
+            <p>
+                Actualmente, son muchos los casos de distintas enfermedades que son diagnosticadas de primera instancia por lesiones que aparecen en la mucosa oral.
+            </p>
+            <p>En Patrodent, tenemos como rutina realizar en cada revisión un estudio minucioso de todas las mucosas orales para anticiparnos a cualquier adversidad.
+            </p>
+            <p>Realizamos la extirpación de todas las lesiones orales que sean necesarias y contamos con los servicios de un Laboratorio de Análisis Anatomopatológico para tener la certeza de diganóstico definitivo de los diferentes casos mediante un informe que será entregado también al paciente que lo solicite.</p>
+        </div>
+    </div>
+{% endblock %}
+{% block before-after-title-wrapper %}{% endblock %}

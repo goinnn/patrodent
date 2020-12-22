@@ -1,0 +1,118 @@
+{% extends "templates/base.html" %}
+
+{% load static %}
+
+{% block title %}Antes y después - {% endblock %}
+
+{% block metadescription %}Casos reales de nuestros pacientes (antes y después){% endblock %}
+
+{% block meta %}
+<meta property="og:title" content="Casos reales de nuestros pacientes" />
+<meta property="og:url" content="https://patrodent.com{{ request.get_host }}{% url 'template_view' 'antes-y-despues' %}">
+<meta property="og:description" content="Casos reales de nuestros pacientes (antes y después)">
+{% endblock %}
+
+{% block pageclass %}beforeAfter{% endblock %}
+
+{% block class-antes-despues-link %} active{% endblock %}
+
+{% block content %}
+    <div class="wrapper">
+        <div class="alpha prefix_1 grid_22 suffix_8 omega afterAndBeforePage">
+            <h2 class="p3">Casos reales de nuestros pacientes</h2>
+            <p>
+                Creemos que la mejor manera de que creas en nosotros es enseñandote lo que hemos hecho por otros pacientes.
+                Aqui puedes ver una recopilación de estos casos.
+            </p>
+            <p> <strong>Pasa el ratón por encima de las imágenes (o tocalas desde un movil o una tablet) para ver el antes</strong></p>
+            <h4>Ortodoncia</h4>
+            <div class="imgswrapper">
+            {% with all=1 %}
+                {% include "templates/after_before/inc.ortodoncia.html" %}
+            {% endwith %}
+            </div>
+            <div class="clear"></div>
+            <h4>Periodoncia</h4>
+            <div class="imgswrapper">
+            {% include "templates/after_before/inc.periodoncia.html" %}
+            </div>
+            <div class="clear"></div>
+            <h4>Prótesis</h4>
+            <div class="imgswrapper">
+            {% include "templates/after_before/inc.protesis.html" %}
+            <div class="wrapper indent-bot2 afterAndBefore">
+                <figure class="img-style img-indent"><img src="{% static 'images/protesis_despues_3.jpg' %}" alt="Caso real protesis" title="Caso real protesis" class="after" />
+                    <span class="afterBeforeText">Después</span>
+                </figure>
+            </div>
+            </div>
+            <div class="clear"></div>
+            <h4>Estética y blanqueamiento dental</h4>
+
+            <div class="imgswrapper">
+            <div class="wrapper indent-bot2 afterAndBefore">
+                <figure class="img-style img-indent"><img src="{% static 'images/blanqueamiento1_despues.jpg' %}" alt="Caso real odontología conservadora" title="Caso real odontología conservadora" class="after" />
+                    <span class="afterBeforeText">Después</span>
+                </figure>
+            </div>
+            </div>
+            <div class="imgswrapper">
+            {% with all=1 %}
+            {% include "templates/after_before/inc.odontologia.html" %}
+            {% endwith %}
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+{% endblock %}
+
+
+
+{% block footergallery %}
+    <figure>
+        <a href="{% static 'images/ortodoncia_caso_antes3.jpg' %}" rel="shadowbox[antes-y-despues]" title="Ortodoncia caso real (antes)">
+            <img src="{% static 'images/ortodoncia_caso_antes3.min.jpg' %}" alt="Ortodoncia caso real (antes)" title="Ortodoncia caso real (antes)" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{% static 'images/ortodoncia_caso_antes1.jpg' %}" rel="shadowbox[antes-y-despues]" title="Ortodoncia caso real (antes)">
+            <img src="{% static 'images/ortodoncia_caso_antes1.min.jpg' %}" alt="Ortodoncia caso real (antes)" title="Ortodoncia caso real (antes)" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{% static 'images/ortodoncia_caso_antes2.jpg' %}" rel="shadowbox[antes-y-despues]" title="Ortodoncia caso real (antes)">
+            <img src="{% static 'images/ortodoncia_caso_antes2.min.jpg' %}" alt="Ortodoncia caso real (antes)" title="Ortodoncia caso real (antes)" />
+        </a>
+    </figure>
+    <div class="clear"></div>
+    <figure>
+        <a href="{% static 'images/ortodoncia_caso_despues2.jpg' %}" rel="shadowbox[antes-y-despues]" title="Ortodoncia caso real (después)">
+            <img src="{% static 'images/ortodoncia_caso_despues2.min.jpg' %}" alt="Ortodoncia caso real (después)" title="Ortodoncia caso real (después)" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{% static 'images/ortodoncia_caso_despues1.jpg' %}" rel="shadowbox[antes-y-despues]" title="Ortodoncia caso real (después)">
+            <img src="{% static 'images/ortodoncia_caso_despues1.min.jpg' %}" alt="Ortodoncia caso real (después)" title="Ortodoncia caso real (después)" />
+        </a>
+    </figure>
+    <figure>
+        <a href="{% static 'images/ortodoncia_caso_despues3.jpg' %}" rel="shadowbox[antes-y-despues]" title="Ortodoncia caso real (después)">
+            <img src="{% static 'images/ortodoncia_caso_despues3.min.jpg' %}" alt="Ortodoncia caso real (después)" title="Ortodoncia caso real (después)" />
+        </a>
+    </figure>
+{% endblock %}
+
+
+{% block footerjs %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'js/jquery.swap-images.js' %}"></script>
+    <script type="text/javascript">
+        (function($){
+            $(document).ready(function () {
+                setTimeout(function() {
+                    $(".after").swapImages({before: "antes", after: "despues"});
+                }, 1000);
+            });
+          })(jQuery);
+    </script>
+{% endblock %}

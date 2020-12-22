@@ -1,9 +1,19 @@
 {% extends "templates/base.html" %}
 
+{% load static %}
+
+{% block meta %}
+<meta property="og:title" content="Clínica Dental Patrodent, C/ Marques de Paradas, Sevilla" />
+<meta property="og:url" content="https://patrodent.com{% url 'template_view' 'index' %}">
+<meta property="og:description" content="Clínica Dental Patrocinio Gómez Martínez C/ Marques de Paradas nº 22 1 º dcha Sevilla (junto a plaza de armas)">
+<meta property="og:type" content="image/jpeg" />
+<meta property="og:image" content="https://patrodent.com/{% static 'images/sala_de_esperas.jpg' %}" />
+{% endblock %}
+
 {% block js %}
     {{ block.super }}
-    <script src="{{ STATIC_URL }}js/tms-0.3.js" type="text/javascript"></script>
-    <script src="{{ STATIC_URL }}js/tms_presets.js" type="text/javascript"></script>
+    <script src="{% static 'js/tms-0.3.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/tms_presets.min.js' %}" type="text/javascript"></script>
 {% endblock %}
 
 {% block pageclass %}index{% endblock %}
@@ -11,94 +21,60 @@
 {% block class-patrodent-link %} active{% endblock %}
 
 {% block content %}
-    <div class="slider-bottom p5">
+    <div class="slider-bottom p2">
         <div class="wrapper bot-pad">
             <div class="alpha prefix_1 grid_9">
-                <h2>Clínica Dental Patrodent</h2>
-                <h3 class="p2">Bienvenidos a tu clinica</h3>
+                <h2>Nuestra experiencia a tu servicio</h2>
                 <p class="text-1 text-left-index">
-                    La Clínica Dental Patrodent es una consulta de odontología integral, que le permitirá resolver todos los problemas de salud y estética buco-dental de una manera sencilla, cómoda y eficaz.
+                    La Clínica Dental PATRODENT es una consulta de Odontología Avanzada con más de 35 años de experiencia. Está situada en el centro de Sevilla y ofrece todos los servicios e innovaciones de la odontología actual.
                 </p>
                 <p class="text-1 text-left-index">
-                    Ofrece todo tipo de especialidades con un personal altamente cualificado: Odontología general, Estética dental y Blanqueamiento, Ortodoncia, Odontopediatría, Periodoncia, Endodoncia, Cirugía oral e Implantología, Prótesis dental y Rehabilitación implantoprotésica.
+                    Buscamos la excelencia en el trato y en el servicio, es por ello que ofrecemos una atención personalizada y exclusiva durante todo el tratamiento.
                 </p>
                 <p class="text-1 text-left-index">
-                    Ven y confía en nosotros
+                    Nuestras instalaciones cuentan con todas las comodidades para ofrecer un diagnóstico avanzado de todos nuestros casos.
                 </p>
             </div>
             <div class="grid_14 omega">
                 <div class="slider-wrapper">
                     <div class="slider">
                         <ul class="items">
-                            <li><img src="{{ STATIC_URL }}images/logo_galeria.png" alt=""></li>
-                            <li><img src="{{ STATIC_URL }}images/patrocinio_y_angela.jpg" alt=""></li>
-                            <li><img src="{{ STATIC_URL }}images/sala_de_esperas.jpg" alt=""></li>
-                            <li><img src="{{ STATIC_URL }}images/recepcion3.jpg" alt=""></li>
-                            <li><img src="{{ STATIC_URL }}images/cristal.jpg" alt=""></li>
-                            <li><img src="{{ STATIC_URL }}images/patrocinio_y_angela2.jpg" alt=""></li>
-                            <li><img src="{{ STATIC_URL }}images/equipo.jpg" alt=""></li>
+                            <li><img src="{% static 'images/patrocinio_y_angela.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/sala_de_esperas.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/recepcion3.jpg' %}" alt=""></li>
+                            <li><img src="{% static 'images/cristal.jpg' %}" alt=""></li>
                         </ul>
                         <ul class="pagination">
                             <li><a href="#"><span>1</span></a></li>
                             <li><a href="#"><span>2</span></a></li>
                             <li><a href="#"><span>3</span></a></li>
                             <li><a href="#"><span>4</span></a></li>
-                            <li><a href="#"><span>5</span></a></li>
-                            <li><a href="#"><span>6</span></a></li>
-                            <li><a href="#"><span>7</span></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="wrapper">
-        <div class="alpha prefix_1 grid_65 suffix_1">
-            <h4 class="p3">Financiación</h4>
-            <p class="p3">Contamos con un sistema de financiación, que le será totalmente de su agrado. Dado el carácter particular de cada paciente no es posible dar un presupuesto estándar sin estudiar detenidamente el tratamiento individual de cada paciente. Por ello le invitamos a visitar nuestra clínica para concertar una cita o déjenos sus datos y nosotros le llamaremos.</p>
+    <div class="wrapper home3colums">
+        <div class="grid_7">
+            <img src="{% static 'images/logo_1982_green.png' %}" class="tip-logo" alt="1982">
+            <h4><a href="{% url 'template_view' "nuestra-historia" %}">Tu clínica de confianza desde 1982</a></h4>
+            <p class="text-1">Mantenemos la filosofía del trato cercano y familiar. </p>
+            <p class="text-1">La tradición y la experiencia se unen para ofrecerte el mejor servicio</p>
         </div>
-        <div class="grid_6 grid_65 suffix_1">
-            <h4 class="p3"><a href="{% url template_view "tratamientos" %}">Nuestros Tratamientos</a></h4>
-            <ul class="list-1 p3">
-                {% include "templates/inc.tratamientos.html" %}
-            </ul>
+        <div class="grid_7 center">
+            <img src="{% static 'images/logo_finanza_green.png' %}" alt="Finanzciación">
+            <h4><a href="{% url 'template_view' "financiacion" %}">Financiación a tu medida</a></h4>
+            <p class="text-1">Contamos con un sistema de financiación adaptado a las necesidades individuales de cada paciente que le permitirá acceder al tratamiento médico que requiere de manera directa. </p>
         </div>
-        <div class="grid_7 suffix_1 omega">
-            <h4 class="p3">Renovandonos por ti...</h4>
-            <blockquote><p>Nuestra vocación es ofrecer un excelente servicio y atención a nuestros pacientes para que queden totalmente satisfechos. Por ello, nos renovamos día a día intentando superarnos en nuestros logros; renovando la imágen de <a href="{% url template_view "instalaciones" %}"> nuestra clínica</a> que le invitamos a conocer.</p>
-            <p>Nuestro <a href="{% url template_view "quienes_somos" %}">equipo humano</a> muy cualificado está a su disposición para ayudarle a resolver todas sus consultas en cualquier momento.”</p></blockquote>
+
+        <div class="grid_7">
+            <img src="{% static 'images/logo_materiales_premium.png' %}" class="tip-logo" alt="materiales premium">
+            <h4 class><a href="{% url 'template_view' "instalaciones" %}">Excelencia</a></h4>
+            <p class="p3">Trabajamos sólo con materiales de alta gama y nuestras instalaciones cuentan con todas las comodidades para ofrecer un diagnóstico avanzado de todos nuestros casos.</p>
         </div>
     </div>
 {% endblock %}
-
-{% block footergallery %}
-    <figure>
-        <a href="{{ STATIC_URL }}images/equipo_trabajando2.jpg" rel="shadowbox[index]" title="Equipo trabajando">
-            <img src="{{ STATIC_URL }}images/equipo_trabajando2.min.jpg" alt="Equipo trabajando" title="Equipo trabajando" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{{ STATIC_URL }}images/consulta1.jpg" rel="shadowbox[index]" title="Imágen de la consulta">
-            <img src="{{ STATIC_URL }}images/consulta1.min.jpg" alt="Imágen de la consulta" title="Imágen de la consulta" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{{ STATIC_URL }}images/patrocinio_tv.jpg" rel="shadowbox[index]" title="Patrocinio diagnosticando">
-            <img src="{{ STATIC_URL }}images/patrocinio_tv.min.jpg" alt="Patrocinio diagnosticando" title="Patrocinio diagnosticando" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{{ STATIC_URL }}images/consulta2.jpg" rel="shadowbox[index]" title="Imágen de la consulta">
-            <img src="{{ STATIC_URL }}images/consulta2.min.jpg" alt="Imágen de la consulta" title="Imágen de la consulta" />
-        </a>
-    </figure>
-    <figure>
-        <a href="https://www.youtube.com/watch?v=5-JuMRmbmXo" target="_blank" title="Instalaciones de Patrodent">
-            <img src="{{ STATIC_URL }}images/instalaciones.min.jpg" alt="Instalaciones de Patrodent" title="Instalaciones de Patrodent" />
-        </a>
-    </figure>
-{% endblock %}
-
 
 {% block footerjs %}
     {{ block.super }}

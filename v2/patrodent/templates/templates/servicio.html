@@ -1,11 +1,13 @@
 {% extends "templates/base.html" %}
 
+{% load static %}
+
 {% block class-servicios-link %} active{% endblock %}
 
 {% block footerjs %}
     {{ block.super }}
     {% block js-after-before %}
-        <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.swap-images.js"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.swap-images.js' %}"></script>
         <script type="text/javascript">
             (function($){
                 $(document).ready(function () {
@@ -26,7 +28,7 @@
                     <div class="alpha grid_23">
                         <div class="indent-l">
                             <div>
-                                <div class="title"><a href="{% url template_view "servicios" %}">Servicios</a></div>
+                                <div class="title"><a href="">Servicios Dentales</a></div>
                                 <ul class="list-1 columns3">
                                     {% include "templates/inc.servicios.html" %}
                                 </ul>
@@ -54,18 +56,18 @@
                 {% block before-after %}
                     <div class="wrapper indent-bot2">
                         <figure class="img-style img-indent">
-                            <img src="{{ STATIC_URL }}images/limpieza_despues.jpg" class="after" />
+                            <img src="{% static 'images/limpieza-despues.jpg' %}" class="after" alt="" />
                             <span class="afterBeforeText">Después</span>
                         </figure>
-                        <figure class="img-style"><img src="{{ STATIC_URL }}images/periodoncia_despues2.jpg" alt="" class="after" />
+                        <figure class="img-style"><img src="{% static 'images/periodoncia_despues2.jpg' %}" alt="" class="after" />
                             <span class="afterBeforeText">Después</span>
                         </figure>
                     </div>
                     <div class="wrapper indent-bot2">
-                        <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/limpieza_despues.jpg" alt="" class="after" />
+                        <figure class="img-style img-indent"><img src="{% static 'images/limpieza-despues.jpg' %}" alt="" class="after" />
                             <span class="afterBeforeText">Después</span>
                         </figure>
-                        <figure class="img-style"><img src="{{ STATIC_URL }}images/periodoncia_despues2.jpg" alt="" class="after" />
+                        <figure class="img-style"><img src="{% static 'images/periodoncia_despues2.jpg' %}" alt="" class="after" />
                             <span class="afterBeforeText">Después</span>
                         </figure>
                     </div>
@@ -74,33 +76,4 @@
         </div>
         {% endblock %}
     </div>
-{% endblock %}
-
-
-{% block footergallery %}
-    <figure>
-        <a href="{{ STATIC_URL }}images/equipo_trabajando.jpg" rel="shadowbox[servicio]" title="Equipo trabajando">
-            <img src="{{ STATIC_URL }}images/equipo_trabajando.min.jpg" alt="Equipo trabajando" title="Equipo trabajando" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{{ STATIC_URL }}images/equipo_trabajando2.jpg" rel="shadowbox[servicio]" title="Equipo trabajando">
-            <img src="{{ STATIC_URL }}images/equipo_trabajando2.min.jpg" alt="Equipo trabajando" title="Equipo trabajando" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{{ STATIC_URL }}images/patrocinio_trabajando.jpg" rel="shadowbox[servicio]" title="Patrocinio trabajando">
-            <img src="{{ STATIC_URL }}images/patrocinio_trabajando.min.jpg" alt="Patrocinio diagnosticando" title="Patrocinio trabajando" />
-        </a>
-    </figure>
-    <figure>
-        <a href="{{ STATIC_URL }}images/consulta2.jpg" rel="shadowbox[servicio]" title="Imágen de la consulta">
-            <img src="{{ STATIC_URL }}images/consulta2.min.jpg" alt="Imágen de la consulta" title="Imágen de la consulta" />
-        </a>
-    </figure>
-    <figure>
-        <a href="https://www.youtube.com/watch?v=5-JuMRmbmXo" target="_blank" title="Instalaciones de Patrodent">
-            <img src="{{ STATIC_URL }}images/instalaciones.min.jpg" alt="Instalaciones de Patrodent" title="Instalaciones de Patrodent" />
-        </a>
-    </figure>
 {% endblock %}

@@ -1,10 +1,17 @@
+{% load static %}
+
+{#<div class="wrapper indent-bot2 afterAndBefore">#}
+{#    <figure class="img-style img-indent"><img src="{% static 'images/estetica-despues-2.jpg' %}" alt="Caso real odontología conservadora" title="Caso real odontología conservadora" class="after" />#}
+{#        <span class="afterBeforeText">Después</span>#}
+{#    </figure>#}
+{#</div>#}
 <div class="wrapper indent-bot2 afterAndBefore">
-    <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/estetica_despues_2.jpg" alt="Caso real odontología conservadora" title="Caso real odontología conservadora" class="after" />
+    <figure class="img-style img-indent"><img src="{% static 'images/blanqueamiento1_despues.jpg' %}" alt="Caso real odontología conservadora" title="Caso real odontología conservadora" class="after" />
         <span class="afterBeforeText">Después</span>
     </figure>
 </div>
-<div class="wrapper indent-bot2 afterAndBefore">
-    <figure class="img-style img-indent"><img src="{{ STATIC_URL }}images/blanqueamiento1_despues.jpg" alt="Caso real odontología conservadora" title="Caso real odontología conservadora" class="after" />
-        <span class="afterBeforeText">Después</span>
+<div class="wrapper">
+    <figure class="img-style img-indent">
+        <img  src="{% static 'images/estetica.png' %}" alt="">
     </figure>
 </div>

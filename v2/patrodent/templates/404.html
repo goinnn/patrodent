@@ -1,0 +1,14 @@
+{% extends 'templates/base.html' %}
+
+{% block content %}
+    <div class="slider-bottom p5">
+        <div class="wrapper bot-pad">
+            <div class="alpha prefix_1 grid_9">
+                <h1>Error 404, Página no encontrada</h1>
+                <div class="clear"></div>
+                <p class="text-1 text-left-index">No hemos encontrado la página solicitada.</p>
+                <a class="btn btn-primary" href="{% url 'template_view' 'index' %}">Ir a inicio</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
