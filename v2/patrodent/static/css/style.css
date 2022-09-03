@@ -1239,6 +1239,7 @@ form.form .labelinfo {
 
 .question {
 	margin-bottom: 0.2em;
+	padding-right: 20px;
 }
 
 .question h4 {
@@ -1322,7 +1323,7 @@ form.form .labelinfo {
 /* VIDEO carousel */
 
 .video-slider {
-	width: 400px;
+	max-width: 400px;
 	height: 232px;
 	margin-top: 5em;
 	background: #444;
@@ -1774,7 +1775,19 @@ form.form .labelinfo {
 		top: 495px;
 	}
 }
+@media only screen and (max-width : 960px) {
+    .zinnia #content,
+    .zinnia.right-sidebar #content,
+    .zinnia #sidebar, .zinnia.right-sidebar #sidebar {
+        float: none;
+        width: 100%;
+    }
+}
 @media only screen and (max-width : 887px) {
+	.border-1 {
+		margin-right: 0;
+		padding-right: 0;
+	}
 	.history .container_24 .prefix_1,
 	.history .container_24 .grid_13 {
 		margin: 0 auto;
@@ -1788,15 +1801,6 @@ form.form .labelinfo {
 	}
 
 }
-@media only screen and (max-width : 960px) {
-    .zinnia #content,
-    .zinnia.right-sidebar #content,
-    .zinnia #sidebar, .zinnia.right-sidebar #sidebar {
-        float: none;
-        width: 100%;
-    }
-}
-
 @media only screen and (max-width : 875px) {
 	header h1.sign {
 		padding-top: 0.5em;
@@ -1921,12 +1925,6 @@ form.form .labelinfo {
 	}
 }
 
-@media only screen and (max-width : 867px) {
-	/*header {*/
-	/*	height: 200px;*/
-	/*}*/
-}
-
 @media only screen and (max-width : 830px) {
 	.contactheader {
 		max-width: 361px;
@@ -1978,39 +1976,6 @@ form.form .labelinfo {
 		margin: 0 auto 2em;
 	}
 }
-
-@media only screen and (max-width : 720px) {
-	/*header h1.sign {*/
-	/*	display: block;*/
-	/*	margin: 0 auto;*/
-	/*	width: 100%;*/
-	/*	line-height: 0.5em;*/
-	/*}*/
-	/*header h1.sign a {*/
-	/*	display: block;*/
-	/*	width: 324px;*/
-	/*	margin: 0 auto;*/
-	/*	background: white;*/
-	/*	line-height: 1em;*/
-	/*}*/
-	/*header .grid_24 > .fright {*/
-	/*	float: none;*/
-	/*	width: 100%;*/
-	/*	margin: 0 auto;*/
-	/*	clear: both;*/
-	/*}*/
-	/*header .contactheader {*/
-	/*	font-size: 14px;*/
-	/*}*/
-	/*header .contactheader i.fas.fa-phone-alt {*/
-	/*	font-size: 26px!important;*/
-	/*}*/
-	/*.contactheader {*/
-	/*	max-width: None;*/
-	/*	margin-top: 28px;*/
-	/*	float: left;*/
-	/*}*/
-}
 @media only screen and (max-width : 700px) {
     header .slogon .tel{
         font-size: 22px;
@@ -2042,6 +2007,16 @@ form.form .labelinfo {
         top: 0;
         right: 0;
     }
+	.profile div {
+		margin: 0 auto;
+		max-width: 25em;
+	}
+	.profile div.little {
+		max-width: 188px;
+	}
+	.profile img {
+		margin: 0;
+	}
     .box-big,
     .box {
         width: 185px;
@@ -2234,17 +2209,33 @@ form.form .labelinfo {
 		max-width: 100%;
 	}
 	.Place .slider-wrapper {
-		width: 150px;
-		height: 100px;
+		width: 300px;
+		height: 200px;
 		margin: 0 auto 60px
 	}
 	.Place .slider-wrapper img {
-		max-height: 90px;
+		max-height: 175px;
 	}
 	.Place .slider-wrapper .pic {margin-left: 0;}
 	.Place .slider-wrapper .pagination {
-		top: 105px;
+		top: 201px;
 	}
+	.addressinfo i {
+		font-size: 8px;
+	}
+	.addressinfo a {
+		margin: 0;
+	}
+	header .addressinfo {
+		font-size: 7px;
+	}
+	.movileContact .social{
+		padding: 0;
+	}
+	.socialheader {
+		margin-left: 0;
+	}
+	.btn-cita  {margin-left: 0em;}
 }
 @media only screen and (max-width : 378px) {
 	header h1 a {
@@ -2270,24 +2261,6 @@ form.form .labelinfo {
 	.jcarousel ul.gallery li {
 		width: 277px;
 	}
-}
-@media only screen and (max-width : 360px) {
-	.addressinfo i {
-		font-size: 8px;
-	}
-	.addressinfo a {
-		margin: 0;
-	}
-	header .addressinfo {
-		font-size: 7px;
-	}
-	.movileContact .social{
-		padding: 0;
-	}
-	.socialheader {
-		margin-left: 0;
-	}
-	.btn-cita  {margin-left: 0em;}
 }
 @media only screen and (max-width : 356px) {
 	header {height: 270px}

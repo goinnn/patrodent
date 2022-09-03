@@ -21,7 +21,9 @@
                 <h2 class="p3">Cómo Encontrarnos</h2>
                 <div class="wrapper">
                     <figure class="img-style img-indent">
-                        <div id="map_canvas"></div>
+                        <div id="map_canvas">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.518966954089!2d-6.002534633885874!3d37.390150981440264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c127b462e0f%3A0xcebc2c2e1156dfdd!2sCl%C3%ADnica%20Dental%20PATRODENT%20en%20Sevilla%20-%20Odontolog%C3%ADa%20Avanzada!5e0!3m2!1ses!2ses!4v1583685844082!5m2!1ses!2ses" width="100%"  height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
                     </figure>
                     <div class="clear"></div>
                     <div class="map-margin">
@@ -130,31 +132,11 @@
             });
         })(jQuery);
     </script>
-    <script type="text/javascript">
-        var cfJsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
-        document.write(unescape("%3Cscript src='" + cfJsHost + "www.123contactform.com/includes/interactive123cf.js?2480' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script src="{% static 'js/jquery.googlemaps1.01.js' %}" type="text/javascript"></script>
-    <script src="https://maps.google.com/maps?file=api&amp;v=3&amp;hl=es&amp;sensor=true&amp;key=AIzaSyAgfMglec3JH1xa-E_M13YolNAeM6N2p1s" type="text/javascript"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgfMglec3JH1xa-E_M13YolNAeM6N2p1s&v=3.47" type="text/javascript"></script>
 <!--     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.9&sensor=true"></script> -->
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#map_canvas').googleMaps({
-                hl: 'es',
-                latitude: 37.406045,
-                longitude: -5.993344,
-                markers: {
-                        latitude:   37.390045,
-                        longitude: -6.001344,
-                        icon: {
-                            image: '{{ STATIC_URL }}images/gmap_patrodent.png'
-                        },
-                        info: {
-                            popup: true,
-                            layer: '#address_info'
-                        },
-                    }
-                });
             if (document.referrer == "https://www.123formbuilder.com/form-283841/Patrodent" || document.location.href.indexOf("sucess") != -1) {
                 alert("Email enviado con exito, nos pondremos en contacto lo más rapidamente posible")
             }
@@ -162,9 +144,9 @@
     </script>
     <script type="text/javascript">
         $(window).load(function(){
-            $('#contact-form').forms({
+            /*$('#contact-form').forms({
                 ownerEmail:'#'
-            })
+            })*/
         })
 	</script>
 {% endblock %}
